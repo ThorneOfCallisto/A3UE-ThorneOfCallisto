@@ -2,8 +2,8 @@
  * Converted from: NFtS_AI_SOV_Arctic.sqf
  */
 _basic append ["NORTH_SOV_R75"];
-_unarmedVehicles append ["LIB_Willys_MB_w","LIB_Willys_MB_Hood_w"];
-_armedVehicles append ["NORTH_SOV_W_T38","NORTH_SOV_W_T20","NORTH_SOV_W_BA10","NORTH_SOV_W_BA6","NORTH_SOV_W_T60"];
+_lightUnarmed append ["LIB_Willys_MB_w","LIB_Willys_MB_Hood_w"];
+_lightArmed append ["NORTH_SOV_W_T38","NORTH_SOV_W_T20","NORTH_SOV_W_BA10","NORTH_SOV_W_BA6","NORTH_SOV_W_T60"];
 _Trucks append ["LIB_US6_Tent","LIB_US6_Open"];
 _cargoTrucks append ["LIB_US6_Open_Cargo","LIB_US6_Tent_Cargo"];
 _ammoTrucks append ["LIB_US6_Ammo"];

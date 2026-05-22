@@ -1,4 +1,4 @@
-_armedVehicles append ["EF_B_MRAP_01_AT_NATO_T", "EF_B_MRAP_01_FSV_NATO_T"];
+_lightArmed append ["EF_B_MRAP_01_AT_NATO_T", "EF_B_MRAP_01_FSV_NATO_T"];
 _aa pushBack "EF_B_MRAP_01_LAAD_NATO_T";
 
 _IFVs append ["EF_B_AAV9_MJTF_Wdl", "EF_B_AAV9_50mm_MJTF_Wdl"];

@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_SLA_Temperate.sqf
  */
 _basic append ["O_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_O_UAZ_Unarmed_SLA"];
-_armedVehicles append ["CUP_O_UAZ_AGS30_SLA", "CUP_O_UAZ_MG_SLA", "CUP_O_UAZ_METIS_SLA", "CUP_O_UAZ_SPG9_SLA", "CUP_O_Ural_ZU23_SLA"];
+_lightUnarmed append ["CUP_O_UAZ_Unarmed_SLA"];
+_lightArmed append ["CUP_O_UAZ_AGS30_SLA", "CUP_O_UAZ_MG_SLA", "CUP_O_UAZ_METIS_SLA", "CUP_O_UAZ_SPG9_SLA", "CUP_O_Ural_ZU23_SLA"];
 _Trucks append ["CUP_O_Ural_SLA"];
 _cargoTrucks append ["CUP_O_Ural_Open_SLA"];
 _ammoTrucks append ["CUP_O_Ural_Reammo_SLA"];

@@ -2,8 +2,8 @@
  * Converted from: CWR_AI_US_Army_Arid.sqf
  */
 _basic append ["cwr3_b_m151_des"];
-_unarmedVehicles append ["cwr3_b_hmmwv_des","cwr3_b_hmmwv_transport_des"];
-_armedVehicles append ["cwr3_b_hmmwv_m2_des"];
+_lightUnarmed append ["cwr3_b_hmmwv_des","cwr3_b_hmmwv_transport_des"];
+_lightArmed append ["cwr3_b_hmmwv_m2_des"];
 _Trucks append ["cwr3_b_m939_des"];
 _cargoTrucks append ["cwr3_b_m939_open_des"];
 _ammoTrucks append ["cwr3_b_m939_reammo_des"];

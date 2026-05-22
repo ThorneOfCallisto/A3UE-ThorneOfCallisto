@@ -2,8 +2,8 @@
  * Converted from: WM_AI_EMP.sqf
  */
 _basic append ["WM_74Z_Imperial_Brown"];
-_unarmedVehicles append ["3AS_ISP_Transport"];
-_armedVehicles append ["WM_74Z_Imperial_Brown", "3AS_ISP", "3AS_ISP"];
+_lightUnarmed append ["3AS_ISP_Transport"];
+_lightArmed append ["WM_74Z_Imperial_Brown", "3AS_ISP", "3AS_ISP"];
 _Trucks append ["442_argon_transport", "442_argon_covered"];
 _cargoTrucks append ["442_argon_transport", "442_argon_covered"];
 _ammoTrucks append ["442_argon_ammo"];

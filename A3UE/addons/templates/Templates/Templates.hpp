@@ -1,7 +1,7 @@
 class Templates 
 {
     // ***************************** Custom Mix Factions *****************************
-    #include "Templates\custom_mixed\templates.hpp"
+    #include "MIX-Templates\templates.hpp"
 };
 
 /*

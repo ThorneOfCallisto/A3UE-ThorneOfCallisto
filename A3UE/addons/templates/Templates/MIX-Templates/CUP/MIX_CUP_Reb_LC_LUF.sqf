@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_LC_LUF.sqf
  */
 _basic append ["Flex_CUP_LUF_TT650"];
-_unarmedVehicles append ["Flex_CUP_LUF_Datsun_4seat", "Flex_CUP_LUF_Hilux_unarmed", "Flex_CUP_LUF_Hilux_armored_unarmed"];
-_armedVehicles append ["Flex_CUP_LUF_Datsun_PK", "Flex_CUP_LUF_Hilux_DSHKM", "Flex_CUP_LUF_Hilux_M2", "Flex_CUP_LUF_Hilux_armored_DSHKM", "Flex_CUP_LUF_Hilux_armored_M2", "Flex_CUP_LUF_BTR40_MG"];
+_lightUnarmed append ["Flex_CUP_LUF_Datsun_4seat", "Flex_CUP_LUF_Hilux_unarmed", "Flex_CUP_LUF_Hilux_armored_unarmed"];
+_lightArmed append ["Flex_CUP_LUF_Datsun_PK", "Flex_CUP_LUF_Hilux_DSHKM", "Flex_CUP_LUF_Hilux_M2", "Flex_CUP_LUF_Hilux_armored_DSHKM", "Flex_CUP_LUF_Hilux_armored_M2", "Flex_CUP_LUF_BTR40_MG"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

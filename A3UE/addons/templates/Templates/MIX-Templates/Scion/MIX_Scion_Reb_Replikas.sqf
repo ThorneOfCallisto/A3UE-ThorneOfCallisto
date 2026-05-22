@@ -2,8 +2,8 @@
  * Converted from: Scion_Reb_Replikas.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_unarmedVehicles append ["SCEXT_Dingo_AC"];
-_armedVehicles append ["SC_Ferret_AC"];
+_lightUnarmed append ["SCEXT_Dingo_AC"];
+_lightArmed append ["SC_Ferret_AC"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

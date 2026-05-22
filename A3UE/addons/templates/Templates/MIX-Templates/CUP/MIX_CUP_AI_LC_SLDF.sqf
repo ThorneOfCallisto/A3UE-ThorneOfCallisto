@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_LC_SLDF.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["Flex_CUP_SLDF_LR_Transport"];
-_armedVehicles append ["Flex_CUP_SLDF_RG31_M2", "Flex_CUP_SLDF_RG31E_M2"];
+_lightUnarmed append ["Flex_CUP_SLDF_LR_Transport"];
+_lightArmed append ["Flex_CUP_SLDF_RG31_M2", "Flex_CUP_SLDF_RG31E_M2"];
 _Trucks append ["Flex_CUP_SLDF_MTVR"];
 _cargoTrucks append ["Flex_CUP_SLDF_MTVR"];
 _ammoTrucks append ["Flex_CUP_SLDF_MTVR_Ammo"];

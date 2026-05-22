@@ -2,8 +2,8 @@
  * Converted from: EAW_Reb_CHI.sqf
  */
 _basic append ["fow_v_truppenfahrrad_ger_heer"];
-_unarmedVehicles append ["LIB_Willys_MB"];
-_armedVehicles append ["LIB_US_Willys_MB_M1919"];
+_lightUnarmed append ["LIB_Willys_MB"];
+_lightArmed append ["LIB_US_Willys_MB_M1919"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

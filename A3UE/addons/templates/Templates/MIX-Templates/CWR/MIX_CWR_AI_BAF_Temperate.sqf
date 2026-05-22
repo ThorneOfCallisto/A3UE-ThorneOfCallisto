@@ -2,8 +2,8 @@
  * Converted from: CWR_AI_BAF_Temperate.sqf
  */
 _basic append ["cwr3_b_uk_landrover"];
-_unarmedVehicles append ["cwr3_b_uk_landrover"];
-_armedVehicles append ["CUP_B_LR_MG_GB_W"];
+_lightUnarmed append ["cwr3_b_uk_landrover"];
+_lightArmed append ["CUP_B_LR_MG_GB_W"];
 _Trucks append ["cwr3_b_uk_fv620_transport"];
 _cargoTrucks append ["cwr3_b_uk_fv620_transport"];
 _ammoTrucks append ["cwr3_b_uk_fv620_reammo"];

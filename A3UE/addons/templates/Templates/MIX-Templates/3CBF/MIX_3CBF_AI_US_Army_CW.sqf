@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_US_Army_CW.sqf
  */
 _basic append ["UK3CB_B_M1030_USMC_WDL"];
-_unarmedVehicles append ["UK3CB_CW_US_B_LATE_M1025_Unarmed"];
-_armedVehicles append ["UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_MK19", "UK3CB_CW_US_B_LATE_M1025_TOW"];
+_lightUnarmed append ["UK3CB_CW_US_B_LATE_M1025_Unarmed"];
+_lightArmed append ["UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_MK19", "UK3CB_CW_US_B_LATE_M1025_TOW"];
 _Trucks append ["UK3CB_CW_US_B_LATE_M939", "UK3CB_CW_US_B_LATE_M939_Guntruck", "UK3CB_CW_US_B_LATE_M939_Open"];
 _cargoTrucks append ["UK3CB_CW_US_B_LATE_M939_Recovery", "UK3CB_CW_US_B_LATE_M977A4_Recovery"];
 _ammoTrucks append ["UK3CB_CW_US_B_LATE_M977A4_Reammo", "UK3CB_CW_US_B_LATE_M939_Reammo"];

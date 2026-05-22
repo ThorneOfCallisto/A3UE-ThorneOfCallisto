@@ -2,8 +2,8 @@
  * Converted from: WM_Reb_RA.sqf
  */
 _basic append ["CW_Quadbike"];
-_unarmedVehicles append ["ls_vehicle_105kLancer"];
-_armedVehicles append ["WM_V25_Speeder"];
+_lightUnarmed append ["ls_vehicle_105kLancer"];
+_lightArmed append ["WM_V25_Speeder"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

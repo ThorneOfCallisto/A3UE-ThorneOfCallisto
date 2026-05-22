@@ -2,8 +2,8 @@
  * Converted from: IFA_AI_Allies_Arid.sqf
  */
 _basic append ["LIB_US_NAC_Willys_MB"];
-_unarmedVehicles append ["LIB_US_NAC_Willys_MB","LIB_US_NAC_Willys_MB_Hood"];
-_armedVehicles append ["LIB_US_NAC_Willys_MB_M1919"];
+_lightUnarmed append ["LIB_US_NAC_Willys_MB","LIB_US_NAC_Willys_MB_Hood"];
+_lightArmed append ["LIB_US_NAC_Willys_MB_M1919"];
 _Trucks append ["LIB_US_NAC_GMC_Tent","LIB_US_NAC_GMC_Open"];
 _cargoTrucks append ["LIB_US_NAC_GMC_Tent","LIB_US_NAC_GMC_Open"];
 _ammoTrucks append ["LIB_US_NAC_GMC_Ammo"];

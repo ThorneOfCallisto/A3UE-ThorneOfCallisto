@@ -2,8 +2,8 @@
  * Converted from: EMP_AI_EMP_WBK.sqf
  */
 _basic append ["JMSLLTE_B_veh_74z_imp_F"];
-_unarmedVehicles append ["JMSLLTE_B_veh_v35_reb_F", "CW_Ifrit_Empire"];
-_armedVehicles append ["CW_Ifrit_Imperial_HMG", "CW_Ifrit_Imperial_AT"];
+_lightUnarmed append ["JMSLLTE_B_veh_v35_reb_F", "CW_Ifrit_Empire"];
+_lightArmed append ["CW_Ifrit_Imperial_HMG", "CW_Ifrit_Imperial_AT"];
 _Trucks append ["JMSLLTE_B_veh_v35c_reb_F"];
 _cargoTrucks append [];
 _ammoTrucks append ["JMSLLTE_B_veh_ITTc_imp_F"];

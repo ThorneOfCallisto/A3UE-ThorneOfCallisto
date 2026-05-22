@@ -2,10 +2,10 @@
  * Converted from: GM_AI_NVA_arctic.sqf
  */
 _basic append ["gm_gc_army_p601"];
-_unarmedVehicles append ["gm_gc_army_uaz469_cargo_un", "gm_gc_army_uaz469_cargo_win", "gm_gc_army_uaz469_cargo_un", "gm_gc_army_uaz469_cargo_win", 
+_lightUnarmed append ["gm_gc_army_uaz469_cargo_un", "gm_gc_army_uaz469_cargo_win", "gm_gc_army_uaz469_cargo_un", "gm_gc_army_uaz469_cargo_win", 
     "gm_gc_army_btr60pu12_un", "gm_gc_army_btr60pu12_win", "gm_gc_army_btr60pu12_olw", "gm_gc_army_uaz469_cargo_olw", "gm_gc_army_brdm2um_win",
     "gm_gc_army_brdm2um_un", "gm_gc_army_brdm2um_olw"];
-_armedVehicles append ["gm_gc_army_uaz469_dshkm_win", "gm_gc_army_uaz469_dshkm_un", "gm_gc_army_brdm2_win", "gm_gc_army_brdm2_un", "gm_gc_army_brdm2_olw", 
+_lightArmed append ["gm_gc_army_uaz469_dshkm_win", "gm_gc_army_uaz469_dshkm_un", "gm_gc_army_brdm2_win", "gm_gc_army_brdm2_un", "gm_gc_army_brdm2_olw", 
     "CUP_O_GAZ_Vodnik_BPPU_RU", "CUP_O_GAZ_Vodnik_KPVT_RU", "gm_gc_army_brdm2rkh_win", "gm_gc_army_brdm2rkh_un", "gm_gc_army_brdm2rkh_olw"];
 _Trucks append ["gm_gc_army_btr60pa_win", "gm_gc_army_btr60pa_un", "gm_gc_army_ural375d_cargo_un", "gm_gc_army_ural4320_cargo_un", 
     "gm_gc_army_ural4320_cargo_win", "gm_gc_army_ural375d_cargo_win", "gm_gc_army_ural375d_cargo_olw", "gm_gc_army_ural4320_cargo_olw", 

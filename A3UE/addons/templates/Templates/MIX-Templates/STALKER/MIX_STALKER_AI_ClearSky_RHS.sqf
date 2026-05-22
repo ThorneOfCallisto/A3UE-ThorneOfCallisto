@@ -2,8 +2,8 @@
  * Converted from: STALKER_AI_ClearSky_RHS.sqf
  */
 _basic append ["C_Quadbike_01_F"];
-_unarmedVehicles append ["rhsgref_cdf_b_reg_uaz", "rhsusf_m1025_w"];
-_armedVehicles append ["rhsgref_cdf_b_reg_uaz_dshkm", "rhsgref_cdf_b_reg_uaz_ags", "rhsusf_m1151_m2_v1_usarmy_wd"];
+_lightUnarmed append ["rhsgref_cdf_b_reg_uaz", "rhsusf_m1025_w"];
+_lightArmed append ["rhsgref_cdf_b_reg_uaz_dshkm", "rhsgref_cdf_b_reg_uaz_ags", "rhsusf_m1151_m2_v1_usarmy_wd"];
 _Trucks append ["rhs_gaz66_msv", "rhs_gaz66o_msv", "RHS_Ural_Open_MSV_01]"];
 _cargoTrucks append ["rhs_gaz66_msv", "RHS_Ural_MSV_01"];
 _ammoTrucks append ["rhs_gaz66_ammo_msv"];

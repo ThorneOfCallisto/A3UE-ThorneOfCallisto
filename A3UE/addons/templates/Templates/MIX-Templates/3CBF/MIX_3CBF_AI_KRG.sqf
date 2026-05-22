@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_KRG.sqf
  */
 _basic append ["UK3CB_KRG_B_Quadbike"];
-_unarmedVehicles append ["UK3CB_KRG_B_M270_Transport", "UK3CB_KRG_B_BTR40", "UK3CB_KRG_B_M1025_Unarmed", "UK3CB_KRG_B_M998_2DR", "UK3CB_KRG_B_M998_4DR", "UK3CB_KRG_B_Pickup"];
-_armedVehicles append ["UK3CB_KRG_B_Pickup_M2", "UK3CB_KRG_B_Pickup_DSHKM", "UK3CB_KRG_B_M1025_TOW", "UK3CB_KRG_B_M1025_M2", "UK3CB_KRG_B_M939_ZU23", "UK3CB_KRG_B_MTVR_ZU23"];
+_lightUnarmed append ["UK3CB_KRG_B_M270_Transport", "UK3CB_KRG_B_BTR40", "UK3CB_KRG_B_M1025_Unarmed", "UK3CB_KRG_B_M998_2DR", "UK3CB_KRG_B_M998_4DR", "UK3CB_KRG_B_Pickup"];
+_lightArmed append ["UK3CB_KRG_B_Pickup_M2", "UK3CB_KRG_B_Pickup_DSHKM", "UK3CB_KRG_B_M1025_TOW", "UK3CB_KRG_B_M1025_M2", "UK3CB_KRG_B_M939_ZU23", "UK3CB_KRG_B_MTVR_ZU23"];
 _Trucks append ["UK3CB_KRG_B_M939_Closed", "UK3CB_KRG_B_M939_Guntruck", "UK3CB_KRG_B_M939_Open", "UK3CB_KRG_B_MTVR_Closed"];
 _cargoTrucks append ["UK3CB_KRG_B_M939_Recovery", "UK3CB_KRG_B_MTVR_Recovery", "UK3CB_KRG_B_M270_Carrier"];
 _ammoTrucks append ["UK3CB_KRG_B_M939_Reammo", "UK3CB_KRG_B_MTVR_Reammo"];

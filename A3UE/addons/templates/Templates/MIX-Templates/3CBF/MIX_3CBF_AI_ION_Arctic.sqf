@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_ION_Arctic.sqf
  */
 _basic append ["UK3CB_ION_B_Winter_Quadbike", "UK3CB_ION_B_Winter_M1030"];
-_unarmedVehicles append ["UK3CB_ION_B_Winter_SUV", "UK3CB_ION_B_Winter_LSV_02", "UK3CB_ION_B_Winter_M1025"];
-_armedVehicles append ["UK3CB_ION_B_Winter_SUV_Armed", "UK3CB_ION_B_Winter_LSV_02_Armed", "UK3CB_ION_B_Winter_M1025_M2"];
+_lightUnarmed append ["UK3CB_ION_B_Winter_SUV", "UK3CB_ION_B_Winter_LSV_02", "UK3CB_ION_B_Winter_M1025"];
+_lightArmed append ["UK3CB_ION_B_Winter_SUV_Armed", "UK3CB_ION_B_Winter_LSV_02_Armed", "UK3CB_ION_B_Winter_M1025_M2"];
 _Trucks append ["UK3CB_ION_B_Winter_T810_Closed", "UK3CB_ION_B_Winter_T810_Open"];
 _cargoTrucks append ["UK3CB_ION_B_Winter_T810_Closed", "UK3CB_ION_B_Winter_T810_Open", "UK3CB_ION_B_Winter_T810_Recovery"];
 _ammoTrucks append ["UK3CB_ION_B_Winter_T810_Reammo"];

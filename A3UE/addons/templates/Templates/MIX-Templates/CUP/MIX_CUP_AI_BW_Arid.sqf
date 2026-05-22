@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_BW_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_B_FENNEK_GER_Des", "CUP_B_nM1025_Unarmed_USA_DES", "CUP_B_nM1038_4s_USA_DES", "CUP_B_nM1038_USA_DES", "CUP_B_M1151_USA"];
-_armedVehicles append ["CUP_B_Dingo_GL_GER_Des", "CUP_B_Dingo_GER_Des", "CUP_B_M1165_GMV_USA", "CUP_B_nM1025_M2_USA_DES", "CUP_B_nM1025_M240_USA_DES", "CUP_B_nM1025_SOV_M2_USA_DES", "CUP_B_M1151_M2_USA", "CUP_B_M1167_USA", "CUP_B_M1151_Mk19_USA"];
+_lightUnarmed append ["CUP_B_FENNEK_GER_Des", "CUP_B_nM1025_Unarmed_USA_DES", "CUP_B_nM1038_4s_USA_DES", "CUP_B_nM1038_USA_DES", "CUP_B_M1151_USA"];
+_lightArmed append ["CUP_B_Dingo_GL_GER_Des", "CUP_B_Dingo_GER_Des", "CUP_B_M1165_GMV_USA", "CUP_B_nM1025_M2_USA_DES", "CUP_B_nM1025_M240_USA_DES", "CUP_B_nM1025_SOV_M2_USA_DES", "CUP_B_M1151_M2_USA", "CUP_B_M1167_USA", "CUP_B_M1151_Mk19_USA"];
 _Trucks append ["CUP_B_MTVR_USA"];
 _cargoTrucks append [];
 _ammoTrucks append ["CUP_B_MTVR_Ammo_USA", "CUP_B_nM1038_Ammo_USA_DES", "CUP_B_nM1038_Ammo_DF_USA_DES"];

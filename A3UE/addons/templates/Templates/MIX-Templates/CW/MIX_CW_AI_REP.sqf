@@ -2,8 +2,8 @@
  * Converted from: CW_AI_REP.sqf
  */
 _basic append ["3AS_Barc"];
-_unarmedVehicles append ["3AS_ISP_Transport"];
-_armedVehicles append ["3AS_BarcSideCar", "3AS_ISP", "3AS_ISP", "3AS_Barc"];
+_lightUnarmed append ["3AS_ISP_Transport"];
+_lightArmed append ["3AS_BarcSideCar", "3AS_ISP", "3AS_ISP", "3AS_Barc"];
 _Trucks append ["442_argon_transport", "442_argon_covered"];
 _cargoTrucks append ["442_argon_transport", "442_argon_covered"];
 _ammoTrucks append ["442_argon_ammo"];

@@ -2,8 +2,8 @@
  * Converted from: PED_AI_ITA_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["ASZ_LR90_EI", "ASZ_LR110_CCpara"];
-_armedVehicles append ["ASZ_LR110_CCpara_MG3", "ASZ_LR90_M2", "ASZ_LR90_MK19", "ASZ_LR90_TOW", "ASZ_PUMA4x4CC_MG3", "ASZ_PUMA4x4_M2", "ASZ_PUMA4x4_TOW", "ASZ_PUMA6x6_AT", "ASZ_PUMA6x6CC_MG3", "ASZ_PUMA6x6_hitrole", "ASZ_PUMA6x6_M2"];
+_lightUnarmed append ["ASZ_LR90_EI", "ASZ_LR110_CCpara"];
+_lightArmed append ["ASZ_LR110_CCpara_MG3", "ASZ_LR90_M2", "ASZ_LR90_MK19", "ASZ_LR90_TOW", "ASZ_PUMA4x4CC_MG3", "ASZ_PUMA4x4_M2", "ASZ_PUMA4x4_TOW", "ASZ_PUMA6x6_AT", "ASZ_PUMA6x6CC_MG3", "ASZ_PUMA6x6_hitrole", "ASZ_PUMA6x6_M2"];
 _Trucks append ["ASZ_ACTL4x4_EI"];
 _cargoTrucks append ["ASZ_ACTL6x6_logistic"];
 _ammoTrucks append ["CUP_B_MTVR_Ammo_BAF_WOOD"];

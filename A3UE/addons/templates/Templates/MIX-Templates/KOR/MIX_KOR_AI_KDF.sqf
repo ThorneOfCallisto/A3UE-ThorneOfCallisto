@@ -2,8 +2,8 @@
  * Converted from: KOR_AI_KDF.sqf
  */
 _basic append ["vtf_kf_B_Quadbike_01_F"];
-_unarmedVehicles append ["vtf_kf_B_LSV_01_unarmed_F","vtf_kf_B_MRAP_01_F"];
-_armedVehicles append ["B_T_MRAP_01_hmg_F","B_T_MRAP_01_gmg_F"];
+_lightUnarmed append ["vtf_kf_B_LSV_01_unarmed_F","vtf_kf_B_MRAP_01_F"];
+_lightArmed append ["B_T_MRAP_01_hmg_F","B_T_MRAP_01_gmg_F"];
 _Trucks append ["vtf_kf_B_Truck_02_F"];
 _cargoTrucks append [];
 _ammoTrucks append ["vtf_kf_B_Truck_02_Ammo_F"];

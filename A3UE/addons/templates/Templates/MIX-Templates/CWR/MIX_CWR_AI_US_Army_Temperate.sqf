@@ -2,8 +2,8 @@
  * Converted from: CWR_AI_US_Army_Temperate.sqf
  */
 _basic append ["cwr3_b_m151"];
-_unarmedVehicles append ["cwr3_b_hmmwv","cwr3_b_hmmwv_transport"];
-_armedVehicles append ["cwr3_b_hmmwv_m2"];
+_lightUnarmed append ["cwr3_b_hmmwv","cwr3_b_hmmwv_transport"];
+_lightArmed append ["cwr3_b_hmmwv_m2"];
 _Trucks append ["cwr3_b_m939"];
 _cargoTrucks append ["cwr3_b_m939_open"];
 _ammoTrucks append ["cwr3_b_m939_reammo"];

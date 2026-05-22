@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_CSAT_Temperate.sqf
  */
 _basic append ["Atlas_O_W_Quadbike_01_F"];
-_unarmedVehicles append ["Atlas_O_W_MRAP_02_F"];
-_armedVehicles append ["Atlas_O_W_MRAP_02_gmg_F", "Atlas_O_W_MRAP_02_hmg_F"];
+_lightUnarmed append ["Atlas_O_W_MRAP_02_F"];
+_lightArmed append ["Atlas_O_W_MRAP_02_gmg_F", "Atlas_O_W_MRAP_02_hmg_F"];
 _Trucks append ["Atlas_O_W_Truck_02_transport_F", "Atlas_O_W_Truck_02_F", "Atlas_O_W_Truck_03_transport_ghex_F", "Atlas_O_W_Truck_03_covered_ghex_F"];
 _cargoTrucks append ["Atlas_O_W_Truck_02_transport_F", "Atlas_O_W_Truck_02_F", "Atlas_O_W_Truck_03_transport_ghex_F", "Atlas_O_W_Truck_03_covered_ghex_F","O_T_UGV_01_ghex_F"];
 _ammoTrucks append ["Atlas_O_W_Truck_03_ammo_ghex_F"];
@@ -713,8 +713,8 @@ _pilotfacewear append [];
 /////////////////////////////
 
 if (_hasApex) then {
-    _unarmedVehicles pushBack "Atlas_O_W_LSV_02_unarmed_F";
-    _armedVehicles append ["Atlas_O_W_LSV_02_AT_F", "Atlas_O_W_LSV_02_armed_F"];
+    _lightUnarmed pushBack "Atlas_O_W_LSV_02_unarmed_F";
+    _lightArmed append ["Atlas_O_W_LSV_02_AT_F", "Atlas_O_W_LSV_02_armed_F"];
 };
 
 if (_hasHelicopters) then {

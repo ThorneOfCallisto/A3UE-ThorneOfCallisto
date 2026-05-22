@@ -2,8 +2,8 @@
  * Converted from: CW_Reb_MAND.sqf
  */
 _basic append ["CW_Quadbike"];
-_unarmedVehicles append ["ls_vehicle_105kLancer_civ"];
-_armedVehicles append ["CW_Offroad_Mando_HMG"];
+_lightUnarmed append ["ls_vehicle_105kLancer_civ"];
+_lightArmed append ["CW_Offroad_Mando_HMG"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

@@ -2,8 +2,8 @@
  * Converted from: Vanguard_AI_Expeditionary.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["ssv_vanguard_vehicle_m12_black", "ssv_vanguard_vehicle_m813_black"];
-_armedVehicles append ["ssv_vanguard_vehicle_m12_mg_black"];
+_lightUnarmed append ["ssv_vanguard_vehicle_m12_black", "ssv_vanguard_vehicle_m813_black"];
+_lightArmed append ["ssv_vanguard_vehicle_m12_mg_black"];
 _Trucks append ["OPTRE_m1015_mule_cma", "OPTRE_m1015_mule_cover_cma"];
 _cargoTrucks append ["OPTRE_m1015_mule_cma", "OPTRE_m1015_mule_cover_cma"];
 _ammoTrucks append ["OPTRE_m1015_mule_ammo_cma"];

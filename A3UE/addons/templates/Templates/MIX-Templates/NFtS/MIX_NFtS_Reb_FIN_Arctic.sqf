@@ -2,8 +2,8 @@
  * Converted from: NFtS_Reb_FIN_Arctic.sqf
  */
 _basic append ["NORTH_FIN_41_R75"];
-_unarmedVehicles append ["LIB_Kfz1_w"];
-_armedVehicles append ["LIB_Kfz1_MG42_sernyt"];
+_lightUnarmed append ["LIB_Kfz1_w"];
+_lightArmed append ["LIB_Kfz1_MG42_sernyt"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

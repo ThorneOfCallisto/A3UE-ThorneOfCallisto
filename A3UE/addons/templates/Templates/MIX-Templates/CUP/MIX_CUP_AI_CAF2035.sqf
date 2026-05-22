@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_CAF2035.sqf
  */
 _basic append ["PUP_CAF_QuadBike_01_F"];
-_unarmedVehicles append ["PUP_CAF_LSV_01_unarmed_F", "PUP_CAF_LSV_01_light_F", "PUP_CAF_MRAP_03_F", "B_W_MRAP_01_F", "B_T_MRAP_01_F", "B_W_LSV_01_unarmed_F", "B_W_LSV_01_light_F", "CUP_B_nM1151_Unarmed_NATO_T"];
-_armedVehicles append ["PUP_CAF_LSV_01_armed_F", "PUP_CAF_LSV_01_AT_F", "B_W_LSV_01_armed_F", "B_W_LSV_01_AT_F", "CUP_B_nM1151_ogpk_m2_NATO_T", "CUP_B_nM1151_ogpk_m240_NATO_T", "CUP_B_nM1151_ogpk_mk19_NATO_T", "PUP_CAF_MRAP_03_hmg_F", "PUP_CAF_MRAP_03_gmg_F", "B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F", "B_W_MRAP_01_hmg_F", "B_W_MRAP_01_gmg_F"];
+_lightUnarmed append ["PUP_CAF_LSV_01_unarmed_F", "PUP_CAF_LSV_01_light_F", "PUP_CAF_MRAP_03_F", "B_W_MRAP_01_F", "B_T_MRAP_01_F", "B_W_LSV_01_unarmed_F", "B_W_LSV_01_light_F", "CUP_B_nM1151_Unarmed_NATO_T"];
+_lightArmed append ["PUP_CAF_LSV_01_armed_F", "PUP_CAF_LSV_01_AT_F", "B_W_LSV_01_armed_F", "B_W_LSV_01_AT_F", "CUP_B_nM1151_ogpk_m2_NATO_T", "CUP_B_nM1151_ogpk_m240_NATO_T", "CUP_B_nM1151_ogpk_mk19_NATO_T", "PUP_CAF_MRAP_03_hmg_F", "PUP_CAF_MRAP_03_gmg_F", "B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F", "B_W_MRAP_01_hmg_F", "B_W_MRAP_01_gmg_F"];
 _Trucks append ["PUP_CAF_Truck_01_transport_F", "PUP_CAF_Truck_01_covered_F"];
 _cargoTrucks append ["PUP_CAF_Truck_01_cargo_F"];
 _ammoTrucks append ["PUP_CAF_Truck_01_ammo_F"];

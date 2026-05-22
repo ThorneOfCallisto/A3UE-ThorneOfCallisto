@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_BW_Temperate.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_B_FENNEK_GER_Wdl", "CUP_B_nM1025_Unarmed_USA_WDL", "CUP_B_nM1038_4s_USA_WDL", "CUP_B_nM1038_USA_WDL", "CUP_B_M1151_WDL_USA"];
-_armedVehicles append ["CUP_B_Dingo_GL_GER_Wdl", "CUP_B_Dingo_GER_Wdl", "CUP_B_M1165_GMV_WDL_USA", "CUP_B_nM1025_M2_USA_WDL", "CUP_B_nM1025_M240_USA_WDL", "CUP_B_nM1025_SOV_M2_USA_WDL", "CUP_B_M1151_M2_WDL_USA", "CUP_B_nM1036_TOW_USA_WDL", "CUP_B_M1151_Mk19_WDL_USA"];
+_lightUnarmed append ["CUP_B_FENNEK_GER_Wdl", "CUP_B_nM1025_Unarmed_USA_WDL", "CUP_B_nM1038_4s_USA_WDL", "CUP_B_nM1038_USA_WDL", "CUP_B_M1151_WDL_USA"];
+_lightArmed append ["CUP_B_Dingo_GL_GER_Wdl", "CUP_B_Dingo_GER_Wdl", "CUP_B_M1165_GMV_WDL_USA", "CUP_B_nM1025_M2_USA_WDL", "CUP_B_nM1025_M240_USA_WDL", "CUP_B_nM1025_SOV_M2_USA_WDL", "CUP_B_M1151_M2_WDL_USA", "CUP_B_nM1036_TOW_USA_WDL", "CUP_B_M1151_Mk19_WDL_USA"];
 _Trucks append ["CUP_B_MTVR_USMC"];
 _cargoTrucks append [];
 _ammoTrucks append ["CUP_B_MTVR_Ammo_USMC", "CUP_B_nM1038_Ammo_USA_WDL", "CUP_B_nM1038_Ammo_DF_USA_WDL"];

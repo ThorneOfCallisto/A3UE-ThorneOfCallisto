@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_AFRF.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["rhs_tigr_msv", "rhs_tigr_m_msv"];
-_armedVehicles append ["rhs_tigr_sts_3camo_msv", "rhs_tigr_sts_3camo_msv", "RHS_Ural_Zu23_MSV_01", "UK3CB_O_G_MTLB_Zu23"];
+_lightUnarmed append ["rhs_tigr_msv", "rhs_tigr_m_msv"];
+_lightArmed append ["rhs_tigr_sts_3camo_msv", "rhs_tigr_sts_3camo_msv", "RHS_Ural_Zu23_MSV_01", "UK3CB_O_G_MTLB_Zu23"];
 _Trucks append ["rhs_kamaz5350_msv", "rhs_kamaz5350_open_msv", "RHS_Ural_Open_MSV_01", "RHS_Ural_MSV_01"];
 _cargoTrucks append ["rhs_kamaz5350_flatbed_cover_msv", "rhs_kamaz5350_flatbed_msv", "RHS_Ural_Flat_MSV_01", "RHS_Ural_Open_Flat_MSV_01"];
 _ammoTrucks append ["rhs_kamaz5350_ammo_msv", "RHS_Ural_Ammo_MSV_01"];

@@ -2,8 +2,8 @@
  * Converted from: Scion_AI_Empire.sqf
  */
 _basic append ["SC_Ferret_AR"];
-_unarmedVehicles append ["SCEXT_Dingo_AR"];
-_armedVehicles append ["SCEXT_Dingo_A_AR", "SC_Ferret_AA_AR"];
+_lightUnarmed append ["SCEXT_Dingo_AR"];
+_lightArmed append ["SCEXT_Dingo_A_AR", "SC_Ferret_AA_AR"];
 _Trucks append ["SC_Gator_TO_AR", "SC_Gator_TC_AR"];
 _cargoTrucks append ["SC_Gator_FB_AR", "SCEXT_Gator_Flatbed_Trans_AR"];
 _ammoTrucks append ["SCEXT_Gator_Crate_AR"];

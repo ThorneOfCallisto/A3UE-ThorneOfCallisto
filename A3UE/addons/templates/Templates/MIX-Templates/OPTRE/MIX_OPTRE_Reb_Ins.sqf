@@ -2,8 +2,8 @@
  * Converted from: OPTRE_Reb_Ins.sqf
  */
 _basic append ["OPTRE_M274_ATV_Ins"];
-_unarmedVehicles append ["OPTRE_M12_FAV_ins"];
-_armedVehicles append ["OPTRE_M12_LRV_ins"];
+_lightUnarmed append ["OPTRE_M12_FAV_ins"];
+_lightArmed append ["OPTRE_M12_LRV_ins"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_ACW_Raven_PMC.sqf
  */
 _basic append ["Flex_CUP_RAV_Quad", "Flex_CUP_RAV_TT650"];
-_unarmedVehicles append ["CUP_I_Pickup_Unarmed_PMC", "CUP_I_SUV_ION"];
-_armedVehicles append ["Flex_CUP_RAV_Tigr_M_KORD", "Flex_CUP_RAV_Tigr_M_PK"];
+_lightUnarmed append ["CUP_I_Pickup_Unarmed_PMC", "CUP_I_SUV_ION"];
+_lightArmed append ["Flex_CUP_RAV_Tigr_M_KORD", "Flex_CUP_RAV_Tigr_M_PK"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

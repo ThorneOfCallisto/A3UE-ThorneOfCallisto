@@ -2,8 +2,8 @@
  * Converted from: NFtS_AI_SOV_Temperate.sqf
  */
 _basic append ["NORTH_SOV_R75"];
-_unarmedVehicles append ["LIB_Willys_MB","LIB_Willys_MB_Hood"];
-_armedVehicles append ["NORTH_SOV_T38","NORTH_SOV_T20","NORTH_SOV_BA10","NORTH_SOV_BA6","NORTH_SOV_T60"];
+_lightUnarmed append ["LIB_Willys_MB","LIB_Willys_MB_Hood"];
+_lightArmed append ["NORTH_SOV_T38","NORTH_SOV_T20","NORTH_SOV_BA10","NORTH_SOV_BA6","NORTH_SOV_T60"];
 _Trucks append ["LIB_US6_Tent","LIB_US6_Open"];
 _cargoTrucks append ["LIB_US6_Open_Cargo","LIB_US6_Tent_Cargo"];
 _ammoTrucks append ["LIB_US6_Ammo"];

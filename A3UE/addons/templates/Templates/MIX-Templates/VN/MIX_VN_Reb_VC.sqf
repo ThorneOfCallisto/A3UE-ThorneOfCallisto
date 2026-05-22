@@ -2,8 +2,8 @@
  * Converted from: VN_Reb_VC.sqf
  */
 _basic append ["vn_o_bicycle_01_vcmf"];
-_unarmedVehicles append ["vn_o_wheeled_btr40_01_vcmf"];
-_armedVehicles append ["vn_o_wheeled_z157_mg_01_vcmf", "vn_o_wheeled_btr40_mg_02_vcmf", "vn_o_wheeled_btr40_mg_01_vcmf", "vn_o_wheeled_btr40_mg_04_vcmf"];
+_lightUnarmed append ["vn_o_wheeled_btr40_01_vcmf"];
+_lightArmed append ["vn_o_wheeled_z157_mg_01_vcmf", "vn_o_wheeled_btr40_mg_02_vcmf", "vn_o_wheeled_btr40_mg_01_vcmf", "vn_o_wheeled_btr40_mg_04_vcmf"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

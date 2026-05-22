@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_EST.sqf
  */
 _basic append ["EST_Quadbike"];
-_unarmedVehicles append ["EST_Army_Offroad", "EST_Army_Offroad_Comms", "EST_Army_Offroad_Covered", "EST_Strider_Army"];
-_armedVehicles append ["EST_Army_Offroad_Armed", "EST_Strider_Army_HMG", "EST_Strider_Army_GMG"];
+_lightUnarmed append ["EST_Army_Offroad", "EST_Army_Offroad_Comms", "EST_Army_Offroad_Covered", "EST_Strider_Army"];
+_lightArmed append ["EST_Army_Offroad_Armed", "EST_Strider_Army_HMG", "EST_Strider_Army_GMG"];
 _Trucks append ["EST_MTVR_Covered", "EST_Tatra_Unarmed"];
 _cargoTrucks append ["EST_MTVR_Covered", "EST_Tatra_Unarmed"];
 _ammoTrucks append ["EST_MTVR_Ammo", "EST_Tatra_Ammo"];

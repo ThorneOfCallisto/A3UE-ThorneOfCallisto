@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_NAPA.sqf
  */
 _basic append ["UK3CB_NAP_I_TT650"];
-_unarmedVehicles append ["UK3CB_NAP_B_Hilux_Pkm"];
-_armedVehicles append ["UK3CB_NAP_B_Hilux_M2"];
+_lightUnarmed append ["UK3CB_NAP_B_Hilux_Pkm"];
+_lightArmed append ["UK3CB_NAP_B_Hilux_M2"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

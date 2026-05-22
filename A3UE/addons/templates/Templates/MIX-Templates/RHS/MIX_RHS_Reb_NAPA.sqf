@@ -2,8 +2,8 @@
  * Converted from: RHS_Reb_NAPA.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_unarmedVehicles append ["rhsgref_nat_uaz_open"];
-_armedVehicles append ["rhsgref_nat_uaz_dshkm"];
+_lightUnarmed append ["rhsgref_nat_uaz_open"];
+_lightArmed append ["rhsgref_nat_uaz_dshkm"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

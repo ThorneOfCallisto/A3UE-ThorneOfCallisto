@@ -2,8 +2,8 @@
  * Converted from: NFtS_Reb_NOR_Temperate.sqf
  */
 _basic append ["NORTH_FIN_41_R75"];
-_unarmedVehicles append ["LIB_Kfz1_sernyt"];
-_armedVehicles append ["LIB_Kfz1_MG42_sernyt"];
+_lightUnarmed append ["LIB_Kfz1_sernyt"];
+_lightArmed append ["LIB_Kfz1_MG42_sernyt"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

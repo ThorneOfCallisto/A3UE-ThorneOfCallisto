@@ -2,8 +2,8 @@
  * Converted from: SPE_IFA_REB_FFF.sqf
  */
 _basic append ["LIB_Kfz1_sernyt"];
-_unarmedVehicles append ["LIB_Kfz1_Hood_sernyt","LIB_UK_Willys_MB_Hood"];
-_armedVehicles append ["LIB_UK_Willys_MB_M1919","LIB_Kfz1_MG42_sernyt"];
+_lightUnarmed append ["LIB_Kfz1_Hood_sernyt","LIB_UK_Willys_MB_Hood"];
+_lightArmed append ["LIB_UK_Willys_MB_M1919","LIB_Kfz1_MG42_sernyt"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

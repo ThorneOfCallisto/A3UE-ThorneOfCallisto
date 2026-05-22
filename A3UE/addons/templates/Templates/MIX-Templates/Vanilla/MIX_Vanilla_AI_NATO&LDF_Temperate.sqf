@@ -2,8 +2,8 @@
  * Converted from: Vanilla_AI_NATO&LDF_Temperate.sqf
  */
 _basic append ["B_T_Quadbike_01_F"];
-_unarmedVehicles append ["B_T_MRAP_01_F"];
-_armedVehicles append ["B_T_MRAP_01_gmg_F", "B_T_MRAP_01_hmg_F"];
+_lightUnarmed append ["B_T_MRAP_01_F"];
+_lightArmed append ["B_T_MRAP_01_gmg_F", "B_T_MRAP_01_hmg_F"];
 _Trucks append ["B_T_Truck_01_covered_F", "B_T_Truck_01_transport_F"];
 _cargoTrucks append ["B_T_Truck_01_flatbed_F", "B_T_Truck_01_cargo_F","B_T_UGV_01_olive_F","I_E_Truck_02_transport_F", "I_E_Truck_02_F"];
 _ammoTrucks append ["B_T_Truck_01_ammo_F","I_E_Truck_02_Ammo_F"];

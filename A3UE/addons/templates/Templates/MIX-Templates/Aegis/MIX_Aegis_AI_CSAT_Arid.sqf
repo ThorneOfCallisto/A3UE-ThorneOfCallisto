@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_CSAT_Arid.sqf
  */
 _basic append ["O_Quadbike_01_F"];
-_unarmedVehicles append ["O_MRAP_02_F"];
-_armedVehicles append ["O_MRAP_02_hmg_F", "O_MRAP_02_gmg_F"];
+_lightUnarmed append ["O_MRAP_02_F"];
+_lightArmed append ["O_MRAP_02_hmg_F", "O_MRAP_02_gmg_F"];
 _Trucks append ["O_Truck_02_transport_F", "O_Truck_02_covered_F", "O_Truck_03_transport_F", "O_Truck_03_covered_F"];
 _cargoTrucks append ["O_Truck_02_transport_F", "O_Truck_02_covered_F", "O_Truck_03_transport_F", "O_Truck_03_covered_F","O_UGV_01_F"];
 _ammoTrucks append ["O_Truck_02_Ammo_F", "O_Truck_03_ammo_F"];
@@ -605,8 +605,8 @@ _pilotfacewear append [];
 /////////////////////////////
 
 if (_hasApex) then {
-    _unarmedVehicles pushBack "O_LSV_02_unarmed_F";
-    _armedVehicles append ["O_LSV_02_AT_F", "O_LSV_02_armed_F"];
+    _lightUnarmed pushBack "O_LSV_02_unarmed_F";
+    _lightArmed append ["O_LSV_02_AT_F", "O_LSV_02_armed_F"];
 };
 
 if (_hasHelicopters) then {

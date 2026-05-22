@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_CSAT_Winter.sqf
  */
 _basic append ["UK3CB_CSAT_S_O_Quadbike", "UK3CB_CSAT_S_O_M1030"];
-_unarmedVehicles append ["UK3CB_CSAT_S_O_GAZ_Vodnik", "UK3CB_CSAT_S_O_BRDM2_UM"];
-_armedVehicles append ["UK3CB_CSAT_S_O_BTR40_MG", "UK3CB_CSAT_S_O_GAZ_Vodnik_PKT"];
+_lightUnarmed append ["UK3CB_CSAT_S_O_GAZ_Vodnik", "UK3CB_CSAT_S_O_BRDM2_UM"];
+_lightArmed append ["UK3CB_CSAT_S_O_BTR40_MG", "UK3CB_CSAT_S_O_GAZ_Vodnik_PKT"];
 _Trucks append ["UK3CB_CSAT_S_O_Ural"];
 _cargoTrucks append ["UK3CB_CSAT_S_O_Ural_Open", "UK3CB_CSAT_S_O_Ural_Recovery"];
 _ammoTrucks append ["UK3CB_CSAT_S_O_MAZ_543_Reammo", "UK3CB_CSAT_S_O_Ural_Ammo"];

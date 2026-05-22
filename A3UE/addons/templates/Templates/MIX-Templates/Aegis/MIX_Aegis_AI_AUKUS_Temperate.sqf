@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_AUKUS_Temperate.sqf
  */
 _basic append ["B_A_Quadbike_01_wdl_F"];
-_unarmedVehicles append ["B_A_MRAP_03_wdl_F"];
-_armedVehicles append ["B_A_MRAP_03_gmg_wdl_F", "B_A_MRAP_03_hmg_wdl_F"];
+_lightUnarmed append ["B_A_MRAP_03_wdl_F"];
+_lightArmed append ["B_A_MRAP_03_gmg_wdl_F", "B_A_MRAP_03_hmg_wdl_F"];
 _Trucks append ["B_A_Truck_01_transport_wdl_F", "B_A_Truck_01_covered_wdl_F"];
 _cargoTrucks append ["B_A_Truck_01_cargo_wdl_F", "B_A_Truck_01_flatbed_wdl_F","B_D_UGV_01_lxWS"];
 _ammoTrucks append ["B_A_Truck_01_ammo_wdl_F"];

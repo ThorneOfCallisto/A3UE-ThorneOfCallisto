@@ -2,8 +2,8 @@
  * Converted from: CWR_Reb_FIA.sqf
  */
 _basic append ["cwr3_i_m151"];
-_unarmedVehicles append ["cwr3_i_landrover", "cwr3_i_uaz452", "cwr3_i_uaz_open", "cwr3_i_btr40"];
-_armedVehicles append ["cwr3_i_uaz_dshkm", "cwr3_i_btr40_dshkm"];
+_lightUnarmed append ["cwr3_i_landrover", "cwr3_i_uaz452", "cwr3_i_uaz_open", "cwr3_i_btr40"];
+_lightArmed append ["cwr3_i_uaz_dshkm", "cwr3_i_btr40_dshkm"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

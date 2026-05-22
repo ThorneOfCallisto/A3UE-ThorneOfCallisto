@@ -2,8 +2,8 @@
  * Converted from: RHS_AI_GSB.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["gsb_rhs_22_m1151_olive", "gsb_rhs_22_m1152_olive", "gsb_rhs_22_m1152_TCV_olive"];
-_armedVehicles append ["gsb_rhs_22_m1151_m2_v1_olive", "gsb_rhs_22_m1151_olive_pkm", "gsb_rhs_22_m1151_mk19_v1_olive"];
+_lightUnarmed append ["gsb_rhs_22_m1151_olive", "gsb_rhs_22_m1152_olive", "gsb_rhs_22_m1152_TCV_olive"];
+_lightArmed append ["gsb_rhs_22_m1151_m2_v1_olive", "gsb_rhs_22_m1151_olive_pkm", "gsb_rhs_22_m1151_mk19_v1_olive"];
 _Trucks append ["gsb_rhs_22_ural_open", "gsb_rhs_22_ural", "rhsgref_cdf_b_gaz66", "rhsgref_cdf_b_gaz66o", "rhsgref_cdf_b_zil131", "rhsgref_cdf_b_zil131_open"];
 _cargoTrucks append ["gsb_rhs_22_ural_open", "gsb_rhs_22_ural", "rhsgref_cdf_b_gaz66", "rhsgref_cdf_b_gaz66o", "rhsgref_cdf_b_zil131", "rhsgref_cdf_b_zil131_open"];
 _ammoTrucks append ["gsb_rhs_22_m1152_rsv_olive", "rhsgref_cdf_b_gaz66_ammo"];

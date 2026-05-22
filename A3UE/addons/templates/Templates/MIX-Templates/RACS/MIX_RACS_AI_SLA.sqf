@@ -2,8 +2,8 @@
  * Converted from: RACS_AI_SLA.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["PRACS_SLA_BTR40", "PRACS_SLA_UAZ_open", "PRACS_SLA_UAZ"];
-_armedVehicles append ["PRACS_SLA_BTR40_NSV", "PRACS_SLA_UAZ_DSHKM"];
+_lightUnarmed append ["PRACS_SLA_BTR40", "PRACS_SLA_UAZ_open", "PRACS_SLA_UAZ"];
+_lightArmed append ["PRACS_SLA_BTR40_NSV", "PRACS_SLA_UAZ_DSHKM"];
 _Trucks append ["PRACS_SLA_URAL"];
 _cargoTrucks append ["PRACS_SLA_URAL"];
 _ammoTrucks append ["PRACS_SLA_Ural_Ammo", "PRACS_SLA_MAZ_ammo"];

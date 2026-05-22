@@ -2,8 +2,8 @@
  * Converted from: IFA_AI_WEH_Arctic.sqf
  */
 _basic append ["LIB_Kfz1_w"];
-_unarmedVehicles append ["LIB_Kfz1_w","LIB_Kfz1_Hood_w"];
-_armedVehicles append ["LIB_Kfz1_MG42_sernyt"];
+_lightUnarmed append ["LIB_Kfz1_w","LIB_Kfz1_Hood_w"];
+_lightArmed append ["LIB_Kfz1_MG42_sernyt"];
 _Trucks append ["LIB_OpelBlitz_Open_Y_Camo_w","LIB_OpelBlitz_Tent_G_Camo_w","LIB_SdKfz_7_w"];
 _cargoTrucks append ["LIB_OpelBlitz_Open_Y_Camo_w","LIB_SdKfz_7_w"];
 _ammoTrucks append ["LIB_OpelBlitz_Ammo_w"];

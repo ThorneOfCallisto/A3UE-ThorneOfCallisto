@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_ACW_FIA.sqf
  */
 _basic append ["Flex_CUP_FIA_TT650", "Flex_CUP_FIA_Quad"];
-_unarmedVehicles append ["Flex_CUP_FIA_Hilux_unarmed", "Flex_CUP_FIA_van_cargo", "Flex_CUP_FIA_armored_unarmed"];
-_armedVehicles append ["Flex_CUP_FIA_Hilux_M2", "Flex_CUP_FIA_Hilux_armored_M2"];
+_lightUnarmed append ["Flex_CUP_FIA_Hilux_unarmed", "Flex_CUP_FIA_van_cargo", "Flex_CUP_FIA_armored_unarmed"];
+_lightArmed append ["Flex_CUP_FIA_Hilux_M2", "Flex_CUP_FIA_Hilux_armored_M2"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

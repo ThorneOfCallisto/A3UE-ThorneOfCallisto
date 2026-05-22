@@ -2,8 +2,8 @@
  * Converted from: Aegis_Reb_FIA.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_unarmedVehicles append ["I_G_Offroad_01_F"];
-_armedVehicles append ["I_G_Offroad_01_armed_F"];
+_lightUnarmed append ["I_G_Offroad_01_F"];
+_lightArmed append ["I_G_Offroad_01_armed_F"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

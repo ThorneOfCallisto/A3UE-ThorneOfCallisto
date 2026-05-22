@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_CCM.sqf
  */
 _basic append ["UK3CB_NAP_I_YAVA"];
-_unarmedVehicles append ["UK3CB_KDF_I_UAZ_Closed"];
-_armedVehicles append ["UK3CB_KDF_I_UAZ_MG"];
+_lightUnarmed append ["UK3CB_KDF_I_UAZ_Closed"];
+_lightArmed append ["UK3CB_KDF_I_UAZ_MG"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

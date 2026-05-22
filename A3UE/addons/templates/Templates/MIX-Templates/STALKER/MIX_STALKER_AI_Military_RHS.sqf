@@ -2,8 +2,8 @@
  * Converted from: STALKER_AI_Military_RHS.sqf
  */
 _basic append ["rhsgref_cdf_b_reg_uaz"];
-_unarmedVehicles append ["rhsgref_cdf_b_reg_uaz"];
-_armedVehicles append ["rhsgref_cdf_b_reg_uaz_dshkm", "rhsgref_cdf_b_reg_uaz_ags", "rhs_tigr_sts_msv"];
+_lightUnarmed append ["rhsgref_cdf_b_reg_uaz"];
+_lightArmed append ["rhsgref_cdf_b_reg_uaz_dshkm", "rhsgref_cdf_b_reg_uaz_ags", "rhs_tigr_sts_msv"];
 _Trucks append ["rhs_kamaz5350_msv", "rhs_kamaz5350_open_msv"];
 _cargoTrucks append ["rhs_kamaz5350_msv", "rhs_kamaz5350_open_msv"];
 _ammoTrucks append ["rhs_kamaz5350_ammo_msv"];

@@ -2,8 +2,8 @@
  * Converted from: CWR_AI_TDF_Arid.sqf
  */
 _basic append ["cwr3_tdf_uaz_open"];
-_unarmedVehicles append ["cwr3_tdf_uaz", "cwr3_tdf_btr40"];
-_armedVehicles append ["cwr3_tdf_uaz_dshkm", "cwr3_tdf_uaz_ags30", "cwr3_tdf_uaz_spg9", "cwr3_tdf_brdm2um"];
+_lightUnarmed append ["cwr3_tdf_uaz", "cwr3_tdf_btr40"];
+_lightArmed append ["cwr3_tdf_uaz_dshkm", "cwr3_tdf_uaz_ags30", "cwr3_tdf_uaz_spg9", "cwr3_tdf_brdm2um"];
 _Trucks append ["cwr3_tdf_ural"];
 _cargoTrucks append ["cwr3_tdf_ural_open"];
 _ammoTrucks append ["cwr3_tdf_ural_reammo"];

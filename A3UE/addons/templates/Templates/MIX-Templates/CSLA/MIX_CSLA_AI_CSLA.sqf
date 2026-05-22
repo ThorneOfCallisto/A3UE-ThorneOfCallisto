@@ -2,8 +2,8 @@
  * Converted from: CSLA_AI_CSLA.sqf
  */
 _basic append ["CSLA_JARA250","CSLA_AZU_R2"];
-_unarmedVehicles append ["CSLA_AZU","CSLA_AZU_para","CSLA_AZU_R2"];
-_armedVehicles append [];
+_lightUnarmed append ["CSLA_AZU","CSLA_AZU_para","CSLA_AZU_R2"];
+_lightArmed append [];
 _Trucks append ["CSLA_V3SLizard","CSLA_F813o","CSLA_F813"];
 _cargoTrucks append ["CSLA_V3SLizard","CSLA_F813o","CSLA_F813"];
 _ammoTrucks append ["CSLA_V3Sa"];

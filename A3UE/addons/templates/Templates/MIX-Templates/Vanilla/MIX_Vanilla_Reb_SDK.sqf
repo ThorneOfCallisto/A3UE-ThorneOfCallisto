@@ -2,8 +2,8 @@
  * Converted from: Vanilla_Reb_SDK.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_unarmedVehicles append ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"];
-_armedVehicles append ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"];
+_lightUnarmed append ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"];
+_lightArmed append ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

@@ -2,8 +2,8 @@
  * Converted from: VN_AI_ARVN.sqf
  */
 _basic append ["vn_i_wheeled_m151_01"];
-_unarmedVehicles append ["vn_i_wheeled_m151_01", "vn_i_wheeled_m151_02"];
-_armedVehicles append ["vn_i_wheeled_m151_mg_01", "vn_i_wheeled_m151_mg_02_marines", "vn_i_wheeled_m151_mg_01", "vn_i_wheeled_m151_mg_02_marines", "vn_i_wheeled_m151_mg_06", "vn_i_wheeled_m151_mg_05_marines", "vn_i_armor_m132_01"];
+_lightUnarmed append ["vn_i_wheeled_m151_01", "vn_i_wheeled_m151_02"];
+_lightArmed append ["vn_i_wheeled_m151_mg_01", "vn_i_wheeled_m151_mg_02_marines", "vn_i_wheeled_m151_mg_01", "vn_i_wheeled_m151_mg_02_marines", "vn_i_wheeled_m151_mg_06", "vn_i_wheeled_m151_mg_05_marines", "vn_i_armor_m132_01"];
 _Trucks append ["vn_i_wheeled_m54_01", "vn_i_wheeled_m54_02"];
 _cargoTrucks append [];
 _ammoTrucks append ["vn_i_wheeled_m54_ammo"];

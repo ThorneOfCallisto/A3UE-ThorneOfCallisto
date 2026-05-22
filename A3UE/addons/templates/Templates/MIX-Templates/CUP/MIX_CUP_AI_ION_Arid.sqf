@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_ION_Arid.sqf
  */
 _basic append ["CUP_I_4WD_unarmed_ION"];
-_unarmedVehicles append ["CUP_I_LSV_02_unarmed_ION", "CUP_I_nM1025_Unarmed_ION", "CUP_I_MATV_ION", "CUP_I_FENNEK_ION"];
-_armedVehicles append ["CUP_B_nM1025_SOV_Mk19_ION", "CUP_B_nM1025_SOV_M2_ION", "CUP_I_SUV_Armored_ION", "CUP_I_4WD_LMG_ION", "CUP_I_FENNEK_HMG_ION", "CUP_I_LSV_02_Minigun_ION", "CUP_I_FENNEK_GMG_ION", "CUP_I_MATV_HMG_ION", "CUP_I_MATV_GMG_ION"];
+_lightUnarmed append ["CUP_I_LSV_02_unarmed_ION", "CUP_I_nM1025_Unarmed_ION", "CUP_I_MATV_ION", "CUP_I_FENNEK_ION"];
+_lightArmed append ["CUP_B_nM1025_SOV_Mk19_ION", "CUP_B_nM1025_SOV_M2_ION", "CUP_I_SUV_Armored_ION", "CUP_I_4WD_LMG_ION", "CUP_I_FENNEK_HMG_ION", "CUP_I_LSV_02_Minigun_ION", "CUP_I_FENNEK_GMG_ION", "CUP_I_MATV_HMG_ION", "CUP_I_MATV_GMG_ION"];
 _Trucks append ["CUP_I_Van_Transport_ION"];
 _cargoTrucks append ["CUP_I_Van_Cargo_ION"];
 _ammoTrucks append ["CUP_I_nM1038_Ammo_ION"];

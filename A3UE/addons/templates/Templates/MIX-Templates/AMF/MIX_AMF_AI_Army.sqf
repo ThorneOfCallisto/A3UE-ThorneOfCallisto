@@ -2,8 +2,8 @@
  * Converted from: AMF_AI_Army.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["B_AMF_VAB_ULTIMA_X8_F", "amf_pvp_01_mag_CE_f", "amf_pvp_01_top_CE_f"];
-_armedVehicles append ["AMF_VB2L_CE_762_01_F", "AMF_VB2L_CCE", "amf_VBAE_01_CE_f", "amf_VBAE_03_CE_f", "amf_VBAE_02_CE_f", "AMF_VBL_CE_127_01_F", "AMF_VBL_CE_762_01_F", "AMF_VBL_127_CCE", "AMF_VBL_762_CCE", "B_AMF_VAB_ULTIMA_TOP_X8_F"];
+_lightUnarmed append ["B_AMF_VAB_ULTIMA_X8_F", "amf_pvp_01_mag_CE_f", "amf_pvp_01_top_CE_f"];
+_lightArmed append ["AMF_VB2L_CE_762_01_F", "AMF_VB2L_CCE", "amf_VBAE_01_CE_f", "amf_VBAE_03_CE_f", "amf_VBAE_02_CE_f", "AMF_VBL_CE_127_01_F", "AMF_VBL_CE_762_01_F", "AMF_VBL_127_CCE", "AMF_VBL_762_CCE", "B_AMF_VAB_ULTIMA_TOP_X8_F"];
 _Trucks append ["AMF_GBC180_PERS_01"];
 _cargoTrucks append ["AMF_GBC180_PLATEAU_01", "AMF_GBC180_PERS_01"];
 _ammoTrucks append ["AMF_GBC180_AmmoTruck"];

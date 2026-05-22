@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_SOV_CW.sqf
  */
 _basic append ["UK3CB_NFA_O_YAVA"];
-_unarmedVehicles append ["UK3CB_CW_SOV_O_EARLY_BRDM2_UM", "UK3CB_ARD_O_GAZ_Vodnik"];
-_armedVehicles append ["UK3CB_CW_SOV_O_LATE_BTR40_MG", "UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_CW_SOV_O_LATE_BRDM2", "UK3CB_CW_SOV_O_LATE_BRDM2_ATGM", "UK3CB_CW_SOV_O_LATE_Gaz66_ZU23", "UK3CB_CW_SOV_O_LATE_Ural_Zu23", "UK3CB_CW_SOV_O_LATE_UAZ_AGS30"];
+_lightUnarmed append ["UK3CB_CW_SOV_O_EARLY_BRDM2_UM", "UK3CB_ARD_O_GAZ_Vodnik"];
+_lightArmed append ["UK3CB_CW_SOV_O_LATE_BTR40_MG", "UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_CW_SOV_O_LATE_BRDM2", "UK3CB_CW_SOV_O_LATE_BRDM2_ATGM", "UK3CB_CW_SOV_O_LATE_Gaz66_ZU23", "UK3CB_CW_SOV_O_LATE_Ural_Zu23", "UK3CB_CW_SOV_O_LATE_UAZ_AGS30"];
 _Trucks append ["UK3CB_CW_SOV_O_EARLY_Ural", "UK3CB_CW_SOV_O_EARLY_Ural_Open", "UK3CB_CW_SOV_O_EARLY_VDV_Kraz255_Open", "UK3CB_CW_SOV_O_EARLY_Gaz66_Open", "UK3CB_CW_SOV_O_EARLY_Gaz66_Covered"];
 _cargoTrucks append ["UK3CB_CW_SOV_O_EARLY_Gaz66_Open_Flatbed", "UK3CB_CW_SOV_O_EARLY_Ural_Recovery", "UK3CB_CW_SOV_O_EARLY_Kraz255_Flatbed"];
 _ammoTrucks append ["UK3CB_CW_SOV_O_EARLY_Gaz66_Ammo", "UK3CB_CW_SOV_O_EARLY_Ural_Ammo"];

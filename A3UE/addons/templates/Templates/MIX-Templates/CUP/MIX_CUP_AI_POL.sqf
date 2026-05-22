@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_POL.sqf
  */
 _basic append ["Flex_CUP_POL_Quadbike"];
-_unarmedVehicles append ["Flex_CUP_POL_nM1025_Unarmed", "Flex_CUP_POL_nM1038", "Flex_CUP_POL_nM1038_4s", "Flex_CUP_POL_LR_Transport", "Flex_CUP_POL_MRAP"];
-_armedVehicles append ["Flex_CUP_POL_nM1025_M240", "Flex_CUP_POL_nM1036_TOW", "Flex_CUP_POL_LR_MG", "Flex_CUP_POL_RG31E_M2", "Flex_CUP_POL_RG31_Mk19", "Flex_CUP_POL_RG31_M2"];
+_lightUnarmed append ["Flex_CUP_POL_nM1025_Unarmed", "Flex_CUP_POL_nM1038", "Flex_CUP_POL_nM1038_4s", "Flex_CUP_POL_LR_Transport", "Flex_CUP_POL_MRAP"];
+_lightArmed append ["Flex_CUP_POL_nM1025_M240", "Flex_CUP_POL_nM1036_TOW", "Flex_CUP_POL_LR_MG", "Flex_CUP_POL_RG31E_M2", "Flex_CUP_POL_RG31_Mk19", "Flex_CUP_POL_RG31_M2"];
 _Trucks append ["Flex_CUP_POL_Truck_Transport", "Flex_CUP_POL_Truck_Covered"];
 _cargoTrucks append ["Flex_CUP_POL_Truck_Transport", "Flex_CUP_POL_Truck_Covered"];
 _ammoTrucks append ["Flex_CUP_POL_nM1038_Ammo", "Flex_CUP_POL_Truck_Ammo"];

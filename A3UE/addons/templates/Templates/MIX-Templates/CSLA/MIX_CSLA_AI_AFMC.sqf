@@ -2,8 +2,8 @@
  * Converted from: CSLA_AI_AFMC.sqf
  */
 _basic append ["AFMC_M1008_S250"];
-_unarmedVehicles append ["AFMC_M1008"];
-_armedVehicles append ["US85_M998SFGT","AFMC_M1008_MK19","AFMC_M923A1_GT"];
+_lightUnarmed append ["AFMC_M1008"];
+_lightArmed append ["US85_M998SFGT","AFMC_M1008_MK19","AFMC_M923A1_GT"];
 _Trucks append ["AFMC_M923o","AFMC_M923c"];
 _cargoTrucks append ["AFMC_M1008c","AFMC_M923cargo"];
 _ammoTrucks append ["AFMC_M923a"];

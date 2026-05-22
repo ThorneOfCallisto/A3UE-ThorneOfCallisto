@@ -2,8 +2,8 @@
  * Converted from: UNS_AI_US.sqf
  */
 _basic append ["uns_willys_2_usmc"];
-_unarmedVehicles append ["uns_m37b1", "uns_m274"];
-_armedVehicles append ["uns_willysmg50", "uns_willysmg", "uns_willysm40", "uns_m37b1_m1919", "uns_m274_m40", "uns_m274_m60"];
+_lightUnarmed append ["uns_m37b1", "uns_m274"];
+_lightArmed append ["uns_willysmg50", "uns_willysmg", "uns_willysm40", "uns_m37b1_m1919", "uns_m274_m40", "uns_m274_m60"];
 _Trucks append ["uns_M35A2_Open", "uns_M35A2"];
 _cargoTrucks append ["uns_M35A2_Open"];
 _ammoTrucks append ["uns_M35A2_ammo"];

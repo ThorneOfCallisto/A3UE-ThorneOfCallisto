@@ -2,13 +2,13 @@
  * Converted from: GM_AI_BW_arctic.sqf
  */
 _basic append ["gm_ge_army_k125"];
-_unarmedVehicles append ["gm_ge_army_iltis_cargo_wiw", "gm_ge_army_typ1200_cargo_olw", "gm_ge_army_iltis_cargo_win", "gm_ge_army_iltis_cargo_un",
+_lightUnarmed append ["gm_ge_army_iltis_cargo_wiw", "gm_ge_army_typ1200_cargo_olw", "gm_ge_army_iltis_cargo_win", "gm_ge_army_iltis_cargo_un",
     "gm_ge_army_typ1200_cargo_wiw", "gm_ge_army_typ1200_cargo_olw", "gm_ge_army_typ1200_cargo_win",  "gm_ge_army_typ1200_cargo_un", "gm_ge_army_typ253_cargo_wiw", 
     "gm_ge_army_typ253_cargo_olw", "gm_ge_army_typ253_cargo_win", "gm_ge_army_typ253_cargo_un", "gm_ge_army_typ253_mp_wiw", "gm_ge_army_typ253_mp_olw", 
     "gm_ge_army_typ253_mp_win", "gm_ge_army_typ253_mp_un", "gm_ge_army_typ247_cargo_wiw", "gm_ge_army_typ247_cargo_olw", "gm_ge_army_typ247_cargo_win", 
     "gm_ge_army_typ247_cargo_un", "gm_ge_army_typ247_firefighter_wiw", "gm_ge_army_typ247_firefighter_olw", "gm_ge_army_typ247_firefighter_win", 
     "gm_ge_army_typ247_firefighter_un", "gm_ge_bgs_w123_cargo", "gm_ge_bgs_typ253_cargo", "gm_ge_army_w123_cargo"];
-_armedVehicles append ["gm_ge_army_iltis_milan_un", "gm_ge_army_iltis_mg3_un", "gm_ge_army_iltis_mg3_un", "gm_ge_army_iltis_milan_win", "gm_ge_army_iltis_mg3_win", "gm_ge_army_iltis_mg3_win", "gm_ge_army_iltis_milan_wiw", "gm_ge_army_iltis_mg3_wiw", "gm_ge_army_iltis_mg3_wiw", "gm_ge_army_luchsa2_un", "gm_ge_army_luchsa2_win", "gm_ge_army_luchsa2_wiw"];
+_lightArmed append ["gm_ge_army_iltis_milan_un", "gm_ge_army_iltis_mg3_un", "gm_ge_army_iltis_mg3_un", "gm_ge_army_iltis_milan_win", "gm_ge_army_iltis_mg3_win", "gm_ge_army_iltis_mg3_win", "gm_ge_army_iltis_milan_wiw", "gm_ge_army_iltis_mg3_wiw", "gm_ge_army_iltis_mg3_wiw", "gm_ge_army_luchsa2_un", "gm_ge_army_luchsa2_win", "gm_ge_army_luchsa2_wiw"];
 _Trucks append ["gm_ge_army_kat1_451_container_un", "gm_ge_army_u1300l_cargo_un", "gm_ge_army_kat1_451_cargo_un", "gm_ge_army_u1300l_container_un", "gm_ge_army_u1300l_container_win", "gm_ge_army_u1300l_cargo_win", "gm_ge_army_kat1_451_cargo_win", "gm_ge_army_kat1_451_container_win", "gm_ge_army_kat1_451_cargo_wiw", "gm_ge_army_kat1_451_container_wiw", "gm_ge_army_u1300l_container_wiw", "gm_ge_army_u1300l_cargo_wiw"];
 _cargoTrucks append ["gm_ge_army_kat1_451_container_un", "gm_ge_army_u1300l_container_un", "gm_ge_army_u1300l_container_win", "gm_ge_army_kat1_451_container_win", "gm_ge_army_kat1_451_container_wiw", "gm_ge_army_u1300l_container_wiw", "gm_ge_army_kat1_454_cargo_wiw", "gm_ge_army_kat1_452_container_win", "gm_ge_army_kat1_452_container_wiw", "gm_ge_army_kat1_454_cargo_win", "gm_ge_army_kat1_452_container_un", "gm_ge_army_kat1_454_cargo_un"];
 _ammoTrucks append ["gm_ge_army_kat1_454_reammo_un", "gm_ge_army_kat1_451_reammo_un", "gm_ge_army_kat1_454_reammo_win", "gm_ge_army_kat1_451_reammo_win", "gm_ge_army_kat1_451_reammo_wiw", "gm_ge_army_kat1_454_reammo_wiw"];

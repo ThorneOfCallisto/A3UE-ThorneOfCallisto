@@ -2,8 +2,8 @@
  * Converted from: TFC_AI_CA_Army_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["tfc_vs_luvw_arid_f", "rhsusf_m998_d_4dr_fulltop", "rhsusf_m1043_d"];
-_armedVehicles append ["tfc_vs_luvw_arid_armed_f", "rhsusf_m1043_d_m2", "rhsusf_m1151_m240_v2_usarmy_d"];
+_lightUnarmed append ["tfc_vs_luvw_arid_f", "rhsusf_m998_d_4dr_fulltop", "rhsusf_m1043_d"];
+_lightArmed append ["tfc_vs_luvw_arid_armed_f", "rhsusf_m1043_d_m2", "rhsusf_m1151_m240_v2_usarmy_d"];
 _Trucks append ["rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy"];
 _cargoTrucks append ["rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_B_D_fmtv_usarmy"];
 _ammoTrucks append ["rhsusf_M977A4_AMMO_BKIT_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"];

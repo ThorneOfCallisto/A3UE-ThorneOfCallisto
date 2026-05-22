@@ -2,8 +2,8 @@
  * Converted from: STALKER_Reb_Loners_RHS.sqf
  */
 _basic append ["rhsgref_cdf_b_reg_uaz_open"];
-_unarmedVehicles append ["rhsgref_cdf_b_reg_uaz"];
-_armedVehicles append ["rhsgref_cdf_b_reg_uaz_dshkm"];
+_lightUnarmed append ["rhsgref_cdf_b_reg_uaz"];
+_lightArmed append ["rhsgref_cdf_b_reg_uaz_dshkm"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

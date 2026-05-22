@@ -2,8 +2,8 @@
  * Converted from: IFA_AI_UK_Temperate.sqf
  */
 _basic append ["LIB_UK_Willys_MB"];
-_unarmedVehicles append ["LIB_UK_Willys_MB","LIB_UK_Willys_MB_Hood"];
-_armedVehicles append ["LIB_UK_Willys_MB_M1919","LIB_UniversalCarrier"];
+_lightUnarmed append ["LIB_UK_Willys_MB","LIB_UK_Willys_MB_Hood"];
+_lightArmed append ["LIB_UK_Willys_MB_M1919","LIB_UniversalCarrier"];
 _Trucks append ["LIB_US_GMC_Tent","LIB_US_GMC_Open"];
 _cargoTrucks append ["LIB_US_GMC_Tent","LIB_US_GMC_Open"];
 _ammoTrucks append ["LIB_US_GMC_Ammo"];

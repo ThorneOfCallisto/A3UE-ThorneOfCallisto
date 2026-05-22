@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_ACR_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_B_UAZ_Open_ACR", "CUP_B_UAZ_Unarmed_ACR", "CUP_B_LR_Transport_CZ_D"];
-_armedVehicles append ["CUP_B_Dingo_GL_CZ_Des", "CUP_B_Dingo_CZ_Des", "CUP_B_HMMWV_AGS_GPK_ACR", "CUP_B_HMMWV_DSHKM_GPK_ACR", "CUP_B_HMMWV_M2_GPK_ACR", "CUP_B_LR_Special_Des_CZ_D", "CUP_B_UAZ_SPG9_ACR", "CUP_B_UAZ_METIS_ACR", "CUP_B_UAZ_MG_ACR", "CUP_B_UAZ_AGS30_ACR"];
+_lightUnarmed append ["CUP_B_UAZ_Open_ACR", "CUP_B_UAZ_Unarmed_ACR", "CUP_B_LR_Transport_CZ_D"];
+_lightArmed append ["CUP_B_Dingo_GL_CZ_Des", "CUP_B_Dingo_CZ_Des", "CUP_B_HMMWV_AGS_GPK_ACR", "CUP_B_HMMWV_DSHKM_GPK_ACR", "CUP_B_HMMWV_M2_GPK_ACR", "CUP_B_LR_Special_Des_CZ_D", "CUP_B_UAZ_SPG9_ACR", "CUP_B_UAZ_METIS_ACR", "CUP_B_UAZ_MG_ACR", "CUP_B_UAZ_AGS30_ACR"];
 _Trucks append ["CUP_B_T810_Unarmed_CZ_DES", "CUP_B_T810_Armed_CZ_DES"];
 _cargoTrucks append [];
 _ammoTrucks append ["CUP_B_T810_Reammo_CZ_DES"];

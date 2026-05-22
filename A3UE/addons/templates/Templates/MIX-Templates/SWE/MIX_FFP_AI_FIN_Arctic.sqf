@@ -2,8 +2,8 @@
  * Converted from: FFP_AI_FIN_Arctic.sqf
  */
 _basic append [];
-_unarmedVehicles append ["ffp_bv206", "ffp_rg32m"];
-_armedVehicles append ["sfp_tgb16_ksp58", "sfp_tgb16_rws"];
+_lightUnarmed append ["ffp_bv206", "ffp_rg32m"];
+_lightArmed append ["sfp_tgb16_ksp58", "sfp_tgb16_rws"];
 _Trucks append ["ffp_susi_sa420", "ffp_susi_sa420_covered"];
 _cargoTrucks append ["ffp_susi_sa420", "ffp_susi_sa420_covered"];
 _ammoTrucks append ["ffp_susi8x8_ammo"];

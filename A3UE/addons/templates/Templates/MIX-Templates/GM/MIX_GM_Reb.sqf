@@ -2,8 +2,8 @@
  * Converted from: GM_Reb.sqf
  */
 _basic append ["gm_ge_army_k125"];
-_unarmedVehicles append ["gm_ge_army_iltis_cargo"];
-_armedVehicles append ["gm_gc_army_uaz469_dshkm"];
+_lightUnarmed append ["gm_ge_army_iltis_cargo"];
+_lightArmed append ["gm_gc_army_uaz469_dshkm"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

@@ -2,8 +2,8 @@
  * Converted from: RHS_AI_CDF.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["rhsgref_cdf_b_reg_uaz", "rhsgref_cdf_b_reg_uaz_open", "rhsgref_BRDM2UM_b"];
-_armedVehicles append ["rhsgref_BRDM2_b", "rhsgref_BRDM2_ATGM_b", "rhsgref_BRDM2_HQ_b", "rhsgref_cdf_b_gaz66_zu23", "rhsgref_cdf_b_ural_Zu23", "rhsgref_cdf_b_reg_uaz_ags"];
+_lightUnarmed append ["rhsgref_cdf_b_reg_uaz", "rhsgref_cdf_b_reg_uaz_open", "rhsgref_BRDM2UM_b"];
+_lightArmed append ["rhsgref_BRDM2_b", "rhsgref_BRDM2_ATGM_b", "rhsgref_BRDM2_HQ_b", "rhsgref_cdf_b_gaz66_zu23", "rhsgref_cdf_b_ural_Zu23", "rhsgref_cdf_b_reg_uaz_ags"];
 _Trucks append ["rhsgref_cdf_b_gaz66", "rhsgref_cdf_b_gaz66o", "rhsgref_cdf_b_ural_open", "rhsgref_cdf_b_ural"];
 _cargoTrucks append ["rhsgref_cdf_b_gaz66_flat", "rhsgref_cdf_b_gaz66o_flat"];
 _ammoTrucks append ["rhsgref_cdf_b_gaz66_ammo"];

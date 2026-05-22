@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_BAF_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_B_LR_Transport_GB_D"];
-_armedVehicles append ["CUP_B_BAF_Coyote_GMG_D", "CUP_B_BAF_Coyote_L2A1_D", "CUP_B_Jackal2_L2A1_GB_D", "CUP_B_LR_Special_M2_GB_D", "CUP_B_LR_MG_GB_D", "CUP_B_Ridgback_GMG_GB_D", "CUP_B_Ridgback_HMG_GB_D", "CUP_B_Ridgback_LMG_GB_D", "CUP_B_Wolfhound_GMG_GB_D", "CUP_B_Wolfhound_HMG_GB_D", "CUP_B_Wolfhound_LMG_GB_D"];
+_lightUnarmed append ["CUP_B_LR_Transport_GB_D"];
+_lightArmed append ["CUP_B_BAF_Coyote_GMG_D", "CUP_B_BAF_Coyote_L2A1_D", "CUP_B_Jackal2_L2A1_GB_D", "CUP_B_LR_Special_M2_GB_D", "CUP_B_LR_MG_GB_D", "CUP_B_Ridgback_GMG_GB_D", "CUP_B_Ridgback_HMG_GB_D", "CUP_B_Ridgback_LMG_GB_D", "CUP_B_Wolfhound_GMG_GB_D", "CUP_B_Wolfhound_HMG_GB_D", "CUP_B_Wolfhound_LMG_GB_D"];
 _Trucks append ["CUP_B_MTVR_BAF_DES"];
 _cargoTrucks append [];
 _ammoTrucks append ["CUP_B_MTVR_Ammo_BAF_DES"];

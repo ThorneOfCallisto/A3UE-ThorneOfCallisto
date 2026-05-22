@@ -23,39 +23,38 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
     if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_FIA_B")) then {
             _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-            #include "3CBF\MIX_3CBF_AI_AFRF.sqf"
+            #include "3CBF\MIX_3CBF_AI_AFRF.sqf";
             ["AFRF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
         };
     } else {
 
-    }
-    #include "RHS\RHS_Vehicle_Attributes.sqf"
+    #include "RHS\RHS_Vehicle_Attributes.sqf";
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "BWA3_Dingo2_FLW200_M2_CG13_Fleck")) then {
     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-    #include "BWA3\MIX_BW_Temperate.sqf"
+    #include "BWA3\MIX_BW_Temperate.sqf";
     ["BW", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-    #include "BWA3\BWA3_Vehicle_Attributes.sqf"
+    #include "BWA3\BWA3_Vehicle_Attributes.sqf";
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "B_AMF_TANK_01") && isClass(configFile >> "CfgVehicles" >> "R3F_WeaponStock")) then {
     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-    #include "AMF\MIX_AMF_Temperate.sqf"
+    #include "AMF\MIX_AMF_Temperate.sqf";
     ["AMF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-    #include "SWE\MIX_SFP_Temperate.sqf"
+    #include "SWE\MIX_SFP_Temperate.sqf";
     ["SFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-    #include "SWE\SFP_Vehicle_Attributes.sqf"
+    #include "SWE\SFP_Vehicle_Attributes.sqf";
 
     if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4")) then {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-        #include "SWE\MIX_FFP_Temperate.sqf" // Lacking standalone content, needs other mods to be more usefull...
+        #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull...
         ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-        #include "SWE\FFP_Vehicle_Attributes.sqf"
+        #include "SWE\FFP_Vehicle_Attributes.sqf";
     };
 };
 

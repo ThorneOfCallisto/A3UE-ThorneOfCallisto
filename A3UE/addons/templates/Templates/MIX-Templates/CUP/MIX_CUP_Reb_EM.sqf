@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_EM.sqf
  */
 _basic append ["CUP_C_TT650_TK_CIV"];
-_unarmedVehicles append ["a3u_cup_uaz_unarmed_convertible_1", "a3u_cup_uaz_unarmed_convertible_2", "CUP_B_UAZ_Open_CDF", "CUP_O_Hilux_unarmed_CHDKZ"];
-_armedVehicles append ["CUP_B_UAZ_MG_CDF", "CUP_O_Hilux_DSHKM_CHDKZ"];
+_lightUnarmed append ["a3u_cup_uaz_unarmed_convertible_1", "a3u_cup_uaz_unarmed_convertible_2", "CUP_B_UAZ_Open_CDF", "CUP_O_Hilux_unarmed_CHDKZ"];
+_lightArmed append ["CUP_B_UAZ_MG_CDF", "CUP_O_Hilux_DSHKM_CHDKZ"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

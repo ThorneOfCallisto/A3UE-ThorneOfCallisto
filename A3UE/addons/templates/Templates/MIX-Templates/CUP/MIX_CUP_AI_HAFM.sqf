@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_HAFM.sqf
  */
 _basic append [];
-_unarmedVehicles append ["HAFM_GD240_Unarmed2", "HAFM_HMMWV1", "HAFM_VBL2"];
-_armedVehicles append ["HAFM_GD240_Patrol2", "HAFM_HMMWV1_M2", "HAFM_HMMWV1_Kornet", "HAFM_HMMWV1_Milan", "HAFM_HMMWV1_TOW", "HAFM_HMMWV1_MK19", "HAFM_VBL2_M50", "HAFM_VBL2_M240"];
+_lightUnarmed append ["HAFM_GD240_Unarmed2", "HAFM_HMMWV1", "HAFM_VBL2"];
+_lightArmed append ["HAFM_GD240_Patrol2", "HAFM_HMMWV1_M2", "HAFM_HMMWV1_Kornet", "HAFM_HMMWV1_Milan", "HAFM_HMMWV1_TOW", "HAFM_HMMWV1_MK19", "HAFM_VBL2_M50", "HAFM_VBL2_M240"];
 _Trucks append ["Unimog1550_SemiCovered2", "Unimog1550_Covered2"];
 _cargoTrucks append ["Unimog1550_Covered2"];
 _ammoTrucks append ["B_T_Truck_01_ammo_F"];

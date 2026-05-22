@@ -2,8 +2,8 @@
  * Converted from: CW_AI_CIS_WBK.sqf
  */
 _basic append ["3AS_Fliknot_F"];
-_unarmedVehicles append ["3AS_Combat_Speeder_F"];
-_armedVehicles append ["3AS_Combat_Speeder_F", "ls_vehicle_ast"];
+_lightUnarmed append ["3AS_Combat_Speeder_F"];
+_lightArmed append ["3AS_Combat_Speeder_F", "ls_vehicle_ast"];
 _Trucks append ["442_argon_covered_cis"];
 _cargoTrucks append ["442_argon_covered_cis", "442_argon_transport_cis"];
 _ammoTrucks append ["442_argon_ammo_cis"];

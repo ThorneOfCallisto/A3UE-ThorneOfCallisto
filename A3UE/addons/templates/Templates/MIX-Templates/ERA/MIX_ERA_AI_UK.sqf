@@ -2,8 +2,8 @@
  * Converted from: ERA_AI_UK.sqf
  */
 _basic append ["cwr3_b_uk_landrover", "B_Quadbike_01_F"];
-_unarmedVehicles append ["cwr3_b_uk_landrover", "CUP_B_LR_Transport_GB_W"];
-_armedVehicles append ["CUP_B_LR_MG_GB_W", "CUP_B_BAF_Coyote_GMG_W", "CUP_B_BAF_Coyote_L2A1_W", "CUP_B_Jackal2_L2A1_GB_W", "CUP_B_LR_Special_M2_GB_W", "CUP_B_LR_MG_GB_W", "CUP_B_Ridgback_GMG_GB_W", "CUP_B_Ridgback_HMG_GB_W", "CUP_B_Ridgback_LMG_GB_W", "CUP_B_Wolfhound_GMG_GB_W", "CUP_B_Wolfhound_HMG_GB_W", "CUP_B_Wolfhound_LMG_GB_W"];
+_lightUnarmed append ["cwr3_b_uk_landrover", "CUP_B_LR_Transport_GB_W"];
+_lightArmed append ["CUP_B_LR_MG_GB_W", "CUP_B_BAF_Coyote_GMG_W", "CUP_B_BAF_Coyote_L2A1_W", "CUP_B_Jackal2_L2A1_GB_W", "CUP_B_LR_Special_M2_GB_W", "CUP_B_LR_MG_GB_W", "CUP_B_Ridgback_GMG_GB_W", "CUP_B_Ridgback_HMG_GB_W", "CUP_B_Ridgback_LMG_GB_W", "CUP_B_Wolfhound_GMG_GB_W", "CUP_B_Wolfhound_HMG_GB_W", "CUP_B_Wolfhound_LMG_GB_W"];
 _Trucks append ["cwr3_b_uk_fv620_transport", "CUP_B_MTVR_BAF_WOOD"];
 _cargoTrucks append ["cwr3_b_uk_fv620_transport"];
 _ammoTrucks append ["cwr3_b_uk_fv620_reammo", "CUP_B_MTVR_Ammo_BAF_WOOD"];

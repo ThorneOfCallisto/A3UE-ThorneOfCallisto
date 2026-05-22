@@ -2,8 +2,8 @@
  * Converted from: STALKER_AI_Freedom.sqf
  */
 _basic append ["CUP_O_TT650_TKA"];
-_unarmedVehicles append ["CUP_O_Hilux_unarmed_TK_INS", "CUP_O_Volha_SLA"];
-_armedVehicles append ["CUP_O_Hilux_M2_TK_INS", "CUP_O_Hilux_metis_TK_INS", "CUP_O_Hilux_armored_DSHKM_TK_INS"];
+_lightUnarmed append ["CUP_O_Hilux_unarmed_TK_INS", "CUP_O_Volha_SLA"];
+_lightArmed append ["CUP_O_Hilux_M2_TK_INS", "CUP_O_Hilux_metis_TK_INS", "CUP_O_Hilux_armored_DSHKM_TK_INS"];
 _Trucks append ["CUP_O_Ural_SLA", "CUP_O_Ural_Open_SLA"];
 _cargoTrucks append ["CUP_O_Ural_SLA", "CUP_O_Ural_Open_SLA"];
 _ammoTrucks append ["CUP_O_Ural_Reammo_SLA"];

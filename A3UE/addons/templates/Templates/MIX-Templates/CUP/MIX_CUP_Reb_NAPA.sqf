@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_NAPA.sqf
  */
 _basic append ["I_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_I_Hilux_armored_unarmed_NAPA"];
-_armedVehicles append ["CUP_I_Hilux_DSHKM_NAPA", "CUP_I_Datsun_PK"];
+_lightUnarmed append ["CUP_I_Hilux_armored_unarmed_NAPA"];
+_lightArmed append ["CUP_I_Hilux_DSHKM_NAPA", "CUP_I_Datsun_PK"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

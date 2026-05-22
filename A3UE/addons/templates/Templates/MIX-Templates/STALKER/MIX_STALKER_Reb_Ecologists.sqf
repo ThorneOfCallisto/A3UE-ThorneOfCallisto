@@ -2,8 +2,8 @@
  * Converted from: STALKER_Reb_Ecologists.sqf
  */
 _basic append ["CUP_C_TT650_RU"];
-_unarmedVehicles append ["CUP_I_Datsun_4seat"];
-_armedVehicles append ["CUP_I_Datsun_PK"];
+_lightUnarmed append ["CUP_I_Datsun_4seat"];
+_lightArmed append ["CUP_I_Datsun_PK"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

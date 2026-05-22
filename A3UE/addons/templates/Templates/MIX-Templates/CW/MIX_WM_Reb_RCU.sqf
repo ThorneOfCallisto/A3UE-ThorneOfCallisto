@@ -2,8 +2,8 @@
  * Converted from: WM_Reb_RCU.sqf
  */
 _basic append ["3AS_Barc"];
-_unarmedVehicles append ["3AS_ISP_Transport"];
-_armedVehicles append ["3AS_ISP"];
+_lightUnarmed append ["3AS_ISP_Transport"];
+_lightArmed append ["3AS_ISP"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

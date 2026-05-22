@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_NorAF_Temperate.sqf
  */
 _basic append ["B_T_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_B_nM1025_Unarmed_NATO_T", "CUP_B_nM1025_Unarmed_DF_NATO_T", "CUP_B_nM1151_Unarmed_NATO_T", "CUP_B_nM1151_Unarmed_DF_NATO_T"];
-_armedVehicles append ["Flex_CUP_NOR_Dingo_MG", "Flex_CUP_NOR_Dingo_GL"];
+_lightUnarmed append ["CUP_B_nM1025_Unarmed_NATO_T", "CUP_B_nM1025_Unarmed_DF_NATO_T", "CUP_B_nM1151_Unarmed_NATO_T", "CUP_B_nM1151_Unarmed_DF_NATO_T"];
+_lightArmed append ["Flex_CUP_NOR_Dingo_MG", "Flex_CUP_NOR_Dingo_GL"];
 _Trucks append ["Flex_CUP_NOR_Truck_01_transport", "Flex_CUP_NOR_Truck_01_covered"];
 _cargoTrucks append ["Flex_CUP_NOR_Truck_01_flatbed", "Flex_CUP_NOR_Truck_01_cargo"];
 _ammoTrucks append ["Flex_CUP_NOR_Truck_01_ammo", "Flex_CUP_NOR_M113A3_Reammo"];

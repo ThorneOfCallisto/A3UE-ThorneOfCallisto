@@ -2,8 +2,8 @@
  * Converted from: SPE_IFA_AI_US.sqf
  */
 _basic append ["SPE_US_G503_MB_Open"];
-_unarmedVehicles append ["SPE_US_G503_MB", "SPE_US_G503_MB_Armoured"];
-_armedVehicles append ["SPE_US_G503_MB_M1919_Armoured", "SPE_US_G503_MB_M2_Armoured", "SPE_US_G503_MB_M2_PATROL", "SPE_US_G503_MB_M1919_PATROL"];
+_lightUnarmed append ["SPE_US_G503_MB", "SPE_US_G503_MB_Armoured"];
+_lightArmed append ["SPE_US_G503_MB_M1919_Armoured", "SPE_US_G503_MB_M2_Armoured", "SPE_US_G503_MB_M2_PATROL", "SPE_US_G503_MB_M1919_PATROL"];
 _Trucks append ["SPE_US_M3_Halftrack_Unarmed", "SPE_CCKW_353_Open", "SPE_CCKW_353"];
 _cargoTrucks append ["SPE_CCKW_353_Open"];
 _ammoTrucks append ["SPE_US_M3_Halftrack_Ammo", "SPE_CCKW_353_Ammo"];

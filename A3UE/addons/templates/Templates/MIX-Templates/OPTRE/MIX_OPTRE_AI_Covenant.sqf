@@ -2,8 +2,8 @@
  * Converted from: OPTRE_AI_Covenant.sqf
  */
 _basic append ["OPTRE_FC_Ghost_Driverless"];
-_unarmedVehicles append ["OPTRE_FC_Ghost_Driverless"];
-_armedVehicles append ["OPTRE_FC_Ghost_Needler_Driverless", "OPTRE_FC_Ghost_Armor_Driverless"];
+_lightUnarmed append ["OPTRE_FC_Ghost_Driverless"];
+_lightArmed append ["OPTRE_FC_Ghost_Needler_Driverless", "OPTRE_FC_Ghost_Armor_Driverless"];
 _Trucks append ["OPTRE_m1015_mule_ins", "OPTRE_m1015_mule_cover_ins"];
 _cargoTrucks append ["OPTRE_m1015_mule_ins", "OPTRE_m1015_mule_cover_ins"];
 _ammoTrucks append ["OPTRE_m1015_mule_ammo_ins"];

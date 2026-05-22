@@ -2,7 +2,7 @@
     {
         requiredAddons[] = {};
         logo = "a3\ui_f\data\logos\arma3_white_ca.paa";
-        basepath = QPATHTOFOLDER(Templates\Templates\custom_mixed); //the path to the template folder
+        basepath = QPATHTOFOLDER(Templates\MIX-Templates); //the path to the template folder
         priority = 10;
         equipFlags[] = {};
         description = $STR_A3AP_setupFactionsTab_vanilla_generic;
@@ -33,7 +33,7 @@
         side = "Occ";
         flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
         name = "A3 Europe MIX Temperate";
-        file = "MIX_AI_Europe_Temparate_OCC";
+        file = "MIX_AI_BLUFOR_Europe_Temparate_OCC";
         climate[] = {"temperate", "tropical", "arctic"};
         description = "Small MIX of West European Nations (BAF, BW, AMF)";
     };

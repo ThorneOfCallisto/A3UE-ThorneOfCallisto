@@ -2,8 +2,8 @@
  * Converted from: EF_AI_MJTF_Temperate.sqf
  */
 _basic append ["B_T_Quadbike_01_F"];
-_unarmedVehicles append ["B_T_MRAP_01_F"];
-_armedVehicles append ["B_T_MRAP_01_gmg_F", "B_T_MRAP_01_hmg_F", "EF_B_MRAP_01_AT_MJTF_Wdl", "EF_B_MRAP_01_FSV_MJTF_Wdl","EF_B_MRAP_01_LAAD_MJTF_Wdl"];
+_lightUnarmed append ["B_T_MRAP_01_F"];
+_lightArmed append ["B_T_MRAP_01_gmg_F", "B_T_MRAP_01_hmg_F", "EF_B_MRAP_01_AT_MJTF_Wdl", "EF_B_MRAP_01_FSV_MJTF_Wdl","EF_B_MRAP_01_LAAD_MJTF_Wdl"];
 _Trucks append ["B_Truck_01_covered_F", "B_Truck_01_transport_F"];
 _cargoTrucks append ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"];
 _ammoTrucks append ["B_T_Truck_01_ammo_F"];

@@ -2,8 +2,8 @@
  * Converted from: WS_Reb_Tura.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_unarmedVehicles append ["O_SFIA_Offroad_lxWS","O_Tura_Offroad_armor_lxWS"];
-_armedVehicles append ["O_SFIA_Offroad_armed_lxWS","O_Tura_Offroad_armor_armed_lxWS"];
+_lightUnarmed append ["O_SFIA_Offroad_lxWS","O_Tura_Offroad_armor_lxWS"];
+_lightArmed append ["O_SFIA_Offroad_armed_lxWS","O_Tura_Offroad_armor_armed_lxWS"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

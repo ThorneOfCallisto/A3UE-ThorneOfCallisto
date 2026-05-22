@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_AFRF_Temperate.sqf
  */
 _basic append ["O_R_Quadbike_01_F"];
-_unarmedVehicles append ["O_R_MRAP_02_F"];
-_armedVehicles append ["O_R_MRAP_02_hmg_F", "O_R_MRAP_02_gmg_F"];
+_lightUnarmed append ["O_R_MRAP_02_F"];
+_lightArmed append ["O_R_MRAP_02_hmg_F", "O_R_MRAP_02_gmg_F"];
 _Trucks append ["O_R_Truck_03_transport_F", "O_R_Truck_03_covered_F"];
 _cargoTrucks append ["O_R_Truck_02_cargo_F", "O_R_Truck_02_flatbed_F","O_R_UGV_01_ard_F"];
 _ammoTrucks append ["O_R_Truck_03_ammo_F"];
@@ -660,8 +660,8 @@ _pilotfacewear append [];
 /////////////////////////////
 
 if (_hasApex) then {
-    _unarmedVehicles pushBack "O_R_LSV_02_unarmed_F";
-    _armedVehicles append ["O_R_LSV_02_AT_F", "O_R_LSV_02_armed_F"];
+    _lightUnarmed pushBack "O_R_LSV_02_unarmed_F";
+    _lightArmed append ["O_R_LSV_02_AT_F", "O_R_LSV_02_armed_F"];
 };
 
 if (_hasTanks) then {

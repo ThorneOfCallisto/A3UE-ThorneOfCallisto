@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_ION_Arctic.sqf
  */
 _basic append ["CUP_I_4WD_unarmed_ION"];
-_unarmedVehicles append ["CUP_I_LSV_02_unarmed_ION", "CUP_I_nM1025_Unarmed_ION_WIN", "CUP_I_nM1038_4s_ION_WIN"];
-_armedVehicles append ["CUP_B_nM1025_SOV_Mk19_ION_WIN", "CUP_B_nM1025_SOV_M2_ION_WIN", "CUP_I_SUV_Armored_ION", "CUP_I_nM1025_M240_DF_ION_WIN", "CUP_I_nM1036_TOW_ION_WIN"];
+_lightUnarmed append ["CUP_I_LSV_02_unarmed_ION", "CUP_I_nM1025_Unarmed_ION_WIN", "CUP_I_nM1038_4s_ION_WIN"];
+_lightArmed append ["CUP_B_nM1025_SOV_Mk19_ION_WIN", "CUP_B_nM1025_SOV_M2_ION_WIN", "CUP_I_SUV_Armored_ION", "CUP_I_nM1025_M240_DF_ION_WIN", "CUP_I_nM1036_TOW_ION_WIN"];
 _Trucks append ["CUP_I_Van_Transport_ION"];
 _cargoTrucks append ["CUP_I_Van_Cargo_ION"];
 _ammoTrucks append ["CUP_I_nM1038_Ammo_ION_WIN"];

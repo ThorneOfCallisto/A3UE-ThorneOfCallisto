@@ -2,8 +2,8 @@
  * Converted from: WS_AI_CSAT&SFIA.sqf
  */
 _basic append ["O_Quadbike_01_F"];
-_unarmedVehicles append ["O_MRAP_02_F"];
-_armedVehicles append ["O_MRAP_02_gmg_F","O_MRAP_02_hmg_F"];
+_lightUnarmed append ["O_MRAP_02_F"];
+_lightArmed append ["O_MRAP_02_gmg_F","O_MRAP_02_hmg_F"];
 _Trucks append ["O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_02_transport_F","O_Truck_02_covered_F"];
 _cargoTrucks append ["O_Truck_02_cargo_lxWS","O_Truck_02_flatbed_lxWS","O_UGV_01_F","O_SFIA_Truck_02_cargo_lxWS","O_SFIA_Truck_02_flatbed_lxWS"];
 _ammoTrucks append ["O_Truck_02_Ammo_F","O_Truck_03_ammo_F","O_SFIA_Truck_02_Ammo_lxWS"];

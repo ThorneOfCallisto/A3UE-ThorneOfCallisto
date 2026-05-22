@@ -2,8 +2,8 @@
  * Converted from: CSA_AI_UK_Arctic.sqf
  */
 _basic append ["LIB_UK_Willys_MB_w"];
-_unarmedVehicles append ["LIB_UK_Willys_MB_w","LIB_UK_Willys_MB_Hood_w"];
-_armedVehicles append ["LIB_UK_Willys_MB_M1919_w","LIB_UniversalCarrier_w"];
+_lightUnarmed append ["LIB_UK_Willys_MB_w","LIB_UK_Willys_MB_Hood_w"];
+_lightArmed append ["LIB_UK_Willys_MB_M1919_w","LIB_UniversalCarrier_w"];
 _Trucks append ["LIB_US_GMC_Tent_w","LIB_US_GMC_Open_w"];
 _cargoTrucks append ["LIB_US_GMC_Tent_w","LIB_US_GMC_Open_w"];
 _ammoTrucks append ["LIB_US_GMC_Ammo_w"];

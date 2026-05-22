@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_CDF_Arctic.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_B_UAZ_Unarmed_CDF", "CUP_B_UAZ_Open_CDF"];
-_armedVehicles append ["CUP_B_UAZ_AGS30_CDF", "CUP_B_UAZ_MG_CDF", "CUP_B_UAZ_METIS_CDF", "CUP_B_UAZ_SPG9_CDF", "CUP_B_UAZ_AA_CDF", "CUP_B_Ural_ZU23_CDF"];
+_lightUnarmed append ["CUP_B_UAZ_Unarmed_CDF", "CUP_B_UAZ_Open_CDF"];
+_lightArmed append ["CUP_B_UAZ_AGS30_CDF", "CUP_B_UAZ_MG_CDF", "CUP_B_UAZ_METIS_CDF", "CUP_B_UAZ_SPG9_CDF", "CUP_B_UAZ_AA_CDF", "CUP_B_Ural_ZU23_CDF"];
 _Trucks append ["CUP_B_Kamaz_CDF", "CUP_B_Ural_CDF", "CUP_B_Kamaz_Open_CDF"];
 _cargoTrucks append ["CUP_B_Kamaz_Open_CDF"];
 _ammoTrucks append ["CUP_B_Kamaz_Reammo_CDF", "CUP_B_Ural_Reammo_CDF"];

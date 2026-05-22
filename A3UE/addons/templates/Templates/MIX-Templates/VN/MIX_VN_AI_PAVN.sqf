@@ -2,8 +2,8 @@
  * Converted from: VN_AI_PAVN.sqf
  */
 _basic append ["vn_o_bicycle_01"];
-_unarmedVehicles append ["vn_o_wheeled_btr40_01"];
-_armedVehicles append ["vn_o_wheeled_btr40_mg_02", "vn_o_wheeled_btr40_mg_01", "vn_o_wheeled_btr40_mg_04_nva65", "vn_o_wheeled_btr40_mg_03", "vn_o_wheeled_z157_mg_02", "vn_o_wheeled_z157_mg_01"];
+_lightUnarmed append ["vn_o_wheeled_btr40_01"];
+_lightArmed append ["vn_o_wheeled_btr40_mg_02", "vn_o_wheeled_btr40_mg_01", "vn_o_wheeled_btr40_mg_04_nva65", "vn_o_wheeled_btr40_mg_03", "vn_o_wheeled_z157_mg_02", "vn_o_wheeled_z157_mg_01"];
 _Trucks append ["vn_o_wheeled_z157_01", "vn_o_wheeled_z157_02"];
 _cargoTrucks append [];
 _ammoTrucks append ["vn_o_wheeled_z157_ammo"];

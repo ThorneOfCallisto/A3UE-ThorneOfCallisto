@@ -3,8 +3,8 @@
  * Optional mods/addons: "USAF_A10_C", "USAF_MQ9", "USAF_AC130U"
  */
 _basic              append ["B_Quadbike_01_F"];
-_unarmedVehicles    append ["rhsusf_m1165_usmc_d", "rhsusf_m1151_usmc_d", "rhsusf_m1025_d_s", "rhsusf_m1043_d_s", "rhsusf_CGRCAT1A2_usmc_d", "rhsusf_m1240a1_usmc_d"];
-_armedVehicles      append ["rhsusf_m1240a1_m2_usmc_d", "rhsusf_m1240a1_m240_usmc_d", "rhsusf_m1240a1_mk19_usmc_d", "rhsusf_m1151_m2crows_usmc_d", "rhsusf_m1151_mk19crows_usmc_d", "rhsusf_m1151_m2_v3_usmc_d", "rhsusf_m1151_m240_v3_usmc_d", "rhsusf_m1151_mk19_v3_usmc_d", "rhsusf_CGRCAT1A2_M2_usmc_d", "rhsusf_CGRCAT1A2_Mk19_usmc_d", "rhsusf_m1240a1_mk19crows_usmc_d", "rhsusf_m1240a1_m2crows_usmc_d"];
+_lightUnarmed    append ["rhsusf_m1165_usmc_d", "rhsusf_m1151_usmc_d", "rhsusf_m1025_d_s", "rhsusf_m1043_d_s", "rhsusf_CGRCAT1A2_usmc_d", "rhsusf_m1240a1_usmc_d"];
+_lightArmed      append ["rhsusf_m1240a1_m2_usmc_d", "rhsusf_m1240a1_m240_usmc_d", "rhsusf_m1240a1_mk19_usmc_d", "rhsusf_m1151_m2crows_usmc_d", "rhsusf_m1151_mk19crows_usmc_d", "rhsusf_m1151_m2_v3_usmc_d", "rhsusf_m1151_m240_v3_usmc_d", "rhsusf_m1151_mk19_v3_usmc_d", "rhsusf_CGRCAT1A2_M2_usmc_d", "rhsusf_CGRCAT1A2_Mk19_usmc_d", "rhsusf_m1240a1_mk19crows_usmc_d", "rhsusf_m1240a1_m2crows_usmc_d"];
 _Trucks             append ["rhsusf_M1078A1P2_B_D_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy", "rhsusf_M1083A1P2_B_D_fmtv_usarmy", "rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy"];
 _cargoTrucks        append ["rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy", "rhsusf_M977A4_usarmy_d", "rhsusf_M977A4_BKIT_usarmy_d", "rhsusf_M977A4_BKIT_M2_usarmy_d"];
 _ammoTrucks         append ["rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"];

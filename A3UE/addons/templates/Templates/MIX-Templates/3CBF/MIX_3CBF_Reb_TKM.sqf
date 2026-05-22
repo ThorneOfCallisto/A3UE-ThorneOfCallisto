@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_TKM.sqf
  */
 _basic append ["UK3CB_TKM_I_YAVA"];
-_unarmedVehicles append ["UK3CB_TKM_I_LR_Closed"];
-_armedVehicles append ["UK3CB_TKM_I_Hilux_Dshkm"];
+_lightUnarmed append ["UK3CB_TKM_I_LR_Closed"];
+_lightArmed append ["UK3CB_TKM_I_Hilux_Dshkm"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_PLA.sqf
  */
 _basic append ["Flex_CUP_PLA_Quadbike"];
-_unarmedVehicles append ["Flex_CUP_PLA_Tigr_M_233114", "Flex_CUP_PLA_LSV_02_unarmed"];
-_armedVehicles append ["Flex_CUP_PLA_LSV_02_armed", "Flex_CUP_PLA_LSV_02_AT", "Flex_CUP_PLA_Tigr_M_233114_PK", "Flex_CUP_PLA_Tigr_M_233114_KORD"];
+_lightUnarmed append ["Flex_CUP_PLA_Tigr_M_233114", "Flex_CUP_PLA_LSV_02_unarmed"];
+_lightArmed append ["Flex_CUP_PLA_LSV_02_armed", "Flex_CUP_PLA_LSV_02_AT", "Flex_CUP_PLA_Tigr_M_233114_PK", "Flex_CUP_PLA_Tigr_M_233114_KORD"];
 _Trucks append ["Flex_CUP_PLA_Truck_03_transport", "Flex_CUP_PLA_Truck_03"];
 _cargoTrucks append ["Flex_CUP_PLA_Truck_03_transport", "Flex_CUP_PLA_Truck_03"];
 _ammoTrucks append ["Flex_CUP_PLA_Truck_03_ammo"];

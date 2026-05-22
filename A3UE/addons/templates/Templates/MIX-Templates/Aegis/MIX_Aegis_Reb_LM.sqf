@@ -2,8 +2,8 @@
  * Converted from: Aegis_Reb_LM.sqf
  */
 _basic append ["Opf_B_P_Quadbike_01_F"];
-_unarmedVehicles append ["Opf_B_P_Offroad_01_F"];
-_armedVehicles append ["Opf_B_P_Offroad_01_armed_F"];
+_lightUnarmed append ["Opf_B_P_Offroad_01_F"];
+_lightArmed append ["Opf_B_P_Offroad_01_armed_F"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

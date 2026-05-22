@@ -2,8 +2,8 @@
  * Converted from: 3CB_AI_BAF_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["UK3CB_BAF_LandRover_Hard_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_Snatch_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_Soft_FFR_Sand_A_DDPM"];
-_armedVehicles append ["UK3CB_BAF_Husky_Passenger_GMG_Sand_DDPM", "UK3CB_BAF_Husky_Passenger_GPMG_Sand_DDPM", "UK3CB_BAF_Husky_Passenger_HMG_Sand_DDPM", "UK3CB_BAF_LandRover_WMIK_GMG_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_WMIK_Milan_FFR_Sand_A_DDPM", "UK3CB_BAF_Panther_GPMG_Sand_A_DDPM"];
+_lightUnarmed append ["UK3CB_BAF_LandRover_Hard_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_Snatch_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_Soft_FFR_Sand_A_DDPM"];
+_lightArmed append ["UK3CB_BAF_Husky_Passenger_GMG_Sand_DDPM", "UK3CB_BAF_Husky_Passenger_GPMG_Sand_DDPM", "UK3CB_BAF_Husky_Passenger_HMG_Sand_DDPM", "UK3CB_BAF_LandRover_WMIK_GMG_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A_DDPM", "UK3CB_BAF_LandRover_WMIK_Milan_FFR_Sand_A_DDPM", "UK3CB_BAF_Panther_GPMG_Sand_A_DDPM"];
 _Trucks append ["UK3CB_BAF_MAN_HX60_Transport_Sand_DDPM", "UK3CB_BAF_MAN_HX58_Transport_Sand_DDPM"];
 _cargoTrucks append ["UK3CB_BAF_MAN_HX60_Cargo_Sand_A_DDPM", "UK3CB_BAF_MAN_HX58_Cargo_Sand_A_DDPM"];
 _ammoTrucks append ["rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"];

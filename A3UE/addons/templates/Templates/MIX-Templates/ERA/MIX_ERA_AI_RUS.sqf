@@ -2,8 +2,8 @@
  * Converted from: ERA_AI_RUS.sqf
  */
 _basic append ["cwr3_o_uaz_open"];
-_unarmedVehicles append ["cwr3_o_uaz", "cwr3_o_uaz452"];
-_armedVehicles append ["cwr3_o_uaz_dshkm", "cwr3_o_uaz_ags30", "cwr3_o_uaz_spg9", "cwr3_o_brdm2um"];
+_lightUnarmed append ["cwr3_o_uaz", "cwr3_o_uaz452"];
+_lightArmed append ["cwr3_o_uaz_dshkm", "cwr3_o_uaz_ags30", "cwr3_o_uaz_spg9", "cwr3_o_brdm2um"];
 _Trucks append ["cwr3_o_ural", "CUP_O_Kamaz_RU", "CUP_O_Ural_RU", "CUP_O_GAZ_Vodnik_Unarmed_RU"];
 _cargoTrucks append ["CUP_O_Kamaz_Open_RU", "cwr3_o_ural_open"];
 _ammoTrucks append ["CUP_O_Kamaz_Reammo_RU", "cwr3_o_ural_reammo"];

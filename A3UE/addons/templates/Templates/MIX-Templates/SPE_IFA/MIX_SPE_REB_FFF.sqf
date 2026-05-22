@@ -2,8 +2,8 @@
  * Converted from: SPE_REB_FFF.sqf
  */
 _basic append ["SPE_FFI_R200_Unarmed"];
-_unarmedVehicles append ["SPE_FFI_R200_Hood"];
-_armedVehicles append ["SPE_FFI_R200_MG34"];
+_lightUnarmed append ["SPE_FFI_R200_Hood"];
+_lightArmed append ["SPE_FFI_R200_MG34"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

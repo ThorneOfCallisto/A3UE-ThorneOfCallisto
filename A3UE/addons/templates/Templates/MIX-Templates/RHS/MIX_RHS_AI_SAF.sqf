@@ -2,8 +2,8 @@
  * Converted from: RHS_AI_SAF.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["rhssaf_army_o_m1025_olive", "rhssaf_army_o_m1152_tcv_olive", "rhssaf_army_o_m998_olive_2dr_fulltop"];
-_armedVehicles append ["rhssaf_army_o_m1025_olive_m2", "rhssaf_army_o_m1151_olive_pkm", "rhs_tigr_sts_vmf", "rhs_tigr_sts_3camo_vmf", "RHS_Ural_Zu23_VMF_01"];
+_lightUnarmed append ["rhssaf_army_o_m1025_olive", "rhssaf_army_o_m1152_tcv_olive", "rhssaf_army_o_m998_olive_2dr_fulltop"];
+_lightArmed append ["rhssaf_army_o_m1025_olive_m2", "rhssaf_army_o_m1151_olive_pkm", "rhs_tigr_sts_vmf", "rhs_tigr_sts_3camo_vmf", "RHS_Ural_Zu23_VMF_01"];
 _Trucks append ["rhssaf_army_o_ural_open", "rhssaf_army_o_ural", "rhs_kamaz5350_open_vmf", "rhs_kamaz5350_vmf"];
 _cargoTrucks append ["RHS_Ural_Open_Flat_VMF_01", "RHS_Ural_Flat_VMF_01", "rhs_kamaz5350_flatbed_cover_vmf", "rhs_kamaz5350_flatbed_vmf"];
 _ammoTrucks append ["rhs_gaz66_ammo_vmf", "rhs_kamaz5350_ammo_vmf"];

@@ -2,8 +2,8 @@
  * Converted from: VN_Reb_VM.sqf
  */
 _basic append ["vn_c_bicycle_01"];
-_unarmedVehicles append ["vn_b_wheeled_lr2a_01_aus_army", "vn_b_wheeled_lr2a_02_aus_army"];
-_armedVehicles append ["vn_i_wheeled_lr2a_mg_01_fank_71"];
+_lightUnarmed append ["vn_b_wheeled_lr2a_01_aus_army", "vn_b_wheeled_lr2a_02_aus_army"];
+_lightArmed append ["vn_i_wheeled_lr2a_mg_01_fank_71"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

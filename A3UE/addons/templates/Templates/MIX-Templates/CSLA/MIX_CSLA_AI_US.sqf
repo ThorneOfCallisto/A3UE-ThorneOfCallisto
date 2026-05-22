@@ -2,8 +2,8 @@
  * Converted from: CSLA_AI_US.sqf
  */
 _basic append ["US85_M1030","US85_M1008_S250","US85_M923a1_s280"];
-_unarmedVehicles append ["US85_M1025_ua","US85_M1043_ua"];
-_armedVehicles append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60"];
+_lightUnarmed append ["US85_M1025_ua","US85_M1043_ua"];
+_lightArmed append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60"];
 _Trucks append ["US85_M923o","US85_M923c","US85_M923a1o","US85_M923a1om2","US85_M923a1c","US85_M923a1cm2"];
 _cargoTrucks append ["US85_M1008c","US85_M923cargo","US85_M923a1_cargo"];
 _ammoTrucks append ["US85_M923a","US85_M923a1_a"];

@@ -2,8 +2,8 @@
  * Converted from: TMT_AI_Army.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["tmt_landrover_w", "CUP_B_nM1025_Unarmed_USA_WDL", "CUP_B_nM1038_4s_USA_WDL"];
-_armedVehicles append ["TMT_Cobra_RCWS_W", "CUP_B_nM1025_M240_USA_WDL", "CUP_B_nM1025_SOV_M2_USA_WDL"];
+_lightUnarmed append ["tmt_landrover_w", "CUP_B_nM1025_Unarmed_USA_WDL", "CUP_B_nM1038_4s_USA_WDL"];
+_lightArmed append ["TMT_Cobra_RCWS_W", "CUP_B_nM1025_M240_USA_WDL", "CUP_B_nM1025_SOV_M2_USA_WDL"];
 _Trucks append ["TMT_Unimog_Transport_W"];
 _cargoTrucks append ["CUP_I_T810_Unarmed_LDF"];
 _ammoTrucks append ["TMT_Unimog_Ammo_W"];

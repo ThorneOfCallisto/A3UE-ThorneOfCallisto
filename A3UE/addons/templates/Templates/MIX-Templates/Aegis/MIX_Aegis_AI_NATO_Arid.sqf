@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_NATO_Arid.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["B_MRAP_01_F"];
-_armedVehicles append ["B_MRAP_01_gmg_F", "B_MRAP_01_hmg_F"];
+_lightUnarmed append ["B_MRAP_01_F"];
+_lightArmed append ["B_MRAP_01_gmg_F", "B_MRAP_01_hmg_F"];
 _Trucks append ["B_Truck_01_covered_F", "B_Truck_01_transport_F"];
 _cargoTrucks append ["B_Truck_01_cargo_F", "B_Truck_01_flatbed_F","B_UGV_01_F"];
 _ammoTrucks append ["B_Truck_01_ammo_F"];

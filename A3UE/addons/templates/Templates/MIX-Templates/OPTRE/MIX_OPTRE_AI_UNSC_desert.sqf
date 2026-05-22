@@ -2,8 +2,8 @@
  * Converted from: OPTRE_AI_UNSC_desert.sqf
  */
 _basic append ["OPTRE_M274_ATV"];
-_unarmedVehicles append ["OPTRE_M813_TT", "OPTRE_M12_FAV"];
-_armedVehicles append ["OPTRE_M12_LRV", "OPTRE_M12A1_LRV"];
+_lightUnarmed append ["OPTRE_M813_TT", "OPTRE_M12_FAV"];
+_lightArmed append ["OPTRE_M12_LRV", "OPTRE_M12A1_LRV"];
 _Trucks append ["OPTRE_m1087_stallion_unsc"];
 _cargoTrucks append ["OPTRE_m1087_stallion_cover_unsc"];
 _ammoTrucks append ["OPTRE_m1087_stallion_unsc_resupply"];

@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_CDF.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["UK3CB_B_LandRover_Closed_CDF", "UK3CB_B_LandRover_Open_CDF", "rhsgref_BRDM2UM_b"];
-_armedVehicles append ["UK3CB_B_LandRover_AGS30_CDF", "UK3CB_B_LandRover_M2_CDF", "UK3CB_B_LandRover_SPG9_CDF", "rhsgref_BRDM2_b", "rhsgref_BRDM2_ATGM_b", "rhsgref_BRDM2_HQ_b", "rhsgref_cdf_b_gaz66_zu23", "rhsgref_cdf_b_ural_Zu23", "rhsgref_cdf_b_reg_uaz_ags"];
+_lightUnarmed append ["UK3CB_B_LandRover_Closed_CDF", "UK3CB_B_LandRover_Open_CDF", "rhsgref_BRDM2UM_b"];
+_lightArmed append ["UK3CB_B_LandRover_AGS30_CDF", "UK3CB_B_LandRover_M2_CDF", "UK3CB_B_LandRover_SPG9_CDF", "rhsgref_BRDM2_b", "rhsgref_BRDM2_ATGM_b", "rhsgref_BRDM2_HQ_b", "rhsgref_cdf_b_gaz66_zu23", "rhsgref_cdf_b_ural_Zu23", "rhsgref_cdf_b_reg_uaz_ags"];
 _Trucks append ["UK3CB_B_Kamaz_Open_CDF", "UK3CB_B_Kamaz_Covered_CDF", "rhsgref_cdf_b_gaz66", "rhsgref_cdf_b_gaz66o", "rhsgref_cdf_b_ural_open", "rhsgref_cdf_b_ural"];
 _cargoTrucks append ["rhsgref_cdf_b_gaz66_flat", "rhsgref_cdf_b_gaz66o_flat"];
 _ammoTrucks append ["UK3CB_B_Ural_Ammo_CDF", "rhsgref_cdf_b_gaz66_ammo"];

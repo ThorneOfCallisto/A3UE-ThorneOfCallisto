@@ -2,8 +2,8 @@
  * Converted from: EAW_AI_JAP_Temperate.sqf
  */
 _basic append ["fow_v_truppenfahrrad_ger_heer"];
-_unarmedVehicles append ["LIB_Kfz1_camo","LIB_Kfz1_Hood_camo"];
-_armedVehicles append ["EAW_Type94_1937","EAW_Panzar1","EAW_Crossley"];
+_lightUnarmed append ["LIB_Kfz1_camo","LIB_Kfz1_Hood_camo"];
+_lightArmed append ["EAW_Type94_1937","EAW_Panzar1","EAW_Crossley"];
 _Trucks append ["EAW_Dodge1936_Pickup_Military_IJA","fow_v_type97_truck_open_ija","fow_v_type97_truck_ija"];
 _cargoTrucks append ["EAW_Dodge1936_Pickup_Military_IJA"];
 _ammoTrucks append ["EAW_Dodge1936_Pickup_Military_Ammo_IJA"];

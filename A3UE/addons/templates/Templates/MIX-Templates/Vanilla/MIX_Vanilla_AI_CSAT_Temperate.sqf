@@ -2,8 +2,8 @@
  * Converted from: Vanilla_AI_CSAT_Temperate.sqf
  */
 _basic append ["O_T_Quadbike_01_ghex_F"];
-_unarmedVehicles append ["O_T_MRAP_02_ghex_F"];
-_armedVehicles append ["O_T_MRAP_02_gmg_ghex_F", "O_T_MRAP_02_hmg_ghex_F"];
+_lightUnarmed append ["O_T_MRAP_02_ghex_F"];
+_lightArmed append ["O_T_MRAP_02_gmg_ghex_F", "O_T_MRAP_02_hmg_ghex_F"];
 _Trucks append ["O_T_Truck_03_covered_ghex_F", "O_T_Truck_03_transport_ghex_F"];
 _cargoTrucks append ["O_T_Truck_02_F", "O_T_Truck_02_transport_F", "O_T_Truck_03_covered_ghex_F", "O_T_Truck_03_transport_ghex_F","O_T_UGV_01_ghex_F"];
 _ammoTrucks append ["O_T_Truck_03_ammo_ghex_F"];

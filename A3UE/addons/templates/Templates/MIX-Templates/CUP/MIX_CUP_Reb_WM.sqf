@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_WM.sqf
  */
 _basic append ["CUP_C_TT650_TK_CIV"];
-_unarmedVehicles append ["CUP_B_LR_Transport_GB_W", "a3u_cup_m1025_unarmed_olive"];
-_armedVehicles append ["a3u_cup_lr_mg_wl", "a3u_cup_m1025_m240_olive", "a3u_cup_m1025_sov_m2_olive"];
+_lightUnarmed append ["CUP_B_LR_Transport_GB_W", "a3u_cup_m1025_unarmed_olive"];
+_lightArmed append ["a3u_cup_lr_mg_wl", "a3u_cup_m1025_m240_olive", "a3u_cup_m1025_sov_m2_olive"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

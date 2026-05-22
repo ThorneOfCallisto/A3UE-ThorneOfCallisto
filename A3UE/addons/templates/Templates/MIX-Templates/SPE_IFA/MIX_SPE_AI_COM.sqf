@@ -2,8 +2,8 @@
  * Converted from: SPE_AI_COM.sqf
  */
 _basic append ["SPEX_CW_G503_MB"];
-_unarmedVehicles append ["SPEX_CW_G503_MB", "SPEX_CW_Bedford_MWD"];
-_armedVehicles append ["SPEX_CW_G503_MB_M2", "SPEX_CW_Humber_LRC"];
+_lightUnarmed append ["SPEX_CW_G503_MB", "SPEX_CW_Bedford_MWD"];
+_lightArmed append ["SPEX_CW_G503_MB_M2", "SPEX_CW_Humber_LRC"];
 _Trucks append ["SPEX_CW_Bedford_MWD_Open", "SPEX_CW_M5_Halftrack_Unarmed", "SPE_CCKW_353_Open", "SPE_CCKW_353"];
 _cargoTrucks append ["SPE_CCKW_353_Open"];
 _ammoTrucks append ["SPE_CCKW_353_Ammo", "SPEX_CW_Bedford_MWD_Ammo"];

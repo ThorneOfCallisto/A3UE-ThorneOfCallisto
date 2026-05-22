@@ -2,8 +2,8 @@
  * Converted from: IFA_AI_SOV_Arctic.sqf
  */
 _basic append ["LIB_GazM1_SOV"];
-_unarmedVehicles append ["LIB_Willys_MB_w","LIB_Willys_MB_Hood_w"];
-_armedVehicles append ["LIB_Scout_m3_w"];
+_lightUnarmed append ["LIB_Willys_MB_w","LIB_Willys_MB_Hood_w"];
+_lightArmed append ["LIB_Scout_m3_w"];
 _Trucks append ["LIB_US6_Tent","LIB_US6_Open"];
 _cargoTrucks append ["LIB_US6_Open_Cargo","LIB_US6_Tent_Cargo"];
 _ammoTrucks append ["LIB_US6_Ammo"];

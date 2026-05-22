@@ -2,8 +2,8 @@
  * Converted from: CSLA_AI_CSLA_Desert.sqf
  */
 _basic append ["CSLA_JARA250","CSLA_AZU_R2_des"];
-_unarmedVehicles append ["CSLA_AZU_para_des","CSLA_AZU_des","CSLA_AZU_R2_des"];
-_armedVehicles append [];
+_lightUnarmed append ["CSLA_AZU_para_des","CSLA_AZU_des","CSLA_AZU_R2_des"];
+_lightArmed append [];
 _Trucks append ["CSLA_F813_des","CSLA_V3S_des"];
 _cargoTrucks append ["CSLA_F813_des","CSLA_V3S_des"];
 _ammoTrucks append ["CSLA_V3Sa_des"];

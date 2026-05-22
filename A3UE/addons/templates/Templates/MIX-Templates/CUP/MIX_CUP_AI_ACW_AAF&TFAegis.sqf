@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_ACW_AAF&TFAegis.sqf
  */
 _basic append ["Flex_CUP_AAF_Quad", "Flex_CUP_AAF_TowingTractor"       ];
-_unarmedVehicles append [];
-_armedVehicles append [];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

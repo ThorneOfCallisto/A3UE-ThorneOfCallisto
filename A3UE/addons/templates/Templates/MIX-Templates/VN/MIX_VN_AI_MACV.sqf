@@ -2,8 +2,8 @@
  * Converted from: VN_AI_MACV.sqf
  */
 _basic append ["vn_b_wheeled_m274_01_01"];
-_unarmedVehicles append ["vn_b_wheeled_m151_01", "vn_b_wheeled_m151_02"];
-_armedVehicles append ["vn_b_wheeled_m151_mg_02", "vn_b_wheeled_m151_mg_04", "vn_b_wheeled_m151_mg_06", "vn_b_wheeled_m151_mg_03", "vn_b_wheeled_m151_mg_05", "vn_b_wheeled_m54_mg_02", "vn_b_armor_m132_01"];
+_lightUnarmed append ["vn_b_wheeled_m151_01", "vn_b_wheeled_m151_02"];
+_lightArmed append ["vn_b_wheeled_m151_mg_02", "vn_b_wheeled_m151_mg_04", "vn_b_wheeled_m151_mg_06", "vn_b_wheeled_m151_mg_03", "vn_b_wheeled_m151_mg_05", "vn_b_wheeled_m54_mg_02", "vn_b_armor_m132_01"];
 _Trucks append ["vn_b_wheeled_m54_01", "vn_b_wheeled_m54_02"];
 _cargoTrucks append [];
 _ammoTrucks append ["vn_b_wheeled_m54_ammo"];

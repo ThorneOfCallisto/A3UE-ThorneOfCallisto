@@ -2,8 +2,8 @@
  * Converted from: SFP_AI_SWE_Arctic.sqf
  */
 _basic append ["sfp_cykel42"];
-_unarmedVehicles append ["sfp_tgb11", "sfp_81_tgb1112", "sfp_tgb1317"];
-_armedVehicles append ["sfp_tgb13_ksp58", "sfp_tgb1111", "sfp_tgb1111_sog_rbs56"];
+_lightUnarmed append ["sfp_tgb11", "sfp_81_tgb1112", "sfp_tgb1317"];
+_lightArmed append ["sfp_tgb13_ksp58", "sfp_tgb1111", "sfp_tgb1111_sog_rbs56"];
 _Trucks append ["sfp_tgb20"];
 _cargoTrucks append ["CUP_B_MTVR_BAF_WOOD"];
 _ammoTrucks append ["CUP_B_MTVR_Ammo_BAF_WOOD"];

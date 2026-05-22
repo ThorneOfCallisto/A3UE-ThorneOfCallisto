@@ -2,8 +2,8 @@
  * Converted from: CWR_AI_USSR_Temperate.sqf
  */
 _basic append ["cwr3_o_uaz_open"];
-_unarmedVehicles append ["cwr3_o_uaz", "cwr3_o_uaz452"];
-_armedVehicles append ["cwr3_o_uaz_dshkm", "cwr3_o_uaz_ags30", "cwr3_o_uaz_spg9", "cwr3_o_brdm2um"];
+_lightUnarmed append ["cwr3_o_uaz", "cwr3_o_uaz452"];
+_lightArmed append ["cwr3_o_uaz_dshkm", "cwr3_o_uaz_ags30", "cwr3_o_uaz_spg9", "cwr3_o_brdm2um"];
 _Trucks append ["cwr3_o_ural"];
 _cargoTrucks append ["cwr3_o_ural_open"];
 _ammoTrucks append ["cwr3_o_ural_reammo"];

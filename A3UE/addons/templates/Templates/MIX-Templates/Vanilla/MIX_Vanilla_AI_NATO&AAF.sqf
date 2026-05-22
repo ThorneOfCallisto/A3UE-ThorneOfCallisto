@@ -2,8 +2,8 @@
  * Converted from: Vanilla_AI_NATO&AAF.sqf
  */
 _basic append ["B_Quadbike_01_F","B_Truck_01_mover_F"];
-_unarmedVehicles append ["B_MRAP_01_F","a3a_MRAP_03_grey_F"];
-_armedVehicles append ["B_MRAP_01_gmg_F", "B_MRAP_01_hmg_F", "a3a_MRAP_03_gmg_grey_F", "a3a_MRAP_03_hmg_grey_F"];
+_lightUnarmed append ["B_MRAP_01_F","a3a_MRAP_03_grey_F"];
+_lightArmed append ["B_MRAP_01_gmg_F", "B_MRAP_01_hmg_F", "a3a_MRAP_03_gmg_grey_F", "a3a_MRAP_03_hmg_grey_F"];
 _Trucks append ["B_Truck_01_covered_F", "B_Truck_01_transport_F"];
 _cargoTrucks append ["B_Truck_01_cargo_F", "B_Truck_01_flatbed_F","B_UGV_01_F"];
 _ammoTrucks append ["B_Truck_01_ammo_F","I_Truck_02_ammo_F"];

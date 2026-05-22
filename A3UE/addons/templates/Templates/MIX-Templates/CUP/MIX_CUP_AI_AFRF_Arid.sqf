@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_AFRF_Arid.sqf
  */
 _basic append ["O_Quadbike_01_F"];
-_unarmedVehicles append ["CUP_O_UAZ_Open_RU", "CUP_O_GAZ_Vodnik_Unarmed_RU"];
-_armedVehicles append ["CUP_O_UAZ_AGS30_RU", "CUP_O_UAZ_MG_RU", "CUP_O_UAZ_METIS_RU", "CUP_O_UAZ_SPG9_RU", "CUP_O_GAZ_Vodnik_BPPU_RU", "CUP_O_GAZ_Vodnik_KPVT_RU"];
+_lightUnarmed append ["CUP_O_UAZ_Open_RU", "CUP_O_GAZ_Vodnik_Unarmed_RU"];
+_lightArmed append ["CUP_O_UAZ_AGS30_RU", "CUP_O_UAZ_MG_RU", "CUP_O_UAZ_METIS_RU", "CUP_O_UAZ_SPG9_RU", "CUP_O_GAZ_Vodnik_BPPU_RU", "CUP_O_GAZ_Vodnik_KPVT_RU"];
 _Trucks append ["CUP_O_Kamaz_RU", "CUP_O_Ural_RU", "CUP_O_GAZ_Vodnik_Unarmed_RU"];
 _cargoTrucks append ["CUP_O_Kamaz_Open_RU", "CUP_O_Ural_Open_RU"];
 _ammoTrucks append ["CUP_O_Kamaz_Reammo_RU", "CUP_O_Ural_Reammo_RU"];

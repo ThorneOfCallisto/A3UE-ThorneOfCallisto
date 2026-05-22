@@ -2,8 +2,8 @@
  * Converted from: STALKER_AI_ClearSky.sqf
  */
 _basic append ["CUP_O_TT650_TKA"];
-_unarmedVehicles append ["CUP_O_UAZ_Unarmed_SLA", "CUP_O_GAZ_Vodnik_Unarmed_RU"];
-_armedVehicles append ["CUP_O_UAZ_MG_SLA", "CUP_O_UAZ_METIS_SLA", "CUP_O_GAZ_Vodnik_PK_RU"];
+_lightUnarmed append ["CUP_O_UAZ_Unarmed_SLA", "CUP_O_GAZ_Vodnik_Unarmed_RU"];
+_lightArmed append ["CUP_O_UAZ_MG_SLA", "CUP_O_UAZ_METIS_SLA", "CUP_O_GAZ_Vodnik_PK_RU"];
 _Trucks append ["CUP_O_Ural_SLA", "CUP_O_Ural_Open_SLA"];
 _cargoTrucks append ["CUP_O_Ural_SLA", "CUP_O_Ural_Open_SLA"];
 _ammoTrucks append ["CUP_O_Ural_Reammo_SLA"];

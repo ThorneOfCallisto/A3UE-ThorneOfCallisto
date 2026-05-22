@@ -2,8 +2,8 @@
  * Converted from: FFAA_AI_SPA_Temperate.sqf
  */
 _basic append ["ffaa_et_neton_mk2"];
-_unarmedVehicles append ["ffaa_et_vamtac_ume","ffaa_et_vamtac_trans", "ffaa_et_vamtac_trans_blind"];
-_armedVehicles append ["ffaa_et_vamtac_st5_m2", "ffaa_et_vamtac_m2", "ffaa_et_lince_m2", "ffaa_et_vamtac_st5_lag40", "ffaa_vamtac_lag40", "ffaa_et_lince_lag40", "ffaa_et_vamtac_st5_spike", "ffaa_et_vamtac_tow", "ffaa_et_vamtac_crows", "ffaa_et_rg31_samson", "ffaa_et_vamtac_cardom"];
+_lightUnarmed append ["ffaa_et_vamtac_ume","ffaa_et_vamtac_trans", "ffaa_et_vamtac_trans_blind"];
+_lightArmed append ["ffaa_et_vamtac_st5_m2", "ffaa_et_vamtac_m2", "ffaa_et_lince_m2", "ffaa_et_vamtac_st5_lag40", "ffaa_vamtac_lag40", "ffaa_et_lince_lag40", "ffaa_et_vamtac_st5_spike", "ffaa_et_vamtac_tow", "ffaa_et_vamtac_crows", "ffaa_et_rg31_samson", "ffaa_et_vamtac_cardom"];
 _Trucks append ["ffaa_et_pegaso_carga", "ffaa_et_m250_carga_blin", "ffaa_et_pegaso_carga_Iona", "ffaa_et_m250_carga_Iona_blin"];
 _cargoTrucks append ["ffaa_et_m250_recuperacion_blin"];
 _ammoTrucks append ["ffaa_et_pegaso_municion", "ffaa_et_m250_municion_blin"];

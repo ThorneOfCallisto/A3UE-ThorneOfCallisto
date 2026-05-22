@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_AUKUS_Tropical.sqf
  */
 _basic append ["B_A_Quadbike_01_tna_F"];
-_unarmedVehicles append ["B_A_MRAP_03_tna_F"];
-_armedVehicles append ["B_A_MRAP_03_gmg_tna_F", "B_A_MRAP_03_hmg_tna_F"];
+_lightUnarmed append ["B_A_MRAP_03_tna_F"];
+_lightArmed append ["B_A_MRAP_03_gmg_tna_F", "B_A_MRAP_03_hmg_tna_F"];
 _Trucks append ["B_A_Truck_01_transport_tna_F", "B_A_Truck_01_covered_tna_F"];
 _cargoTrucks append ["B_A_Truck_01_flatbed_tna_F", "B_A_Truck_01_cargo_tna_F","B_A_UGV_01_tna_F"];
 _ammoTrucks append ["B_A_Truck_01_ammo_tna_F"];

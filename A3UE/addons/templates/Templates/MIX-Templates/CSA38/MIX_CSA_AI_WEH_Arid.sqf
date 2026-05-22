@@ -2,8 +2,8 @@
  * Converted from: CSA_AI_WEH_Arid.sqf
  */
 _basic append ["LIB_DAK_Kfz1"];
-_unarmedVehicles append ["LIB_DAK_Kfz1","LIB_DAK_Kfz1_Hood"];
-_armedVehicles append ["LIB_DAK_Kfz1_MG42", "CSA38_pzbfwI_DE", "CSA38_8rad2DE", "CSA38_8radDE"];
+_lightUnarmed append ["LIB_DAK_Kfz1","LIB_DAK_Kfz1_Hood"];
+_lightArmed append ["LIB_DAK_Kfz1_MG42", "CSA38_pzbfwI_DE", "CSA38_8rad2DE", "CSA38_8radDE"];
 _Trucks append ["LIB_DAK_OpelBlitz_Open","LIB_DAK_OpelBlitz_Tent","LIB_DAK_SdKfz_7"];
 _cargoTrucks append ["LIB_DAK_OpelBlitz_Open","LIB_DAK_SdKfz_7"];
 _ammoTrucks append ["LIB_DAK_OpelBlitz_Ammo", "LIB_DAK_SdKfz_7_Ammo"];

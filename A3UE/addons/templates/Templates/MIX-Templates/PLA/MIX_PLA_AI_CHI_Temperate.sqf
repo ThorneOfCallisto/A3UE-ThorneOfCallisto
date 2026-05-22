@@ -2,8 +2,8 @@
  * Converted from: PLA_AI_CHI_Temperate.sqf
  */
 _basic append ["O_mas_chi_Quadbike_01_F"];
-_unarmedVehicles append ["O_mas_chi_LSV_02_unarmed_F", "O_mas_chi_MRAP_02_F"];
-_armedVehicles append ["O_mas_chi_LSV_02_armed_F", "O_mas_chi_LSV_02_AT_F", "O_mas_chi_MRAP_02_hmg_F", "O_mas_chi_MRAP_02_gmg_F"];
+_lightUnarmed append ["O_mas_chi_LSV_02_unarmed_F", "O_mas_chi_MRAP_02_F"];
+_lightArmed append ["O_mas_chi_LSV_02_armed_F", "O_mas_chi_LSV_02_AT_F", "O_mas_chi_MRAP_02_hmg_F", "O_mas_chi_MRAP_02_gmg_F"];
 _Trucks append ["O_mas_chi_Truck_02_transport_F","O_mas_chi_Truck_02_covered_F"];
 _cargoTrucks append ["O_mas_chi_Truck_02_transport_F"];
 _ammoTrucks append ["O_mas_chi_Truck_02_reammo_F"];

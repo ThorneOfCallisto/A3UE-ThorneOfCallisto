@@ -2,8 +2,8 @@
  * Converted from: CSA_AI_WEH_Temperate.sqf
  */
 _basic append ["LIB_Kfz1"];
-_unarmedVehicles append ["LIB_Kfz1","LIB_Kfz1_camo","LIB_Kfz1_Hood"];
-_armedVehicles append ["LIB_Kfz1_MG42","LIB_Kfz1_MG42_camo","CSA38_8radLATE2","CSA38_8rad2LATE2"];
+_lightUnarmed append ["LIB_Kfz1","LIB_Kfz1_camo","LIB_Kfz1_Hood"];
+_lightArmed append ["LIB_Kfz1_MG42","LIB_Kfz1_MG42_camo","CSA38_8radLATE2","CSA38_8rad2LATE2"];
 _Trucks append ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo","LIB_SdKfz_7"];
 _cargoTrucks append ["LIB_OpelBlitz_Open_Y_Camo","LIB_SdKfz_7"];
 _ammoTrucks append ["LIB_OpelBlitz_Ammo", "LIB_SdKfz_7_Ammo"];

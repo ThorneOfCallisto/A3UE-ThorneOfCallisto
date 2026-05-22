@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_ARD.sqf
  */
 _basic append ["UK3CB_ARD_O_YAVA"];
-_unarmedVehicles append ["UK3CB_ARD_O_BRDM2_UM", "UK3CB_ARD_O_GAZ_Vodnik"];
-_armedVehicles append ["UK3CB_ARD_O_BRDM2", "UK3CB_ARD_O_BRDM2_ATGM", "UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_ARD_O_Ural_Zu23"];
+_lightUnarmed append ["UK3CB_ARD_O_BRDM2_UM", "UK3CB_ARD_O_GAZ_Vodnik"];
+_lightArmed append ["UK3CB_ARD_O_BRDM2", "UK3CB_ARD_O_BRDM2_ATGM", "UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_ARD_O_Ural_Zu23"];
 _Trucks append ["UK3CB_ARD_O_Ural", "UK3CB_ARD_O_Ural_Open"];
 _cargoTrucks append ["UK3CB_ARD_O_Ural_Recovery", "UK3CB_ARD_I_MAZ_543_Recovery"];
 _ammoTrucks append ["UK3CB_ARD_O_Ural_Ammo", "UK3CB_ARD_I_MAZ_543_Reammo"];

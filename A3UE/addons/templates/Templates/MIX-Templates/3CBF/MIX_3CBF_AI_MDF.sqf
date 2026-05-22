@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_MDF.sqf
  */
 _basic append ["UK3CB_MDF_B_Quadbike", "UK3CB_MDF_B_M1030"];
-_unarmedVehicles append ["UK3CB_MDF_B_M1025_Unarmed", "UK3CB_MDF_B_M998_2DR", "UK3CB_MDF_B_M998_4DR"];
-_armedVehicles append ["UK3CB_MDF_B_M1025_M2", "UK3CB_MDF_B_M1025_TOW", "UK3CB_MDF_B_M1151_GPK_M2", "UK3CB_MDF_B_M1151_GPK_M240"];
+_lightUnarmed append ["UK3CB_MDF_B_M1025_Unarmed", "UK3CB_MDF_B_M998_2DR", "UK3CB_MDF_B_M998_4DR"];
+_lightArmed append ["UK3CB_MDF_B_M1025_M2", "UK3CB_MDF_B_M1025_TOW", "UK3CB_MDF_B_M1151_GPK_M2", "UK3CB_MDF_B_M1151_GPK_M240"];
 _Trucks append ["UK3CB_MDF_B_MTVR_Open", "UK3CB_MDF_B_MTVR_Closed"];
 _cargoTrucks append ["UK3CB_MDF_B_MTVR_Open", "UK3CB_MDF_B_MTVR_Closed", "UK3CB_MDF_B_MTVR_Recovery"];
 _ammoTrucks append ["UK3CB_MDF_B_MTVR_Reammo"];

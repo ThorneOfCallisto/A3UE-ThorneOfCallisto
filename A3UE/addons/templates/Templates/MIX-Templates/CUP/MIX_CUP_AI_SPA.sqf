@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_SPA.sqf
  */
 _basic append ["Flex_CUP_SPA_Quadbike"];
-_unarmedVehicles append ["Flex_CUP_SPA_nM1025_Unarmed", "Flex_CUP_SPA_LR_Transport", "Flex_CUP_SPA_LSV_01_Unarmed", "Flex_CUP_SPA_nM1151_Unarmed"];
-_armedVehicles append ["Flex_CUP_SPA_LR_MG", "Flex_CUP_SPA_nM1025_M2", "Flex_CUP_SPA_nM1025_Mk19", "Flex_CUP_SPA_nM1036_TOW", "Flex_CUP_SPA_nM1151_ogpk_m2", "Flex_CUP_SPA_nM1151_ogpk_mk19", "Flex_CUP_SPA_RG31_Mk19", "Flex_CUP_SPA_RG31E_M2", "Flex_CUP_SPA_RG31_M2"];
+_lightUnarmed append ["Flex_CUP_SPA_nM1025_Unarmed", "Flex_CUP_SPA_LR_Transport", "Flex_CUP_SPA_LSV_01_Unarmed", "Flex_CUP_SPA_nM1151_Unarmed"];
+_lightArmed append ["Flex_CUP_SPA_LR_MG", "Flex_CUP_SPA_nM1025_M2", "Flex_CUP_SPA_nM1025_Mk19", "Flex_CUP_SPA_nM1036_TOW", "Flex_CUP_SPA_nM1151_ogpk_m2", "Flex_CUP_SPA_nM1151_ogpk_mk19", "Flex_CUP_SPA_RG31_Mk19", "Flex_CUP_SPA_RG31E_M2", "Flex_CUP_SPA_RG31_M2"];
 _Trucks append ["Flex_CUP_SPA_T810_Unarmed"];
 _cargoTrucks append ["Flex_CUP_SPA_T810_Unarmed"];
 _ammoTrucks append ["Flex_CUP_SPA_T810_Reammo"];

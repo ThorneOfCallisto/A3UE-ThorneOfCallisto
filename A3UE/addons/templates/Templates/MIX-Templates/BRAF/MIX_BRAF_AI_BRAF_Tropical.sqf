@@ -2,8 +2,8 @@
  * Converted from: BRAF_AI_BRAF_Tropical.sqf
  */
 _basic append ["BRAF_AM11_Unarmed"];
-_unarmedVehicles append ["BRAF_LMV_EB", "BRAF_AM21_GLO", "BRAF_AM21_Opened"];
-_armedVehicles append ["BRAF_LMV_EB_RCWS", "BRAF_AM11_Armed"];
+_lightUnarmed append ["BRAF_LMV_EB", "BRAF_AM21_GLO", "BRAF_AM21_Opened"];
+_lightArmed append ["BRAF_LMV_EB_RCWS", "BRAF_AM11_Armed"];
 _Trucks append ["BRAF_AM21_Covered", "BRAF_Worker_Covered"];
 _cargoTrucks append ["BRAF_Worker_Cargo", "BRAF_AM21_Cargo"];
 _ammoTrucks append ["BRAF_Worker_Ammo", "BRAF_AM21_Ammo"];

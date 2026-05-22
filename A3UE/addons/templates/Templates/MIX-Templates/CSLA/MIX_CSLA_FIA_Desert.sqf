@@ -2,8 +2,8 @@
  * Converted from: CSLA_FIA_Desert.sqf
  */
 _basic append ["CSLA_CIV_JARA250"];
-_unarmedVehicles append ["FIA_AZU_para_des","CSLA_FIA_BTR40_des"];
-_armedVehicles append ["CSLA_FIA_BTR40_DSKM_des","CSLA_FIA_AZU_DSKM_des","CSLA_FIA_AZU_T21_des","CSLA_FIA_V3S_AGS17_des","CSLA_FIA_V3S_GT_des"];
+_lightUnarmed append ["FIA_AZU_para_des","CSLA_FIA_BTR40_des"];
+_lightArmed append ["CSLA_FIA_BTR40_DSKM_des","CSLA_FIA_AZU_DSKM_des","CSLA_FIA_AZU_T21_des","CSLA_FIA_V3S_AGS17_des","CSLA_FIA_V3S_GT_des"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

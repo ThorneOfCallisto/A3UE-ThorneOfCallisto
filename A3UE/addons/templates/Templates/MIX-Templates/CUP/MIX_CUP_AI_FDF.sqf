@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_FDF.sqf
  */
 _basic append ["Flex_CUP_FIN_Quadbike"];
-_unarmedVehicles append ["Flex_CUP_FIN_LR_Transport"];
-_armedVehicles append ["Flex_CUP_FIN_LR_MG", "Flex_CUP_FIN_RG31_Mk19", "Flex_CUP_FIN_RG31E_M2", "Flex_CUP_FIN_RG31_M2"];
+_lightUnarmed append ["Flex_CUP_FIN_LR_Transport"];
+_lightArmed append ["Flex_CUP_FIN_LR_MG", "Flex_CUP_FIN_RG31_Mk19", "Flex_CUP_FIN_RG31E_M2", "Flex_CUP_FIN_RG31_M2"];
 _Trucks append ["Flex_CUP_FIN_Truck_Transport", "Flex_CUP_FIN_Truck_Covered"];
 _cargoTrucks append ["Flex_CUP_FIN_Truck_Transport", "Flex_CUP_FIN_Truck_Covered"];
 _ammoTrucks append ["Flex_CUP_FIN_Truck_Ammo"];

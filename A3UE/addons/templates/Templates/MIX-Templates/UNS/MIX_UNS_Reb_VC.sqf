@@ -2,8 +2,8 @@
  * Converted from: UNS_Reb_VC.sqf
  */
 _basic append ["uns_m274"];
-_unarmedVehicles append ["uns_Type55"];
-_armedVehicles append ["uns_Type55_LMG"];
+_lightUnarmed append ["uns_Type55"];
+_lightArmed append ["uns_Type55_LMG"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

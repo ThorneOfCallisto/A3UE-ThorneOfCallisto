@@ -2,8 +2,8 @@
  * Converted from: TFC_AI_CA_Army_Temperate.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["tfc_vs_luvw_f", "rhsusf_m998_w_4dr_fulltop", "rhsusf_m1043_w"];
-_armedVehicles append ["tfc_vs_luvw_armed_f", "rhsusf_m1043_w_m2", "rhsusf_m1151_m240_v2_usarmy_wd"];
+_lightUnarmed append ["tfc_vs_luvw_f", "rhsusf_m998_w_4dr_fulltop", "rhsusf_m1043_w"];
+_lightArmed append ["tfc_vs_luvw_armed_f", "rhsusf_m1043_w_m2", "rhsusf_m1151_m240_v2_usarmy_wd"];
 _Trucks append ["rhsusf_M1078A1P2_B_WD_fmtv_usarmy", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy"];
 _cargoTrucks append ["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "tfc_mlvw_f"];
 _ammoTrucks append ["tfc_mlvw_ammo_f", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"];

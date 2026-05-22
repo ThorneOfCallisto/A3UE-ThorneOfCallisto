@@ -2,8 +2,8 @@
  * Converted from: BRAF_Reb_MNGC.sqf
  */
 _basic append ["I_Quadbike_01_F"];
-_unarmedVehicles append ["BRAF_AM11_Unarmed", "CUP_B_nM1025_Unarmed_NATO_T"];
-_armedVehicles append ["BRAF_AM11_Armed", "CUP_B_nM1025_M240_NATO_T"];
+_lightUnarmed append ["BRAF_AM11_Unarmed", "CUP_B_nM1025_Unarmed_NATO_T"];
+_lightArmed append ["BRAF_AM11_Armed", "CUP_B_nM1025_M240_NATO_T"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

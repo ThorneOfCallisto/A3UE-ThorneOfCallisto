@@ -23,8 +23,8 @@ private _hasEF = "ef" in A3A_enabledDLC;
 ["equipmentBox", "Box_AAF_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
 private _basic = [];
-private _unarmedVehicles = [];
-private _armedVehicles = [];
+private _lightUnarmed = [];
+private _lightArmed = [];
 private _Trucks = [];
 private _cargoTrucks = [];
 private _ammoTrucks = [];

@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_LRI.sqf
  */
 _basic append ["C_Quadbike_01_F", "CUP_C_Golf4_black_Civ"];
-_unarmedVehicles append ["CUP_O_Hilux_unarmed_TK_CIV"];
-_armedVehicles append ["CUP_I_Hilux_M2_IND_G_F"];
+_lightUnarmed append ["CUP_O_Hilux_unarmed_TK_CIV"];
+_lightArmed append ["CUP_I_Hilux_M2_IND_G_F"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

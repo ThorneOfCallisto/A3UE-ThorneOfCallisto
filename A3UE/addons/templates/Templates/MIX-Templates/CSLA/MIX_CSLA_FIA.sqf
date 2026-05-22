@@ -2,8 +2,8 @@
  * Converted from: CSLA_FIA.sqf
  */
 _basic append ["CSLA_CIV_JARA250"];
-_unarmedVehicles append ["FIA_AZU_para","FIA_BTR40"];
-_armedVehicles append ["FIA_BTR40_DSKM","FIA_AZU_DSKM","FIA_AZU_T21","CSLA_FIA_V3S_AGS17","CSLA_FIA_V3S_GT"];
+_lightUnarmed append ["FIA_AZU_para","FIA_BTR40"];
+_lightArmed append ["FIA_BTR40_DSKM","FIA_AZU_DSKM","FIA_AZU_T21","CSLA_FIA_V3S_AGS17","CSLA_FIA_V3S_GT"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

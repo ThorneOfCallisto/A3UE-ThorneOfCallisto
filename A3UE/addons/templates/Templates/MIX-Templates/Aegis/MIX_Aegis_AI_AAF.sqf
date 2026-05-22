@@ -2,8 +2,8 @@
  * Converted from: Aegis_AI_AAF.sqf
  */
 _basic append ["I_Quadbike_01_F"];
-_unarmedVehicles append ["I_MRAP_03_F"];
-_armedVehicles append ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"];
+_lightUnarmed append ["I_MRAP_03_F"];
+_lightArmed append ["I_MRAP_03_hmg_F", "I_MRAP_03_gmg_F"];
 _Trucks append ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
 _cargoTrucks append ["I_Truck_02_transport_F", "I_Truck_02_covered_F","I_UGV_01_F"];
 _ammoTrucks append ["I_Truck_02_ammo_F"];

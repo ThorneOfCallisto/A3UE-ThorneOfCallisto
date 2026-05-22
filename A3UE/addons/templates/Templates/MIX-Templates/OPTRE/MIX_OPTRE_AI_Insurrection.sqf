@@ -2,8 +2,8 @@
  * Converted from: OPTRE_AI_Insurrection.sqf
  */
 _basic append ["OPTRE_M274_ATV_Ins"];
-_unarmedVehicles append ["OPTRE_M12_FAV_ins"];
-_armedVehicles append ["OPTRE_M12_LRV_ins"];
+_lightUnarmed append ["OPTRE_M12_FAV_ins"];
+_lightArmed append ["OPTRE_M12_LRV_ins"];
 _Trucks append ["OPTRE_m1015_mule_ins", "OPTRE_m1015_mule_cover_ins"];
 _cargoTrucks append ["OPTRE_m1015_mule_ins", "OPTRE_m1015_mule_cover_ins"];
 _ammoTrucks append ["OPTRE_m1015_mule_ammo_ins"];

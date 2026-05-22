@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_ION.sqf
  */
 _basic append ["UK3CB_ION_B_Winter_Quadbike"];
-_unarmedVehicles append ["UK3CB_ION_B_Winter_Offroad", "UK3CB_ION_B_Winter_Pickup", "UK3CB_ION_B_Winter_SUV", "UK3CB_ION_B_Winter_M998_2DR"];
-_armedVehicles append ["UK3CB_ION_B_Winter_Offroad_M2", "UK3CB_ION_B_Winter_Hilux_M2", "UK3CB_ION_B_Winter_LR_M2", "UK3CB_ION_B_Winter_Pickup_M2", "UK3CB_ION_B_Winter_M1025_M2", "UK3CB_ION_B_Winter_SUV_Armed"];
+_lightUnarmed append ["UK3CB_ION_B_Winter_Offroad", "UK3CB_ION_B_Winter_Pickup", "UK3CB_ION_B_Winter_SUV", "UK3CB_ION_B_Winter_M998_2DR"];
+_lightArmed append ["UK3CB_ION_B_Winter_Offroad_M2", "UK3CB_ION_B_Winter_Hilux_M2", "UK3CB_ION_B_Winter_LR_M2", "UK3CB_ION_B_Winter_Pickup_M2", "UK3CB_ION_B_Winter_M1025_M2", "UK3CB_ION_B_Winter_SUV_Armed"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

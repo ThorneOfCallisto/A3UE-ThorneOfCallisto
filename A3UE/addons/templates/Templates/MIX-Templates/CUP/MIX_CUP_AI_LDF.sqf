@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_LDF.sqf
  */
 _basic append ["Flex_CUP_LDF_Quadbike"];
-_unarmedVehicles append ["Flex_CUP_LDF_nM1151_Unarmed", "Flex_CUP_LDF_Offroad_01", "Flex_CUP_LDF_Offroad_01_covered"];
-_armedVehicles append ["Flex_CUP_LDF_nM1151_crowslp_m2", "Flex_CUP_LDF_nM1151_m2"];
+_lightUnarmed append ["Flex_CUP_LDF_nM1151_Unarmed", "Flex_CUP_LDF_Offroad_01", "Flex_CUP_LDF_Offroad_01_covered"];
+_lightArmed append ["Flex_CUP_LDF_nM1151_crowslp_m2", "Flex_CUP_LDF_nM1151_m2"];
 _Trucks append ["Flex_CUP_LDF_T810_Unarmed"];
 _cargoTrucks append ["Flex_CUP_LDF_T810_Unarmed"];
 _ammoTrucks append ["Flex_CUP_LDF_T810_Reammo","Flex_CUP_LDF_M113A3_Reammo"];

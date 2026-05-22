@@ -1,9 +1,10 @@
-/* Faction : BW
- * Converted from: BWA3_AI_BW_Arid.sqf
+/* Faction : BW Arid
+ * Required mods/addons: "bwa3_common"
+ * Optional mods/addons: "CUP_AirVehicles_Core", "RHS_US_A2Port_Armor"
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["BWA3_Eagle_Tropen"];
-_armedVehicles append ["BWA3_Dingo2_FLW200_GMW_CG13_Tropen", "BWA3_Dingo2_FLW200_M2_CG13_Tropen", "BWA3_Dingo2_FLW100_MG3_CG13_Tropen", "BWA3_Eagle_FLW100_Tropen"];
+_lightUnarmed append ["BWA3_Eagle_Tropen"];
+_lightArmed append ["BWA3_Dingo2_FLW200_GMW_CG13_Tropen", "BWA3_Dingo2_FLW200_M2_CG13_Tropen", "BWA3_Dingo2_FLW100_MG3_CG13_Tropen", "BWA3_Eagle_FLW100_Tropen"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -678,8 +679,8 @@ _pilotfacewear append [];
 /////////////////////////////
 
 if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") && !isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
-    _unarmedVehicles append ["CUP_B_FENNEK_GER_Des"];
-    _armedVehicles append ["CUP_B_M1165_GMV_USA", "CUP_B_nM1025_M2_USA_DES", "CUP_B_nM1025_M240_USA_DES", "CUP_B_nM1036_TOW_USA_DES"];
+    _lightUnarmed append ["CUP_B_FENNEK_GER_Des"];
+    _lightArmed append ["CUP_B_M1165_GMV_USA", "CUP_B_nM1025_M2_USA_DES", "CUP_B_nM1025_M240_USA_DES", "CUP_B_nM1036_TOW_USA_DES"];
     _Trucks = ["CUP_B_MTVR_USA"];
     _cargoTrucks = ["CUP_B_MTVR_USMC"];
     _ammoTrucks = ["CUP_B_MTVR_Ammo_USA", "CUP_B_nM1038_Ammo_USA_DES", "CUP_B_nM1038_Ammo_DF_USA_DES"];
@@ -711,8 +712,8 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isCl
     _staticMG = ["RHS_M2StaticMG_WD"];
     _staticAA = ["RHS_Stinger_AA_pod_WD"];
     if (!_hasGM) then {
-        _unarmedVehicles append ["rhsusf_m1151_usarmy_d", "rhsusf_m1043_d", "rhsusf_m998_d_2dr_fulltop"];
-        _armedVehicles append ["rhsusf_m1151_m240_v1_usarmy_d", "rhsusf_m1151_m2_lras3_v1_usarmy_d", "rhsusf_m1151_m2_v1_usarmy_d", "rhsusf_m966_d"];
+        _lightUnarmed append ["rhsusf_m1151_usarmy_d", "rhsusf_m1043_d", "rhsusf_m998_d_2dr_fulltop"];
+        _lightArmed append ["rhsusf_m1151_m240_v1_usarmy_d", "rhsusf_m1151_m2_lras3_v1_usarmy_d", "rhsusf_m1151_m2_v1_usarmy_d", "rhsusf_m966_d"];
         _Trucks = ["rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_fmtv_usarmy", "rhsusf_M1083A1P2_D_fmtv_usarmy", "rhsusf_M1083A1P2_B_D_fmtv_usarmy"];
         _cargoTrucks = ["rhsusf_M1084A1R_SOV_M2_D_fmtv_socom", "rhsusf_M1078A1P2_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_D_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_D_fmtv_usarmy", "rhsusf_M1084A1P2_B_D_fmtv_usarmy", "rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy", "rhsusf_M977A4_usarmy_d", "rhsusf_M977A4_BKIT_usarmy_d", "rhsusf_M977A4_BKIT_M2_usarmy_d"];
         _ammoTrucks = ["rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_usarmy_d", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d"];
@@ -730,7 +731,7 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isCl
 };
 
 if (isClass (configfile >> "CfgPatches" >> "Redd_Marder_1A5")) then {
-    _armedVehicles append ["Redd_Tank_Wiesel_1A4_MK20_Tropentarn", "Redd_Tank_Wiesel_1A2_TOW_Tropentarn"];
+    _lightArmed append ["Redd_Tank_Wiesel_1A4_MK20_Tropentarn", "Redd_Tank_Wiesel_1A2_TOW_Tropentarn"];
     _Trucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_trope", "rnt_lkw_7t_mil_gl_kat_i_transport_trope"];
     _cargoTrucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_trope", "rnt_lkw_7t_mil_gl_kat_i_transport_trope"];
     _ammoTrucks = ["rnt_lkw_7t_mil_gl_kat_i_mun_trope"];
@@ -739,8 +740,8 @@ if (isClass (configfile >> "CfgPatches" >> "Redd_Marder_1A5")) then {
     _miltiaTrucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_trope", "rnt_lkw_7t_mil_gl_kat_i_transport_trope"];
 
     if (!_hasGM) then {
-        _unarmedVehicles append ["Redd_Tank_LKW_leicht_gl_Wolf_Tropentarn_FueFu"];
-        _armedVehicles append ["Redd_Tank_Fuchs_1A4_Pi_Tropentarn", "Redd_Tank_Fuchs_1A4_Jg_Tropentarn"];
+        _lightUnarmed append ["Redd_Tank_LKW_leicht_gl_Wolf_Tropentarn_FueFu"];
+        _lightArmed append ["Redd_Tank_Fuchs_1A4_Pi_Tropentarn", "Redd_Tank_Fuchs_1A4_Jg_Tropentarn"];
         _medicalTrucks = ["Redd_Tank_Fuchs_1A4_San_Tropentarn", "Redd_Tank_LKW_leicht_gl_Wolf_Tropentarn_San"];
         _APCs append ["Redd_Marder_1A5_Tropentarn"];
         _IFVs append ["Redd_Marder_1A5_Tropentarn", "rnt_sppz_2a2_luchs_tropentarn"];
@@ -751,8 +752,8 @@ if (isClass (configfile >> "CfgPatches" >> "Redd_Marder_1A5")) then {
 };
 
 if (_hasGM) then {
-    _unarmedVehicles = ["gm_ge_army_iltis_cargo"];
-    _armedVehicles = ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3","gm_ge_army_fuchsa0_command", "gm_ge_army_fuchsa0_engineer","gm_ge_army_fuchsa0_reconnaissance"];
+    _lightUnarmed = ["gm_ge_army_iltis_cargo"];
+    _lightArmed = ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3","gm_ge_army_fuchsa0_command", "gm_ge_army_fuchsa0_engineer","gm_ge_army_fuchsa0_reconnaissance"];
 	_Trucks append ["gm_ge_army_u1300l_cargo", "gm_ge_army_kat1_451_cargo"];
 	_cargoTrucks append ["gm_ge_army_kat1_454_cargo", "gm_ge_army_u1300l_container","gm_ge_army_kat1_451_container","gm_ge_army_kat1_452_container"];
 	_ammoTrucks append ["gm_ge_army_kat1_451_reammo","gm_ge_army_kat1_454_reammo"];

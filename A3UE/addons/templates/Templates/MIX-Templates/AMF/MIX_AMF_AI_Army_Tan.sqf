@@ -2,8 +2,8 @@
  * Converted from: AMF_AI_Army_Tan.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["R3F_PVP_DA", "B_AMF_VAB_ULTIMA_X8_TDF_F"];
-_armedVehicles append ["R3F_PVP_FN_DA", "AMF_VBMR_L_TDF_01"];
+_lightUnarmed append ["R3F_PVP_DA", "B_AMF_VAB_ULTIMA_X8_TDF_F"];
+_lightArmed append ["R3F_PVP_FN_DA", "AMF_VBMR_L_TDF_01"];
 _Trucks append ["AMF_GBC180_PERS_01", "R3F_KAMAZ_DA_trans"];
 _cargoTrucks append ["AMF_GBC180_PLATEAU_01", "AMF_GBC180_PERS_01"];
 _ammoTrucks append ["AMF_GBC180_AmmoTruck"];

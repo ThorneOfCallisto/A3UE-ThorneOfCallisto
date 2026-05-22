@@ -2,8 +2,8 @@
  * Converted from: UNS_AI_PAVN.sqf
  */
 _basic append ["uns_willys"];
-_unarmedVehicles append ["uns_Type55"];
-_armedVehicles append ["uns_Type55_LMG", "uns_Type55_MG", "uns_Type55_patrol", "uns_Type55_twinMG", "uns_Type55_RR57", "uns_Type55_RR73", "uns_Type55_M40", "uns_BTR152_DSHK", "uns_Type55_ZU", "uns_nvatruck_zpu", "uns_nvatruck_zu23", "uns_nvatruck_s60"];
+_lightUnarmed append ["uns_Type55"];
+_lightArmed append ["uns_Type55_LMG", "uns_Type55_MG", "uns_Type55_patrol", "uns_Type55_twinMG", "uns_Type55_RR57", "uns_Type55_RR73", "uns_Type55_M40", "uns_BTR152_DSHK", "uns_Type55_ZU", "uns_nvatruck_zpu", "uns_nvatruck_zu23", "uns_nvatruck_s60"];
 _Trucks append ["uns_nvatruck_open", "uns_zil157", "uns_nvatruck_camo", "uns_nvatruck"];
 _cargoTrucks append ["uns_nvatruck_open", "uns_zil157"];
 _ammoTrucks append ["uns_nvatruck_reammo"];

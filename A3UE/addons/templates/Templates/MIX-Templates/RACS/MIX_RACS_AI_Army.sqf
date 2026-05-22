@@ -2,8 +2,8 @@
  * Converted from: RACS_AI_Army.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["PRACS_M1025", "PRACS_M1025_marine"];
-_armedVehicles append ["PRACS_M1025_M2", "PRACS_M1151_M240"];
+_lightUnarmed append ["PRACS_M1025", "PRACS_M1025_marine"];
+_lightArmed append ["PRACS_M1025_M2", "PRACS_M1151_M240"];
 _Trucks append ["PRACS_M250_open", "PRACS_M250"];
 _cargoTrucks append ["PRACS_M250_open", "PRACS_M250"];
 _ammoTrucks append ["PRACS_M250_Ammo"];

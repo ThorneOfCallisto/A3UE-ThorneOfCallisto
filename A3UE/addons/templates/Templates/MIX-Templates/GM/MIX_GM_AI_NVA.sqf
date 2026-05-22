@@ -2,8 +2,8 @@
  * Converted from: GM_AI_NVA.sqf
  */
 _basic append ["gm_gc_army_p601"];
-_unarmedVehicles append ["gm_gc_army_uaz469_cargo", "gm_gc_army_uaz469_cargo", "gm_gc_army_btr60pu12", "gm_gc_army_brdm2um"];
-_armedVehicles append ["gm_gc_army_uaz469_dshkm", "gm_gc_army_brdm2", "gm_gc_army_uaz469_dshkm", "CUP_O_GAZ_Vodnik_BPPU_RU", 
+_lightUnarmed append ["gm_gc_army_uaz469_cargo", "gm_gc_army_uaz469_cargo", "gm_gc_army_btr60pu12", "gm_gc_army_brdm2um"];
+_lightArmed append ["gm_gc_army_uaz469_dshkm", "gm_gc_army_brdm2", "gm_gc_army_uaz469_dshkm", "CUP_O_GAZ_Vodnik_BPPU_RU", 
     "CUP_O_GAZ_Vodnik_KPVT_RU", "gm_gc_army_brdm2rkh"];
 _Trucks append ["gm_gc_army_ural4320_cargo", "gm_gc_army_ural375d_cargo", "gm_gc_army_btr60pa"];
 _cargoTrucks append ["gm_gc_army_ural4320_cargo", "gm_gc_army_ural44202", "gm_gc_army_ural375d_cargo"];

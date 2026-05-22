@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_TKA.sqf
  */
 _basic append ["UK3CB_TKA_B_YAVA"];
-_unarmedVehicles append ["UK3CB_TKA_B_BRDM2_UM", "UK3CB_TKA_B_M1025", "UK3CB_TKA_B_M998_2DR", "UK3CB_TKA_B_M998_4DR"];
-_armedVehicles append ["UK3CB_TKA_B_MTLB_ZU23", "UK3CB_TKA_B_Ural_Zu23", "UK3CB_TKA_B_BRDM2_HQ", "UK3CB_TKA_B_BRDM2", "UK3CB_TKA_B_LR_SF_AGS30", "UK3CB_TKA_B_LR_SF_M2", "UK3CB_TKA_B_M1025_MK19", "UK3CB_TKA_B_M1025_M2", "UK3CB_TKA_B_BRDM2_ATGM", "UK3CB_TKA_B_MaxxPro_M2", "UK3CB_TKA_B_MaxxPro_MK19"];
+_lightUnarmed append ["UK3CB_TKA_B_BRDM2_UM", "UK3CB_TKA_B_M1025", "UK3CB_TKA_B_M998_2DR", "UK3CB_TKA_B_M998_4DR"];
+_lightArmed append ["UK3CB_TKA_B_MTLB_ZU23", "UK3CB_TKA_B_Ural_Zu23", "UK3CB_TKA_B_BRDM2_HQ", "UK3CB_TKA_B_BRDM2", "UK3CB_TKA_B_LR_SF_AGS30", "UK3CB_TKA_B_LR_SF_M2", "UK3CB_TKA_B_M1025_MK19", "UK3CB_TKA_B_M1025_M2", "UK3CB_TKA_B_BRDM2_ATGM", "UK3CB_TKA_B_MaxxPro_M2", "UK3CB_TKA_B_MaxxPro_MK19"];
 _Trucks append ["UK3CB_TKA_B_Kamaz_Closed", "UK3CB_TKA_B_Kamaz_Open"];
 _cargoTrucks append ["UK3CB_TKA_B_Ural_Recovery"];
 _ammoTrucks append ["UK3CB_TKA_B_Ural_Ammo"];

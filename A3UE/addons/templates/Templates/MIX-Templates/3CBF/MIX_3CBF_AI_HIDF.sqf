@@ -2,8 +2,8 @@
  * Converted from: 3CBF_AI_HIDF.sqf
  */
 _basic append ["UK3CB_B_M1030_HIDF"];
-_unarmedVehicles append ["rhsgref_hidf_m1025", "rhsgref_hidf_M998_2dr_fulltop", "rhsgref_hidf_M998_2dr_halftop", "rhsgref_hidf_M998_2dr", "rhsgref_hidf_M998_4dr_fulltop", "rhsgref_hidf_m998_4dr", "UK3CB_B_M151_Jeep_Closed_HIDF"];
-_armedVehicles append ["rhsgref_hidf_m1025_m2", "rhsgref_hidf_m1025_mk19", "UK3CB_B_M151_Jeep_HMG_HIDF", "UK3CB_B_M151_Jeep_TOW_HIDF"];
+_lightUnarmed append ["rhsgref_hidf_m1025", "rhsgref_hidf_M998_2dr_fulltop", "rhsgref_hidf_M998_2dr_halftop", "rhsgref_hidf_M998_2dr", "rhsgref_hidf_M998_4dr_fulltop", "rhsgref_hidf_m998_4dr", "UK3CB_B_M151_Jeep_Closed_HIDF"];
+_lightArmed append ["rhsgref_hidf_m1025_m2", "rhsgref_hidf_m1025_mk19", "UK3CB_B_M151_Jeep_HMG_HIDF", "UK3CB_B_M151_Jeep_TOW_HIDF"];
 _Trucks append ["UK3CB_B_MTVR_Closed_HIDF", "UK3CB_B_MTVR_Open_HIDF"];
 _cargoTrucks append ["UK3CB_B_MTVR_Recovery_HIDF"];
 _ammoTrucks append ["UK3CB_B_MTVR_Reammo_HIDF"];

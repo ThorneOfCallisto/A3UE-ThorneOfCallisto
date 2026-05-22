@@ -2,8 +2,8 @@
  * Converted from: SPE_IFA_AI_WEH.sqf
  */
 _basic append ["SPE_GER_R200_Unarmed"];
-_unarmedVehicles append ["SPE_GER_R200_Unarmed", "SPE_GER_R200_Hood"];
-_armedVehicles append ["SPE_GER_R200_MG34", "LIB_SdKfz251", "SPE_ST_OpelBlitz_Flak38"];
+_lightUnarmed append ["SPE_GER_R200_Unarmed", "SPE_GER_R200_Hood"];
+_lightArmed append ["SPE_GER_R200_MG34", "LIB_SdKfz251", "SPE_ST_OpelBlitz_Flak38"];
 _Trucks append ["SPE_OpelBlitz_Open", "SPE_OpelBlitz", "LIB_SdKfz_7"];
 _cargoTrucks append ["SPE_OpelBlitz_Open"];
 _ammoTrucks append ["SPE_OpelBlitz_Ammo", "LIB_SdKfz_7_Ammo"];

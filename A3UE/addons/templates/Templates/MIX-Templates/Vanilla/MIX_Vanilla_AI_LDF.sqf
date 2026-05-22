@@ -2,8 +2,8 @@
  * Converted from: Vanilla_AI_LDF.sqf
  */
 _basic append ["I_E_Quadbike_01_F"];
-_unarmedVehicles append ["B_T_MRAP_01_F"];
-_armedVehicles append ["B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F"];
+_lightUnarmed append ["B_T_MRAP_01_F"];
+_lightArmed append ["B_T_MRAP_01_hmg_F", "B_T_MRAP_01_gmg_F"];
 _Trucks append ["I_E_Truck_02_transport_F", "I_E_Truck_02_F"];
 _cargoTrucks append ["I_E_Truck_02_transport_F", "I_E_Truck_02_F","I_E_UGV_01_F"];
 _ammoTrucks append ["I_E_Truck_02_Ammo_F"];

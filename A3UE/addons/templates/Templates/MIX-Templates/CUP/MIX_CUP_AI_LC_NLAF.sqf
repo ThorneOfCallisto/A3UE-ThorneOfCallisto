@@ -2,8 +2,8 @@
  * Converted from: CUP_AI_LC_NLAF.sqf
  */
 _basic append ["O_Quadbike_01_F", "Flex_CUP_NLAF_Ural_Empty"];
-_unarmedVehicles append ["Flex_CUP_NLAF_Hilux_unarmed", "Flex_CUP_NLAF_UAZ_Unarmed", "Flex_CUP_NLAF_UAZ_Open"];
-_armedVehicles append ["Flex_CUP_NLAF_Hilux_M2", "Flex_CUP_NLAF_Hilux_SPG9", "Flex_CUP_NLAF_UAZ_SPG9"];
+_lightUnarmed append ["Flex_CUP_NLAF_Hilux_unarmed", "Flex_CUP_NLAF_UAZ_Unarmed", "Flex_CUP_NLAF_UAZ_Open"];
+_lightArmed append ["Flex_CUP_NLAF_Hilux_M2", "Flex_CUP_NLAF_Hilux_SPG9", "Flex_CUP_NLAF_UAZ_SPG9"];
 _Trucks append ["Flex_CUP_NLAF_Ural"];
 _cargoTrucks append ["Flex_CUP_NLAF_Ural_Open"];
 _ammoTrucks append ["Flex_CUP_NLAF_Ural_Reammo"];

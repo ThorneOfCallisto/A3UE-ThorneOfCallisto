@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_FIA.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_unarmedVehicles append ["UK3CB_ARD_I_Hilux_Open"];
-_armedVehicles append ["UK3CB_ARD_I_Hilux_M2"];
+_lightUnarmed append ["UK3CB_ARD_I_Hilux_Open"];
+_lightArmed append ["UK3CB_ARD_I_Hilux_M2"];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

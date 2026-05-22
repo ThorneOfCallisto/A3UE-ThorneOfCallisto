@@ -2,8 +2,8 @@
  * Converted from: Vanguard_AI_Army.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_unarmedVehicles append ["SSV_Vehicle_Vanguard_Ifrit"];
-_armedVehicles append ["OPTRE_M12_LRV_CMA", "OPTRE_M12_LRV_DME"];
+_lightUnarmed append ["SSV_Vehicle_Vanguard_Ifrit"];
+_lightArmed append ["OPTRE_M12_LRV_CMA", "OPTRE_M12_LRV_DME"];
 _Trucks append ["OPTRE_m1015_mule_cma", "OPTRE_m1015_mule_cover_cma"];
 _cargoTrucks append ["OPTRE_m1015_mule_cma", "OPTRE_m1015_mule_cover_cma"];
 _ammoTrucks append ["OPTRE_m1015_mule_ammo_cma"];
