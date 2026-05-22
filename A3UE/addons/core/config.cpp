@@ -16,7 +16,7 @@ class CfgPatches
     };
 };
 
-class A3A // remove this block if you're not adding params for your extender
-{
-    #include "Params.hpp"
-};
+// class A3A // remove this block if you're not adding params for your extender
+// {
+//     #include "Params.hpp"
+// };
