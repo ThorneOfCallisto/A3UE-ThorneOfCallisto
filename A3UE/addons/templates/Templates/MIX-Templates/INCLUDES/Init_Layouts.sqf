@@ -69,6 +69,8 @@
 // If a given loadoutData variable has a weighted array, make sure all mod/DLC compats also have a weighted array for the same.
 // To simplify work on mod/DLC compats, the weighted arrays here are made to sum up to 10. This is so that compats have a consistent base to work off but is not strictly necessary.
 
+private _fnc_GenerateLayoutsForCurrentGear = {
+    params [["_LayoutTag", ""]];
 private _loadoutData = call _fnc_createLoadoutData;
 _loadoutData set ["slRifles", _slRifles];
 _loadoutData set ["rifles", _rifles];
@@ -979,135 +981,89 @@ private _patrolSpotterTemplate = {
 };
 
 
+
 ////////////////////////////////////////////////////////////////////////////////////////
-//  You shouldn't touch below this line unless you really really know what you're doing.
-//  Things below here can and will break the gamemode if improperly changed.
+//  Thorne MIX generated unit layouts
+//  Generates base loadouts AND per-gear-faction loadouts like:
+//  loadouts_occ_militia_AMF_Rifleman
+//  loadouts_occ_police_BW_Standard
+//  loadouts_occ_other_SFP_Crew
 ////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////
-//  Special Forces Units   //
-/////////////////////////////
-private _prefix = "SF";
-private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
-	["AA", _aaTemplate, [], [_prefix]],
-	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]]
+private _fnc_Prefix = {
+    params ["_base"];
+    if (_LayoutTag isEqualTo "") exitWith { _base };
+    format ["%1_%2", _base, _LayoutTag]
+};
+
+private _fnc_GenerateSet = {
+    params ["_basePrefix", "_unitTypes", "_loadoutData"];
+    private _finalPrefix = [_basePrefix] call _fnc_Prefix;
+    private _finalUnitTypes = _unitTypes apply {
+        _x params ["_name", "_template", ["_traits", []], ["_properties", []]];
+        [_name, _template, _traits, [_finalPrefix]]
+    };
+    [_finalPrefix, _finalUnitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+};
+
+private _commonCombatUnitTypes = [
+    ["SquadLeader", _squadLeaderTemplate, [], []],
+    ["Rifleman", _riflemanTemplate, [], []],
+    ["Radioman", _radiomanTemplate, [], []],
+    ["Medic", _medicTemplate, [["medic", true]], []],
+    ["Engineer", _engineerTemplate, [["engineer", true]], []],
+    ["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], []],
+    ["Grenadier", _grenadierTemplate, [], []],
+    ["LAT", _latTemplate, [], []],
+    ["AT", _atTemplate, [], []],
+    ["AA", _aaTemplate, [], []],
+    ["MachineGunner", _machineGunnerTemplate, [], []],
+    ["Marksman", _marksmanTemplate, [], []],
+    ["Sniper", _sniperTemplate, [], []]
 ];
 
-[_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-
-/*{
-    params ["_name", "_loadoutTemplate"];
-    private _loadouts = [_sfLoadoutData, _loadoutTemplate] call _fnc_buildLoadouts;
-    private _finalName = _prefix + _name;
-    [_finalName, _loadouts] call _fnc_saveToTemplate;
-} forEach _unitTypes;
-*/
-
-///////////////////////
-//  Military Units   //
-///////////////////////
-private _prefix = "military";
-private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
-	["AA", _aaTemplate, [], [_prefix]],
-	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]],
-    	["PatrolSniper", _patrolSniperTemplate, [], [_prefix]],
-    	["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
+private _commonCombatPatrolUnitTypes = _commonCombatUnitTypes + [
+    ["PatrolSniper", _patrolSniperTemplate, [], []],
+    ["PatrolSpotter", _patrolSpotterTemplate, [], []]
 ];
 
-[_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["SF", _commonCombatUnitTypes, _sfLoadoutData] call _fnc_GenerateSet;
+["military", _commonCombatPatrolUnitTypes, _militaryLoadoutData] call _fnc_GenerateSet;
+["police", [["SquadLeader", _policeTemplate, [], []], ["Standard", _policeTemplate, [], []]], _policeLoadoutData] call _fnc_GenerateSet;
+["militia", _commonCombatPatrolUnitTypes, _militiaLoadoutData] call _fnc_GenerateSet;
+["elite", _commonCombatPatrolUnitTypes, _eliteLoadoutData] call _fnc_GenerateSet;
 
-////////////////////////
-//    Police Units    //
-////////////////////////
-private _prefix = "police";
-private _unitTypes = [
-	["SquadLeader", _policeTemplate, [], [_prefix]],
-	["Standard", _policeTemplate, [], [_prefix]]
-];
+["other", [["Crew", _crewTemplate, [], []]], _crewLoadoutData] call _fnc_GenerateSet;
+["other", [["Pilot", _crewTemplate, [], []]], _pilotLoadoutData] call _fnc_GenerateSet;
+["other", [["Official", _officerTemplate, [], []]], _militaryLoadoutData] call _fnc_GenerateSet;
+["other", [["Traitor", _traitorTemplate, [], []]], _militiaLoadoutData] call _fnc_GenerateSet;
+["other", [["Unarmed", _UnarmedTemplate, [], []]], _militaryLoadoutData] call _fnc_GenerateSet;
 
-[_prefix, _unitTypes, _policeLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+diag_log format ["[Thorne MIX] Generated unit layout tag '%1'", if (_LayoutTag isEqualTo "") then {"BASE"} else {_LayoutTag}];
 
-////////////////////////
-//    Militia Units    //
-////////////////////////
-private _prefix = "militia";
-private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
-	["AA", _aaTemplate, [], [_prefix]],
-	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]],
-    ["PatrolSniper", _patrolSniperTemplate, [], [_prefix]],
-    ["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
-];
+};
 
-[_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
-///////////////////////
-//  Elite Units   //
-///////////////////////
-private _prefix = "elite";
-private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
-	["AA", _aaTemplate, [], [_prefix]],
-	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]],
-    	["PatrolSniper", _patrolSniperTemplate, [], [_prefix]],
-    	["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
-];
+// Always generate the original/base unit classnames too. This prevents A3A from trying to create
+// loadouts_occ_* as a CfgVehicles class if a tag-specific class cannot be found.
+[""] call _fnc_GenerateLayoutsForCurrentGear;
 
-[_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+private _MixedFactionTags = [];
+if (!isNil "_gearFactionPools") then {
+    _MixedFactionTags = keys _gearFactionPools;
+};
+_MixedFactionTags = _MixedFactionTags select { _x isEqualType "" && { _x isNotEqualTo "" } };
 
-//////////////////////
-//    Misc Units    //
-//////////////////////
+// Save these tags in the template so the spawn/createUnit overrides know which variants exist.
+["mixedFactionTags", _MixedFactionTags] call _fnc_saveToTemplate;
+diag_log format ["[Thorne MIX] mixedFactionTags saved: %1", _MixedFactionTags];
 
-//The following lines are determining the loadout of vehicle crew
-["other", [["Crew", _crewTemplate, [], ["other"]]], _crewLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+{
+    [_x] call _fnc_gearFactionApply;
+    [_x] call _fnc_GenerateLayoutsForCurrentGear;
+} forEach _MixedFactionTags;
 
-["other", [["Pilot", _crewTemplate, [], ["other"]]], _pilotLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-//The following lines are determining the loadout for the unit used in the "kill the official" mission
-["other", [["Official", _officerTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-//The following lines are determining the loadout for the AI used in the "kill the traitor" mission
-["other", [["Traitor", _traitorTemplate, [], ["other"]]], _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-//The following lines are determining the loadout for the AI used in the "Invader Punishment" mission
-["other", [["Unarmed", _UnarmedTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+// Return to a random pool after generation so any later reads stay mixed/random.
+if (_MixedFactionTags isNotEqualTo []) then {
+    ["RANDOM"] call _fnc_gearFactionApply;
+};

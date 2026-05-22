@@ -700,9 +700,9 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") && !isClass (
     _helisLightAttack append ["CUP_B_UH1D_armed_GER_KSK", "CUP_B_UH1D_gunship_GER_KSK", "CUP_B_AW159_GER"];
     _planesCAS = ["CUP_B_A10_DYN_USA"];
     _planesAA = ["CUP_B_GR9_DYN_GB"];
-    _miltiaLightArmed = ["CUP_B_nM1025_M2_USMC_WDL"];
-    _miltiaTrucks = ["CUP_B_MTVR_BAF_WOOD"];
-    _miltiaCars = ["CUP_B_nM1025_Unarmed_USMC_WDL"];
+    _militiaLightArmed = ["CUP_B_nM1025_M2_USMC_WDL"];
+    _militiaTrucks = ["CUP_B_MTVR_BAF_WOOD"];
+    _militiaCars = ["CUP_B_nM1025_Unarmed_USMC_WDL"];
     _staticMG = ["CUP_B_M2StaticMG_US"];
     _staticAA = ["CUP_B_CUP_Stinger_AA_pod_US"];
 };
@@ -727,9 +727,9 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isCl
         _helisLight append ["RHS_MELB_MH6M"];
         _transportHelicopters append ["RHS_CH_47F", "RHS_UH60M", "rhsusf_CH53E_USMC_GAU21", "rhsusf_CH53E_USMC"];
         _helisLightAttack append ["RHS_MELB_AH6M"];
-        _miltiaLightArmed append ["rhsusf_m1151_m240_v2_usarmy_wd", "rhsusf_m1151_m2_v2_usarmy_wd", "rhsusf_m1025_w_s_m2"];
-        _miltiaTrucks append ["rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_fmtv_usarmy"];
-        _miltiaCars append ["rhsusf_m1025_w_s", "rhsusf_m1043_w_s"];
+        _militiaLightArmed append ["rhsusf_m1151_m240_v2_usarmy_wd", "rhsusf_m1151_m2_v2_usarmy_wd", "rhsusf_m1025_w_s_m2"];
+        _militiaTrucks append ["rhsusf_M1078A1P2_WD_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_fmtv_usarmy"];
+        _militiaCars append ["rhsusf_m1025_w_s", "rhsusf_m1043_w_s"];
     };
 };
 
@@ -740,7 +740,7 @@ if (isClass (configfile >> "CfgPatches" >> "Redd_Marder_1A5")) then {
     _ammoTrucks = ["rnt_lkw_7t_mil_gl_kat_i_mun_fleck"];
     _repairTrucks = ["rnt_lkw_5t_mil_gl_kat_i_fuel_fleck"];
     _fuelTrucks = ["rnt_lkw_5t_mil_gl_kat_i_fuel_fleck"];
-    _miltiaTrucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_fleck", "rnt_lkw_7t_mil_gl_kat_i_transport_fleck"];
+    _militiaTrucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_fleck", "rnt_lkw_7t_mil_gl_kat_i_transport_fleck"];
     
     if (!_hasGM) then {
         _lightUnarmed append ["Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu"];
@@ -792,12 +792,12 @@ if (isClass (configFile >> "CfgVehicles" >> "FIR_F35B_MFG1")) then {
 };
 
 if (isClass (configfile >> "CfgPatches" >> "USAF_MQ9")) then {
-    _uavAttack append ["USAF_MQ9", "USAF_RQ4A"];
+    _uavsAttack append ["USAF_MQ9", "USAF_RQ4A"];
     _planesTransport append ["USAF_C130J", "USAF_C17"];
 };
 
 if (isClass (configfile >> "CfgPatches" >> "FIR_MQ81U_DarkGrey")) then {
-    _uavAttack append ["FIR_MQ81U_DarkGrey"];
+    _uavsAttack append ["FIR_MQ81U_DarkGrey"];
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "FIR_F35B_MFG1")) then {

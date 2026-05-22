@@ -699,9 +699,9 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") && !isClass (
     _helisLightAttack append ["CUP_B_UH1D_armed_GER_KSK_Des", "CUP_B_UH1D_gunship_GER_KSK_Des", "CUP_B_AW159_GER"];
     _planesCAS = ["CUP_B_A10_DYN_USA"];
     _planesAA = ["CUP_B_GR9_DYN_GB"];
-    _miltiaLightArmed = ["CUP_B_nM1025_M2_USMC_DES"];
-    _miltiaTrucks = ["CUP_B_MTVR_BAF_DES"];
-    _miltiaCars = ["CUP_B_nM1025_Unarmed_USMC_DES"];
+    _militiaLightArmed = ["CUP_B_nM1025_M2_USMC_DES"];
+    _militiaTrucks = ["CUP_B_MTVR_BAF_DES"];
+    _militiaCars = ["CUP_B_nM1025_Unarmed_USMC_DES"];
     _staticMG = ["CUP_B_M2StaticMG_US"];
     _staticAA = ["CUP_B_CUP_Stinger_AA_pod_US"];
 };
@@ -726,9 +726,9 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isCl
         _helisLight append ["RHS_MELB_MH6M"];
         _transportHelicopters append ["RHS_CH_47F_light", "RHS_UH60M", "rhsusf_CH53E_USMC_GAU21", "rhsusf_CH53E_USMC"];
         _helisLightAttack append ["RHS_MELB_AH6M"];
-        _miltiaLightArmed = ["rhsusf_m1151_m240_v2_usarmy_d", "rhsusf_m1151_m2_v2_usarmy_d", "rhsusf_m1025_d_s_m2"];
-        _miltiaTrucks = ["rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_fmtv_usarmy"];
-        _miltiaCars = ["rhsusf_m1025_d_s", "rhsusf_m1043_d_s"];
+        _militiaLightArmed = ["rhsusf_m1151_m240_v2_usarmy_d", "rhsusf_m1151_m2_v2_usarmy_d", "rhsusf_m1025_d_s_m2"];
+        _militiaTrucks = ["rhsusf_M1078A1P2_D_fmtv_usarmy", "rhsusf_M1078A1P2_B_D_fmtv_usarmy"];
+        _militiaCars = ["rhsusf_m1025_d_s", "rhsusf_m1043_d_s"];
     };
 };
 
@@ -739,7 +739,7 @@ if (isClass (configfile >> "CfgPatches" >> "Redd_Marder_1A5")) then {
     _ammoTrucks = ["rnt_lkw_7t_mil_gl_kat_i_mun_trope"];
     _repairTrucks = ["rnt_lkw_5t_mil_gl_kat_i_fuel_trope"];
     _fuelTrucks = ["rnt_lkw_5t_mil_gl_kat_i_fuel_trope"];
-    _miltiaTrucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_trope", "rnt_lkw_7t_mil_gl_kat_i_transport_trope"];
+    _militiaTrucks = ["rnt_lkw_5t_mil_gl_kat_i_transport_trope", "rnt_lkw_7t_mil_gl_kat_i_transport_trope"];
 
     if (!_hasGM) then {
         _lightUnarmed append ["Redd_Tank_LKW_leicht_gl_Wolf_Tropentarn_FueFu"];
