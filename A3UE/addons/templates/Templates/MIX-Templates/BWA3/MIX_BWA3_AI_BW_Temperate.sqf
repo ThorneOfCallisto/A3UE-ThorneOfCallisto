@@ -39,7 +39,9 @@ _helisAttack append ["BWA3_Tiger_RMK_FZ", "BWA3_Tiger_RMK_Heavy", "BWA3_Tiger_RM
 _airPatrol append [];
 
 _artillery append ["BWA3_Panzerhaubitze2000_Tropen"];
-_artilleryMags append createHashMapFromArray _artilleryMags;
+_artilleryMags append [
+    ["BWA3_Panzerhaubitze2000_Tropen", ["rhs_mag_155mm_m795_28"]]
+];
 
 _uavsAttack append ["B_UAV_02_CAS_F"];
 _uavsPortable append ["B_UAV_01_F"];

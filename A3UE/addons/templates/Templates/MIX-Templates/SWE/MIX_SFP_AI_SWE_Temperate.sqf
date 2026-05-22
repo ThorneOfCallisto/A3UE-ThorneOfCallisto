@@ -672,7 +672,7 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (c
 		_helisAttack        append ["CUP_B_AH64_DL_BAF"];
 		_uavsAttack     	append ["CUP_B_USMC_DYN_MQ9"];
 		_staticMG       	append ["CUP_B_M2StaticMG_USMC"];
-		_staticAT			append ["CUP_B_TOW2_TriPod_USMC"]l
+		_staticAT			append ["CUP_B_TOW2_TriPod_USMC"];
 		_staticAA       	append ["CUP_B_Stinger_AA_pod_Base_USMC"];
 		_staticMortars  	append ["CUP_B_M252_USMC"];
 		

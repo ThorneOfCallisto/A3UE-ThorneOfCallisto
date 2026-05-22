@@ -24,6 +24,7 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
 
     if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_FIA_B")) then {
         #include "3CBF\3CBF_Vehicle_Attributes.sqf";
+        #include "3CBF\RHS_Vehicle_Attributes.sqf";
 
         if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_BAF_Faction_Army_MTP")) then {
             _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
@@ -31,8 +32,7 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
             ["BAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
             #include "3CBBAF\3CBBAF_Vehicle_Attributes.sqf";
         };
-    }
-    #include "RHS\RHS_Vehicle_Attributes.sqf";
+    };
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "BWA3_Dingo2_FLW200_M2_CG13_Fleck")) then {
@@ -70,6 +70,6 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
 // Pick one infantry gear faction after all faction files have been included.
 // Vehicles remain mixed from all included factions.
 // Options: "RANDOM", "AAF", "NATO", "BAF", "BW", "AMF", etc.
-["RANDOM"] call _fnc_gearFactionApply;
+["BAF"] call _fnc_gearFactionApply;
 
 #include "INCLUDES\Init_Layouts.sqf"
