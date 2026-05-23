@@ -1067,3 +1067,43 @@ diag_log format ["[Thorne MIX] mixedFactionTags saved: %1", _MixedFactionTags];
 if (_MixedFactionTags isNotEqualTo []) then {
     ["RANDOM"] call _fnc_gearFactionApply;
 };
+
+private _mixedIdentityPools = createHashMap;
+
+{
+    private _tag = _x;
+    private _pool = _gearFactionPools getOrDefault [_tag, createHashMap];
+
+    private _faces = _pool getOrDefault ["_faces", []];
+    private _voices = _pool getOrDefault ["_voices", []];
+    private _insignia = _pool getOrDefault ["_insignia", []];
+
+    private _identityPool = createHashMapFromArray [
+        ["faces", _faces],
+        ["voices", _voices],
+        ["insignia", _insignia],
+
+        // Role-specific identity arrays. If a template does not define these,
+        // fn_NATOinit falls back to the generic faces/voices/insignia above.
+        ["milFaces", _pool getOrDefault ["_milFaces", _faces]],
+        ["milVoices", _pool getOrDefault ["_milVoices", _voices]],
+        ["milInsignia", _pool getOrDefault ["_milInsignia", _insignia]],
+
+        ["polFaces", _pool getOrDefault ["_polFaces", _faces]],
+        ["polVoices", _pool getOrDefault ["_polVoices", _voices]],
+        ["polInsignia", _pool getOrDefault ["_polInsignia", _insignia]],
+
+        ["eliteFaces", _pool getOrDefault ["_eliteFaces", _faces]],
+        ["eliteVoices", _pool getOrDefault ["_eliteVoices", _voices]],
+        ["eliteInsignia", _pool getOrDefault ["_eliteInsignia", _insignia]],
+
+        ["sfFaces", _pool getOrDefault ["_sfFaces", _faces]],
+        ["sfVoices", _pool getOrDefault ["_sfVoices", _voices]],
+        ["sfInsignia", _pool getOrDefault ["_sfInsignia", _insignia]]
+    ];
+
+    _mixedIdentityPools set [_tag, _identityPool];
+} forEach _mixedFactionTags;
+
+["mixedIdentityPools", _mixedIdentityPools] call _fnc_saveToTemplate;
+diag_log format ["[Thorne MIX] mixedIdentityPools saved for tags: %1", keys _mixedIdentityPools];

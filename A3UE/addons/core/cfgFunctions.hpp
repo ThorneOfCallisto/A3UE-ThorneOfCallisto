@@ -5,6 +5,7 @@ class CfgFunctions
     {
         class CREATE {
             class createUnit { file = QPATHTOFOLDER(functions\CREATE\fn_createUnit.sqf); };
+            class NATOinit { file = QPATHTOFOLDER(functions\CREATE\fn_NATOinit.sqf); };
             class spawnGroup { file = QPATHTOFOLDER(functions\CREATE\fn_spawnGroup.sqf); };
         };
     };

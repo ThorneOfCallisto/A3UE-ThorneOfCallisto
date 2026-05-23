@@ -1,17 +1,25 @@
 /*
-    Thorne MIX override for A3A_fnc_createUnit.
-    Purpose:
-    - All callers that spawn individual units are routed through this function.
-    - If a loadout classname like loadouts_occ_militia_Rifleman is requested,
-      it tries to resolve it to a generated faction-specific class like
-      loadouts_occ_militia_AMF_Rifleman.
-    - If the selected tag does not contain that role, it falls back to any tag that does.
-    - If no tagged class exists, it falls back to the original base class.
+    Thorne MIX createUnit override - restored to the working mixed-spawn version.
+
+    Changes compared to the broken identity attempt:
+    - Keeps createUnit focused on creating the unit and resolving loadout classnames.
+    - Does NOT do mixed face/voice logic here anymore.
+    - Avoids A3AU CBA macros like Faction(...) so it compiles safely from the extender.
+    - Stores small metadata variables that fn_NATOinit can use later.
 */
 
-#include "..\..\script_component.hpp"
-
 params ["_group", "_type", "_position", ["_markers", []], ["_placement", 0], ["_special", "NONE"], "_identity"];
+
+private _fnc_thorneFactionFromSide = {
+    params ["_side"];
+    switch (_side) do {
+        case west: { missionNamespace getVariable ["A3A_faction_occ", createHashMap] };
+        case east: { missionNamespace getVariable ["A3A_faction_inv", createHashMap] };
+        case independent: { missionNamespace getVariable ["A3A_faction_reb", createHashMap] };
+        case civilian: { missionNamespace getVariable ["A3A_faction_civ", createHashMap] };
+        default { missionNamespace getVariable ["A3A_faction_occ", createHashMap] };
+    };
+};
 
 private _fnc_thorneCustomTypeExists = {
     params ["_className"];
@@ -30,6 +38,39 @@ private _fnc_thorneFallbackVehicleClass = {
     };
 };
 
+private _fnc_thorneExtractTag = {
+    params ["_unitType", ["_tags", []]];
+
+    private _tag = "BASE";
+    if !(_unitType isEqualType "") exitWith { _tag };
+
+    private _parts = _unitType splitString "_";
+    if ((count _parts) >= 5) then {
+        private _possibleTag = _parts # 3;
+        if (_possibleTag in _tags) then {
+            _tag = _possibleTag;
+        };
+    };
+
+    _tag
+};
+
+private _fnc_thorneExtractPrefix = {
+    params ["_unitType"];
+
+    private _prefix = "";
+    if !(_unitType isEqualType "") exitWith { _prefix };
+
+    private _parts = _unitType splitString "_";
+    if ((count _parts) >= 3) then {
+        _prefix = _parts # 2;
+    };
+
+    _prefix
+};
+
+private _originalType = _type;
+
 private _fnc_thorneResolveMixedUnitType = {
     params ["_group", "_unitType"];
 
@@ -45,7 +86,7 @@ private _fnc_thorneResolveMixedUnitType = {
     private _role = _roleParts joinString "_";
 
     private _side = side _group;
-    private _faction = Faction(_side);
+    private _faction = [_side] call _fnc_thorneFactionFromSide;
     private _tags = _faction getOrDefault ["mixedFactionTags", []];
     _tags = _tags select { _x isEqualType "" && { _x isNotEqualTo "" } };
 
@@ -93,6 +134,12 @@ private _fnc_thorneResolveMixedUnitType = {
 
 _type = [_group, _type] call _fnc_thorneResolveMixedUnitType;
 
+private _resolvedSide = side _group;
+private _resolvedFaction = [_resolvedSide] call _fnc_thorneFactionFromSide;
+private _resolvedTags = _resolvedFaction getOrDefault ["mixedFactionTags", []];
+private _gearTag = [_type, _resolvedTags] call _fnc_thorneExtractTag;
+private _basePrefix = [_type] call _fnc_thorneExtractPrefix;
+
 private _unitDefinition = A3A_customUnitTypes getVariable [_type, []];
 
 if !(_unitDefinition isEqualTo []) exitWith {
@@ -122,9 +169,15 @@ if !(_unitDefinition isEqualTo []) exitWith {
     };
 
     _unit setVariable ["unitType", _type, true];
+    _unit setVariable ["Thorne_MIX_ResolvedUnitType", _type, true];
+    _unit setVariable ["Thorne_MIX_BaseUnitType", _originalType, true];
+    _unit setVariable ["Thorne_MIX_GearTag", _gearTag, true];
+    _unit setVariable ["Thorne_MIX_BaseUnitPrefix", _basePrefix, true];
 
+    // Keep identity creation close to original A3AU createUnit behavior.
+    // The faction-aware correction happens later in fn_NATOinit.
     private _identityFinal = if (isNil "_identity") then {
-        [Faction(side _unit), _type] call A3A_fnc_createRandomIdentity;
+        [[side _unit] call _fnc_thorneFactionFromSide, _type] call A3A_fnc_createRandomIdentity;
     } else {
         _identity;
     };
@@ -148,4 +201,8 @@ if !(_unitDefinition isEqualTo []) exitWith {
 
 private _unit = _group createUnit [_type, _position, _markers, _placement, _special];
 _unit setVariable ["unitType", _type, true];
+_unit setVariable ["Thorne_MIX_ResolvedUnitType", _type, true];
+_unit setVariable ["Thorne_MIX_BaseUnitType", _originalType, true];
+_unit setVariable ["Thorne_MIX_GearTag", _gearTag, true];
+_unit setVariable ["Thorne_MIX_BaseUnitPrefix", _basePrefix, true];
 _unit
