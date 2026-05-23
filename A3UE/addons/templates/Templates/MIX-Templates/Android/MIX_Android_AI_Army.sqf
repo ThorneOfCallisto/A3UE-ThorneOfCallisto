@@ -90,9 +90,15 @@ _marksmanRifles append [];
 _sniperRifles append [];
 _lightATLaunchers append [];
 _lightHELaunchers append [];
-_ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
+_ATLaunchers append [
+    ["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT_SALH", "OPTRE_M41_Twin_HEAT"], [], ""]
+];
+_missleATLaunchers append [
+    ["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT"], [], ""]
+];
+_AALaunchers append [
+    ["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT_Thermal"], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -101,7 +107,7 @@ _APMines append ["APERSMine_Range_Mag"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
 _heavyExplosives append ["SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["OPTRE_M9_Frag"];
 _antiTankGrenades append [];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
@@ -111,17 +117,17 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_NVGs append ["JMSJEFF_NVChip"];
+_binoculars append ["OPTRE_Binoculars"];
+_rangefinders append ["OPTRE_Smartfinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["JMSJEFF_uniformJ3_S_black1_F_CombatUniform"];
+_traitorVests append ["SSV_Vest_Android_Military", "V_RebreatherB"];
+_traitorHats append ["SSV_Helmet_Android_Assassin"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["JMSJEFF_uniformJ3_base_F_CombatUniform", "JMSJEFF_uniformJ13_black_F_CombatUniform"];
+_officerVests append ["SSV_Vest_Android_Military", "SSV_Vest_Android_Military_Heavy"];
+_officerHats append ["SSV_Helmet_Android_Miner"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -132,6 +138,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -149,12 +156,12 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["OPTRE_ANPRC_515"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
-_SLhats append [];
-_SNIhats append [];
+_SLhats append ["JMSJEFF_Mariner_F_black_helmet", "JMSJEFF_Jeff_R4_helmet"];
+_SNIhats append ["JMSJEFF_Jeff_spec_helmet"];
 
 _slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
 _rItems append [];
@@ -177,8 +184,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -272,8 +278,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["JMSJEFF_Jeff_spec_helmet"];
 _sfSNIhats append ["Sinagami_EPSM_Helmet_FULL"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -372,8 +377,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append ["JMSJEFF_Jeff_R4_helmet"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -473,8 +477,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["JMSJEFF_Jeff_R4_helmet"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -582,9 +585,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append [];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

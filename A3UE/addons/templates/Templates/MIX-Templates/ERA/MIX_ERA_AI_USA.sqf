@@ -104,32 +104,32 @@ _AALaunchers append [];
 _sidearms append [];
 _GLsidearms append [];
 
-_ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
-_lightExplosives append ["DemoCharge_Remote_Mag"];
-_heavyExplosives append ["SatchelCharge_Remote_Mag"];
+_ATMines append ["uns_mine_AV_mag", "ATMine_Range_Mag"];
+_APMines append ["uns_traps_mine_mag", "APERSMine_Range_Mag"];
+_lightExplosives append ["uns_M118_mag_remote", "DemoCharge_Remote_Mag"];
+_heavyExplosives append ["DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
-_antiTankGrenades append [];
-_smokeGrenades append ["SmokeShell"];
+_antiInfantryGrenades append ["uns_m67gren", "uns_m61gren", "uns_mk2gren", "CUP_HandGrenade_M67"];
+_antiTankGrenades append ["uns_m14gren", "uns_m34gren"];
+_smokeGrenades append ["uns_m18white"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
 _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
-_radios append ["ItemRadio"];
+_radios append ["TFAR_SCR536", "UNS_ItemRadio_PRC_90_TFAR"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_NVGs append ["CUP_NVG_PVS15_black"];
+_binoculars append ["uns_binocular_navy"];
+_rangefinders append ["uns_binocular_army"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["UNS_USMC_BDU_65"];
+_traitorVests append ["uns_simc_flak_55_bandoleer"];
+_traitorHats append ["UNS_Boonie_ODF"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["UNS_USMC_BDU_65"];
+_officerVests append ["uns_simc_flak_55_bandoleer"];
+_officerHats append ["H_Beret_blk"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -140,6 +140,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -164,7 +165,7 @@ _SLhelmets append [];
 _SLhats append [];
 _SNIhats append [];
 
-_slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+_slItems append [];
 _rItems append [];
 _mItems append [];
 _gItems append [];
@@ -180,13 +181,12 @@ _uItems append [];
 
 // Remove this if not wanted, example: WW2 mods
 if (A3A_hasACE) then {
-	_slItems append ["ACE_microDAGR", "ACE_DAGR"];
+	_slItems append [];
 	_eeItems append ["ToolKit", "UNS_TrapKit"];
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -316,8 +316,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["CUP_H_USA_Cap_Mcam_DEF"];
 _sfSNIhats append ["CUP_H_USArmy_Boonie_hs_OCP"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -444,8 +443,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["CUP_H_USArmy_Boonie_OEFCP"];
 _eliteSNIhats append ["CUP_H_USArmy_Boonie_OEFCP"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -554,8 +552,7 @@ _militarySLhelmets append [];
 _militarySLhats append ["UNS_M1_2"];
 _militarySNIhats append ["UNS_M1_2", "uns_simc_m1_bitch_op"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -667,9 +664,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["H_LIB_US_Helmet"];
 _militiaSNIhats append ["H_LIB_US_Helmet","H_LIB_US_Helmet_ns","H_LIB_US_Helmet_os","H_LIB_US_Helmet_Net","H_LIB_US_Helmet_Net_ns","H_LIB_US_Helmet_Net_os"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

@@ -2,8 +2,8 @@
  * Converted from: SPE_REB_FFF.sqf
  */
 _basic append ["SPE_FFI_R200_Unarmed"];
-_lightUnarmed append ["SPE_FFI_R200_Hood"];
-_lightArmed append ["SPE_FFI_R200_MG34"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -105,12 +105,12 @@ _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
+_watches append ["SPE_US_ItemWatch","SPE_GER_ItemWatch"];
+_compasses append ["SPE_US_ItemCompass","SPE_GER_ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["SPE_Binocular_GER"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append [];
@@ -127,7 +127,23 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_SPE_FFI_Casual_1_trop",
+    "U_SPE_FFI_Casual_2",
+    "U_SPE_FFI_Casual_2_trop",
+    "U_SPE_FFI_Casual_4_trop",
+    "U_SPE_FFI_Casual_5",
+    "U_SPE_FFI_Casual_5_trop",
+    "U_SPE_FFI_Casual_7_trop",
+    "U_SPE_FFI_Jacket_bruin",
+    "U_SPE_FFI_Jacket_bruin_swetr",
+    "U_SPE_FFI_Jacket_grijs",
+    "U_SPE_FFI_Jacket_grijs_swetr",
+    "U_SPE_FFI_Jacket_zwart_Alt",
+    "U_SPE_FFI_Worker_2_trop",
+    "U_SPE_FFI_Worker_3_trop",
+    "U_SPE_FFI_Worker_4"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

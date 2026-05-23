@@ -186,18 +186,18 @@ _goggles append [];
 ///////////////////////////////////////
 
 _sfslRifles append [
-    ["AMF_614_long_FS_BLK", "AMF_ROTEX_III", "AMF_AN_PEQ_15_black", "AMF_specter", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
+    ["AMF_614_short_FS4_BLK", "AMF_ROTEX_III", "AMF_AN_PEQ_15_black", "AMF_specter", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
     ["AMF_614_short_FS4_BLK", "AMF_ROTEX_V", "AMF_WMX200", "AMF_AIMPOINT_MICRO_T2", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip4"],
-    ["AMF_Samas_VALO_01_F", "muzzle_snds_M", "AMF_AN_PEQ_15_black", "AMF_Red_Dot_Sight", ["25Rnd_samas_f1_mag"], [], "amf_acc_famas_grip5"]
+    ["Famas_F1", "muzzle_snds_M", "AMF_AN_PEQ_15_black", "AMF_Red_Dot_Sight", ["AMF_25Rnd_BO_BT_MEN_SS109"], [], "amf_acc_famas_grip5"]
 ];
 _sfrifles append [  
     ["R3F_SCAR_L_BLACK", "R3F_SILENCIEUX_ROTEX", "r3f_acc_anpeq_laser_scar", "R3F_ELCAN_5_56", ["R3F_30Rnd_Magpul_556x45"], [], ""],
-    ["AMF_614_long_FS3_BLK", "AMF_ROTEX_V", "", "AMF_exps3_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
+    ["AMF_614_short_FS3_BLK", "AMF_ROTEX_V", "", "AMF_exps3_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
     ["AMF_614_short_FS3_BLK", "AMF_ROTEX_V", "", "AMF_EOTECH_553", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
     ["AMF_614_short_FS4_BLK", "AMF_ROTEX_V", "", "AMF_exps3", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 _sfcarbines append [  
-    ["AMF_614_short_fs2_blk", "", "", "AMF_Eotech_552", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
+    ["AMF_614_short_FS4_BLK", "", "", "AMF_Eotech_552", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
     ["AMF_614_short_FS_BLK", "", "", "AMF_Red_Dot_Sight", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
     ["AMF_614_short_FS3_BLK", "", "", "AMF_exps3", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip4"],
     ["AMF_614_short_FS5_BLK", "", "", "AMF_xps3_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"]
@@ -215,7 +215,8 @@ _sfSMGs append [
 _sfmachineGuns append [
     ["R3F_Minimi_762_HG", "", "", "R3F_ELCAN_7_62", ["R3F_100Rnd_762x51_MINIMI"], [], ""],
     ["R3F_Minimi_HG", "", "", "R3F_EOTECH", ["R3F_200Rnd_556x45_MINIMI"], [], ""],
-    ["amf_mini_mg_tactical_mk3", "", "", "", ["150Rnd_MINI_MG_mag"], [], ""]
+    ["FN_Minimi_MK3", "", "", "AMF_xps3_magnifier_side", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], ""],
+    ["FN_Minimi_MK3", "", "", "ScromeJ4_RIS_NoCover", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], ""]
 ];
 _sfmarksmanRifles append [
     ["AMF_714_Long_01_F", "", "AMF_AN_PEQ_15_black", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "bipod_03_F_blk"],
@@ -223,17 +224,28 @@ _sfmarksmanRifles append [
     ["R3F_SCAR_H_TPR_20pcs_blk", "", "AMF_AN_PEQ_15_black", "R3F_NF42", ["R3F_20Rnd_762x51_SCAR"], [], "R3F_BIPIED_HK417"]
 ];
 _sfsniperRifles append [   
-    ["AMF_PGM_ULTIMA_RATIO_01_F", "", "", "optic_LRPS", ["10Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
+    ["AMF_PGM_ULTIMA_RATIO_F", "", "", "optic_LRPS", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "bipod_01_F_blk"],
+    ["AMF_PGM_ULTIMA_RATIO_F", "muzzle_snds_B", "", "optic_LRPS", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "bipod_01_F_blk"],
+    ["AMF_PGM_Hecate_II_Poly_RIS", "", "", "optic_LRPS", ["AMF_7Rnd_127x99_HECATE2_IMI_661GR_FMJ"], [], ""],
+    ["R3F_PGM_ULTIMA_RATIO_ghillie", "R3F_SILENCIEUX_HK417", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
+    ["R3F_PGM_ULTIMA_RATIO_ghillie", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
+    ["R3F_PGM_ULTIMA_RATIO", "R3F_SILENCIEUX_HK417", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
+    ["R3F_PGM_ULTIMA_RATIO", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""]
 ];
 _sflightATLaunchers append ["AMF_AT4CS_Loaded"];
 _sflightHELaunchers append ["AMF_LRAC89_F"];
-_sfATLaunchers append [];
+_sfATLaunchers append [
+    ["AMF_Eryx", "", "", "", ["Eryx_HEAT"], [], ""]
+];
 _sfmissleATLaunchers append [];
-_sfAALaunchers append [];
+_sfAALaunchers append [
+    ["R3F_STINGER", "", "", "", ["R3F_STINGER_mag"], [], ""]
+];
 _sfsidearms append [
-    ["R3F_HKUSP", "", "", "", [], [], ""],
-    ["AMF_Pamas", "", "", "", [], [], ""],
-    ["R3F_G17", "", "", "", [], [], ""]
+    ["R3F_HKUSP", "", "", "", ["R3F_15Rnd_9x19_HKUSP"], [], ""],
+    ["AMF_PAMAC_50", "", "", "", ["AMF_9Rnd_9x19_PAMC50"], [], ""],
+    ["R3F_PAMAS", "", "", "", ["R3F_15Rnd_9x19_PAMAS"], [], ""],
+    ["R3F_G17", "", "", "", ["R3F_17Rnd_9x19_G17"], [], ""]
 ];
 _sfGLsidearms append [];
 
@@ -255,30 +267,30 @@ _sfNVGs append ["AMF_BINYX_BLK_NVG"];
 _sfbinoculars append ["AMF_OB72_SOPHIE"];
 _sfrangefinders append [];
 
-_sfuniforms append ["amf_uniform_04_OD", "amf_uniform_05_OD"];
+_sfuniforms append ["amf_FELIN_T4S2_CCE_BMJA", "amf_FELIN_T4S2_CCE_HX", "amf_FELIN_T4S2_CCE_LowaZephyr", "amf_FELIN_T4S2_CCE_MD"];
 _sfMEDuniforms append [];
 _sfENGuniforms append [];
 _sfSLuniforms append [];
-_sfvests append ["amf_JPC_01_OD", "amf_DCS_01_OD"];
+_sfvests append ["amf_SMB_FUS", "amf_SMB_FUS_FAMAS"];
 _sfHvests append [];
 _sfMGvests append ["amf_SMB_ART_TDF"];
-_sfMEDvests append ["amf_DCS_03_OD"];
-_sfSLvests append [];
-_sfSNIvests append [];
-_sfGLvests append ["amf_SMB_GRE_TDF"];
+_sfMEDvests append ["amf_SMB_AUXSAN", "amf_SMB_AUXSAN_FAMAS"];
+_sfSLvests append ["amf_SMB_LEADER_FAMAS", "amf_SMB_LEADER"];
+_sfSNIvests append ["amf_SMB_TP_SCAR", "amf_SMB_TP_HK417", "amf_SMB_TP_FRF2"];
+_sfGLvests append ["amf_SMB_GRE"];
 _sfATvests append [];
 _sfENGvests append [];
-_sfbackpacks append ["AMF_rush24_01"];
+_sfbackpacks append ["amf_tecpack_30L"];
 _sfATBackpacks append ["AMF_Bergen_F2"];
-_sfAABackpacks append [];
-_sfMGbackpacks append [];
-_sfGLbackpacks append [];
-_sfMEDBackpacks append [];
-_sfENGBackpacks append [];
-_sfEXPBackpacks append [];
-_sfSLBackpacks append ["R3F_sac_petit_noir"];
+_sfAABackpacks append ["AMF_Bergen_F2"];
+_sfMGbackpacks append ["AMF_FELIN_BACKPACK_Minimi"];
+_sfGLbackpacks append ["AMF_FELIN_BACKPACK"];
+_sfMEDBackpacks append ["AMF_FELIN_BACKPACK"];
+_sfENGBackpacks append ["amf_tecpack_70L"];
+_sfEXPBackpacks append ["amf_tecpack_70L"];
+_sfSLBackpacks append ["AMF_FELIN_BACKPACK_RADIO_TDF"];
 _sflongRangeRadios append [];
-_sfhelmets append ["AMF_opscore4", "AMF_OPSCORE2_OD1_2"];
+_sfhelmets append ["AMF_OPSCORE_GREY2", "AMF_OPSCORE_GREY2_2"];
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append ["AMF_BERET_MARINE_PARA"];
@@ -294,21 +306,21 @@ _sfgoggles append [];
 
 _eliteslRifles append [
     ["AMF_614_short_FS_TAN2", "", "", "AMF_AIMPOINT_MICRO_T2", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
-    ["AMF_614_long_FS_TAN2", "", "AMF_AN_PEQ_15_black", "AMF_exps3_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
-    ["AMF_614_long_FS3_BLK", "", "AMF_AN_PEQ_15_black", "AMF_specter", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
+    ["AMF_614_short_FS4_TAN", "", "AMF_AN_PEQ_15_black", "AMF_exps3_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
+    ["AMF_614_short_FS4_TAN", "", "AMF_AN_PEQ_15_black", "AMF_specter", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
     ["AMF_SCAR_L_01_F", "", "AMF_AN_PEQ_15_black", "AMF_Red_Dot_Sight", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
 _eliterifles append [
-    ["AMF_614_short_FS3_BLK", "", "", "AMF_EOTECH_553", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip4"],
-    ["AMF_614_long_FS3_TAN2", "", "", "AMF_Aimpoint_Pro_Patrol", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip10"],
-    ["AMF_614_long_FS5_BLK", "", "AMF_AN_PEQ_15_black", "AMF_EOTECH_553_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
-    ["AMF_Samas_VALO_01_F", "", "", "AMF_EOTECH_553", ["25Rnd_samas_f1_mag"], [], ""],
+    ["AMF_614_short_FS_BLK", "", "", "AMF_EOTECH_553", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip4"],
+    ["AMF_614_short_FS_TAN2", "", "", "AMF_Aimpoint_Pro_Patrol", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip10"],
+    ["AMF_614_short_FS_BLK", "", "AMF_AN_PEQ_15_black", "AMF_EOTECH_553_magnifier_side", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip5"],
+    ["Famas_Valo", "", "", "AMF_EOTECH_553", ["AMF_25Rnd_BO_BT_MEN_SS109"], [], ""],
     ["AMF_SCAR_L_02_F", "", "", "AMF_exps3", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-    ["AMF_Samas_FELIN_01_F", "", "", "AMF_Aimpoint_Pro_Patrol", ["25Rnd_samas_f1_mag"], [], ""]
+    ["Famas_FELIN", "", "", "AMF_Aimpoint_Pro_Patrol", ["AMF_25Rnd_BO_BT_MEN_SS109"], [], ""]
 ];
 _elitecarbines append [
-    ["AMF_614_short_FS3_BLK", "", "", "AMF_EOTECH_553", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip4"],
-    ["AMF_614_long_FS3_TAN2", "", "", "AMF_Aimpoint_Pro_Patrol", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip10"],
+    ["AMF_614_short_FS_BLK", "", "", "AMF_EOTECH_553", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip4"],
+    ["AMF_614_short_FS_TAN2", "", "", "AMF_Aimpoint_Pro_Patrol", ["30Rnd_556x45_Stanag_Tracer_Green"], [], "amf_acc_614_grip10"],
     ["AMF_SCAR_L_01_F", "", "", "", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
     ["AMF_SCAR_L_02_F", "", "", "AMF_Aimpoint_Pro_Patrol", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
     ["AMF_614_short_01_F", "", "", "AMF_exps3", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""]
@@ -322,26 +334,34 @@ _eliteSMGs append [
     ["amf_hk_mp5_02_f", "", "", "AMF_specter", ["30Rnd_9x19_mag"], [], "amf_acc_hkmp5_grip3"]
 ];
 _elitemachineGuns append [
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip2"],
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip3"]
+    ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip2"],
+    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip3"]
 ];
 _elitemarksmanRifles append [
-    ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
-    ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
-    ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "amf_acc_714_long_grip3"]
+    ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], ""],
+    ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], "bipod_01_F_blk"],
+    ["AMF_HK417_F", "", "", "AMF_schmidt_benderx4", ["AMF_20Rnd_762x51_HK417_BO_F3"], [], "amf_acc_714_long_grip3"]
 ];
 _elitesniperRifles append [
-    ["AMF_PGM_ULTIMA_RATIO_01_F", "", "", "AMF_schmidt_benderx4", ["10Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
+    ["AMF_PGM_ULTIMA_RATIO_01_F", "", "", "AMF_schmidt_benderx4", ["10Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
+    ["R3F_PGM_ULTIMA_RATIO", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""]
+    ["R3F_PGM_Hecate_II_DES", "", "", "R3F_J8_DES", ["R3F_7Rnd_127x99_PGM"], [], ""]
+    ["R3F_TAC50", "", "", "R3F_ZEISS_DES", ["R3F_5Rnd_127x99_TAC50"], [], ""]
 ];
 _elitelightATLaunchers append ["AMF_AT4CS_Loaded"];
 _elitelightHELaunchers append ["AMF_LRAC89_F"];
-_eliteATLaunchers append [];
+_eliteATLaunchers append [
+    ["AMF_Eryx", "", "", "", ["Eryx_HEAT"], [], ""]
+];
 _elitemissleATLaunchers append [];
-_eliteAALaunchers append [];
+_eliteAALaunchers append [
+    ["R3F_STINGER", "", "", "", ["R3F_STINGER_mag"], [], ""]
+];
 _elitesidearms append [
-    ["AMF_Glock_17_BLK", "", "", "", ["16Rnd_9x21_Mag"], [], ""],
+    ["AMF_Glock_17_Gen4", "", "", "", ["AMF_17Rnd_9x19_Glock"], [], ""],
     ["R3F_HKUSP", "", "", "", ["R3F_15Rnd_9x19_HKUSP"], [], ""],
-    ["AMF_Pamas", "", "", "", ["15Rnd_9x21_Mag"], [], ""]
+    ["R3F_PAMAS", "", "", "", ["R3F_15Rnd_9x19_PAMAS"], [], ""],
+    ["R3F_G17", "", "", "", ["R3F_17Rnd_9x19_G17"], [], ""]
 ];
 _eliteGLsidearms append [];
 
@@ -363,26 +383,26 @@ _eliteNVGs append [];
 _elitebinoculars append ["AMF_OB72_SOPHIE"];
 _eliterangefinders append [];
 
-_eliteuniforms append ["amf_uniform_01_CE_HS", "amf_uniform_01_RE_CE_HS", "amf_uniform_03_CE_HS", "amf_uniform_05_TAN"];
-_eliteSLuniforms append ["amf_uniform_04_TAN"];
-_elitevests append ["amf_DCS_04_TAN", "amf_DCS_03_TAN", "amf_DCS_02_TAN"];
+_eliteuniforms append ["amf_uniform_01_CE_HX", "amf_uniform_01_RE_NG_CE_HX", "amf_uniform_01_RE_CE_HX", "amf_uniform_01_NG_CE_HX"];
+_eliteSLuniforms append [];
+_elitevests append ["amf_SMB_FUS", "amf_SMB_FUS_FAMAS"];
 _eliteHvests append [];
-_eliteMGvests append ["amf_SMB_ART_TAN"];
-_eliteMEDvests append ["amf_SMB_AUXSAN_TAN", "amf_JPC_03_TAN"];
-_eliteSLvests append ["amf_DCS_01_TAN", "amf_SMB_LEADER_TAN"];
-_eliteSNIvests append [];
-_eliteGLvests append ["amf_SMB_GRE_TAN"];
+_eliteMGvests append ["amf_SMB_ART_TDF"];
+_eliteMEDvests append ["amf_SMB_AUXSAN", "amf_SMB_AUXSAN_FAMAS"];
+_eliteSLvests append ["amf_SMB_LEADER_FAMAS", "amf_SMB_LEADER"];
+_eliteSNIvests append ["amf_SMB_TP_SCAR", "amf_SMB_TP_HK417", "amf_SMB_TP_FRF2"];
+_eliteGLvests append ["amf_SMB_GRE"];
 _eliteATvests append [];
-_eliteENGvests append ["amf_SMB_GRE_FAMAS_TAN"];
-_elitebackpacks append ["AMF_rush24_01_TAN", "AMF_FELIN_BACKPACK_TAN", "AMF_Bergen_F2"];
-_eliteATBackpacks append ["amf_tecpack_70L_TAN"];
-_eliteAABackpacks append [];
-_eliteMGBackpacks append [];
-_eliteGLBackpacks append [];
-_eliteMEDBackpacks append [];
-_eliteENGBackpacks append [];
-_eliteEXPBackpacks append [];
-_eliteSLBackpacks append ["AMF_FELIN_BACKPACK_MEDIC_TAN", "AMF_FELIN_BACKPACK_LIGHT_TAN"];
+_eliteENGvests append [];
+_elitebackpacks append ["amf_tecpack_30L"];
+_eliteATBackpacks append ["AMF_Bergen_F2"];
+_eliteAABackpacks append ["AMF_Bergen_F2"];
+_eliteMGbackpacks append ["AMF_FELIN_BACKPACK_Minimi"];
+_eliteGLbackpacks append ["AMF_FELIN_BACKPACK"];
+_eliteMEDBackpacks append ["AMF_FELIN_BACKPACK"];
+_eliteENGBackpacks append ["amf_tecpack_70L"];
+_eliteEXPBackpacks append ["amf_tecpack_70L"];
+_eliteSLBackpacks append ["AMF_FELIN_BACKPACK_RADIO_TDF"];
 _elitelongRangeRadios append [];
 _elitehelmets append ["AMF_FELIN_05_TAN", "AMF_FELIN_06_TAN", "AMF_OPSCORE_TAN_2", "AMF_OPSCORE3_TAN", "AMF_OPSCORE4_TAN"];
 _eliteMEDhelmets append [];
@@ -406,8 +426,8 @@ _militaryslRifles append [
 _militaryrifles append [
     ["AMF_614_short_01_F", "", "", "", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
     ["AMF_614_long_01_F", "", "", "AMF_AIMPOINT_MICRO_T2", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
-    ["AMF_Samas_G2_01_F", "", "", "", ["30Rnd_556x45_Stanag"], [], ""],
-    ["AMF_Samas_VALO_01_F", "", "", "", ["25Rnd_samas_f1_mag"], [], ""]
+    ["Famas_G2", "", "", "", ["AMF_30Rnd_556x45_SS109_Tracer_Stanag"], [], ""],
+    ["Famas_G2_PGMP", "", "", "Aimpoint_CompM_PGMP", ["AMF_30Rnd_556x45_SS109_Tracer_Stanag"], [], ""]
 ];
 _militarycarbines append [
     ["AMF_SCAR_L_01_F", "", "", "", ["30Rnd_556x45_Stanag_Tracer_Green"], [], ""],
@@ -423,8 +443,8 @@ _militarySMGs append [
     ["amf_hk_mp5_02_f", "", "", "AMF_Red_Dot_Sight", ["30Rnd_9x19_mag"], [], ""]
 ];
 _militarymachineGuns append [
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip2"],
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["150Rnd_MINI_MG_mag"], [], "amf_acc_mini_grip3"]
+    ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip2"],
+    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip3"]
 ];
 _militarymarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
@@ -436,11 +456,15 @@ _militarysniperRifles append [
 ];
 _militarylightATLaunchers append ["AMF_AT4CS_Loaded"];
 _militarylightHELaunchers append ["AMF_LRAC89_F"];
-_militaryATLaunchers append [];
+_militaryATLaunchers append [
+    ["AMF_Eryx", "", "", "", ["Eryx_HEAT"], [], ""]
+];
 _militarymissleATLaunchers append [];
-_militaryAALaunchers append [];
+_militaryAALaunchers append [
+    ["R3F_STINGER", "", "", "", ["R3F_STINGER_mag"], [], ""]
+];
 _militarysidearms append [
-    ["AMF_Glock_17_BLK", "", "", "", ["16Rnd_9x21_Mag"], [], ""],
+    ["AMF_Glock_17_Gen4", "", "", "", ["AMF_17Rnd_9x19_Glock"], [], ""],
     ["AMF_Pamas", "", "", "", ["15Rnd_9x21_Mag"], [], ""]
 ];
 _militaryGLsidearms append [];
@@ -463,33 +487,33 @@ _militaryNVGs append [];
 _militarybinoculars append ["AMF_APX_M241"];
 _militaryrangefinders append [];
 
-_militaryuniforms append ["amf_uniform_01_CE_HX", "amf_uniform_01_RE_CE_MD", "amf_uniform_01_RE_NG_CE_HS"];
+_militaryuniforms append ["amf_uniform_01_CE_HX", "amf_uniform_01_RE_CE_MD", "amf_uniform_01_NG_CE_HX"];
 _militaryENGuniforms append [];
-_militarySLuniforms append ["amf_uniform_05_TAN"];
-_militaryvests append ["amf_SMB_AUXSAN_TAN", "amf_SMB_AUXSAN_FAMAS_TAN", "amf_JPC_01_TAN"];
+_militarySLuniforms append ["AMF_CRY_G3_RolledSleeve_CCE"];
+_militaryvests append ["amf_SMB_FUS", "amf_SMB_FUS_FAMAS"];
 _militaryHvests append [];
-_militaryMGvests append ["amf_SMB_ART_TAN"];
-_militaryMEDvests append ["amf_SMB_FUS_TAN", "amf_jpc_02_TAN"];
-_militarySLvests append ["amf_DCS_03_TAN", "amf_JPC_03_TAN", "amf_DCS_02_TAN"];
-_militarySNIvests append [];
-_militaryGLvests append ["amf_SMB_GRE_TAN"];
+_militaryMGvests append ["amf_SMB_ART_TDF"];
+_militaryMEDvests append ["amf_SMB_AUXSAN", "amf_SMB_AUXSAN_FAMAS"];
+_militarySLvests append ["amf_SMB_LEADER_FAMAS", "amf_SMB_LEADER"];
+_militarySNIvests append ["amf_SMB_TP_SCAR", "amf_SMB_TP_HK417", "amf_SMB_TP_FRF2"];
+_militaryGLvests append ["amf_SMB_GRE"];
 _militaryATvests append [];
-_militaryENGvests append ["amf_SMB_GRE_FAMAS_TAN"];
-_militarybackpacks append ["AMF_rush24_01_TAN", "amf_tecpack_30L_TAN", "AMF_FELIN_BACKPACK_TAN"];
+_militaryENGvests append [];
+_militarybackpacks append ["amf_tecpack_30L"];
 _militaryATBackpacks append ["AMF_Bergen_F2"];
-_militaryAABackpacks append [];
-_militaryMGBackpacks append [];
-_militaryGLBackpacks append [];
-_militaryMEDBackpacks append [];
-_militaryENGBackpacks append [];
-_militaryEXPBackpacks append [];
-_militarySLBackpacks append ["AMF_FELIN_BACKPACK_LIGHT_TAN", "AMF_rush24_01_TAN"];
+_militaryAABackpacks append ["AMF_Bergen_F2"];
+_militaryMGbackpacks append ["AMF_FELIN_BACKPACK_Minimi"];
+_militaryGLbackpacks append ["AMF_FELIN_BACKPACK"];
+_militaryMEDBackpacks append ["AMF_FELIN_BACKPACK"];
+_militaryENGBackpacks append ["amf_tecpack_70L"];
+_militaryEXPBackpacks append ["amf_tecpack_70L"];
+_militarySLBackpacks append ["AMF_FELIN_BACKPACK_RADIO_TDF"];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["AMF_FELIN_05_TAN", "AMF_FELIN_05_CE", "AMF_FELIN_06_CE", "AMF_FELIN_06_TAN", "AMF_TC801_TAN_EARPROT_BLK", "AMF_TC801_TAN_EARPROT_BLK_2"];
+_militaryhelmets append ["AMF_FELIN_05_TAN", "AMF_FELIN_05_CE", "AMF_FELIN_06_CE", "AMF_FELIN_06_TAN", "AMF_FELIN_L06_CE", "AMF_FELIN_L06_TAN"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];
-_militarySNIhats append ["AMF_FELIN_L05_TAN", "AMF_FELIN_L05_CE", "AMF_TC800_TAN_EARPROT_TAN", "AMF_TC800_TAN_EARPROT_TAN_2"];
+_militarySNIhats append ["AMF_FELIN_L05_TAN", "AMF_FELIN_L05_CE", "AMF_FELIN_L06_CE", "AMF_FELIN_L06_TAN"];
 
 _militaryglasses append [];
 _militarygoggles append [];
@@ -500,10 +524,10 @@ _militarygoggles append [];
 
 _policeuniforms append ["U_B_GEN_Soldier_F"];
 _policeSLuniforms append [];
-_policevests append ["R3F_vestetactique_noire", "V_TacVest_gen_F"];
+_policevests append ["V_TacVest_gen_F"];
 _policehelmets append ["H_Beret_gen_F"];
 _policeWeapons append [
-    ["AMF_Samas_F1_01_F", "", "", "", ["25Rnd_samas_f1_mag_Tracer_green", "25Rnd_samas_f1_mag_Tracer_red"], [], ""],
+    ["R3F_M4S90", "", "", "", ["R3F_7Rnd_M4S90"], [], ""],
     ["amf_hk_mp5_01_f", "", "", "", ["30Rnd_9x19_mag"], [], ""]
 ];
 _policesidearms append [
@@ -521,13 +545,13 @@ _militiaslRifles append [];
 _militiarifles append [
     ["R3F_SIG551_CE", "", "", "", ["R3F_30Rnd_556x45_SIG551"], [], ""],
     ["R3F_SIG551_CE", "", "", "", ["R3F_30Rnd_556x45_SIG551"], [], ""],
-    ["AMF_Samas_G2_01_F", "", "", "", ["30Rnd_556x45_Stanag"], [], ""]
+    ["R3F_Famas_F1", "", "", "", ["R3F_25Rnd_556x45_FAMAS"], [], ""]
 ];
 _militiacarbines append [
     ["R3F_HK416F_short", "", "", "", ["R3F_30Rnd_556x45"], [], ""],
     ["R3F_SCAR_L_CQC_CAM", "", "", "", ["R3F_30Rnd_Magpul_556x45_tan"], [], ""],
-    ["AMF_Samas_F1_01_F", "", "", "AMF_Red_Dot_Sight", ["25Rnd_samas_f1_mag"], [], ""],
-    ["AMF_Samas_F1_01_F", "", "", "", ["25Rnd_samas_f1_mag"], [], ""]
+    ["R3F_Famas_surb", "", "", "AMF_Red_Dot_Sight", ["R3F_30Rnd_556x45_FAMAS"], [], ""],
+    ["R3F_Famas_surb", "", "", "", ["R3F_30Rnd_556x45_FAMAS"], [], ""]
 ];
 _militiagrenadeLaunchers append [
     ["R3F_SCAR_L_CQC_LG_CAM", "", "", "AMF_EOTECH_553_painted", ["R3F_30Rnd_Magpul_556x45_tan"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
@@ -544,15 +568,17 @@ _militiamarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
     ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["20Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
 ];
-_militiasniperRifles append [];
+_militiasniperRifles append [
+    ["AMF_RFF2_01_F", "", "", "ScromeJ8", ["AMF_10Rnd_762x51_BO_F3"], [], ""],
+];
 _militialightATLaunchers append ["AMF_AT4CS_Loaded"];
 _militialightHELaunchers append ["AMF_LRAC89_F"];
 _militiaATLaunchers append [];
 _militiamissleATLaunchers append [];
 _militiaAALaunchers append [];
 _militiasidearms append [
-    ["AMF_Glock_17_TAN", "", "", "", ["16Rnd_9x21_Mag"], [], ""],
-    ["AMF_Pamas", "", "", "", ["15Rnd_9x21_Mag"], [], ""]
+    ["AMF_PSA_Glock_17", "", "", "", ["AMF_17Rnd_9x19_Glock"], [], ""],
+    ["AMF_Pamas", "", "", "", ["AMF_15Rnd_9x19_PAMAS"], [], ""]
 ];
 _militiaGLsidearms append [];
 
@@ -574,28 +600,28 @@ _militiaNVGs append [];
 _militiabinoculars append [];
 _militiarangefinders append [];
 
-_militiauniforms append ["amf_uniform_01_RE_NG_OD_HX", "amf_uniform_01_RE_OD_HS"];
+_militiauniforms append ["amf_uniform_01_RE_NG_OD_HX", "amf_uniform_01_NG_OD_HX"];
 _militiaMEDuniforms append [];
 _militiaENGuniforms append [];
 _militiaSLuniforms append [];
-_militiavests append ["amf_SMB_TDF"];
+_militiavests append ["amf_SMB_FUS"];
 _militiaHvests append [];
 _militiaMGvests append [];
 _militiaMEDvests append [];
 _militiaSLvests append [];
-_militiaSNIvests append ["amf_SMB_TP_SCAR_TAN"];
+_militiaSNIvests append ["amf_SMB_TP_SCAR"];
 _militiaGLvests append [];
 _militiaATvests append [];
 _militiaENGvests append [];
-_militiabackpacks append ["AMF_rush24_01_TAN", "amf_tecpack_30L_TAN"];
-_militiaATBackpacks append ["B_Kitbag_cbr"];
+_militiabackpacks append ["amf_tecpack_30L"];
+_militiaATBackpacks append ["AMF_FELIN_BACKPACK"];
 _militiaAABackpacks append [];
 _militiaMGBackpacks append [];
 _militiaGLBackpacks append [];
 _militiaMEDBackpacks append [];
 _militiaENGBackpacks append [];
 _militiaEXPBackpacks append [];
-_militiaSLBackpacks append ["AMF_FELIN_BACKPACK_TAN"];
+_militiaSLBackpacks append ["AMF_FELIN_BACKPACK_RADIO_TDF"];
 _militialongRangeRadios append [];
 _militiahelmets append ["AMF_FELIN_05_CE", "AMF_FELIN_05_TAN", "AMF_FELIN_06_CE"];
 _militiaMEDhelmets append [];
@@ -612,8 +638,8 @@ _militiafacewear append [];
 //    Misc Loadouts     //
 //////////////////////////
 
-_crewuniforms append ["amf_uniform_01_RE_CE_HS"];
-_crewvests append ["amf_SMB_TDF"];
+_crewuniforms append ["amf_uniform_01_OD_HX"];
+_crewvests append ["amf_SMB"];
 _crewhelmets append ["AMF_ELNO_DH_586"];
 _crewcarbines append [
     ["amf_hk_mp5_01_f", "", "", "", ["30Rnd_9x19_mag"], [], ""]
@@ -624,7 +650,7 @@ _crewsidearms append [];
 _crewfacewear append [];
 
 _pilotuniforms append ["amf_pilot_01_f"];
-_pilotvests append ["V_Rangemaster_belt"];
+_pilotvests append ["AMF_Pilot_Vest"];
 _pilotbackpacks append [];
 _pilothelmets append ["AMF_ALPHA900"];
 _pilotcarbines append [
@@ -650,4 +676,16 @@ if (_hasContact) then {
 
 if (_hasRF) then {
     _policeVehs append ["B_GEN_Pickup_covered_rf"];
+};
+
+if (isClass (configFile >> "CfgVehicles" >> "clv_Aml20")) then {
+    _lightArmed append ["clv_Aml20", "clv_AmlHS30", "clv_Aml90"];
+    _lightTanks append ["clv_Amx13", "clv_Kurassier"];
+    _lightAPCs append ["CLV_VCPC"];
+    _IFVs append ["CLV_VCTP", "CLV_VCTP2IP"];
+    _aa append ["clv_VCLM", "clv_Dragon"];
+    _staticAA append ["CLV_OERLIKON"];
+    _howitzers append ["CLV_OMM56"];
+    _radar append ["CLV_Skyguard"];
+    _SAM append ["CLV_RolandTurret"];
 };

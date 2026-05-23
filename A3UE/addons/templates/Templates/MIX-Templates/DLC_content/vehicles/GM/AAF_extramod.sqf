@@ -12,8 +12,8 @@ _militiaAPCs append ["gm_gc_army_btr60pa_noinsignia","gm_gc_army_btr60pa_dshkm_n
 _APCs append ["gmx_aaf_luchsa1_wdl","gmx_aaf_luchsa2_wdl","gm_pl_army_brdm2_noinsignia","gm_gc_army_brdm2rkh_noinsignia"];
 _IFVs append ["gmx_aaf_m113a1g_apc_wdl","gmx_aaf_m113a1g_apc_milan_wdl","gmx_aaf_m113a1g_command_wdl","gmx_aaf_marder1a1plus_wdl","gmx_aaf_marder1a1a_wdl","gmx_aaf_marder1a2_wdl","gmx_aaf_m113a2dk_wdl"];
 _militiaTrucks append ["gmx_aaf_kat1_451_cargo_wdl","gmx_aaf_u1300l_cargo_wdl","gm_gc_bgs_ural4320_cargo_noinsignia"];
-_lightUnarmed append ["gm_gc_army_brdm2um_noinsignia","gmx_aaf_iltis_cargo_wdl","gm_dk_army_typ253_cargo","gm_dk_army_typ1200_cargo"];
-_lightArmed append ["gmx_aaf_iltis_milan_wdl","gm_ge_army_iltis_mg3"];
+_unarmedVehicles append ["gm_gc_army_brdm2um_noinsignia","gmx_aaf_iltis_cargo_wdl","gm_dk_army_typ253_cargo","gm_dk_army_typ1200_cargo"];
+_armedVehicles append ["gmx_aaf_iltis_milan_wdl","gm_ge_army_iltis_mg3"];
 _militiaCars append ["gm_dk_army_typ1200_cargo","gm_dk_army_typ253_cargo","gm_dk_army_typ253_mp","gm_gc_bgs_p601_noinsignia","gm_gc_bgs_uaz469_cargo_noinsignia"];
 _militiaLightArmed append ["gmx_aaf_iltis_milan_wdl","gm_ge_army_iltis_mg3","gm_gc_army_brdm2_noinsignia","gm_gc_army_uaz469_spg9_noinsignia","gm_gc_army_uaz469_dshkm_noinsignia"];
 _policeVehs append ["gm_gc_pol_p601","gm_ge_pol_typ1200","gm_ge_pol_typ253","gm_ge_pol_w123"];

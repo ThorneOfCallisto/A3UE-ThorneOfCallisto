@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_NAPA.sqf
  */
 _basic append ["I_Quadbike_01_F"];
-_lightUnarmed append ["CUP_I_Hilux_armored_unarmed_NAPA"];
-_lightArmed append ["CUP_I_Hilux_DSHKM_NAPA", "CUP_I_Datsun_PK"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -133,7 +133,18 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_U_I_GUE_Anorak_01",
+    "CUP_U_I_GUE_Anorak_03",
+    "CUP_U_I_GUE_Anorak_02",
+    "CUP_U_I_GUE_WorkU_01",
+    "CUP_U_I_GUE_WorkU_02",
+    "CUP_U_I_GUE_Flecktarn2",
+    "CUP_U_I_GUE_Flecktarn3",
+    "CUP_U_I_GUE_Flecktarn",
+    "CUP_U_I_GUE_Flecktarn4",
+    "CUP_U_I_GUE_Woodland1"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

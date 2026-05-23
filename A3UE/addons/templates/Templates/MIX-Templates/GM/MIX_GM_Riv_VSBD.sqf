@@ -1,62 +1,28 @@
 /* Faction : VSBD
  * Converted from: GM_Riv_VSBD.sqf
  */
-_basic append ["I_Quadbike_01_F"];
-_lightUnarmed append [];
-_lightArmed append [];
-_Trucks append [];
-_cargoTrucks append [];
-_ammoTrucks append [];
-_repairTrucks append [];
-_fuelTrucks append [];
-_medicalTrucks append [];
-_lightAPCs append [];
-_APCs append [];
-_IFVs append [];
-_airborneVehicles append [];
-_tanks append [];
-_lightTanks append [];
-_aa append [];
-
-_SDV append ["B_SDV_01_F"];
-_DropPod append ["SpaceshipCapsule_01_F"];
-
-_transportBoat append [];
-_gunBoat append [];
-_Amphibious append [];
-
-_planesCAS append [];
-_planesAA append [];
-
-_planesTransport append [];
-_gunship append [];
-
-_helisLight append [];
-_transportHelicopters append [];
-_helisLightAttack append [];
-_helisAttack append [];
-_airPatrol append [];
-
-_artillery append [];
-_artilleryMags append [];
-
+_unarmedVehicles append ["gm_gc_army_uaz469_cargo", "gm_gc_army_uaz469_cargo"];
+_armedVehicles append ["gm_gc_army_uaz469_dshkm"];
+_Trucks append ["gm_gc_army_ural4320_cargo", "gm_gc_army_ural375d_cargo"];
+_lightAPCs append ["gm_gc_army_btr60pb", "gm_gc_army_btr60pb", "gm_gc_army_btr60pa_dshkm"];
+_tanks append ["gm_gc_army_t55", "gm_gc_army_t55a", "gm_gc_army_t55ak"];
+_transportHelicopters append ["gm_gc_airforce_mi2p", "gm_pl_airforce_mi2ch"];
 _uavsAttack append [];
-_uavsPortable append [];
 
-_militiaLightArmed append [];
-_militiaTrucks append [];
-_militiaCars append [];
-_militiaAPCs append [];
-
-_policeVehs append [];
-
-_staticMG append [];
+_staticLowWeapons append [
+	"gm_pl_army_dshkm_aatripod", 
+	"gm_gc_army_dshkm_aatripod", 
+	"gm_pl_army_dshkm_aatripod", 
+	"gm_gc_army_dshkm_aatripod", 
+	"gm_gc_army_spg9_tripod", 
+	"gm_gc_army_fagot_launcher_tripod"
+];
 _staticAT append [];
 _staticAA append [];
 _staticMortars append ["CUP_O_2b14_82mm_RU"];
-_howitzers append [];
-_radar append [];
-_SAM append [];
+
+_mortarMagazineHE append [];
+_mortarAmmo append [];
 
 _minefieldAT append ["gm_minestatic_at_tm46"];
 _minefieldAPERS append ["gm_minestatic_ap_pfm1"];
@@ -84,70 +50,77 @@ _faces append [
 	"LivonianHead_10"
 ];
 _voices append ["gm_voice_male_deu_05","gm_voice_male_deu_06","gm_voice_male_deu_07", "gm_voice_male_deu_01","gm_voice_male_deu_02"];
-_sfVoices append [];
-_eliteVoices append [];
-
-_insignia append [];
-_sfInsignia append [];
-_milInsignia append [];
 
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
 
-_slRifles append [];
-_rifles append [];
-_carbines append [];
-_grenadeLaunchers append [];
+_slRifles append [
+    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+    ["CUP_arifle_AKS", "", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], [], ""]
+];
+_rifles append [
+    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+	["CUP_arifle_AKS", "", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], [], ""]
+];
+_carbines append [
+    ["CUP_arifle_AKS74U", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
+];
+_grenadeLaunchers append [
+    ["CUP_arifle_AK74_GL", "", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""],
+	["CUP_arifle_AKM_GL", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""]
+];
 _designatedGrenadeLaunchers append [];
-_SMGs append [];
-_machineGuns append [];
-_marksmanRifles append [];
+_SMGs append [
+    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+    ["CUP_arifle_AKS", "", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_TE1_Red_Tracer_762x39_AK47_bakelite_M"], [], ""]
+];
+_machineGuns append [
+    ["gm_mg3_blk", "", "", "", ["gm_120Rnd_762x51mm_B_T_DM21A1_mg3_grn", "gm_120Rnd_762x51mm_B_T_DM21A2_mg3_grn", "gm_120Rnd_762x51mm_B_T_DM21_mg3_grn"], [], ""]
+];
+_marksmanRifles append [
+    ["CUP_srifle_SVD", "", "", "CUP_optic_PSO_1_1", ["CUP_10Rnd_762x54_SVD_M"], [], ""]
+];
 _sniperRifles append [];
-_lightATLaunchers append [];
-_lightHELaunchers append [];
-_ATLaunchers append [];
+_lightATLaunchers append ["CUP_launch_RPG18", "CUP_launch_RPG26"];
+_lightHELaunchers append ["CUP_launch_RShG2"];
+_ATLaunchers append [
+["CUP_launch_RPG7V", "", "", "cup_optic_pgo7v",["CUP_TBG7V_M", "CUP_PG7VL_M", "CUP_PG7V_M"], [], ""],
+["CUP_launch_RPG7V", "", "", "cup_optic_pgo7v2",["CUP_PG7V_M", "CUP_PG7V_M", "CUP_PG7VL_M"], [], ""],
+["CUP_launch_RPG7V", "", "", "cup_optic_pgo7v3",["CUP_TBG7V_M", "CUP_PG7VR_M", "CUP_PG7VR_M"], [], ""]
+];
 _missleATLaunchers append [];
-_AALaunchers append [];
-_sidearms append [];
+_AALaunchers append ["CUP_launch_9K32Strela"];
+_sidearms append [
+["CUP_hgun_Makarov", "", "", "", ["CUP_8Rnd_9x18_Makarov_M"], [], ""]
+];
 _GLsidearms append [];
 
-_ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
+_ATMines append ["gm_mine_at_tm46"];
+_APMines append ["gm_mine_ap_pfm1"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
-_heavyExplosives append ["SatchelCharge_Remote_Mag"];
+_heavyExplosives append ["gm_explosive_plnp_charge"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["gm_handgrenade_frag_rgd5"];
 _antiTankGrenades append [];
-_smokeGrenades append ["SmokeShell"];
-_signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
+_smokeGrenades append ["gm_smokeshell_wht_gc"];
+_signalsmokeGrenades append ["gm_smokeshell_yel_gc", "gm_smokeshell_red_gc", "gm_smokeshell_org_gc", "gm_smokeshell_grn_gc", "gm_smokeshell_blu_gc", "gm_smokeshell_blk_gc"];
 
 _maps append ["ItemMap"];
 _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_NVGs append ["CUP_NVG_1PN138"];
 _binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_rangefinders append ["Binocular"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
-
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
-
-_cloakUniforms append [];
-_cloakVests append [];
-_cloakRifles append [];
-_cloakCarbines append [];
-_cloakSidearms append [];
-
-_uniforms append [];
-_SLuniforms append [];
+_uniforms append [
+	"gm_gc_army_uniform_soldier_80_blk"
+];
+_SLuniforms append ["gm_gc_army_uniform_soldier_80_blk"];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -155,9 +128,9 @@ _SNIvests append [];
 _GLvests append [];
 _ATvests append [];
 _ENGvests append [];
-_vests append [];
-_backpacks append [];
-_ATBackpacks append [];
+_vests append ["gm_ge_bgs_vest_type18_blk"];
+_backpacks append ["gm_ge_army_backpack_80_oli"];
+_ATBackpacks append ["gm_pl_army_backpack_at_80_gry"];
 _AABackpacks append [];
 _MGBackpacks append [];
 _GLBackpacks append [];
@@ -166,7 +139,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append ["gm_ge_headgear_psh77_down_oli"];
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];
@@ -193,307 +166,25 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
-
-///////////////////////////////////////
-//    Special Forces Loadout Data    //
-///////////////////////////////////////
-
-_sfslRifles append [];
-_sfrifles append [];
-_sfcarbines append [];
-_sfgrenadeLaunchers append [];
-_sfdesignatedGrenadeLaunchers append [];
-_sfSMGs append [];
-_sfmachineGuns append [];
-_sfmarksmanRifles append [];
-_sfsniperRifles append [];
-_sflightATLaunchers append [];
-_sflightHELaunchers append [];
-_sfATLaunchers append [];
-_sfmissleATLaunchers append [];
-_sfAALaunchers append [];
-_sfsidearms append [];
-_sfGLsidearms append [];
-
-_sfATMines append [];
-_sfAPMines append [];
-_sflightExplosives append [];
-_sfheavyExplosives append [];
-
-_sfantiInfantryGrenades append [];
-_sfsmokeGrenades append [];
-_sfsignalsmokeGrenades append [];
-
-_sfmaps append [];
-_sfwatches append [];
-_sfcompasses append [];
-_sfradios append [];
-_sfgpses append [];
-_sfNVGs append [];
-_sfbinoculars append ["Laserdesignator"];
-_sfrangefinders append [];
-
-_sfuniforms append [];
-_sfMEDuniforms append [];
-_sfENGuniforms append [];
-_sfSLuniforms append [];
-_sfvests append [];
-_sfHvests append [];
-_sfMGvests append [];
-_sfMEDvests append [];
-_sfSLvests append [];
-_sfSNIvests append [];
-_sfGLvests append [];
-_sfATvests append [];
-_sfENGvests append [];
-_sfbackpacks append [];
-_sfATBackpacks append [];
-_sfAABackpacks append [];
-_sfMGbackpacks append [];
-_sfGLbackpacks append [];
-_sfMEDBackpacks append [];
-_sfENGBackpacks append [];
-_sfEXPBackpacks append [];
-_sfSLBackpacks append [];
-_sflongRangeRadios append [];
-_sfhelmets append [];
-_sfMEDhelmets append [];
-_sfSLhelmets append [];
-_sfSLhats append [];
-_sfSNIhats append [];
-
-_sfglasses append [];
-_sfgoggles append [];
-
-/////////////////////////////////
-//    Elite Loadout Data       //
-/////////////////////////////////
-
-
-_eliteslRifles append [];
-_eliterifles append [];
-_elitecarbines append [];
-_elitegrenadeLaunchers append [];
-_elitedesignatedGrenadeLaunchers append [];
-_eliteSMGs append [];
-_elitemachineGuns append [];
-_elitemarksmanRifles append [];
-_elitesniperRifles append [];
-_elitelightATLaunchers append [];
-_elitelightHELaunchers append [];
-_eliteATLaunchers append [];
-_elitemissleATLaunchers append [];
-_eliteAALaunchers append [];
-_elitesidearms append [];
-_eliteGLsidearms append [];
-
-_eliteATMines append [];
-_eliteAPMines append [];
-_elitelightExplosives append [];
-_eliteheavyExplosives append [];
-
-_eliteantiInfantryGrenades append [];
-_elitesmokeGrenades append [];
-_elitesignalsmokeGrenades append [];
-
-_elitemaps append [];
-_elitewatches append [];
-_elitecompasses append [];
-_eliteradios append [];
-_elitegpses append [];
-_eliteNVGs append [];
-_elitebinoculars append ["Laserdesignator"];
-_eliterangefinders append [];
-
-_eliteuniforms append [];
-_eliteSLuniforms append [];
-_elitevests append [];
-_eliteHvests append [];
-_eliteMGvests append [];
-_eliteMEDvests append [];
-_eliteSLvests append [];
-_eliteSNIvests append [];
-_eliteGLvests append [];
-_eliteATvests append [];
-_eliteENGvests append [];
-_elitebackpacks append [];
-_eliteATBackpacks append [];
-_eliteAABackpacks append [];
-_eliteMGBackpacks append [];
-_eliteGLBackpacks append [];
-_eliteMEDBackpacks append [];
-_eliteENGBackpacks append [];
-_eliteEXPBackpacks append [];
-_eliteSLBackpacks append [];
-_elitelongRangeRadios append [];
-_elitehelmets append [];
-_eliteMEDhelmets append [];
-_eliteSLhelmets append [];
-_eliteSLhats append [];
-_eliteSNIhats append [];
-
-_eliteglasses append [];
-_elitegoggles append [];
-
-/////////////////////////////////
-//    Military Loadout Data    //
-/////////////////////////////////
-
-
-_militaryslRifles append [];
-_militaryrifles append [];
-_militarycarbines append [];
-_militarygrenadeLaunchers append [];
-_militarydesignatedGrenadeLaunchers append [];
-_militarySMGs append [];
-_militarymachineGuns append [];
-_militarymarksmanRifles append [];
-_militarysniperRifles append [];
-_militarylightATLaunchers append [];
-_militarylightHELaunchers append [];
-_militaryATLaunchers append [];
-_militarymissleATLaunchers append [];
-_militaryAALaunchers append [];
-_militarysidearms append [];
-_militaryGLsidearms append [];
-
-_militaryATMines append [];
-_militaryAPMines append [];
-_militarylightExplosives append [];
-_militaryheavyExplosives append [];
-
-_militaryantiInfantryGrenades append [];
-_militarysmokeGrenades append [];
-_militarysignalsmokeGrenades append [];
-
-_militarymaps append [];
-_militarywatches append [];
-_militarycompasses append [];
-_militaryradios append [];
-_militarygpses append [];
-_militaryNVGs append [];
-_militarybinoculars append [];
-_militaryrangefinders append [];
-
-_militaryuniforms append [];
-_militaryENGuniforms append [];
-_militarySLuniforms append [];
-_militaryvests append [];
-_militaryHvests append [];
-_militaryMGvests append [];
-_militaryMEDvests append [];
-_militarySLvests append [];
-_militarySNIvests append [];
-_militaryGLvests append [];
-_militaryATvests append [];
-_militaryENGvests append [];
-_militarybackpacks append [];
-_militaryATBackpacks append [];
-_militaryAABackpacks append [];
-_militaryMGBackpacks append [];
-_militaryGLBackpacks append [];
-_militaryMEDBackpacks append [];
-_militaryENGBackpacks append [];
-_militaryEXPBackpacks append [];
-_militarySLBackpacks append [];
-_militarylongRangeRadios append [];
-_militaryhelmets append [];
-_militaryMEDhelmets append [];
-_militarySLhelmets append [];
-_militarySLhats append [];
-_militarySNIhats append [];
-
-_militaryglasses append [];
-_militarygoggles append [];
-
-///////////////////////////////
-//    Police Loadout Data    //
-///////////////////////////////
-
-_policeuniforms append [];
-_policeSLuniforms append [];
-_policevests append [];
-_policehelmets append [];
-_policeWeapons append [];
-_policesidearms append [];
-
-_policefacewear append [];
-
-////////////////////////////////
-//    Militia Loadout Data    //
-////////////////////////////////
-
-
-_militiaslRifles append [];
-_militiarifles append [];
-_militiacarbines append [];
-_militiagrenadeLaunchers append [];
-_militiadesignatedGrenadeLaunchers append [];
-_militiaSMGs append [];
-_militiamachineGuns append [];
-_militiamarksmanRifles append [];
-_militiasniperRifles append [];
-_militialightATLaunchers append [];
-_militialightHELaunchers append [];
-_militiaATLaunchers append [];
-_militiamissleATLaunchers append [];
-_militiaAALaunchers append [];
-_militiasidearms append [];
-_militiaGLsidearms append [];
-
-_militiaATMines append [];
-_militiaAPMines append [];
-_militialightExplosives append [];
-_militiaheavyExplosives append [];
-
-_militiaantiInfantryGrenades append [];
-_militiasmokeGrenades append [];
-_militiasignalsmokeGrenades append [];
-
-_militiamaps append [];
-_militiawatches append [];
-_militiacompasses append [];
-_militiaradios append [];
-_militiagpses append [];
-_militiaNVGs append [];
-_militiabinoculars append [];
-_militiarangefinders append [];
-
-_militiauniforms append [];
-_militiaMEDuniforms append [];
-_militiaENGuniforms append [];
-_militiaSLuniforms append [];
-_militiavests append [];
-_militiaHvests append [];
-_militiaMGvests append [];
-_militiaMEDvests append [];
-_militiaSLvests append [];
-_militiaSNIvests append [];
-_militiaGLvests append [];
-_militiaATvests append [];
-_militiaENGvests append [];
-_militiabackpacks append [];
-_militiaATBackpacks append [];
-_militiaAABackpacks append [];
-_militiaMGBackpacks append [];
-_militiaGLBackpacks append [];
-_militiaMEDBackpacks append [];
-_militiaENGBackpacks append [];
-_militiaEXPBackpacks append [];
-_militiaSLBackpacks append [];
-_militialongRangeRadios append [];
-_militiahelmets append [];
-_militiaMEDhelmets append [];
-_militiaSLhelmets append [];
-_militiaSLhats append [];
-_militiaSNIhats append [];
-
-
-_militiaglasses append [];
-_militiagoggles append [];
-_militiafacewear append [];
+_facewear append [
+	"G_Shades_Black", 
+	"G_Shades_Blue", 
+	"G_Shades_Green", 
+	"G_Shades_Red", 
+	"G_Aviator",
+	"G_Spectacles", 
+	"G_Spectacles_Tinted",
+	"G_Sport_BlackWhite", 
+	"G_Sport_Blackyellow", 
+	"G_Sport_Greenblack", 
+	"G_Sport_Checkered", 
+	"G_Sport_Red", 
+	"G_Bandanna_aviator",
+	"G_Bandanna_beast",
+	"G_Bandanna_sport",
+	"G_Bandanna_shades"
+];
+_fullmask append [];
 
 //////////////////////////
 //    Misc Loadouts     //

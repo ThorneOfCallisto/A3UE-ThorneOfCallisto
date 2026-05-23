@@ -86,11 +86,20 @@ _SMGs append [];
 _machineGuns append [];
 _marksmanRifles append [];
 _sniperRifles append [];
-_lightATLaunchers append [];
+_lightATLaunchers append ["CUP_launch_RPG26"];
 _lightHELaunchers append [];
-_ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
+_ATLaunchers append [
+    ["CUP_launch_RPG7V", "", "", "CUP_optic_PGO7V3", ["CUP_OG7_M", "CUP_PG7V_M"], [], ""],
+    ["CUP_launch_RPG7V", "", "", "CUP_optic_PGO7V3", ["CUP_OG7_M", "CUP_PG7VL_M"], [], ""],
+    ["CUP_launch_RPG7V", "", "", "CUP_optic_PGO7V3", ["CUP_OG7_M", "CUP_PG7VM_M"], [], ""],
+    ["CUP_launch_RPG7V", "", "", "CUP_optic_PGO7V3", ["CUP_OG7_M", "CUP_PG7VR_M"], [], ""]
+];
+_missleATLaunchers append [
+    ["CUP_launch_Metis", "", "", "", ["CUP_AT13_M"], [], ""]
+];
+_AALaunchers append [
+    ["CUP_launch_9K32Strela", "", "", "", [""], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -99,7 +108,7 @@ _APMines append ["APERSMine_Range_Mag"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
 _heavyExplosives append ["SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["CUP_HandGrenade_RGO"];
 _antiTankGrenades append [];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
@@ -109,17 +118,17 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_NVGs append ["CUP_NVG_1PN138"];
 _binoculars append ["Binocular"];
 _rangefinders append ["Rangefinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["CUP_U_O_TK_MixedCamo"];
+_traitorVests append ["CUP_V_O_TK_Vest_1"];
+_traitorHats append ["CUP_H_PMC_Beanie_Khaki"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["CUP_U_O_TK_Officer"];
+_officerVests append ["CUP_V_O_TK_OfficerBelt2"];
+_officerHats append ["CUP_H_TK_Beret"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -130,6 +139,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -151,7 +161,7 @@ _longRangeRadios append [];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
-_SLhats append [];
+_SLhats append ["CUP_H_TK_Beret"];
 _SNIhats append [];
 
 _slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
@@ -175,8 +185,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -298,8 +307,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["CUP_H_TK_Beret"];
 _sfSNIhats append ["H_Booniehat_oli"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -411,8 +419,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["H_Booniehat_oli"];
 _eliteSNIhats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -529,8 +536,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["H_Booniehat_oli"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -638,9 +644,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append ["CUP_H_SLA_Boonie"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

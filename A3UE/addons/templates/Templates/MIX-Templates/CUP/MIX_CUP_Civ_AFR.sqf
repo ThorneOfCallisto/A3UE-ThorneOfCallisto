@@ -132,7 +132,50 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_C_IDAP_Man_Cargo_F",
+    "U_C_IDAP_Man_Jeans_F",
+    "U_C_IDAP_Man_casual_F",
+    "U_C_IDAP_Man_shorts_F",
+    "U_C_IDAP_Man_Tee_F",
+    "U_C_IDAP_Man_TeeShorts_F",
+    "U_I_C_Soldier_Bandit_1_F",
+    "U_I_C_Soldier_Bandit_2_F",
+    "U_I_C_Soldier_Bandit_3_F",
+    "U_I_C_Soldier_Bandit_4_F",
+    "U_I_C_Soldier_Bandit_5_F",
+    "U_C_Man_Casual_1_F",
+    "U_C_Man_Casual_2_F",
+    "U_C_Man_Casual_3_F",
+    "U_C_Man_Casual_4_F",
+    "U_C_Man_Casual_5_F",
+    "U_C_Man_Casual_6_F",
+    "U_C_ArtTShirt_01_v2_F",
+    "U_C_ArtTShirt_01_v4_F",
+    "U_C_ArtTShirt_01_v5_F",
+    "U_C_Poloshirt_blue",
+    "U_C_Poloshirt_burgundy",
+    "U_C_Poloshirt_redwhite",
+    "U_C_Poloshirt_salmon",
+    "U_C_Poloshirt_stripped",
+    "U_C_Poloshirt_tricolour",
+    "U_C_Uniform_Farmer_01_F",
+    "U_BG_Guerilla2_1",
+    "U_BG_Guerilla2_3",
+    "U_BG_Guerilla3_1",
+    "CUP_U_C_Profiteer_01",
+    "CUP_U_C_Profiteer_02",
+    "CUP_U_C_Profiteer_03",
+    "CUP_U_C_Profiteer_04",
+    "CUP_U_C_Village_01",
+    "CUP_U_C_Villager_04",
+    "U_C_Poor_1",
+    "U_C_Poor_2",
+    "CUP_U_C_Worker_01",
+    "CUP_U_C_Worker_02",
+    "CUP_U_C_Worker_03",
+    "CUP_U_C_Worker_04"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -153,7 +196,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append _civHats;
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

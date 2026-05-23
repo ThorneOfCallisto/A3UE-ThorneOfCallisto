@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_EM.sqf
  */
 _basic append ["CUP_C_TT650_TK_CIV"];
-_lightUnarmed append ["a3u_cup_uaz_unarmed_convertible_1", "a3u_cup_uaz_unarmed_convertible_2", "CUP_B_UAZ_Open_CDF", "CUP_O_Hilux_unarmed_CHDKZ"];
-_lightArmed append ["CUP_B_UAZ_MG_CDF", "CUP_O_Hilux_DSHKM_CHDKZ"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,15 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_U_B_BDUv2_roll2_dirty_Alpenflage",
+    "CUP_U_B_BDUv2_roll2_gloves_dirty_Alpenflage",
+    "CUP_U_B_BDUv2_roll_gloves_dirty_Alpenflage",
+    "CUP_U_O_TK_Green",
+    "CUP_U_O_TK_MixedCamo",
+    "CUP_U_I_GUE_Anorak_02",
+    "CUP_U_C_Woodlander_01"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

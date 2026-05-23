@@ -2,8 +2,8 @@
  * Converted from: BRAF_Reb_MNGC.sqf
  */
 _basic append ["I_Quadbike_01_F"];
-_lightUnarmed append ["BRAF_AM11_Unarmed", "CUP_B_nM1025_Unarmed_NATO_T"];
-_lightArmed append ["BRAF_AM11_Armed", "CUP_B_nM1025_M240_NATO_T"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -133,7 +133,28 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_I_B_PMC_Unit_1",
+    "CUP_I_B_PMC_Unit_2",
+	"CUP_I_B_PMC_Unit_3",
+	"CUP_I_B_PMC_Unit_4",
+	"CUP_I_B_PMC_Unit_5",
+	"CUP_I_B_PMC_Unit_6",
+	"CUP_I_B_PMC_Unit_7",
+	"CUP_I_B_PMC_Unit_8",
+	"CUP_I_B_PMC_Unit_9",
+	"CUP_I_B_PMC_Unit_10",
+	"CUP_I_B_PMC_Unit_11",
+	"CUP_I_B_PMC_Unit_12",
+	"CUP_I_B_PMC_Unit_13",
+	"CUP_I_B_PMC_Unit_14",
+	"CUP_I_B_PMC_Unit_15",
+	"CUP_I_B_PMC_Unit_16",
+	"CUP_I_B_PMC_Unit_17",
+	"CUP_I_B_PMC_Unit_18",
+	"CUP_I_B_PMC_Unit_19",
+	"CUP_I_B_PMC_Unit_20"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

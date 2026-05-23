@@ -96,8 +96,12 @@ _sniperRifles append [];
 _lightATLaunchers append [];
 _lightHELaunchers append [];
 _ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
+_missleATLaunchers append [
+    ["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT"], [], ""]
+];
+_AALaunchers append [
+    ["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT_Thermal"], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -106,7 +110,7 @@ _APMines append ["APERSMine_Range_Mag"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
 _heavyExplosives append ["SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["OPTRE_M9_Frag"];
 _antiTankGrenades append [];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
@@ -116,17 +120,17 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_NVGs append ["OPTRE_NVG"];
+_binoculars append ["OPTRE_Binoculars"];
+_rangefinders append ["OPTRE_Smartfinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["OPTRE_UNSC_Army_Uniform_R_BLK"];
+_traitorVests append ["OPTRE_UNSC_M52A_Armor_Breacher_URB", "OPTRE_UNSC_M52A_Armor1_URB"];
+_traitorHats append ["OPTRE_UNSC_CH252_Helmet_URB"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["OPTRE_UNSC_Army_Uniform_BLKURB"];
+_officerVests append ["OPTRE_UNSC_M52A_Armor_Sniper_URB", "V_Rangemaster_belt"];
+_officerHats append ["OPTRE_PatrolCap_Navy"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -137,6 +141,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -154,12 +159,12 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["OPTRE_ANPRC_515"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
-_SLhats append [];
-_SNIhats append [];
+_SLhats append ["OPTRE_UNSC_CH252A_Black_Helmet"];
+_SNIhats append ["OPTRE_UNSC_CH252A_Black_Helmet"];
 
 _slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
 _rItems append [];
@@ -182,8 +187,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -274,8 +278,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["OPTRE_MJOLNIR_CQC"];
 _sfSNIhats append ["OPTRE_MJOLNIR_Commando", "OPTRE_MJOLNIR_Commando_HUL3"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -363,8 +366,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append ["OPTRE_UNSC_CH252A_Black_Helmet"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -453,8 +455,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["OPTRE_UNSC_CH252A_Black_Helmet"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -556,9 +557,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append ["OPTRE_FC_CH255_Helmet_DES_Visor"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_NAPA.sqf
  */
 _basic append ["UK3CB_NAP_I_TT650"];
-_lightUnarmed append ["UK3CB_NAP_B_Hilux_Pkm"];
-_lightArmed append ["UK3CB_NAP_B_Hilux_M2"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -134,7 +134,51 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "UK3CB_NAP_I_U_Tshirt_FLK",
+    "UK3CB_NAP_I_U_Tshirt_BLK",
+    "UK3CB_NAP_I_U_Tshirt_FLR",
+    "UK3CB_NAP_I_U_Tshirt_FLK",
+    "UK3CB_NAP_I_U_Pilot_FLORA",
+    "UK3CB_NAP_I_U_Pilot_BLK",
+    "UK3CB_NAP_I_U_Pilot_FLK",
+    "UK3CB_NAP_I_U_Officer_Uniform_FLK_BLK",
+    "UK3CB_NAP_I_U_Officer_Uniform_FLK_GRN",
+    "UK3CB_NAP_I_U_Officer_Uniform_GRN_BLK",
+    "UK3CB_NAP_I_U_Officer_Uniform_GRN",
+    "UK3CB_NAP_I_U_Officer_Uniform_WDL_BLK",
+    "UK3CB_NAP_I_U_Officer_Uniform_WDL_GRN",
+    "UK3CB_NAP_I_U_CombatUniform_FLK",
+    "UK3CB_NAP_I_U_CombatUniform_WDL",
+    "UK3CB_NAP_I_U_CombatUniform_01_FLK",
+    "UK3CB_NAP_I_U_CombatUniform_01_WDL",
+    "UK3CB_LNM_I_U_CombatUniform_01",
+    "UK3CB_LNM_I_U_CombatUniform_02",
+    "UK3CB_LNM_I_U_CombatUniform_03",
+    "UK3CB_LNM_I_U_CombatUniform_04",
+    "UK3CB_LNM_I_U_CombatUniform_09",
+    "UK3CB_LNM_I_U_CombatUniform_10",
+    "UK3CB_LNM_I_U_CombatUniform_11",
+    "UK3CB_LNM_I_U_CombatSmock_04",
+    "UK3CB_LNM_I_U_CombatSmock_05",
+    "UK3CB_LNM_I_U_CombatSmock_06",
+    "UK3CB_LNM_I_U_CombatSmock_09",
+    "UK3CB_LNM_I_U_CombatSmock_32",
+    "UK3CB_LNM_I_U_Shirt_Pants_13",
+    "UK3CB_LNM_I_U_Shirt_Pants_14",
+    "UK3CB_LNM_I_U_Shirt_Pants_01",
+    "UK3CB_LNM_I_U_Shirt_Pants_02",
+    "rhsgref_uniform_alpenflage",
+    "rhsgref_uniform_gorka_1_f",
+    "rhsgref_uniform_dpm",
+    "rhsgref_uniform_dpm_olive",
+    "rhsgref_uniform_flecktarn",
+    "rhsgref_uniform_flecktarn_full",
+    "rhsgref_uniform_og107",
+    "rhsgref_uniform_og107_erdl",
+    "rhsgref_uniform_woodland",
+    "rhsgref_uniform_woodland_olive"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -182,8 +226,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

@@ -80,10 +80,4 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
 //  End Include Factions here   //
 //////////////////////////////////
 
-
-// Pick one infantry gear faction after all faction files have been included.
-// Vehicles remain mixed from all included factions.
-// Options: "RANDOM", "AAF", "NATO", "BAF", "BW", "AMF", etc.
-["RANDOM"] call _fnc_gearFactionApply;
-
 #include "INCLUDES\Init_Layouts.sqf"

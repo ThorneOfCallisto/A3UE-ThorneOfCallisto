@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_ACW_FIA.sqf
  */
 _basic append ["Flex_CUP_FIA_TT650", "Flex_CUP_FIA_Quad"];
-_lightUnarmed append ["Flex_CUP_FIA_Hilux_unarmed", "Flex_CUP_FIA_van_cargo", "Flex_CUP_FIA_armored_unarmed"];
-_lightArmed append ["Flex_CUP_FIA_Hilux_M2", "Flex_CUP_FIA_Hilux_armored_M2"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -145,7 +145,19 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+	"CUP_I_B_PMC_Unit_3",
+	"CUP_U_I_GUE_WorkU_02",
+	"Flex_CUP_AAF_BDU_Digital_Rolled",
+	"U_IG_Guerilla2_1",
+	"U_IG_Guerilla2_3",
+	"CUP_I_B_PMC_Unit_2",
+	"CUP_U_I_BDUv2_dirty_DPM",
+	"CUP_U_I_GUE_Woodland1",
+	"U_IG_Guerrilla_6_1",
+	"CUP_I_B_PMC_Unit_5",
+	"CUP_U_I_USMC_MCCUU_roll_2"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

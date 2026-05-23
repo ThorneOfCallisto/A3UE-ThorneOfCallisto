@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_WM.sqf
  */
 _basic append ["CUP_C_TT650_TK_CIV"];
-_lightUnarmed append ["CUP_B_LR_Transport_GB_W", "a3u_cup_m1025_unarmed_olive"];
-_lightArmed append ["a3u_cup_lr_mg_wl", "a3u_cup_m1025_m240_olive", "a3u_cup_m1025_sov_m2_olive"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,15 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_U_O_Partisan_TTsKO_Mixed",
+    "CUP_U_O_Partisan_TTsKO",
+    "CUP_U_B_BDUv2_roll2_gloves_OD",
+    "CUP_U_I_GUE_Anorak_01",
+    "CUP_U_I_GUE_Anorak_03",
+    "CUP_U_I_GUE_Anorak_02",
+    "CUP_U_B_BDUv2_roll2_DPM_OD"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

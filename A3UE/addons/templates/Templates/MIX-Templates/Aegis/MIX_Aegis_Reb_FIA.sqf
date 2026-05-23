@@ -2,8 +2,8 @@
  * Converted from: Aegis_Reb_FIA.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_lightUnarmed append ["I_G_Offroad_01_F"];
-_lightArmed append ["I_G_Offroad_01_armed_F"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -129,7 +129,17 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_IG_Guerilla1_1",
+    "U_IG_Guerilla2_1",
+    "U_IG_Guerilla2_2",
+    "U_IG_Guerilla2_3",
+    "U_IG_Guerilla3_1",
+    "U_IG_leader",
+    "U_IG_Guerrilla_6_1",
+    "U_I_G_resistanceLeader_F",
+    "U_I_L_Uniform_01_deserter_F"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -177,8 +187,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Cigarette","G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

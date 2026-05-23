@@ -106,9 +106,16 @@ _marksmanRifles append [];
 _sniperRifles append [];
 _lightATLaunchers append [];
 _lightHELaunchers append [];
-_ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
+_ATLaunchers append [
+    ["CUP_launch_MAAWS", "", "", "CUP_optic_MAAWS_Scope", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""]
+];
+_missleATLaunchers append [
+    ["launch_O_Vorona_green_F", "", "", "", ["Vorona_HEAT"], [], ""],
+    ["CUP_launch_NLAW", "", "", "", [""], [], ""]
+];
+_AALaunchers append [
+    ["CUP_launch_FIM92Stinger", "", "", "", [""], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -117,7 +124,7 @@ _APMines append ["APERSMine_Range_Mag"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
 _heavyExplosives append ["SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["CUP_HandGrenade_M67"];
 _antiTankGrenades append [];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
@@ -127,27 +134,31 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_NVGs append ["CUP_NVG_PVS14"];
 _binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_rangefinders append ["CUP_Vector21Nite"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["Flex_CUP_AAF_BDU_Digital_Rolled"];
+_traitorVests append ["CUP_V_PMC_CIRAS_OD_Empty", "CUP_V_B_Interceptor_Base_Olive", "CUP_V_B_PASGT_no_bags_OD", "CUP_V_OI_TKI_Jacket1_06"];
+_traitorHats append ["Flex_CUP_AAF_cap", ""];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["Flex_CUP_AAF_Pullover_Uniform", "Flex_CUP_AAF_Pullover_Uniform_Navy"];
+_officerVests append ["Flex_CUP_AAF_Osprey_Mk3_Empty"];
+_officerHats append ["Flex_CUP_AAF_Beret_Army", "Flex_CUP_AAF_cap", "Flex_CUP_AAF_Patrol_cap"];
 
-_cloakUniforms append [];
+_cloakUniforms append ["U_I_FullGhilie_sard"];
 _cloakVests append [];
 _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "Flex_CUP_AAF_BDU_Digital", "Flex_CUP_AAF_BDU_Digital_Gloves", "Flex_CUP_AAF_BDU_Digital_Pads", "Flex_CUP_AAF_BDU_Digital_Pads_Gloves",
+    "Flex_CUP_AAF_BDU_Digital_Pads_Rolled", "Flex_CUP_AAF_BDU_Digital_Pads_Rolled_Gloves", "Flex_CUP_AAF_BDU_Digital_Rolled", "Flex_CUP_AAF_BDU_Digital_Rolled_Gloves"    
+];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -193,8 +204,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -298,8 +308,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["Flex_CUP_AAF_Opscore"];
 _sfSNIhats append ["Flex_CUP_AAF_Boonie_Wood", "Flex_CUP_AAF_Opscore"];
 
-_sfglasses append ["CUP_G_RUS_Ratnik_Balaclava_Winter_Green_1"];
-_sfgoggles append [];
+_sffacewear append ["CUP_G_RUS_Ratnik_Balaclava_Winter_Green_1"];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -402,8 +411,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["H_Beret_02"];
 _eliteSNIhats append [];
 
-_eliteglasses append ["G_Tactical_Clear", "G_Tactical_Black", "CUP_G_Oakleys_Clr", "CUP_G_Oakleys_Drk"];
-_elitegoggles append ["G_Combat"];
+_elitefacewear append ["G_Combat"];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -498,8 +506,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["Flex_CUP_AAF_Boonie_Wood"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -623,9 +630,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["Flex_CUP_AAF_Patrol_cap", "Flex_CUP_AAF_cap"];
 _militiaSNIhats append ["Flex_CUP_AAF_Boonie_Wood"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_TKM.sqf
  */
 _basic append ["UK3CB_TKM_I_YAVA"];
-_lightUnarmed append ["UK3CB_TKM_I_LR_Closed"];
-_lightArmed append ["UK3CB_TKM_I_Hilux_Dshkm"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,26 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "UK3CB_ADE_I_U_02_J",
+    "UK3CB_ADM_I_U_Tshirt_01_WDL_03",
+    "UK3CB_ADM_B_U_Tshirt_01_WDL",
+    "UK3CB_TKM_I_U_01",
+    "UK3CB_TKM_I_U_01_B",
+    "UK3CB_TKM_I_U_01_C",
+    "UK3CB_TKM_I_U_03",
+    "UK3CB_TKM_I_U_03_B",
+    "UK3CB_TKM_I_U_03_C",
+    "UK3CB_TKM_I_U_04",
+    "UK3CB_TKM_I_U_04_B",
+    "UK3CB_TKM_I_U_04_C",
+    "UK3CB_TKM_I_U_05",
+    "UK3CB_TKM_I_U_05_B",
+    "UK3CB_TKM_I_U_05_C",
+    "UK3CB_TKM_I_U_06",
+    "UK3CB_TKM_I_U_06_B",
+    "UK3CB_TKM_I_U_06_C"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -175,8 +194,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

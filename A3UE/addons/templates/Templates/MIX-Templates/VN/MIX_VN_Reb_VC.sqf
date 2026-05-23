@@ -2,8 +2,8 @@
  * Converted from: VN_Reb_VC.sqf
  */
 _basic append ["vn_o_bicycle_01_vcmf"];
-_lightUnarmed append ["vn_o_wheeled_btr40_01_vcmf"];
-_lightArmed append ["vn_o_wheeled_z157_mg_01_vcmf", "vn_o_wheeled_btr40_mg_02_vcmf", "vn_o_wheeled_btr40_mg_01_vcmf", "vn_o_wheeled_btr40_mg_04_vcmf"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,17 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "vn_o_uniform_vc_01_01",
+    "vn_o_uniform_vc_01_02",
+    "vn_o_uniform_vc_02_07",
+    "vn_o_uniform_vc_03_02",
+    "vn_o_uniform_vc_04_02",
+    "vn_o_uniform_vc_05_01",
+    "vn_o_uniform_vc_02_05",
+    "vn_o_uniform_vc_04_03",
+    "vn_o_uniform_vc_03_03"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -175,8 +185,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

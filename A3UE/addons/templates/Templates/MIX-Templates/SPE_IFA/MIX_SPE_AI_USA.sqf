@@ -89,40 +89,45 @@ _SMGs append [];
 _machineGuns append [];
 _marksmanRifles append [];
 _sniperRifles append [];
-_lightATLaunchers append [];
+_lightATLaunchers append [
+["SPE_M1A1_Bazooka", "", "", "",["SPE_1Rnd_60mm_M6"], [], ""]
+];
 _lightHELaunchers append [];
-_ATLaunchers append [];
+_ATLaunchers append [
+["SPE_M9_Bazooka", "", "", "",["SPE_1Rnd_60mm_M6A3"], [], ""],
+["SPE_M9A1_Bazooka", "", "", "",["SPE_1Rnd_60mm_M6A3"], [], ""]
+];
 _missleATLaunchers append [];
 _AALaunchers append [];
 _sidearms append [];
 _GLsidearms append [];
 
-_ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
-_lightExplosives append ["DemoCharge_Remote_Mag"];
-_heavyExplosives append ["SatchelCharge_Remote_Mag"];
+_ATMines append ["SPE_US_M1A1_ATMINE_mag"];
+_APMines append ["SPE_US_M3_Pressure_MINE_mag"];
+_lightExplosives append ["SPE_US_TNT_half_pound_mag"];
+_heavyExplosives append ["SPE_US_TNT_4pound_mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
-_antiTankGrenades append [];
+_antiInfantryGrenades append ["SPE_US_Mk_2"];
+_antiTankGrenades append ["SPE_US_AN_M14"];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
-_radios append ["ItemRadio"];
-_gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_watches append ["SPE_US_ItemWatch"];
+_compasses append ["SPE_US_ItemCompass"];
+_radios append ["TFAR_SCR536"];
+_gpses append [];
+_NVGs append [];
+_binoculars append ["SPE_Binocular_US"];
+_rangefinders append ["SPE_Binocular_US"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["U_SPE_US_Private_1st"];
+_traitorVests append ["V_SPE_US_Vest_Garand"];
+_traitorHats append ["H_SPE_US_Helmet"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["U_SPE_US_CC_1LT"];
+_officerVests append ["V_SPE_US_Vest_Carbine_nco_Radio"];
+_officerHats append ["H_SPE_US_Helmet_Cap"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -133,6 +138,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -150,7 +156,7 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["B_SPE_US_Radio", "B_SPE_US_Radio_alt"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
@@ -178,8 +184,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -265,8 +270,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["H_SPE_US_AB_Helmet_CO", "H_SPE_US_AB_Helmet_CO_ns"];
 _sfSNIhats append ["H_SPE_US_AB_Helmet","H_SPE_US_AB_Helmet_Net","H_SPE_US_AB_Helmet_polar","H_SPE_US_AB_Helmet_os","H_SPE_US_AB_Helmet_Scrim","H_SPE_US_AB_Helmet_Net_os"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -353,8 +357,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["H_SPE_US_Helmet_First_lieutenant"];
 _eliteSNIhats append ["H_SPE_US_Helmet","H_SPE_US_Helmet_os","H_SPE_US_Helmet_Net","H_SPE_US_Helmet_band_net","H_SPE_US_Helmet_ns","H_SPE_US_Helmet_band_net_up", "H_SPE_US_Helmet_band_net_os", "H_SPE_US_Helmet_band_net_ns"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -443,8 +446,7 @@ _militarySLhelmets append [];
 _militarySLhats append ["H_SPE_US_Helmet_First_lieutenant"];
 _militarySNIhats append ["H_SPE_US_Helmet","H_SPE_US_Helmet_os","H_SPE_US_Helmet_Net","H_SPE_US_Helmet_band_net","H_SPE_US_Helmet_ns","H_SPE_US_Helmet_band_net_up", "H_SPE_US_Helmet_band_net_os", "H_SPE_US_Helmet_band_net_ns"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -563,9 +565,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["H_SPE_US_Helmet_CO"];
 _militiaSNIhats append ["H_SPE_US_jeep_cap","H_SPE_US_jeep_cap_rear"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

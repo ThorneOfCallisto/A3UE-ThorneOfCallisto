@@ -2,8 +2,8 @@
  * Converted from: OPTRE_Reb_UNSC.sqf
  */
 _basic append ["OPTRE_M274_ATV"];
-_lightUnarmed append ["OPTRE_M12_FAV"];
-_lightArmed append ["OPTRE_M12_LRV"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];

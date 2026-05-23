@@ -80,49 +80,80 @@ _milInsignia append [];
 //       Loadouts       //
 //////////////////////////
 
-_slRifles append [];
-_rifles append [];
-_carbines append [];
-_grenadeLaunchers append [];
+_slRifles append [
+["SPE_M1A1_Thompson", "", "", "", ["SPE_30Rnd_Thompson_45ACP", "SPE_30Rnd_Thompson_45ACP", "SPE_30Rnd_Thompson_45ACP_t"], [], ""],
+["SPE_M3_GreaseGun", "", "", "", ["SPE_30Rnd_M3_GreaseGun_45ACP", "SPE_30Rnd_M3_GreaseGun_45ACP", "SPE_30Rnd_M3_GreaseGun_45ACP_t"], [], ""],
+["SPE_M1918A2_BAR", "", "SPE_M1918A2_BAR_Handle", "", ["SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63_M2_AP"], [], ""]
+];
+_rifles append [
+["SPE_M1_Garand", "SPE_ACC_M1_Bayo", "", "", ["SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_t"], [], ""],
+["SPE_M1_Garand", "SPE_ACC_M1905_Bayo", "", "", ["SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_t"], [], ""],
+["SPE_M1903A3_Springfield", "SPE_ACC_M1_Bayo", "", "", ["SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_t"], [], ""],
+["SPE_M1903A3_Springfield", "SPE_ACC_M1905_Bayo", "", "", ["SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_t"], [], ""]
+];
+_carbines append [
+["SPE_M1_Carbine", "", "", "", ["SPE_15Rnd_762x33", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], [], ""],
+["SPE_M1A1_Carbine", "", "", "", ["SPE_15Rnd_762x33", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], [], ""]
+];
+_grenadeLaunchers append [
+["SPE_M1_Garand_M7", "SPE_ACC_GL_M7", "", "", ["SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_M1", "SPE_8Rnd_762x63_t"], ["SPE_1Rnd_G_M9A1", "SPE_1Rnd_G_Mk2", "SPE_1Rnd_G_M17A1", "SPE_1Rnd_G_M2_ANM8"], ""],
+["SPE_M1903A3_Springfield_M1_GL", "SPE_ACC_GL_M1", "", "", ["SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_t"], ["SPE_1Rnd_G_M9A1", "SPE_1Rnd_G_Mk2", "SPE_1Rnd_G_M17A1", "SPE_1Rnd_G_M2_ANM8"], ""],
+["SPE_M1_Carbine_M8", "SPE_ACC_GL_M8", "", "", ["SPE_15Rnd_762x33", "SPE_15Rnd_762x33", "SPE_15Rnd_762x33_t"], ["SPE_1Rnd_G_M9A1", "SPE_1Rnd_G_Mk2", "SPE_1Rnd_G_M17A1", "SPE_1Rnd_G_M2_ANM8"], ""]
+];
 _designatedGrenadeLaunchers append [];
-_SMGs append [];
-_machineGuns append [];
-_marksmanRifles append [];
-_sniperRifles append [];
-_lightATLaunchers append [];
+_SMGs append [
+["SPE_M1A1_Thompson", "", "", "", ["SPE_30Rnd_Thompson_45ACP", "SPE_30Rnd_Thompson_45ACP", "SPE_30Rnd_Thompson_45ACP_t"], [], ""],
+["SPE_M3_GreaseGun", "", "", "", ["SPE_30Rnd_M3_GreaseGun_45ACP", "SPE_30Rnd_M3_GreaseGun_45ACP", "SPE_30Rnd_M3_GreaseGun_45ACP_t"], [], ""]
+];
+_machineGuns append [
+["SPE_M1919A4", "", "", "", ["SPE_50Rnd_762x63", "SPE_50Rnd_762x63_M1", "SPE_50Rnd_762x63_M2_AP"], [], ""],
+["SPE_M1919A6", "", "", "", ["SPE_50Rnd_762x63", "SPE_50Rnd_762x63_M1", "SPE_50Rnd_762x63_M2_AP"], [], ""],
+["SPE_M1918A2_BAR", "", "SPE_M1918A2_BAR_Handle", "", ["SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63"], [], ""],
+["SPE_M1918A2_erla_BAR", "", "SPE_M1918A2_BAR_Handle", "", ["SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63"], [], ""],
+["SPE_M1918A0_BAR", "", "", "", ["SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63_M1", "SPE_20Rnd_762x63"], [], ""]
+];
+_marksmanRifles append [
+["SPE_M1903A4_Springfield", "", "", "", ["SPE_5Rnd_762x63", "SPE_5Rnd_762x63", "SPE_5Rnd_762x63_t"], [], ""],
+["SPE_M1903A4_Springfield", "", "", "", ["SPE_5Rnd_762x63", "SPE_5Rnd_762x63", "SPE_5Rnd_762x63_t"], [], ""]
+];
+_sniperRifles append [
+["SPE_M1903A4_Springfield", "", "", "", ["SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M2_AP"], [], ""],
+["SPE_M1903A4_Springfield", "", "", "", ["SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M1", "SPE_5Rnd_762x63_M2_AP"], [], ""]
+];
+_lightATLaunchers append ["SPE_M1A1_Bazooka"];
 _lightHELaunchers append [];
 _ATLaunchers append [];
 _missleATLaunchers append [];
 _AALaunchers append [];
-_sidearms append [];
+_sidearms append ["SPE_M1911"];
 _GLsidearms append [];
 
-_ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
-_lightExplosives append ["DemoCharge_Remote_Mag"];
-_heavyExplosives append ["SatchelCharge_Remote_Mag"];
+_ATMines append ["SPE_US_M1A1_ATMINE_mag"];
+_APMines append ["SPE_US_M3_Pressure_MINE_mag", "SPE_US_M3_MINE_mag"];
+_lightExplosives append ["SPE_US_TNT_half_pound_mag"];
+_heavyExplosives append ["SPE_US_TNT_4pound_mag", "SPE_US_Bangalore_mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["SPE_US_Mk_2", "SPE_US_Mk_2_Yellow", "SPE_US_AN_M14"];
 _antiTankGrenades append [];
-_smokeGrenades append ["SmokeShell"];
-_signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
+_smokeGrenades append ["SPE_US_M18"];
+_signalsmokeGrenades append ["SPE_US_M18_Green", "SPE_US_M18_Red", "SPE_US_M18_Violet", "SPE_US_M18_Yellow"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
-_radios append ["ItemRadio"];
+_watches append ["SPE_US_ItemWatch"];
+_compasses append ["SPE_US_ItemCompass"];
+_radios append ["TFAR_SCR536"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["SPE_Binocular_US"];
 _rangefinders append ["Rangefinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["U_SPE_US_Private_1st"];
+_traitorVests append ["V_SPE_US_Vest_Garand"];
+_traitorHats append ["H_SPE_US_Helmet"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["U_SPE_US_CC_1LT"];
+_officerVests append ["V_SPE_US_Vest_Carbine_nco_Radio"];
+_officerHats append ["H_SPE_US_Helmet_Cap"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -130,34 +161,35 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
-_SLuniforms append [];
+_uniforms append ["U_SPE_US_Technician"];
+_SLuniforms append ["U_SPE_US_CC_1LT", "U_SPE_US_Sergeant"];
 _ENGuniforms append [];
-_MGvests append [];
-_MEDvests append [];
-_SLvests append [];
-_SNIvests append [];
-_GLvests append [];
+_MEDuniforms append ["U_SPE_US_Med"];
+_MGvests append ["V_SPE_US_Vest_Bar"];
+_MEDvests append ["V_SPE_US_Vest_Medic"];
+_SLvests append ["V_SPE_US_Vest_45_off", "V_SPE_US_Vest_Carbine_nco_Radio", "V_SPE_US_Vest_Thompson_nco"];
+_SNIvests append ["V_SPE_US_Vest_Garand_M43"];
+_GLvests append ["V_SPE_US_Vest_Grenadier"];
 _ATvests append [];
-_ENGvests append [];
-_vests append [];
-_backpacks append [];
-_ATBackpacks append [];
+_ENGvests append ["V_SPE_US_Vest_Carbine_eng"];
+_vests append ["V_SPE_US_Vest_Carbine", "V_SPE_US_Vest_Garand", "V_SPE_US_Vest_Garand_M43"];
+_backpacks append ["B_SPE_US_Backpack_Bandoleer_Rifleman", "B_SPE_US_Backpack_BAR"];
+_ATBackpacks append ["B_SPE_US_Backpack_RocketBag"];
 _AABackpacks append [];
 _MGBackpacks append [];
-_GLBackpacks append [];
+_GLBackpacks append ["B_SPE_US_Backpack_Bandoleer_Grenadier_1903"];
 _MEDBackpacks append [];
-_ENGBackpacks append [];
+_ENGBackpacks append ["B_SPE_US_Backpack_eng"];
 _EXPBackpacks append [];
-_SLBackpacks append [];
+_SLBackpacks append ["B_SPE_US_Radio_packboard"];
 _longRangeRadios append [];
-_helmets append [];
-_MEDhelmets append [];
-_SLhelmets append [];
+_helmets append ["H_SPE_US_Helmet", "H_SPE_US_Helmet_Net", "H_SPE_US_Helmet_Net_ns", "H_SPE_US_Helmet_Net_os", "H_SPE_US_Helmet_ns", "H_SPE_US_Helmet_os"];
+_MEDhelmets append ["H_SPE_US_Helmet_Med"];
+_SLhelmets append ["H_SPE_US_Helmet_Cap", "H_SPE_US_Helmet_First_lieutenant", "H_SPE_US_Helmet_Net_os"];
 _SLhats append [];
 _SNIhats append [];
 
-_slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
+_slItems append [];
 _rItems append [];
 _mItems append [];
 _gItems append [];
@@ -173,13 +205,12 @@ _uItems append [];
 
 // Remove this if not wanted, example: WW2 mods
 if (A3A_hasACE) then {
-	_slItems append ["ACE_microDAGR", "ACE_DAGR"];
+	_slItems append [];
 	_eeItems append ["SPE_ToolKit"];
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -261,8 +292,7 @@ _sfSLhelmets append ["H_SPE_US_Rangers_Helmet_First_lieutenant", "H_SPE_US_Range
 _sfSLhats append [];
 _sfSNIhats append [];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -331,8 +361,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -402,8 +431,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -492,9 +520,6 @@ _militiaSLhelmets append ["H_SPE_FR_US_Helmet_ns"];
 _militiaSLhats append [];
 _militiaSNIhats append [];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

@@ -2,8 +2,8 @@
  * Converted from: Scion_Reb_Replikas.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_lightUnarmed append ["SCEXT_Dingo_AC"];
-_lightArmed append ["SC_Ferret_AC"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,9 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "SSV_Uniform_Android_Military_Ruined"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

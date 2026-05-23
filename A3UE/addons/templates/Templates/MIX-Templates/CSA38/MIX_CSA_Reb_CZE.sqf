@@ -2,8 +2,8 @@
  * Converted from: CSA_Reb_CZE.sqf
  */
 _basic append ["CSA38_kolo"];
-_lightUnarmed append ["LIB_Willys_MB"];
-_lightArmed append ["LIB_US_Willys_MB_M1919"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -106,12 +106,12 @@ _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
+_watches append ["LIB_GER_ItemWatch"];
+_compasses append ["LIB_GER_ItemCompass_deg"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["CSA38_Binocular"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append [];
@@ -128,7 +128,18 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_csa38_uniCZ10",
+    "U_csa38_uniCZ01",
+	"U_csa38_uniCZ09",
+	"U_csa38_uniCZ04",
+	"U_csa38_uniCZ08",
+	"U_csa38_uniCZ03",
+	"U_csa38_uniCZ07",
+	"U_csa38_uniCZ05",
+	"U_csa38_uniCZ06",
+    "U_csa38_uniCZ02"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -176,8 +187,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_LIB_Dienst_Brille", "G_LIB_Dienst_Brille2"];
+_goggles append ["G_LIB_Dust_Goggles"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

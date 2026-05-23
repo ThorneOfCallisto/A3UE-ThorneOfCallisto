@@ -2,8 +2,8 @@
  * Converted from: NFtS_Reb_NOR_Arctic.sqf
  */
 _basic append ["NORTH_FIN_41_R75"];
-_lightUnarmed append ["LIB_Kfz1_w"];
-_lightArmed append ["LIB_Kfz1_MG42_sernyt"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -106,12 +106,12 @@ _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
+_watches append ["LIB_GER_ItemWatch"];
+_compasses append ["LIB_GER_ItemCompass_deg"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["LIB_Binocular_GER"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append [];
@@ -128,7 +128,19 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_NORTH_NOR_I_W_Snowsuit",
+    "U_NORTH_NOR_I_W_Snowsuit_HMKG",
+    "U_NORTH_NOR_I_W_Snowsuit_lower",
+	"U_NORTH_NOR_I_W_Snowsuit_upper",
+	"U_NORTH_NOR_I_W_Uniform",
+    "U_NORTH_NOR_I_W_Uniform1",
+    "U_NORTH_NOR_I_W_Uniform2",
+	"U_NORTH_NOR_I_W_Uniform3",
+    "U_NORTH_NOR_I_W_Uniform4",
+    "U_NORTH_NOR_I_W_Uniform_Sergeant",
+	"U_NORTH_NOR_I_W_Uniform_Specialist"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -176,8 +188,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_LIB_Dienst_Brille", "G_LIB_Dienst_Brille2"];
+_goggles append ["G_LIB_Dust_Goggles"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

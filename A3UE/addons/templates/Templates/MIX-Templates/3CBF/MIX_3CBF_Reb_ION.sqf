@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_ION.sqf
  */
 _basic append ["UK3CB_ION_B_Winter_Quadbike"];
-_lightUnarmed append ["UK3CB_ION_B_Winter_Offroad", "UK3CB_ION_B_Winter_Pickup", "UK3CB_ION_B_Winter_SUV", "UK3CB_ION_B_Winter_M998_2DR"];
-_lightArmed append ["UK3CB_ION_B_Winter_Offroad_M2", "UK3CB_ION_B_Winter_Hilux_M2", "UK3CB_ION_B_Winter_LR_M2", "UK3CB_ION_B_Winter_Pickup_M2", "UK3CB_ION_B_Winter_M1025_M2", "UK3CB_ION_B_Winter_SUV_Armed"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -178,8 +178,16 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append [
+    "UK3CB_G_Ballistic_Shemagh_Green_Tactical_Gloves_Tan",
+    "UK3CB_G_Ballistic_Shemagh_White_Tactical_Gloves_Black",
+    "UK3CB_G_Ballistic_Black_Tactical_Gloves_Black",
+    "UK3CB_G_Ballistic_Black_Tactical_Gloves_Green_Headset",
+    "UK3CB_G_Ballistic_Black_Tactical_Gloves_Tan_Headset",
+    "UK3CB_G_Gloves_Green",
+    "UK3CB_G_Gloves_Black"
+];
+_goggles append ["rhs_ess_black"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

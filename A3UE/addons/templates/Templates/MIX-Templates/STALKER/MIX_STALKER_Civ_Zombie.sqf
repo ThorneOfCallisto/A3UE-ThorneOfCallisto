@@ -127,7 +127,13 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_U_O_RUS_Gorka_Green",
+    "CUP_U_O_RUS_Gorka_Green_gloves_kneepads",
+    "CUP_U_O_CHDKZ_Lopotev",
+    "CUP_U_C_Labcoat_02",
+    "CUP_U_I_GUE_Anorak_02"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

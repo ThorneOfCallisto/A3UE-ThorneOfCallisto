@@ -127,7 +127,15 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+	"SCE_Loner_4",
+	"SCE_Loner_3",
+	"SCE_Loner_2",
+	"SCE_Loner_1",
+	"SCE_Loner_CBRN",
+	"SE_Assault_Fatigues_Loner",
+	"SE_SEVA_Loner"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

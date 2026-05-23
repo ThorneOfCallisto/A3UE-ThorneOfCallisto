@@ -2,8 +2,8 @@
  * Converted from: CSLA_FIA.sqf
  */
 _basic append ["CSLA_CIV_JARA250"];
-_lightUnarmed append ["FIA_AZU_para","FIA_BTR40"];
-_lightArmed append ["FIA_BTR40_DSKM","FIA_AZU_DSKM","FIA_AZU_T21","CSLA_FIA_V3S_AGS17","CSLA_FIA_V3S_GT"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,20 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+		"FIA_uniwld",
+		"FIA_uniwld2",
+		"FIA_uniwld3",
+		"FIA_uniwld4",
+		"FIA_uniwld5",
+		"FIA_uniwld6",
+		"FIA_uniwld7",
+		"FIA_uniwld8",
+		"FIA_uniwld9",
+		"FIA_uniwld10",
+		"FIA_uniwld11",
+		"FIA_uniwld12"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -175,8 +188,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

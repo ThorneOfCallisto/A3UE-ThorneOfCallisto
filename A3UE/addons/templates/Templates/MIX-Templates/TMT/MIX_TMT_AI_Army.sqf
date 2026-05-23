@@ -90,9 +90,15 @@ _marksmanRifles append [];
 _sniperRifles append [];
 _lightATLaunchers append [];
 _lightHELaunchers append [];
-_ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
+_ATLaunchers append [
+    ["CUP_launch_MAAWS", "", "", "CUP_optic_MAAWS_Scope", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""]
+];
+_missleATLaunchers append [
+    ["CUP_launch_RPG7V", "", "", "", ["CUP_PG7V_M"], [], ""]
+];
+_AALaunchers append [
+    ["CUP_launch_FIM92Stinger", "", "", "", [""], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -101,7 +107,7 @@ _APMines append ["APERSMine_Range_Mag"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
 _heavyExplosives append ["SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["CUP_HandGrenade_M67"];
 _antiTankGrenades append [];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
@@ -111,17 +117,17 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_NVGs append ["NVGoggles_OPFOR"];
 _binoculars append ["Binocular"];
 _rangefinders append ["Rangefinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["tmt_specialforces_combat_uniform"];
+_traitorVests append ["CUP_V_B_RRV_Officer_CB", "CUP_V_CPC_light_rngr"];
+_traitorHats append ["tmt_Booniehat_sof_HS"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["tmt_specialforces_combat_sfshell_uniform"];
+_officerVests append ["CUP_V_B_RRV_Officer_CB", "TACTEC_medium"];
+_officerHats append ["TMT_Beret_Maroon_officer"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -132,6 +138,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -149,12 +156,12 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["CUP_B_Kombat_Radio_Olive"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
-_SLhats append [];
-_SNIhats append [];
+_SLhats append ["TMT_Beret_black"];
+_SNIhats append ["TMT_Beret_black"];
 
 _slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
 _rItems append [];
@@ -177,8 +184,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append ["tmt_tacticalglasses_clear"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -285,12 +291,11 @@ _sfSLhelmets append [];
 _sfSLhats append ["tmt_garanti_helmet_cut_cover_rac_IR_full_sof"];
 _sfSNIhats append ["tmt_garanti_helmet_cut_cover_peltor_IR_full_sof"];
 
-_sfglasses append [
+_sffacewear append [
     "tmt_tacticalglasses_buff_sof",
     "tmt_tacticalglasses_shamagh_filet_sof",
     "tmt_buff_sof"
 ];
-_sfgoggles append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -394,8 +399,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append ["tmt_garanti_helmet_cut_cover_rac_IR_full_mc"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -495,8 +499,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["tmt_garanti_helmet_cut_fullcover_peltor_kkk", "tmt_garanti_helmet_midcut_fullcover_patch_IR_KKK"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -617,9 +620,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append ["tmt_garanti_helmet_cut_patch_peltor_sof", "tmt_Booniehat_kkk_peltor"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

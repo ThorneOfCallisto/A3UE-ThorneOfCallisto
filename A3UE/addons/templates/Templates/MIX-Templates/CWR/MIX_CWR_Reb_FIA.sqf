@@ -2,8 +2,8 @@
  * Converted from: CWR_Reb_FIA.sqf
  */
 _basic append ["cwr3_i_m151"];
-_lightUnarmed append ["cwr3_i_landrover", "cwr3_i_uaz452", "cwr3_i_uaz_open", "cwr3_i_btr40"];
-_lightArmed append ["cwr3_i_uaz_dshkm", "cwr3_i_btr40_dshkm"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -133,7 +133,16 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "cwr3_i_uniform_alpenflage",
+    "cwr3_i_uniform_fleckerlteppich",
+    "cwr3_i_uniform_blumentarn",
+    "cwr3_i_uniform_dpm_gloves",
+    "cwr3_i_uniform_jigsaw_rolled",
+    "cwr3_i_uniform_M62",
+    "cwr3_i_uniform_og107",
+    "cwr3_i_uniform_splitter_weathered"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

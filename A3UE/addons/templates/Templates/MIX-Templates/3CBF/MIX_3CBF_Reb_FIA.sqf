@@ -2,8 +2,8 @@
  * Converted from: 3CBF_Reb_FIA.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_lightUnarmed append ["UK3CB_ARD_I_Hilux_Open"];
-_lightArmed append ["UK3CB_ARD_I_Hilux_M2"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -142,7 +142,41 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_IG_Guerilla2_1",
+    "U_IG_Guerilla2_2",
+    "U_IG_Guerilla2_3",
+    "U_IG_Guerrilla_6_1",
+    "U_I_G_resistanceLeader_F",
+    "U_I_L_Uniform_01_deserter_F",
+    "rhsgref_uniform_3color_desert",
+    "rhsgref_uniform_dpm",
+    "rhsgref_uniform_dpm_olive",
+    "rhsgref_uniform_og107",
+    "rhsgref_uniform_og107_erdl",
+    "rhsgref_uniform_tigerstripe",
+    "rhsgref_uniform_woodland",
+    "rhsgref_uniform_woodland_olive",
+    "UK3CB_CHD_I_U_CombatSmock_09",
+    "UK3CB_CHD_I_U_CombatSmock_12",
+    "UK3CB_CHD_I_U_CombatUniform_08",
+    "UK3CB_LNM_I_U_CombatSmock_21",
+    "UK3CB_LSM_I_U_CombatSmock_05",
+    "UK3CB_LSM_I_U_CombatSmock_04",
+    "UK3CB_LSM_I_U_CombatSmock_11",
+    "UK3CB_LSM_I_U_CombatSmock_10",
+    "UK3CB_LSM_I_U_Crew_CombatSmock_12",
+    "UK3CB_LSM_I_U_CombatSmock_27",
+    "UK3CB_LSM_I_U_CombatSmock_29",
+    "UK3CB_LSM_I_U_CombatSmock_25",
+    "UK3CB_LSM_I_U_CombatUniform_07",
+    "UK3CB_LSM_I_U_CombatUniform_09",
+    "UK3CB_LNM_I_U_CombatUniform_15",
+    "UK3CB_LSM_I_U_CombatUniform_06",
+    "UK3CB_LSM_I_U_CombatUniform_02",
+    "UK3CB_LSM_I_U_CombatUniform_03",
+    "UK3CB_LSM_I_U_CombatUniform_01"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -190,8 +224,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

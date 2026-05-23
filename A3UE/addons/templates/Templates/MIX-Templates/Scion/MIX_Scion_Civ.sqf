@@ -127,7 +127,10 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "SSV_Uniform_Android_Pilot",
+    "SSV_Uniform_Android_Military"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

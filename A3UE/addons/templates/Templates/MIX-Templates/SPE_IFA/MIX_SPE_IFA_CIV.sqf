@@ -127,7 +127,28 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_SPE_CIV_Citizen_1",
+    "U_SPE_CIV_Citizen_1_tie",
+    "U_SPE_CIV_Citizen_1_trop",
+    "U_SPE_CIV_Citizen_2",
+    "U_SPE_CIV_Citizen_2_tie",
+    "U_SPE_CIV_Citizen_2_trop",
+    "U_SPE_CIV_Citizen_3",
+    "U_SPE_CIV_Citizen_3_tie",
+    "U_SPE_CIV_Citizen_4",
+    "U_SPE_CIV_Citizen_4_tie",
+    "U_SPE_CIV_Citizen_4_trop",
+    "U_SPE_CIV_Citizen_5",
+    "U_SPE_CIV_Citizen_5_tie",
+    "U_SPE_CIV_Citizen_5_trop",
+    "U_SPE_CIV_Citizen_6",
+    "U_SPE_CIV_Citizen_6_tie",
+    "U_SPE_CIV_Citizen_6_trop",
+    "U_SPE_CIV_Citizen_7",
+    "U_SPE_CIV_Citizen_7_tie",
+    "U_SPE_CIV_Citizen_7_trop"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -148,7 +169,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append _civHats;
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

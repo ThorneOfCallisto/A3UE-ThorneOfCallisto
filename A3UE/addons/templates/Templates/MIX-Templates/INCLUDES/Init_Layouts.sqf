@@ -35,8 +35,8 @@
 ["vehiclesAPCs", _APCs] call _fnc_saveToTemplate;
 ["vehiclesIFVs", _IFVs] call _fnc_saveToTemplate;
 ["vehiclesMilitiaAPCs", _militiaAPCs] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", _lightUnarmed] call _fnc_saveToTemplate;
-["vehiclesLightArmed", _lightArmed] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", _unarmedVehicles] call _fnc_saveToTemplate;
+["vehiclesLightArmed", _armedVehicles] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  _lightTanks] call _fnc_saveToTemplate;
 ["vehiclesAirborne", _airborneVehicles] call _fnc_saveToTemplate;
 ["vehiclesAA", _aa] call _fnc_saveToTemplate;
@@ -69,8 +69,6 @@
 // If a given loadoutData variable has a weighted array, make sure all mod/DLC compats also have a weighted array for the same.
 // To simplify work on mod/DLC compats, the weighted arrays here are made to sum up to 10. This is so that compats have a consistent base to work off but is not strictly necessary.
 
-private _fnc_GenerateLayoutsForCurrentGear = {
-    params [["_LayoutTag", ""]];
 private _loadoutData = call _fnc_createLoadoutData;
 _loadoutData set ["slRifles", _slRifles];
 _loadoutData set ["rifles", _rifles];
@@ -142,8 +140,7 @@ _loadoutData set ["helmets", _helmets];
 _loadoutData set ["slHat", _SLhats];
 _loadoutData set ["sniHats", _SNIhats];
 
-_loadoutData set ["glasses", _glasses];
-_loadoutData set ["goggles", _goggles];
+_loadoutData set ["facewear", _facewear];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -227,8 +224,7 @@ if (count _sflongRangeRadios > 0) then { _sfLoadoutData set ["longRangeRadios", 
 if (count _sfhelmets > 0) then { _sfLoadoutData set ["helmets", _sfhelmets]; };
 if (count _sfSLhats > 0) then { _sfLoadoutData set ["slHat", _sfSLhats]; };
 if (count _sfSNIhats > 0) then { _sfLoadoutData set ["sniHats", _sfSNIhats]; };
-if (count _sfglasses > 0) then { _sfLoadoutData set ["glasses", _sfglasses]; };
-if (count _sfgoggles > 0) then { _sfLoadoutData set ["goggles", _sfgoggles]; };
+if (count _sffacewear > 0) then { _sfLoadoutData set ["facewear", _sffacewear]; };
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -289,8 +285,7 @@ if (count _elitelongRangeRadios > 0) then { _eliteLoadoutData set ["longRangeRad
 if (count _elitehelmets > 0) then { _eliteLoadoutData set ["helmets", _elitehelmets]; };
 if (count _eliteSLhats > 0) then { _eliteLoadoutData set ["slHat", _eliteSLhats]; };
 if (count _eliteSNIhats > 0) then { _eliteLoadoutData set ["sniHats", _eliteSNIhats]; };
-if (count _eliteglasses > 0) then { _eliteLoadoutData set ["glasses", _eliteglasses]; };
-if (count _elitegoggles > 0) then { _eliteLoadoutData set ["goggles", _elitegoggles]; };
+if (count _elitefacewear > 0) then { _eliteLoadoutData set ["facewear", _elitefacewear]; };
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -351,8 +346,7 @@ if (count _militarylongRangeRadios > 0) then { _militaryLoadoutData set ["longRa
 if (count _militaryhelmets > 0) then { _militaryLoadoutData set ["helmets", _militaryhelmets]; };
 if (count _militarySLhats > 0) then { _militaryLoadoutData set ["slHat", _militarySLhats]; };
 if (count _militarySNIhats > 0) then { _militaryLoadoutData set ["sniHats", _militarySNIhats]; };
-if (count _militaryglasses > 0) then { _militaryLoadoutData set ["glasses", _militaryglasses]; };
-if (count _militarygoggles > 0) then { _militaryLoadoutData set ["goggles", _militarygoggles]; };
+if (count _militaryfacewear > 0) then { _militaryLoadoutData set ["facewear", _militaryfacewear]; };
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -424,8 +418,7 @@ if (count _militialongRangeRadios > 0) then { _militiaLoadoutData set ["longRang
 if (count _militiahelmets > 0) then { _militiaLoadoutData set ["helmets", _militiahelmets]; };
 if (count _militiaSLhats > 0) then { _militiaLoadoutData set ["slHat", _militiaSLhats]; };
 if (count _militiaSNIhats > 0) then { _militiaLoadoutData set ["sniHats", _militiaSNIhats]; };
-if (count _militiaglasses > 0) then { _militiaLoadoutData set ["glasses", _militiaglasses]; };
-if (count _militiagoggles > 0) then { _militiaLoadoutData set ["goggles", _militiagoggles]; };
+if (count _militiafacewear > 0) then { _militiaLoadoutData set ["facewear", _militiafacewear]; };
 
 //////////////////////////
 //    Misc Loadouts     //
@@ -439,7 +432,7 @@ if (count _crewhelmets > 0) then { _crewLoadoutData set ["helmets", _crewhelmets
 if (count _crewcarbines > 0) then { _crewLoadoutData set ["carbines", _crewcarbines]; };
 if (count _crewSMGs > 0) then { _crewLoadoutData set ["SMGs", _crewSMGs]; };
 if (count _crewsidearms > 0) then { _crewLoadoutData set ["sidearms", _crewsidearms]; };
-if (count _crewfacewear > 0) then { _crewLoadoutData set ["goggles", _crewfacewear]; };
+if (count _crewfacewear > 0) then { _crewLoadoutData set ["facewear", _crewfacewear]; };
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 if (count _pilotuniforms > 0) then { _pilotLoadoutData set ["uniforms", _pilotuniforms]; };
@@ -449,7 +442,7 @@ if (count _pilothelmets > 0) then { _pilotLoadoutData set ["helmets", _pilothelm
 if (count _pilotcarbines > 0) then { _pilotLoadoutData set ["carbines", _pilotcarbines]; };
 if (count _pilotSMGs > 0) then { _pilotLoadoutData set ["SMGs", _pilotSMGs]; };
 if (count _pilotsidearms > 0) then { _pilotLoadoutData set ["sidearms", _pilotsidearms]; };
-if (count _pilotfacewear > 0) then { _pilotLoadoutData set ["goggles", _pilotfacewear]; };
+if (count _pilotfacewear > 0) then { _pilotLoadoutData set ["facewear", _pilotfacewear]; };
 
 /////////////////////////////////
 //    Unit Type Definitions    //
@@ -458,7 +451,7 @@ if (count _pilotfacewear > 0) then { _pilotLoadoutData set ["goggles", _pilotfac
 
 private _squadLeaderTemplate = {
     [selectRandomWeighted ["helmets", 2, "slHat", 1]] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["SLvests", "Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     [["slUniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -487,7 +480,7 @@ private _squadLeaderTemplate = {
 
 private _riflemanTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -518,7 +511,7 @@ private _riflemanTemplate = {
 
 private _radiomanTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["longRangeRadios"] call _fnc_setBackpack;
@@ -545,7 +538,7 @@ private _radiomanTemplate = {
 
 private _medicTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["MEDvests", "Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["medBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -571,7 +564,7 @@ private _medicTemplate = {
 
 private _grenadierTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["GLvests", "Hvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -603,7 +596,7 @@ private _grenadierTemplate = {
 
 private _explosivesExpertTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["Hvests", "vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["expBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -636,7 +629,7 @@ private _explosivesExpertTemplate = {
 
 private _engineerTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["engBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -665,7 +658,7 @@ private _engineerTemplate = {
 
 private _latTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -695,7 +688,7 @@ private _latTemplate = {
 
 private _atTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -722,7 +715,7 @@ private _atTemplate = {
 
 private _aaTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     [["aaBackpacks","atBackpacks", "backpacks"] call _fnc_fallback] call _fnc_setBackpack;
@@ -749,7 +742,7 @@ private _aaTemplate = {
 
 private _machineGunnerTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["MGvests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
     ["backpacks"] call _fnc_setBackpack;
@@ -775,7 +768,7 @@ private _machineGunnerTemplate = {
 
 private _marksmanTemplate = {
     [selectRandomWeighted ["helmets", 2, "sniHats", 1]] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -802,7 +795,7 @@ private _marksmanTemplate = {
 
 private _sniperTemplate = {
     ["sniHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["sniVests", "vests"] call _fnc_fallback] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -852,7 +845,7 @@ private _policeTemplate = {
 
 private _crewTemplate = {
     ["helmets"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     ["vests"] call _fnc_setVest;
     ["uniforms"] call _fnc_setUniform;
 
@@ -891,7 +884,7 @@ private _unarmedTemplate = {
 
 private _traitorTemplate = {
     ["traitorHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 1.25, "glasses", 0.75]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 1.25, "facewear", 0.75]] call _fnc_setFacewear;
     ["traitorVests"] call _fnc_setVest;
     ["traitorUniforms"] call _fnc_setUniform;
 
@@ -910,7 +903,7 @@ private _traitorTemplate = {
 
 private _officerTemplate = {
     ["officerHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 1.25, "glasses", 0.75]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 1.25, "facewear", 0.75]] call _fnc_setFacewear;
     ["officerVests"] call _fnc_setVest;
     ["officerUniforms"] call _fnc_setUniform;
 
@@ -931,7 +924,7 @@ private _officerTemplate = {
 
 private _patrolSniperTemplate = {
     ["sniHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["cloakVests","vests"] call _fnc_fallback] call _fnc_setVest;
     [["cloakUniforms","uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -956,7 +949,7 @@ private _patrolSniperTemplate = {
 
 private _patrolSpotterTemplate = {
     ["sniHats"] call _fnc_setHelmet;
-    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [selectRandomWeighted [[], 2, "facewear", 1.25]] call _fnc_setFacewear;
     [["cloakVests","vests"] call _fnc_fallback] call _fnc_setVest;
     [["cloakUniforms","uniforms"] call _fnc_fallback] call _fnc_setUniform;
 
@@ -981,129 +974,135 @@ private _patrolSpotterTemplate = {
 };
 
 
-
 ////////////////////////////////////////////////////////////////////////////////////////
-//  Thorne MIX generated unit layouts
-//  Generates base loadouts AND per-gear-faction loadouts like:
-//  loadouts_occ_militia_AMF_Rifleman
-//  loadouts_occ_police_BW_Standard
-//  loadouts_occ_other_SFP_Crew
+//  You shouldn't touch below this line unless you really really know what you're doing.
+//  Things below here can and will break the gamemode if improperly changed.
 ////////////////////////////////////////////////////////////////////////////////////////
 
-private _fnc_Prefix = {
-    params ["_base"];
-    if (_LayoutTag isEqualTo "") exitWith { _base };
-    format ["%1_%2", _base, _LayoutTag]
-};
-
-private _fnc_GenerateSet = {
-    params ["_basePrefix", "_unitTypes", "_loadoutData"];
-    private _finalPrefix = [_basePrefix] call _fnc_Prefix;
-    private _finalUnitTypes = _unitTypes apply {
-        _x params ["_name", "_template", ["_traits", []], ["_properties", []]];
-        [_name, _template, _traits, [_finalPrefix]]
-    };
-    [_finalPrefix, _finalUnitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
-};
-
-private _commonCombatUnitTypes = [
-    ["SquadLeader", _squadLeaderTemplate, [], []],
-    ["Rifleman", _riflemanTemplate, [], []],
-    ["Radioman", _radiomanTemplate, [], []],
-    ["Medic", _medicTemplate, [["medic", true]], []],
-    ["Engineer", _engineerTemplate, [["engineer", true]], []],
-    ["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], []],
-    ["Grenadier", _grenadierTemplate, [], []],
-    ["LAT", _latTemplate, [], []],
-    ["AT", _atTemplate, [], []],
-    ["AA", _aaTemplate, [], []],
-    ["MachineGunner", _machineGunnerTemplate, [], []],
-    ["Marksman", _marksmanTemplate, [], []],
-    ["Sniper", _sniperTemplate, [], []]
+/////////////////////////////
+//  Special Forces Units   //
+/////////////////////////////
+private _prefix = "SF";
+private _unitTypes = [
+	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
+	["Rifleman", _riflemanTemplate, [], [_prefix]],
+	["Radioman", _radiomanTemplate, [], [_prefix]],
+	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
+	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
+	["Grenadier", _grenadierTemplate, [], [_prefix]],
+	["LAT", _latTemplate, [], [_prefix]],
+	["AT", _atTemplate, [], [_prefix]],
+	["AA", _aaTemplate, [], [_prefix]],
+	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
+	["Marksman", _marksmanTemplate, [], [_prefix]],
+	["Sniper", _sniperTemplate, [], [_prefix]]
 ];
 
-private _commonCombatPatrolUnitTypes = _commonCombatUnitTypes + [
-    ["PatrolSniper", _patrolSniperTemplate, [], []],
-    ["PatrolSpotter", _patrolSpotterTemplate, [], []]
+[_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+
+/*{
+    params ["_name", "_loadoutTemplate"];
+    private _loadouts = [_sfLoadoutData, _loadoutTemplate] call _fnc_buildLoadouts;
+    private _finalName = _prefix + _name;
+    [_finalName, _loadouts] call _fnc_saveToTemplate;
+} forEach _unitTypes;
+*/
+
+///////////////////////
+//  Military Units   //
+///////////////////////
+private _prefix = "military";
+private _unitTypes = [
+	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
+	["Rifleman", _riflemanTemplate, [], [_prefix]],
+	["Radioman", _radiomanTemplate, [], [_prefix]],
+	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
+	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
+	["Grenadier", _grenadierTemplate, [], [_prefix]],
+	["LAT", _latTemplate, [], [_prefix]],
+	["AT", _atTemplate, [], [_prefix]],
+	["AA", _aaTemplate, [], [_prefix]],
+	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
+	["Marksman", _marksmanTemplate, [], [_prefix]],
+	["Sniper", _sniperTemplate, [], [_prefix]],
+    	["PatrolSniper", _patrolSniperTemplate, [], [_prefix]],
+    	["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
 ];
 
-["SF", _commonCombatUnitTypes, _sfLoadoutData] call _fnc_GenerateSet;
-["military", _commonCombatPatrolUnitTypes, _militaryLoadoutData] call _fnc_GenerateSet;
-["police", [["SquadLeader", _policeTemplate, [], []], ["Standard", _policeTemplate, [], []]], _policeLoadoutData] call _fnc_GenerateSet;
-["militia", _commonCombatPatrolUnitTypes, _militiaLoadoutData] call _fnc_GenerateSet;
-["elite", _commonCombatPatrolUnitTypes, _eliteLoadoutData] call _fnc_GenerateSet;
+[_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
-["other", [["Crew", _crewTemplate, [], []]], _crewLoadoutData] call _fnc_GenerateSet;
-["other", [["Pilot", _crewTemplate, [], []]], _pilotLoadoutData] call _fnc_GenerateSet;
-["other", [["Official", _officerTemplate, [], []]], _militaryLoadoutData] call _fnc_GenerateSet;
-["other", [["Traitor", _traitorTemplate, [], []]], _militiaLoadoutData] call _fnc_GenerateSet;
-["other", [["Unarmed", _UnarmedTemplate, [], []]], _militaryLoadoutData] call _fnc_GenerateSet;
+////////////////////////
+//    Police Units    //
+////////////////////////
+private _prefix = "police";
+private _unitTypes = [
+	["SquadLeader", _policeTemplate, [], [_prefix]],
+	["Standard", _policeTemplate, [], [_prefix]]
+];
 
-diag_log format ["[Thorne MIX] Generated unit layout tag '%1'", if (_LayoutTag isEqualTo "") then {"BASE"} else {_LayoutTag}];
+[_prefix, _unitTypes, _policeLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
-};
+////////////////////////
+//    Militia Units    //
+////////////////////////
+private _prefix = "militia";
+private _unitTypes = [
+	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
+	["Rifleman", _riflemanTemplate, [], [_prefix]],
+	["Radioman", _radiomanTemplate, [], [_prefix]],
+	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
+	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
+	["Grenadier", _grenadierTemplate, [], [_prefix]],
+	["LAT", _latTemplate, [], [_prefix]],
+	["AT", _atTemplate, [], [_prefix]],
+	["AA", _aaTemplate, [], [_prefix]],
+	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
+	["Marksman", _marksmanTemplate, [], [_prefix]],
+	["Sniper", _sniperTemplate, [], [_prefix]],
+    ["PatrolSniper", _patrolSniperTemplate, [], [_prefix]],
+    ["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
+];
 
+[_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
-// Always generate the original/base unit classnames too. This prevents A3A from trying to create
-// loadouts_occ_* as a CfgVehicles class if a tag-specific class cannot be found.
-[""] call _fnc_GenerateLayoutsForCurrentGear;
+///////////////////////
+//  Elite Units   //
+///////////////////////
+private _prefix = "elite";
+private _unitTypes = [
+	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
+	["Rifleman", _riflemanTemplate, [], [_prefix]],
+	["Radioman", _radiomanTemplate, [], [_prefix]],
+	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
+	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
+	["Grenadier", _grenadierTemplate, [], [_prefix]],
+	["LAT", _latTemplate, [], [_prefix]],
+	["AT", _atTemplate, [], [_prefix]],
+	["AA", _aaTemplate, [], [_prefix]],
+	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
+	["Marksman", _marksmanTemplate, [], [_prefix]],
+	["Sniper", _sniperTemplate, [], [_prefix]],
+    	["PatrolSniper", _patrolSniperTemplate, [], [_prefix]],
+    	["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
+];
 
-private _MixedFactionTags = [];
-if (!isNil "_gearFactionPools") then {
-    _MixedFactionTags = keys _gearFactionPools;
-};
-_MixedFactionTags = _MixedFactionTags select { _x isEqualType "" && { _x isNotEqualTo "" } };
+[_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
-// Save these tags in the template so the spawn/createUnit overrides know which variants exist.
-["mixedFactionTags", _MixedFactionTags] call _fnc_saveToTemplate;
-diag_log format ["[Thorne MIX] mixedFactionTags saved: %1", _MixedFactionTags];
+//////////////////////
+//    Misc Units    //
+//////////////////////
 
-{
-    [_x] call _fnc_gearFactionApply;
-    [_x] call _fnc_GenerateLayoutsForCurrentGear;
-} forEach _MixedFactionTags;
+//The following lines are determining the loadout of vehicle crew
+["other", [["Crew", _crewTemplate, [], ["other"]]], _crewLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
-// Return to a random pool after generation so any later reads stay mixed/random.
-if (_MixedFactionTags isNotEqualTo []) then {
-    ["RANDOM"] call _fnc_gearFactionApply;
-};
-
-private _mixedIdentityPools = createHashMap;
-
-{
-    private _tag = _x;
-    private _pool = _gearFactionPools getOrDefault [_tag, createHashMap];
-
-    private _faces = _pool getOrDefault ["_faces", []];
-    private _voices = _pool getOrDefault ["_voices", []];
-    private _insignia = _pool getOrDefault ["_insignia", []];
-
-    private _identityPool = createHashMapFromArray [
-        ["faces", _faces],
-        ["voices", _voices],
-        ["insignia", _insignia],
-
-        // Role-specific identity arrays. If a template does not define these,
-        // fn_NATOinit falls back to the generic faces/voices/insignia above.
-        ["milFaces", _pool getOrDefault ["_milFaces", _faces]],
-        ["milVoices", _pool getOrDefault ["_milVoices", _voices]],
-        ["milInsignia", _pool getOrDefault ["_milInsignia", _insignia]],
-
-        ["polFaces", _pool getOrDefault ["_polFaces", _faces]],
-        ["polVoices", _pool getOrDefault ["_polVoices", _voices]],
-        ["polInsignia", _pool getOrDefault ["_polInsignia", _insignia]],
-
-        ["eliteFaces", _pool getOrDefault ["_eliteFaces", _faces]],
-        ["eliteVoices", _pool getOrDefault ["_eliteVoices", _voices]],
-        ["eliteInsignia", _pool getOrDefault ["_eliteInsignia", _insignia]],
-
-        ["sfFaces", _pool getOrDefault ["_sfFaces", _faces]],
-        ["sfVoices", _pool getOrDefault ["_sfVoices", _voices]],
-        ["sfInsignia", _pool getOrDefault ["_sfInsignia", _insignia]]
-    ];
-
-    _mixedIdentityPools set [_tag, _identityPool];
-} forEach _mixedFactionTags;
-
-["mixedIdentityPools", _mixedIdentityPools] call _fnc_saveToTemplate;
-diag_log format ["[Thorne MIX] mixedIdentityPools saved for tags: %1", keys _mixedIdentityPools];
+["other", [["Pilot", _crewTemplate, [], ["other"]]], _pilotLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+//The following lines are determining the loadout for the unit used in the "kill the official" mission
+["other", [["Official", _officerTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+//The following lines are determining the loadout for the AI used in the "kill the traitor" mission
+["other", [["Traitor", _traitorTemplate, [], ["other"]]], _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+//The following lines are determining the loadout for the AI used in the "Invader Punishment" mission
+["other", [["Unarmed", _UnarmedTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;

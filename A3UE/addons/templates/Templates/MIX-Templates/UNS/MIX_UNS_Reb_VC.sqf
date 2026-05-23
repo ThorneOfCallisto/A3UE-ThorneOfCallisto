@@ -2,8 +2,8 @@
  * Converted from: UNS_Reb_VC.sqf
  */
 _basic append ["uns_m274"];
-_lightUnarmed append ["uns_Type55"];
-_lightArmed append ["uns_Type55_LMG"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -130,7 +130,25 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "UNS_VC_U",
+    "UNS_VC_S",
+    "UNS_VC_K",
+    "UNS_VC_B",
+    "UNS_VC_G",
+    "uns_U_Simc_vc_black_1",
+    "uns_U_Simc_vc_black_1_trop",
+    "uns_U_Simc_vc_black_2",
+    "uns_U_Simc_vc_black_2_trop",
+    "uns_U_Simc_vc_blau_1_trop",
+    "uns_U_Simc_vc_blau_2",
+    "uns_U_Simc_vc_blau_2_trop",
+    "uns_U_Simc_vc_blau_1",
+    "uns_U_Simc_vc_grun_1",
+    "uns_U_Simc_vc_grun_1_trop",
+    "uns_U_Simc_vc_grun_2",
+    "uns_U_Simc_vc_grun_2_trop"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

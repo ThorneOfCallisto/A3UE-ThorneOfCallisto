@@ -2,8 +2,8 @@
  * Converted from: WM_Reb_RA.sqf
  */
 _basic append ["CW_Quadbike"];
-_lightUnarmed append ["ls_vehicle_105kLancer"];
-_lightArmed append ["WM_V25_Speeder"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -114,7 +114,7 @@ _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["JLTS_CloneBinocular_black"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append [];
@@ -131,7 +131,14 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "WM_ParaMilitary_Dst",
+	"WM_ParaMilitary_Short",
+	"WM_ParaMilitary_Shirt",
+	"WM_ParaMilitary_Urban",
+	"WM_ParaMilitary_Wtr",
+	"WM_ParaMilitary_WD"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -180,7 +187,7 @@ if (A3A_hasACE) then {
 };
 
 _glasses append [];
-_goggles append [];
+_goggles append ["ls_clone_phase1_hud", "ls_clone_phase2_hud"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

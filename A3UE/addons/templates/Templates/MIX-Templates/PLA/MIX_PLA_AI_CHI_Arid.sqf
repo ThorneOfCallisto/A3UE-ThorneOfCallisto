@@ -86,11 +86,18 @@ _SMGs append [];
 _machineGuns append [];
 _marksmanRifles append [];
 _sniperRifles append [];
-_lightATLaunchers append [];
+_lightATLaunchers append [
+["CUP_launch_RPG18", "", "", "", [], [], ""],
+["CUP_launch_RPG26", "", "", "", [], [], ""]
+];
 _lightHELaunchers append [];
-_ATLaunchers append [];
+_ATLaunchers append [
+["launch_mas_chi_RPG32_F", "", "", "", ["RPG32_F", "RPG32_HE_F"], [], ""]
+];
 _missleATLaunchers append [];
-_AALaunchers append [];
+_AALaunchers append [
+["launch_mas_chi_Strela_F", "", "", "", ["Strela_mas_chi"], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -109,17 +116,17 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_NVGs append ["NVGoggles_mas_chi_H"];
 _binoculars append ["Binocular"];
 _rangefinders append ["Rangefinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["U_mas_chi_O_sfd1"];
+_traitorVests append ["V_mas_chi_PlateCarrier_sfd"];
+_traitorHats append ["H_mas_chi_boonie_d"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["U_mas_chi_O_officerd3"];
+_officerVests append ["V_mas_chi_PlateCarrier_sfd"];
+_officerHats append ["H_mas_chi_beret_O"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -130,6 +137,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -147,7 +155,7 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["B_RadioBag_01_black_F"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
@@ -175,8 +183,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -267,8 +274,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["H_mas_chi_beret_OS"];
 _sfSNIhats append ["H_mas_chi_boonie_d"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -376,8 +382,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["H_mas_chi_beret_O"];
 _eliteSNIhats append ["H_mas_chi_boonie_d"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -486,8 +491,7 @@ _militarySLhelmets append [];
 _militarySLhats append ["H_mas_chi_beret_O"];
 _militarySNIhats append ["H_mas_chi_boonie_d"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -617,9 +621,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["H_mas_chi_beret_O"];
 _militiaSNIhats append ["H_mas_chi_boonie_d"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

@@ -2,8 +2,8 @@
  * Converted from: OPTRE_Reb_ODST.sqf
  */
 _basic append ["OPTRE_M274_ATV"];
-_lightUnarmed append ["OPTRE_M12_FAV"];
-_lightArmed append ["OPTRE_M12_LRV"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -132,7 +132,12 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "OPTRE_UNSC_ODST_Uniform",
+    "OPTRE_UNSC_Army_Uniform_BLK",
+    "OPTRE_UNSC_Army_Uniform_URB",
+    "OPTRE_UNSC_Army_Uniform_R_BLK_SlimLeg"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

@@ -127,7 +127,45 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "UK3CB_CHC_C_U_ACTIVIST_03",
+    "UK3CB_CHC_C_U_ACTIVIST_01",
+    "UK3CB_CHC_C_U_ACTIVIST_04",
+    "UK3CB_CHC_C_U_ACTIVIST_02",
+    "UK3CB_CHC_C_U_VILL_01",
+    "UK3CB_CHC_C_U_VILL_03",
+    "UK3CB_CHC_C_U_VILL_04",
+    "UK3CB_CHC_C_U_VILL_02",
+    "UK3CB_CHC_C_U_DOC_01",
+    "UK3CB_CHC_C_U_PROF_04",
+    "UK3CB_CHC_C_U_PROF_02",
+    "UK3CB_CHC_C_U_PROF_03",
+    "UK3CB_CHC_C_U_PROF_01",
+    "UK3CB_CHC_C_U_COACH_03",
+    "UK3CB_CHC_C_U_COACH_05",
+    "UK3CB_CHC_C_U_COACH_02",
+    "UK3CB_CHC_C_U_COACH_04",
+    "UK3CB_CHC_C_U_CAN_01",
+    "UK3CB_CHC_C_U_Pilot_01",
+    "UK3CB_CHC_C_U_Pilot_02",
+    "UK3CB_CHC_C_U_Pilot_03",
+    "UK3CB_CHC_C_U_WORK_02",
+    "UK3CB_CHC_C_U_WORK_01",
+    "UK3CB_CHC_C_U_WORK_03",
+    "UK3CB_CHC_C_U_WORK_04",
+    "UK3CB_CHC_C_U_WOOD_04",
+    "UK3CB_CHC_C_U_WOOD_01",
+    "UK3CB_CHC_C_U_WOOD_02",
+    "UK3CB_CHC_C_U_WOOD_03",
+    "UK3CB_CHC_C_U_CIT_03",
+    "UK3CB_CHC_C_U_CIT_02",
+    "UK3CB_CHC_C_U_CIT_04",
+    "UK3CB_CHC_C_U_CIT_01",
+    "UK3CB_CHC_C_U_CIT_05",
+    "UK3CB_CHC_C_U_HIKER_03",
+    "UK3CB_CHC_C_U_HIKER_02",
+    "UK3CB_CHC_C_U_HIKER_01"  
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -148,7 +186,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append _civHats;
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

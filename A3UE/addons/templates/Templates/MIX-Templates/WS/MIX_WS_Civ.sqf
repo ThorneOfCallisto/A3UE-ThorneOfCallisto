@@ -130,7 +130,25 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_lxWS_C_Djella_01",
+    "U_lxWS_C_Djella_02",
+    "U_lxWS_C_Djella_02a",
+    "U_lxWS_C_Djella_03",
+    "U_lxWS_C_Djella_04",
+    "U_lxWS_C_Djella_05",
+    "U_lxWS_C_Djella_06",
+    "U_lxWS_C_Djella_07",
+    "U_lxWS_Tak_01_A",
+    "U_lxWS_Tak_01_B",
+    "U_lxWS_Tak_01_C",
+    "U_lxWS_Tak_02_A",
+    "U_lxWS_Tak_02_B",
+    "U_lxWS_Tak_02_C",
+    "U_lxWS_Tak_03_A",
+    "U_lxWS_Tak_03_B",
+    "U_lxWS_Tak_03_C"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -151,7 +169,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append _civHats;
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

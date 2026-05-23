@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_LRI.sqf
  */
 _basic append ["C_Quadbike_01_F", "CUP_C_Golf4_black_Civ"];
-_lightUnarmed append ["CUP_O_Hilux_unarmed_TK_CIV"];
-_lightArmed append ["CUP_I_Hilux_M2_IND_G_F"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,45 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_I_B_PMC_Unit_20",
+    "CUP_I_B_PMC_Unit_22",
+    "CUP_I_B_PMC_Unit_21",
+    "CUP_I_B_PMC_Unit_19",
+    "CUP_I_B_PMC_Unit_17",
+    "CUP_I_B_PMC_Unit_13",
+    "CUP_I_B_PMC_Unit_14",
+    "CUP_I_B_PMC_Unit_16",
+    "CUP_I_B_PMC_Unit_15",
+    "CUP_I_B_PMC_Unit_12",
+    "CUP_I_B_PMC_Unit_3",
+    "CUP_I_B_PMC_Unit_2",
+    "CUP_I_B_PMC_Unit_1",
+    "CUP_I_B_PMC_Unit_4",
+    "CUP_I_B_PMC_Unit_7",
+    "CUP_I_B_PMC_Unit_6",
+    "CUP_I_B_PMC_Unit_5",
+    "CUP_I_B_PMC_Unit_8",
+    "CUP_I_B_PMC_Unit_11",
+    "CUP_I_B_PMC_Unit_10",
+    "CUP_I_B_PMC_Unit_36",
+    "CUP_I_B_PMC_Unit_37",
+    "CUP_I_B_PMC_Unit_38",
+    "CUP_I_B_PMC_Unit_39",
+    "CUP_I_B_PMC_Unit_40",
+    "CUP_I_B_PMC_Unit_41",
+    "CUP_I_B_PMC_Unit_42",
+    "CUP_I_B_PMC_Unit_43",
+    "CUP_I_B_PMC_Unit_28",
+    "CUP_I_B_PMC_Unit_24",
+    "CUP_I_B_PMC_Unit_23",
+    "CUP_I_B_PMC_Unit_31",
+    "CUP_I_B_PMC_Unit_32",
+    "CUP_I_B_PMC_Unit_29",
+    "CUP_I_B_PMC_Unit_30",
+    "CUP_I_B_PMC_Unit_33",
+    "CUP_I_B_PMC_Unit_34"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

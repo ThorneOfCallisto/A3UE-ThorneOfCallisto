@@ -73,21 +73,16 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
     ["SFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     #include "SWE\SFP_Vehicle_Attributes.sqf";
 
-    // if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4")) then {
-    //     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-    //     #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull...
-    //     ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-    //     #include "SWE\FFP_Vehicle_Attributes.sqf";
-    // };
+    if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
+        ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+        #include "SWE\FFP_Vehicle_Attributes.sqf";
+    };
 };
 
 //////////////////////////////////
 //  End Include Factions here   //
 //////////////////////////////////
-
-// Pick one infantry gear faction after all faction files have been included.
-// Vehicles remain mixed from all included factions.
-// Options: "RANDOM", "AAF", "NATO", "BAF", "BW", "AMF", etc.
-["RANDOM"] call _fnc_gearFactionApply;
 
 #include "INCLUDES\Init_Layouts.sqf"

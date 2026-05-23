@@ -3,8 +3,8 @@
  * Optional mods/addons: "CUP_AirVehicles_Core", "RHS_US_A2Port_Armor", "rhssaf_c_vehicles"
  */
 _basic              append ["sfp_cykel42"];
-_lightUnarmed    append ["sfp_tgb11", "sfp_81_tgb1112", "sfp_tgb1317"];
-_lightArmed      append ["sfp_tgb13_ksp58", "sfp_tgb1111", "sfp_tgb1111_sog_rbs56"];
+_unarmedVehicles    append ["sfp_tgb11", "sfp_81_tgb1112", "sfp_tgb1317"];
+_armedVehicles      append ["sfp_tgb13_ksp58", "sfp_tgb1111", "sfp_tgb1111_sog_rbs56"];
 _Trucks             append ["sfp_tgb20"];
 _cargoTrucks        append [];
 _ammoTrucks         append [];
@@ -593,7 +593,7 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (c
 		_helisAttack        append ["CUP_B_AH64_DL_BAF"];
 		_uavsAttack     	append ["CUP_B_USMC_DYN_MQ9"];
 		_staticMG       	append ["CUP_B_M2StaticMG_USMC"];
-		_staticAT			append ["CUP_B_TOW2_TriPod_USMC"];
+		_staticAT			append ["CUP_B_TOW2_TriPod_USMC"]l
 		_staticAA       	append ["CUP_B_Stinger_AA_pod_Base_USMC"];
 		_staticMortars  	append ["CUP_B_M252_USMC"];
 		

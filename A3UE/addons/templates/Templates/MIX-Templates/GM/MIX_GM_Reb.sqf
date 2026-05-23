@@ -2,8 +2,8 @@
  * Converted from: GM_Reb.sqf
  */
 _basic append ["gm_ge_army_k125"];
-_lightUnarmed append ["gm_ge_army_iltis_cargo"];
-_lightArmed append ["gm_gc_army_uaz469_dshkm"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -109,12 +109,12 @@ _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
+_watches append ["gm_watch_kosei_80"];
+_compasses append ["gm_gc_compass_f73"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["gm_df7x40_blk"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append [];
@@ -131,7 +131,7 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append _rebUniforms;
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -179,8 +179,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Squares", "G_Squares_Tinted", "gm_ge_facewear_glacierglasses"];
+_goggles append ["gm_gc_army_facewear_dustglasses"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

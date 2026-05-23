@@ -101,20 +101,32 @@ _SMGs append [];
 _machineGuns append [];
 _marksmanRifles append [];
 _sniperRifles append [];
-_lightATLaunchers append [];
+_lightATLaunchers append [
+["launch_RPG32_camo_F", "", "", "", ["RPG32_F", "RPG32_F","RPG32_HE_F"], [], ""],
+["launch_RPG32_green_F", "", "", "", ["RPG32_F", "RPG32_F","RPG32_HE_F"], [], ""],
+["launch_RPG32_black_F", "", "", "", ["RPG32_F", "RPG32_F","RPG32_HE_F"], [], ""]
+];
 _lightHELaunchers append [];
-_ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
-_sidearms append [];
+_ATLaunchers append [
+["launch_O_Vorona_brown_F", "", "", "", ["Vorona_HEAT", "Vorona_HEAT"], [], ""],
+["launch_O_Vorona_brown_F", "", "", "", ["Vorona_HEAT", "Vorona_HE"], [], ""]
+];
+_missleATLaunchers append [
+["launch_O_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT"], [], ""],
+["launch_O_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT", "Titan_AP"], [], ""]
+];
+_AALaunchers append [
+["launch_B_Titan_coyote_F", "", "acc_pointer_IR", "", ["Titan_AA"], [], ""]
+];
+_sidearms append ["hgun_Rook40_F"];
 _GLsidearms append [];
 
 _ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
+_APMines append ["APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag"];
 _lightExplosives append ["DemoCharge_Remote_Mag"];
 _heavyExplosives append ["SatchelCharge_Remote_Mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
+_antiInfantryGrenades append ["HandGrenade_Guer", "HandGrenade_East"];
 _antiTankGrenades append [];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
@@ -124,20 +136,20 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_NVGs append ["NVGoggles_INDEP"];
 _binoculars append ["Binocular"];
 _rangefinders append ["Rangefinder"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["Opf_U_I_I_Uniform_01_ghex_F"];
+_traitorVests append ["V_TacVest_grn"];
+_traitorHats append ["H_Cap_ghex_F", "H_Cap_grn", "H_Bandanna_khk"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["Atlas_U_O_W_OfficerUniform"];
+_officerVests append ["V_Rangemaster_belt_khk"];
+_officerHats append ["H_MilCap_whex_F", "H_Beret_CSAT_01_F", "H_Beret_ocamo"];
 
-_cloakUniforms append [];
-_cloakVests append [];
+_cloakUniforms append ["U_O_T_FullGhillie_tna_F", "U_O_FullGhillie_lsh", "U_O_T_Sniper_F"];
+_cloakVests append ["V_HarnessO_ghex_F", "V_BandollierB_ghex_F", "V_TacVest_oli", "V_HarnessOSpec_ghex_F"];
 _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
@@ -145,6 +157,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -154,7 +167,7 @@ _ATvests append [];
 _ENGvests append [];
 _vests append [];
 _backpacks append [];
-_ATBackpacks append [];
+_ATBackpacks append ["B_Carryall_owcamo"];
 _AABackpacks append [];
 _MGBackpacks append [];
 _GLBackpacks append [];
@@ -162,12 +175,12 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["B_RadioBag_01_whex_F"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
-_SLhats append [];
-_SNIhats append [];
+_SLhats append ["H_MilCap_whex_F"];
+_SNIhats append ["H_Booniehat_whex_F", "H_Booniehat_whex_hs_F"];
 
 _slItems append ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
 _rItems append [];
@@ -190,8 +203,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -228,7 +240,18 @@ _sfmachineGuns append [
 ["arifle_CTARS_blk_F", "", "acc_pointer_IR", "optic_ACO_grn", ["100Rnd_580x42_Mag_F", "100Rnd_580x42_Mag_F", "100Rnd_580x42_Mag_Tracer_F"], [], ""],
 ["arifle_CTARS_blk_F", "", "acc_pointer_IR", "optic_NVS", ["100Rnd_580x42_Mag_F", "100Rnd_580x42_Mag_F", "100Rnd_580x42_Mag_Tracer_F"], [], ""]
 ];
-_sfmarksmanRifles append _marksmanRifles;
+_sfmarksmanRifles append [
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_Nightstalker", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_KHS_blk", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_Arco_blk_F", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_DMS", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_SOS", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_Nightstalker", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_KHS_blk", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_Arco_ghex_F", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_DMS_ghex_F", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_SOS", [], [], ""]
+];
 _sfsniperRifles append [
 ["srifle_GM6_F", "", "", "optic_KHS_blk", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
 ["srifle_GM6_F", "", "", "optic_LRPS", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
@@ -291,8 +314,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["lxWS_H_Bandanna_blk_hs"];
 _sfSNIhats append ["H_Booniehat_blk"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -339,8 +361,33 @@ _elitegrenadeLaunchers append [
 ];
 _elitedesignatedGrenadeLaunchers append [];
 _eliteSMGs append [];
-_elitemachineGuns append _mgs;
-_elitemarksmanRifles append _marksmanRifles;
+_elitemachineGuns append if (_hasWs) then {
+    [
+        ["LMG_S77_lxWS", "", "acc_flashlight", "", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_ACO_grn", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_MRCO", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_Arco_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""]
+    ];
+} else {
+    [
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_ACO_grn", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_MRCO", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_Arco_blk_F", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""]
+    ];
+};
+_elitemarksmanRifles append [
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_Nightstalker", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_KHS_blk", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_Arco_blk_F", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_DMS", [], [], ""],
+    ["srifle_DMR_07_blk_F", "muzzle_mzls_H", "", "optic_SOS", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_Nightstalker", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_KHS_blk", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_Arco_ghex_F", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_DMS_ghex_F", [], [], ""],
+    ["srifle_DMR_07_ghex_F", "muzzle_mzls_H", "", "optic_SOS", [], [], ""]
+];
 _elitesniperRifles append [
 ["srifle_GM6_F", "", "", "optic_tws_sniper", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
 ["srifle_GM6_F", "", "", "optic_KHS_blk", ["5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag"], [], ""],
@@ -400,8 +447,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -457,7 +503,21 @@ _militarySMGs append [
 ["SMG_02_F", "", "", "", ["30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow"], [], ""],
 ["SMG_02_F", "", "", "optic_Holosight_blk_F", ["30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow"], [], ""]
 ];
-_militarymachineGuns append _mgs;
+_militarymachineGuns append if (_hasWs) then {
+    [
+        ["LMG_S77_lxWS", "", "acc_flashlight", "", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_ACO_grn", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_MRCO", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_Arco_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""]
+    ];
+} else {
+    [
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_ACO_grn", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_MRCO", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_Arco_blk_F", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""]
+    ];
+};
 _militarymarksmanRifles append [
 ["srifle_DMR_01_black_F", "", "", "optic_NVS", [], [], "bipod_02_F_blk"],
 ["srifle_DMR_01_black_F", "", "", "optic_KHS_blk", [], [], "bipod_02_F_blk"],
@@ -524,8 +584,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -534,7 +593,7 @@ _militarygoggles append [];
 _policeuniforms append ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"];
 _policeSLuniforms append [];
 _policevests append ["V_TacVest_gen_F"];
-_policehelmets append _helmets;
+_policehelmets append ["H_MilCap_gen_F", "H_Beret_gen_F"];
 _policeWeapons append [
 ["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco", [], [], ""],
 ["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Aco_smg", [], [], ""],
@@ -606,7 +665,21 @@ _militiagrenadeLaunchers append [
 ];
 _militiadesignatedGrenadeLaunchers append [];
 _militiaSMGs append [];
-_militiamachineGuns append _mgs;
+_militiamachineGuns append if (_hasWs) then {
+    [
+        ["LMG_S77_lxWS", "", "acc_flashlight", "", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_ACO_grn", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_MRCO", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+        ["LMG_S77_lxWS", "", "acc_flashlight", "optic_Arco_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""]
+    ];
+} else {
+    [
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_ACO_grn", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_MRCO", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""],
+        ["Atlas_LMG_Negev_black_F", "", "acc_flashlight", "optic_Arco_blk_F", ["150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Yellow", "150Rnd_762x51_Box_Tracer_Yellow"], [], ""]
+    ];
+};
 _militiamarksmanRifles append [
 ["srifle_DMR_01_black_F", "", "", "optic_MRCO", [], [], "bipod_02_F_blk"],
 ["srifle_DMR_01_black_F", "", "", "optic_Arco_blk_F", [], [], "bipod_02_F_blk"]
@@ -680,9 +753,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append [];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

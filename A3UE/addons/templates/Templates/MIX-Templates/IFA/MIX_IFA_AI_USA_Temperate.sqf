@@ -94,38 +94,39 @@ _marksmanRifles append [];
 _sniperRifles append [];
 _lightATLaunchers append [];
 _lightHELaunchers append [];
-_ATLaunchers append [];
+_ATLaunchers append [
+["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]];
 _missleATLaunchers append [];
 _AALaunchers append [];
 _sidearms append [];
 _GLsidearms append [];
 
-_ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
-_lightExplosives append ["DemoCharge_Remote_Mag"];
-_heavyExplosives append ["SatchelCharge_Remote_Mag"];
+_ATMines append ["LIB_US_M1A1_ATMINE_mag"];
+_APMines append ["LIB_M3_MINE_mag"];
+_lightExplosives append ["LIB_Ladung_Small_MINE_mag"];
+_heavyExplosives append ["LIB_Ladung_Big_MINE_mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
-_antiTankGrenades append [];
+_antiInfantryGrenades append ["LIB_US_Mk_2"];
+_antiTankGrenades append ["LIB_No82"];
 _smokeGrenades append ["SmokeShell"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
-_radios append ["ItemRadio"];
-_gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_watches append ["LIB_GER_ItemWatch"];
+_compasses append ["LIB_GER_ItemCompass_deg"];
+_radios append ["TFAR_SCR536"];
+_gpses append [];
+_NVGs append [];
+_binoculars append ["LIB_Binocular_US"];
+_rangefinders append ["LIB_Binocular_US"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["U_LIB_US_Rangers_Uniform"];
+_traitorVests append ["V_LIB_US_AB_Vest_Padded_Carbine"];
+_traitorHats append ["H_LIB_US_Rangers_Helmet"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["U_LIB_US_Rangers_Sergeant"];
+_officerVests append ["V_LIB_US_AB_Vest_Padded_Carbine"];
+_officerHats append ["H_LIB_US_Rangers_Helmet"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -136,6 +137,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -153,7 +155,7 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["B_LIB_US_Radio"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
@@ -181,8 +183,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -252,8 +253,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["H_LIB_US_AB_Helmet_Clear_1"];
 _sfSNIhats append ["H_LIB_US_AB_Helmet_Clear_1","H_LIB_US_AB_Helmet_Clear_2","H_LIB_US_AB_Helmet_Clear_3","H_LIB_US_AB_Helmet_Plain_1","H_LIB_US_AB_Helmet_Plain_2","H_LIB_US_AB_Helmet_Plain_3"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -325,8 +325,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["H_LIB_US_Rangers_Helmet"];
 _eliteSNIhats append ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_Helmet_os","H_LIB_US_Rangers_Helmet_ns"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -399,8 +398,7 @@ _militarySLhelmets append [];
 _militarySLhats append ["H_LIB_US_Rangers_Helmet"];
 _militarySNIhats append ["H_LIB_US_Rangers_Helmet","H_LIB_US_Rangers_Helmet_os","H_LIB_US_Rangers_Helmet_ns"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -489,9 +487,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["H_LIB_US_Helmet"];
 _militiaSNIhats append ["H_LIB_US_Helmet","H_LIB_US_Helmet_ns","H_LIB_US_Helmet_os","H_LIB_US_Helmet_Net","H_LIB_US_Helmet_Net_ns","H_LIB_US_Helmet_Net_os"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

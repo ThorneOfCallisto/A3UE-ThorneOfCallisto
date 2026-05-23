@@ -2,8 +2,8 @@
  * Converted from: STALKER_Reb_Ecologists_RHS.sqf
  */
 _basic append ["rhsgref_cdf_b_reg_uaz_open"];
-_lightUnarmed append ["rhsgref_cdf_b_reg_uaz"];
-_lightArmed append ["rhsgref_cdf_b_reg_uaz_dshkm"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,10 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "SE_SEVA_Ecologists_Green",
+    "SE_SEVA_Ecologists_Orange"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

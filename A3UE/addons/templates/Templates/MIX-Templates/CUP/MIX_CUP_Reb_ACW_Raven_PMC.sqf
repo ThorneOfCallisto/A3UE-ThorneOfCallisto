@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_ACW_Raven_PMC.sqf
  */
 _basic append ["Flex_CUP_RAV_Quad", "Flex_CUP_RAV_TT650"];
-_lightUnarmed append ["CUP_I_Pickup_Unarmed_PMC", "CUP_I_SUV_ION"];
-_lightArmed append ["Flex_CUP_RAV_Tigr_M_KORD", "Flex_CUP_RAV_Tigr_M_PK"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -133,7 +133,20 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "CUP_O_B_PMC_Unit_40",
+	"CUP_O_B_PMC_Unit_32",
+	"CUP_O_B_PARA_Unit_1",
+	"CUP_O_B_PMC_Unit_42",
+	"CUP_O_B_PMC_Unit_43",
+	"CUP_O_B_PMC_Unit_42",
+	"CUP_O_B_PMC_Unit_43",
+	"CUP_O_B_PARA_Unit_1",
+	"CUP_O_B_PMC_Unit_39",
+	"CUP_O_B_PMC_Unit_36",
+	"CUP_O_B_PARA_Unit_1",
+	"CUP_O_B_PMC_Unit_40"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

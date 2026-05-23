@@ -2,8 +2,8 @@
  * Converted from: RHS_Reb_NAPA.sqf
  */
 _basic append ["I_G_Quadbike_01_F"];
-_lightUnarmed append ["rhsgref_nat_uaz_open"];
-_lightArmed append ["rhsgref_nat_uaz_dshkm"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -134,7 +134,20 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "rhsgref_uniform_alpenflage",
+    "rhsgref_uniform_gorka_1_f",
+    "rhsgref_uniform_3color_desert",
+    "rhsgref_uniform_dpm",
+    "rhsgref_uniform_dpm_olive",
+    "rhsgref_uniform_flecktarn",
+    "rhsgref_uniform_flecktarn_full",
+    "rhsgref_uniform_og107",
+    "rhsgref_uniform_og107_erdl",
+    "rhsgref_uniform_tigerstripe",
+    "rhsgref_uniform_woodland",
+    "rhsgref_uniform_woodland_olive"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -182,8 +195,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_glasses append ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"];
+_goggles append ["G_Lowprofile"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

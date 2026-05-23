@@ -2,8 +2,8 @@
  * Converted from: STALKER_Reb_Loners.sqf
  */
 _basic append ["CUP_C_TT650_RU"];
-_lightUnarmed append ["CUP_I_Datsun_4seat"];
-_lightArmed append ["CUP_I_Datsun_PK"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -127,7 +127,7 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append ["SCE_Bandit_Rags_2_3", "SCE_Bandit_Rags_1_3"] + _rebUniforms;
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

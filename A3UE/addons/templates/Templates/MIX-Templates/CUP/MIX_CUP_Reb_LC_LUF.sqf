@@ -2,8 +2,8 @@
  * Converted from: CUP_Reb_LC_LUF.sqf
  */
 _basic append ["Flex_CUP_LUF_TT650"];
-_lightUnarmed append ["Flex_CUP_LUF_Datsun_4seat", "Flex_CUP_LUF_Hilux_unarmed", "Flex_CUP_LUF_Hilux_armored_unarmed"];
-_lightArmed append ["Flex_CUP_LUF_Datsun_PK", "Flex_CUP_LUF_Hilux_DSHKM", "Flex_CUP_LUF_Hilux_M2", "Flex_CUP_LUF_Hilux_armored_DSHKM", "Flex_CUP_LUF_Hilux_armored_M2", "Flex_CUP_LUF_BTR40_MG"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -132,7 +132,20 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_I_C_Soldier_Bandit_4_F",
+    "U_I_C_Soldier_Bandit_1_F",
+    "U_I_C_Soldier_Bandit_2_F",
+    "U_I_C_Soldier_Bandit_5_F",
+    "U_I_C_Soldier_Bandit_3_F",
+    "Flex_CUP_LUF_I_Soldier_Deserter",
+    "CUP_U_I_GUE_Flecktarn4",
+    "U_IG_Guerrilla_6_1",
+    "Flex_CUP_LUF_I_Soldier_08",
+    "Flex_CUP_LUF_I_Soldier_03",
+    "U_I_C_Soldier_Para_5_F",
+    "Flex_CUP_LUF_I_Soldier_07"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];

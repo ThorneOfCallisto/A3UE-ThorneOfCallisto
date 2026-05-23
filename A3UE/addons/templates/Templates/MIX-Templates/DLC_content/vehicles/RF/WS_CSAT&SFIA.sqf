@@ -1,4 +1,4 @@
-_lightArmed append ["O_Pickup_rf","O_Pickup_Comms_rf", "O_Pickup_rcws_rf", "AU_O_Pickup_Minigun_RF"];
+_armedVehicles append ["O_Pickup_rf","O_Pickup_Comms_rf", "O_Pickup_rcws_rf", "AU_O_Pickup_Minigun_RF"];
 _militiaLightArmed pushBack "O_G_Pickup_hmg_rf";
 _militiaCars append ["O_Pickup_rf","O_Pickup_Comms_rf"];
 _uavsPortable pushBack "O_UAV_RC40_SENSOR_RF";

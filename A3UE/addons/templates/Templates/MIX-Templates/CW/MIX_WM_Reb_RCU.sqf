@@ -2,8 +2,8 @@
  * Converted from: WM_Reb_RCU.sqf
  */
 _basic append ["3AS_Barc"];
-_lightUnarmed append ["3AS_ISP_Transport"];
-_lightArmed append ["3AS_ISP"];
+_lightUnarmed append [];
+_lightArmed append [];
 _Trucks append [];
 _cargoTrucks append [];
 _ammoTrucks append [];
@@ -114,7 +114,7 @@ _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
 _NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
+_binoculars append ["ls_clone_electrobinoculars"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append [];
@@ -131,7 +131,34 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "ls_gar_phase2_uniform",
+	"ls_cloneUniform_13th_trooper",
+	"ls_cloneUniform_187th_trooper",
+	"ls_cloneUniform_104th_trooper",
+	"ls_cloneUniform_327th_trooper",
+	"ls_cloneUniform_612th_trooper",
+	"ls_cloneUniform_21st_trooper",
+	"ls_cloneUniform_332nd_trooper",
+	"ls_cloneUniform_501st_trooper",
+	"ls_cloneUniform_5th_trooper",
+	"ls_cloneUniform_74th_trooper",
+	"ls_cloneUniform_91st_trooper",
+	"ls_cloneUniform_212th_trooper",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform",
+	"ls_gar_phase2_uniform"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -180,7 +207,7 @@ if (A3A_hasACE) then {
 };
 
 _glasses append [];
-_goggles append [];
+_goggles append ["ls_clone_phase1_hud", "ls_clone_phase2_hud"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

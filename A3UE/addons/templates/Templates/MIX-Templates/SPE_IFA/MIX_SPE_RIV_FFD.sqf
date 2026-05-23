@@ -77,41 +77,62 @@ _milInsignia append [];
 //       Loadouts       //
 //////////////////////////
 
-_slRifles append [];
-_rifles append [];
-_carbines append [];
-_grenadeLaunchers append [];
+_slRifles append [
+	["SPE_K98", "", "", "", ["SPE_5Rnd_792x57","SPE_5Rnd_792x57_t"], [], ""],
+    ["SPE_K98_Late", "", "", "", ["SPE_5Rnd_792x57","SPE_5Rnd_792x57_t"], [], ""]
+];
+_rifles append [
+	["SPE_MAS_36", "", "", "", ["SPE_5Rnd_75x54"], [], ""]
+];
+_carbines append [
+	["SPE_MP40", "", "", "", ["SPE_32Rnd_9x19", "SPE_32rnd_9x19_t"], [], ""]
+];
+_grenadeLaunchers append [
+	["SPE_K98", "SPE_ACC_GW_SB_Empty", "", "", ["SPE_5Rnd_792x57"], ["SPE_1Rnd_G_SPRGR_30","SPE_1Rnd_G_PZGR_30","SPE_1Rnd_G_PZGR_40"], ""],
+    ["SPE_K98_Late", "SPE_ACC_GW_SB_Empty", "", "", ["SPE_5Rnd_792x57"], ["SPE_1Rnd_G_SPRGR_30","SPE_1Rnd_G_PZGR_30","SPE_1Rnd_G_PZGR_40"], ""]
+];
 _designatedGrenadeLaunchers append [];
-_SMGs append [];
-_machineGuns append [];
-_marksmanRifles append [];
+_SMGs append [
+	["SPE_K98", "", "", "", ["SPE_5Rnd_792x57","SPE_5Rnd_792x57_t"], [], ""],
+    ["SPE_K98_Late", "", "", "", ["SPE_5Rnd_792x57","SPE_5Rnd_792x57_t"], [], ""]
+];
+_machineGuns append [
+	["SPE_FM_24_M29", "", "", "", ["SPE_25Rnd_75x54"], [], ""],
+    ["SPE_LMG_303_Mk2", "", "", "", ["SPE_30Rnd_770x56"], [], ""]
+];
+_marksmanRifles append [
+	["SPE_MAS_36", "", "", "", ["SPE_5Rnd_75x54"], [], ""]
+];
 _sniperRifles append [];
-_lightATLaunchers append [];
-_lightHELaunchers append [];
-_ATLaunchers append [];
+_lightATLaunchers append ["SPE_PzFaust_60m", "SPE_PzFaust_30m", "SPE_Faustpatrone"];
+_lightHELaunchers append ["SPE_PzFaust_60m", "SPE_PzFaust_30m", "SPE_Faustpatrone"];
+_ATLaunchers append [
+	["SPE_RPzB_43", "", "", "",["SPE_1Rnd_RPzBGr_4322"], [], ""],
+	["SPE_RPzB_54", "", "", "",["SPE_1Rnd_RPzBGr_4322"], [], ""]
+];
 _missleATLaunchers append [];
-_AALaunchers append [];
-_sidearms append [];
+_AALaunchers append ["SPE_Faustpatrone"];
+_sidearms append ["SPE_P08"];
 _GLsidearms append [];
 
-_ATMines append ["ATMine_Range_Mag"];
-_APMines append ["APERSMine_Range_Mag"];
-_lightExplosives append ["DemoCharge_Remote_Mag"];
-_heavyExplosives append ["SatchelCharge_Remote_Mag"];
+_ATMines append ["SPE_TMI_42_MINE_mag"];
+_APMines append ["SPE_SMI_35_Pressure_MINE_mag"];
+_lightExplosives append ["SPE_Ladung_Small_MINE_mag"];
+_heavyExplosives append ["SPE_Ladung_Big_MINE_mag"];
 
-_antiInfantryGrenades append ["HandGrenade", "MiniGrenade"];
-_antiTankGrenades append [];
-_smokeGrenades append ["SmokeShell"];
+_antiInfantryGrenades append ["SPE_Shg24", "SPE_M39"];
+_antiTankGrenades append ["SPE_Shg24x7"];
+_smokeGrenades append ["SPE_NB39"];
 _signalsmokeGrenades append ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"];
 
 _maps append ["ItemMap"];
-_watches append ["ItemWatch"];
-_compasses append ["ItemCompass"];
-_radios append ["ItemRadio"];
-_gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_watches append ["SPE_GER_ItemWatch"];
+_compasses append ["SPE_GER_ItemCompass_deg", "SPE_GER_ItemCompass"];
+_radios append ["TFAR_SCR536"];
+_gpses append [];
+_NVGs append [];
+_binoculars append ["SPE_Binocular_GER"];
+_rangefinders append ["SPE_Binocular_GER"];
 
 _traitorUniforms append [];
 _traitorVests append [];
@@ -127,7 +148,7 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append ["U_SPE_milice_3","U_SPE_milice_3_CD","U_SPE_milice_3_CDA","U_SPE_milice_3_CR","U_SPE_milice_3_CT"];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -137,9 +158,9 @@ _SNIvests append [];
 _GLvests append [];
 _ATvests append [];
 _ENGvests append [];
-_vests append [];
-_backpacks append [];
-_ATBackpacks append [];
+_vests append ["V_SPE_milice_Vest_MG_sidearm"];
+_backpacks append ["B_SPE_CIV_satchel","B_SPE_FFI_Gasbag"];
+_ATBackpacks append ["B_SPE_CIV_musette"];
 _AABackpacks append [];
 _MGBackpacks append [];
 _GLBackpacks append [];
@@ -148,7 +169,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append ["H_SPE_GER_Helmet", "H_SPE_GER_Helmet_M40"];
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

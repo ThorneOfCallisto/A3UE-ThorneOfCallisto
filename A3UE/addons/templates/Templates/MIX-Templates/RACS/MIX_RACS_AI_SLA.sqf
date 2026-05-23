@@ -91,8 +91,12 @@ _sniperRifles append [];
 _lightATLaunchers append [];
 _lightHELaunchers append [];
 _ATLaunchers append [];
-_missleATLaunchers append [];
-_AALaunchers append [];
+_missleATLaunchers append [
+    ["rhs_weap_rpg7", "", "", "", ["rhs_rpg7_PG7VR_mag"], [], ""]
+];
+_AALaunchers append [
+    ["rhs_weap_igla", "", "", "", ["Titan_AA"], [], ""]
+];
 _sidearms append [];
 _GLsidearms append [];
 
@@ -111,17 +115,17 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
-_binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_NVGs append ["rhs_1PN138"];
+_binoculars append ["rhs_pdu4"];
+_rangefinders append ["rhsusf_bino_lerca_1200_tan"];
 
-_traitorUniforms append [];
-_traitorVests append [];
-_traitorHats append [];
+_traitorUniforms append ["PRACS_M10_Commando_uniform"];
+_traitorVests append ["PRACS_O_CIRAS_GAL_rifleman", "PRACS_O_CIRAS_G3_rifleman"];
+_traitorHats append ["PRACS_Patrol_ASDPM_B_Cap", "PRACS_Patrol_SDPM_Cap", "PRACS_Patrol_SMAR_Cap"];
 
-_officerUniforms append [];
-_officerVests append [];
-_officerHats append [];
+_officerUniforms append ["PRACS_M10_SNG_D_PL_uniform", "PRACS_M10_1ID_PL_uniform"];
+_officerVests append ["PRACS_holster_vest", "V_Rangemaster_belt", "rhs_6sh92_digi_radio"];
+_officerHats append ["PRACS_Patrol_6TDes_Cap", "PRACS_1st_Infantry_beret"];
 
 _cloakUniforms append [];
 _cloakVests append [];
@@ -132,6 +136,7 @@ _cloakSidearms append [];
 _uniforms append [];
 _SLuniforms append [];
 _ENGuniforms append [];
+_MEDuniforms append [];
 _MGvests append [];
 _MEDvests append [];
 _SLvests append [];
@@ -149,7 +154,7 @@ _MEDBackpacks append [];
 _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
-_longRangeRadios append [];
+_longRangeRadios append ["B_RadioBag_01_wdl_F"];
 _helmets append [];
 _MEDhelmets append [];
 _SLhelmets append [];
@@ -177,8 +182,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -271,8 +275,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["PRACS_SLA_6B27M_ess"];
 _sfSNIhats append ["PRACS_SLA_Soft_Cap"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -364,8 +367,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append ["PRACS_SLA_ssh68_cover"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -453,8 +455,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["PRACS_SLA_6B27M_ess"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -558,9 +559,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append ["PRACS_SLA_ssh68_cover"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////

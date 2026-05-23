@@ -697,3 +697,8 @@ _pilotfacewear append [];
 /////////////////////////////
 //    Conditional Gear     //
 /////////////////////////////
+
+if (isClass (configFile >> "CfgVehicles" >> "CLV_101")) then {
+    _IFVs append ["CLV_101", "CLV_107"];
+    _airborneVehicles append ["CLV_101", "CLV_107"];
+};

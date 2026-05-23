@@ -127,7 +127,43 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "UK3CB_ADC_C_Hunter_U_07",
+    "UK3CB_ADC_C_Hunter_U_09",
+    "UK3CB_ADC_C_Hunter_U_08",
+    "UK3CB_ADC_C_Hunter_U_10",
+    "UK3CB_ADC_C_Hunter_U_06",
+    "UK3CB_ADC_C_Shorts_U_01",
+    "UK3CB_ADC_C_Shorts_U_02",
+    "UK3CB_ADC_C_Shorts_U_03",
+    "UK3CB_ADC_C_Shorts_U_06",
+    "UK3CB_ADC_C_Shorts_U_04",
+    "UK3CB_ADC_C_Shorts_U_05",
+    "UK3CB_ADC_C_U_Pilot_02",
+    "UK3CB_CHC_C_U_CAN_01",
+    "UK3CB_ADC_C_Pants_U_22",
+    "UK3CB_ADC_C_Pants_U_19",
+    "UK3CB_ADC_C_Pants_U_21",
+    "UK3CB_ADC_C_Pants_U_13",
+    "UK3CB_ADC_C_Pants_U_06",
+    "UK3CB_ADC_C_Pants_U_24",
+    "UK3CB_ADC_C_Pants_U_11",
+    "UK3CB_ADC_C_Pants_U_15",
+    "UK3CB_ADC_C_Pants_U_25",
+    "UK3CB_ADC_C_Pants_U_23",
+    "UK3CB_ADC_C_Pants_U_20",
+    "UK3CB_ADC_C_Pants_U_16",
+    "UK3CB_ADC_C_Pants_U_17",
+    "UK3CB_ADC_C_Pants_U_07",
+    "UK3CB_ADC_C_Pants_U_10",
+    "UK3CB_ADC_C_Pants_U_09",
+    "UK3CB_ADC_C_Pants_U_08",
+    "UK3CB_ADC_C_Pants_U_04",
+    "UK3CB_ADC_C_Pants_U_02",
+    "UK3CB_ADC_C_Pants_U_01",
+    "UK3CB_ADC_C_Pants_U_05",
+    "UK3CB_ADC_C_Pants_U_03"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -148,7 +184,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append _civHats;
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

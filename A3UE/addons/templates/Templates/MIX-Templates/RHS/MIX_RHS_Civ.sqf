@@ -127,7 +127,38 @@ _cloakRifles append [];
 _cloakCarbines append [];
 _cloakSidearms append [];
 
-_uniforms append [];
+_uniforms append [
+    "U_C_Man_casual_1_F",
+    "U_C_Man_casual_2_F",
+    "U_C_Man_casual_3_F",
+    "U_C_Man_casual_4_F",
+    "U_C_Man_casual_5_F",
+    "U_C_Man_casual_6_F",
+    "U_C_ArtTShirt_01_v1_F",
+    "U_C_ArtTShirt_01_v2_F",
+    "U_C_ArtTShirt_01_v3_F",
+    "U_C_ArtTShirt_01_v4_F",
+    "U_C_ArtTShirt_01_v5_F",
+    "U_C_ArtTShirt_01_v6_F",
+    "U_NikosBody",
+    "U_NikosAgedBody",
+    "U_C_Poloshirt_blue",
+    "U_C_Poloshirt_burgundy",
+    "U_C_Poloshirt_stripped",
+    "U_C_Poloshirt_tricolour",
+    "U_C_Poloshirt_salmon",
+    "U_C_Poloshirt_redwhite",
+    "U_OrestesBody",
+    "U_C_Poor_1",
+    "U_C_HunterBody_grn",
+    "U_I_L_Uniform_01_tshirt_skull_F",
+    "U_I_L_Uniform_01_tshirt_black_F",
+    "U_I_L_Uniform_01_tshirt_sport_F",
+    "U_C_Scientist",
+    "U_C_Uniform_Scientist_02_formal_F",
+    "U_C_Uniform_Scientist_02_F",
+    "U_C_Uniform_Scientist_01_F"
+];
 _SLuniforms append [];
 _ENGuniforms append [];
 _MGvests append [];
@@ -148,7 +179,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append [];
+_helmets append _civHats;
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];

@@ -160,6 +160,7 @@ private _cloakSidearms = [];
 private _uniforms = [];
 private _SLuniforms = [];
 private _ENGuniforms = [];
+private _MEDuniforms = [];
 private _vests = [];
 private _Hvests = [];
 private _MGvests = [];
@@ -199,8 +200,7 @@ private _pItems = [];
 private _cItems = [];
 private _uItems = [];
 
-private _glasses = [];
-private _goggles = [];
+private _facewear = [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -269,8 +269,8 @@ private _sfhelmets = [];
 private _sfSLhelmets = [];
 private _sfSLhats = [];
 private _sfSNIhats = [];
-private _sfglasses = [];
-private _sfgoggles = [];
+
+private _sffacewear = [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -337,8 +337,8 @@ private _eliteMEDhelmets = [];
 private _eliteSLhelmets = [];
 private _eliteSLhats = [];
 private _eliteSNIhats = [];
-private _eliteglasses = [];
-private _elitegoggles = [];
+
+private _elitefacewear = [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -406,8 +406,8 @@ private _militaryhelmets = [];
 private _militarySLhelmets = [];
 private _militarySLhats = [];
 private _militarySNIhats = [];
-private _militaryglasses = [];
-private _militarygoggles = [];
+
+private _militaryfacewear = [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -489,8 +489,7 @@ private _militiaMEDhelmets = [];
 private _militiaSLhelmets = [];
 private _militiaSLhats = [];
 private _militiaSNIhats = [];
-private _militiaglasses = [];
-private _militiagoggles = [];
+
 private _militiafacewear = [];
 
 /////////////////////////////
