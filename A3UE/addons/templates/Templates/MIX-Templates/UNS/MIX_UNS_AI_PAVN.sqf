@@ -59,8 +59,8 @@ _staticAT append ["uns_SPG9_73mm_NVA"];
 _staticAA append ["uns_ZPU4_NVA"];
 _staticMortars append ["uns_m1941_82mm_mortarNVA"];
 _howitzers append [];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["uns_mine_t59"];
 _minefieldAPERS append ["uns_mine_md82"];

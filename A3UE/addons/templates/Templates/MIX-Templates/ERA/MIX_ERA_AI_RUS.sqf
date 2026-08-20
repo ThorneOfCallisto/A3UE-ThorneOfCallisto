@@ -58,8 +58,8 @@ _staticAT append ["cwr3_o_konkurs_tripod", "NORTH_SOV_76mm1936", "CUP_O_Kornet_R
 _staticAA append ["CUP_O_Igla_AA_pod_ChDKZ", "NORTH_SOV_Maxim_Quad"];
 _staticMortars append ["CUP_O_2b14_82mm_RU"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];

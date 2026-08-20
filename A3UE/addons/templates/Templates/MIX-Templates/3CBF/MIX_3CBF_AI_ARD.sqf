@@ -57,8 +57,8 @@ _staticAT append ["UK3CB_TKA_O_Kornet"];
 _staticAA append ["UK3CB_ARD_O_ZU23", "UK3CB_ARD_O_Igla_AA_pod"];
 _staticMortars append ["UK3CB_ARD_O_2b14_82mm"];
 _howitzers append ["UK3CB_ARD_O_D30"];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["rhs_mine_tm62m"];
 _minefieldAPERS append ["rhs_mine_pmn2"];

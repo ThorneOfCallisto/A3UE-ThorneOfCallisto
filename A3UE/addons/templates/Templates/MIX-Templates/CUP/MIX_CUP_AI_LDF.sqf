@@ -54,7 +54,7 @@ _staticMG append ["CUP_B_M2StaticMG_US"];
 _staticAT append ["CUP_B_TOW2_TriPod_US"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["CUP_B_M252_US"];
-_howitzers append [""];
+_howitzers append [];
 _radar append ["Flex_CUP_LDF_Radar_System"];
 _SAM append ["Flex_CUP_LDF_SAM_System"];
 

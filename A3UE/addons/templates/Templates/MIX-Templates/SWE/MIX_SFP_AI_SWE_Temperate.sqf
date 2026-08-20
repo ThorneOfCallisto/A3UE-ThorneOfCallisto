@@ -54,7 +54,7 @@ _staticMG append ["CUP_B_M2StaticMG_USMC"];
 _staticAT append ["CUP_B_TOW2_TriPod_USMC"];
 _staticAA append ["CUP_B_Stinger_AA_pod_Base_USMC"];
 _staticMortars append ["CUP_B_M252_USMC"];
-_howitzers append [""];
+_howitzers append [];
 _radar append ["B_Radar_System_01_F"];
 _SAM append ["B_SAM_System_03_F"];
 

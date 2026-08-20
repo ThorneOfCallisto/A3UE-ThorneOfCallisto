@@ -23,7 +23,7 @@ _DropPod append ["SpaceshipCapsule_01_F"];
 
 _transportBoat append ["B_Boat_Transport_01_F"];
 _gunBoat append ["B_Boat_Armed_01_minigun_F"];
-_Amphibious append [""];
+_Amphibious append [];
 
 _planesCAS append ["AMF_RAFALE_B_01_F"];
 _planesAA append ["AMF_RAFALE_B_01_F", "AMF_RAFALE_C_01_F", "B_AMF_PLANE_FIGHTER_02_F"];

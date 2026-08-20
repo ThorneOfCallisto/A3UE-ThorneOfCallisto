@@ -55,8 +55,8 @@ _staticAT append ["Flex_CUP_SLDF_TOW2_TriPod"];
 _staticAA append ["Flex_CUP_SLDF_ZU23"];
 _staticMortars append ["Flex_CUP_SLDF_Mortar"];
 _howitzers append ["Flex_CUP_SLDF_M119"];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];

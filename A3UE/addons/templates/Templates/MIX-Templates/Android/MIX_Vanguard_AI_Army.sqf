@@ -56,7 +56,7 @@ _staticMG append ["OPTRE_Static_M247H_Tripod"];
 _staticAT append ["OPTRE_Static_FG75_CMA"];
 _staticAA append ["OPTRE_Static_AA"];
 _staticMortars append ["B_Mortar_01_F"];
-_howitzers append [""];
+_howitzers append [];
 _radar append ["B_Radar_System_01_F"];
 _SAM append ["B_SAM_System_03_F"];
 

@@ -62,8 +62,8 @@ _staticAT append ["UK3CB_KRG_B_TOW_TriPod"];
 _staticAA append ["UK3CB_KRG_B_ZU23", "UK3CB_KRG_B_Stinger_AA_pod"];
 _staticMortars append ["UK3CB_LDF_B_M252"];
 _howitzers append [];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["rhsusf_mine_M19"];
 _minefieldAPERS append ["rhsusf_mine_m14"];

@@ -130,7 +130,7 @@ _traitorHats append ["3as_CIS_Light_helmet"];
 
 _officerUniforms append ["3AS_U_CIS_TS"];
 _officerVests append ["ls_droidVest_bx"];
-_officerHats append [""];
+_officerHats append [];
 
 _cloakUniforms append [];
 _cloakVests append [];

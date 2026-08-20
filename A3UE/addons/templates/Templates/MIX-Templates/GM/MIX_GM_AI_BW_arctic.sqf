@@ -70,9 +70,9 @@ _staticMG append ["gm_ge_army_mg3_aatripod"];
 _staticAT append ["gm_ge_army_milan_launcher_tripod"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["CUP_B_M252_US"];
-_howitzers append [""];
-_radar append [""];
-_SAM append [""];
+_howitzers append [];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["gm_minestatic_at_dm21", "gm_minestatic_at_dm1233"];
 _minefieldAPERS append ["gm_minestatic_ap_dm31"];

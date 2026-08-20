@@ -55,8 +55,8 @@ _staticAT append ["Flex_CUP_NLAF_SPG9"];
 _staticAA append ["Flex_CUP_NLAF_ZU23"];
 _staticMortars append ["Flex_CUP_NLAF_Mortar"];
 _howitzers append ["Flex_CUP_NLAF_D30"];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];
@@ -126,7 +126,7 @@ _binoculars append ["Binocular"];
 _rangefinders append ["Rangefinder"];
 
 _traitorUniforms append ["Flex_CUP_NLOM_Pullover_Uniform"];
-_traitorVests append [""];
+_traitorVests append [];
 _traitorHats append ["CUP_H_PMC_Beanie_Khaki"];
 
 _officerUniforms append ["Flex_CUP_NLOM_BDU_Wood_Light_Rolled_Gloves"];

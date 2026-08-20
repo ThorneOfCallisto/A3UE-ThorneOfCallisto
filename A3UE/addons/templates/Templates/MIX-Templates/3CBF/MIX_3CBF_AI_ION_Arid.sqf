@@ -57,8 +57,8 @@ _staticAT append ["RHS_TOW_TriPod_D"];
 _staticAA append ["RHS_Stinger_AA_pod_D"];
 _staticMortars append ["RHS_M252_D"];
 _howitzers append [];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["rhsusf_mine_M19"];
 _minefieldAPERS append ["rhsusf_mine_m14"];

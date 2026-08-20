@@ -55,8 +55,8 @@ _staticAT append ["CUP_B_TOW2_TriPod_US"];
 _staticAA append ["CUP_B_RBS70_ACR"];
 _staticMortars append ["CUP_B_2b14_82mm_ACR"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [""];
-_SAM append [""];
+_radar append [];
+_SAM append [];
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
