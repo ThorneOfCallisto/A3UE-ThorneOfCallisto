@@ -774,7 +774,7 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (c
 	_repairTrucks append ["B_T_Truck_01_Repair_F"];
 	_fuelTrucks append ["B_T_Truck_01_fuel_F"];
     _gunBoat append ["B_Boat_Armed_01_minigun_F"];
-    _Amphibious append ["B_APC_Wheeled_01_cannon_F"]
+    _Amphibious append ["B_APC_Wheeled_01_cannon_F"];
 	_planesCAS append ["B_Plane_CAS_01_dynamicLoadout_F"];
 	_planesAA append ["B_Plane_Fighter_01_F"];
 	_helisAttack append [];
