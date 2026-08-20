@@ -841,11 +841,11 @@ if (_hasHelicopters) then {
     _transportHelicopters append ["B_Heli_Transport_03_F", "B_Heli_Transport_03_unarmed_F"];
 };
 
-if (_hasWs) then {["B_UAV_02_lxWS", "B_UAV_01_F"]}
+if (_hasWs) then {["B_UAV_02_lxWS", "B_UAV_01_F"]};
 
 if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-}
+};
 
 if (_hasTanks) then {
     _lightTanks = ["B_AFV_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F"];

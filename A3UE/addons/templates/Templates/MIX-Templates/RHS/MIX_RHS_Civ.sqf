@@ -545,4 +545,4 @@ if (_hasLawsOfWar) then {
 
 if (_hasLawsOfWar) then {
     ["H_Cap_press", "H_PASGT_basic_blue_press_F", "H_PASGT_neckprot_blue_press_F"];
-}
+};

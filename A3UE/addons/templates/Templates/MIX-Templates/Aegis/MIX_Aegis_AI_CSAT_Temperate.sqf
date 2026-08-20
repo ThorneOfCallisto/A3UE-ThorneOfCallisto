@@ -792,11 +792,11 @@ if (_hasHelicopters) then {
     _transportHelicopters = ["O_T_Heli_Transport_04_covered_F", "O_T_Heli_Transport_04_bench_F"]; 
 };
 
-if (_hasWs) then {["Aegis_O_T_UAV_02_lxWS", "O_T_UAV_01_F"]}
+if (_hasWs) then {["Aegis_O_T_UAV_02_lxWS", "O_T_UAV_01_F"]};
 
 if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-}
+};
 
 if (_hasTanks) then {
     _tanks = [
@@ -870,4 +870,4 @@ if (_hasWs) then {
         ["LMG_S77_lxWS", "", "acc_flashlight", "optic_MRCO", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
         ["LMG_S77_lxWS", "", "acc_flashlight", "optic_Arco_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""]
     ];
-}
+};

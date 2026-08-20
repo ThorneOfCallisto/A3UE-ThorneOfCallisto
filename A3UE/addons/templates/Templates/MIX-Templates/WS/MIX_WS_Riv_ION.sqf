@@ -329,7 +329,7 @@ if (_hasRF) then {
 		["SMG_01_black_RF", "", "", "", [], [], ""],
 		["SMG_01_black_RF", "", "optic_Holosight_smg_blk_F", "", [], [], ""]
 	];
-}
+};
 
 if (_hasContact) then {
 	_mgs append [

@@ -201,7 +201,7 @@ _pilotfacewear append [];
 if (_hasApex) then {
 	_lightArmedVehicles append ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F"];
 	_lightUnarmedVehicles pushBack "I_C_Offroad_02_unarmed_F";
-}
+};
 
 if (_hasWs) then {
 	_lightArmedVehicles append ["O_G_Offroad_01_armor_AT_lxWS", "O_G_Offroad_01_armor_armed_lxWS"];

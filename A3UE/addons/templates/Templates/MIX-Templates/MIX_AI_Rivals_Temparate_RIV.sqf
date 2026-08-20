@@ -19,11 +19,19 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
             _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
             #include "3CBF\MIX_3CBF_Riv_TNM.sqf";
             ["TNM", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+            
+            _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+            #include "3CBF\MIX_3CBF_Riv_CHDKZ.sqf";
+            ["CHDKZ", _gearFactionSnapshot] call _fnc_gearFactionCapture;
         };
     } else {
 
     #include "RHS\RHS_Vehicle_Attributes.sqf";
 };
+            
+_gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+#include "Vanilla\MIX_Vanilla_Riv_Exegermenos.sqf";
+["Exegermenos", _gearFactionSnapshot] call _fnc_gearFactionCapture;
 
 //////////////////////////////////
 //  End Include Factions here   //

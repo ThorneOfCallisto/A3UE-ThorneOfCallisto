@@ -888,11 +888,11 @@ if (_hasHelicopters) then {
     _transportHelicopters append ["B_T_Heli_Transport_03_F", "B_T_Heli_Transport_03_unarmed_F"];
 };
 
-if (_hasWs) then {["Aegis_B_T_UAV_02_lxWS", "B_T_UAV_01_F"]}
+if (_hasWs) then {["Aegis_B_T_UAV_02_lxWS", "B_T_UAV_01_F"]};
 
 if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-}
+};
 
 if (_hasWs) then {
     _APCs pushBack "B_T_APC_Wheeled_01_atgm_lxWS_v2";

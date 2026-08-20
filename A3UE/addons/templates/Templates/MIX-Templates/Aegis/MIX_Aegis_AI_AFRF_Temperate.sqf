@@ -679,11 +679,11 @@ if (_hasHelicopters) then {
     _transportHelicopters append ["O_R_Heli_Transport_04_covered_F", "O_R_Heli_Transport_04_bench_F"]; 
 };
 
-if (_hasWs) then {["Aegis_O_R_UAV_02_lxWS", "O_R_UAV_01_F"]}
+if (_hasWs) then {["Aegis_O_R_UAV_02_lxWS", "O_R_UAV_01_F"]};
 
 if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-}
+};
 
 if (_hasTanks) then {
     _tanks append ["O_MBT_04_cannon_F", "O_MBT_04_command_F"];
@@ -707,4 +707,4 @@ if (_hasLawsOfWar) then {
     _helmets pushBack "H_PASGT_basic_blue_F";
 };
 
-if (_hasApex) then { ["hgun_Pistol_01_F"] }
+if (_hasApex) then { ["hgun_Pistol_01_F"] };

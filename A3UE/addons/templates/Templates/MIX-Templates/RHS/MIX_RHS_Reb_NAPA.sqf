@@ -534,4 +534,4 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_coyote_F", 
         "B_LegStrapBag_olive_F"
     ];
-}
+};

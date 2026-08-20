@@ -647,13 +647,13 @@ _pilotfacewear append [];
 //    Conditional Gear     //
 /////////////////////////////
 
-if (_hasWs) then {["I_UAV_02_lxWS", "I_UAV_01_F"]}
+if (_hasWs) then {["I_UAV_02_lxWS", "I_UAV_01_F"]};
 
-if (_hasTanks) then {["I_LT_01_cannon_F"]}
+if (_hasTanks) then {["I_LT_01_cannon_F"]};
 
 if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-}
+};
 
 if (_hasWs) then {
     _cargoTrucks append ["I_Truck_02_flatbed_lxWS", "I_Truck_02_cargo_lxWS"];
@@ -685,7 +685,7 @@ if (_hasWs) then {
         ["LMG_Mk200_F", "", "acc_pointer_IR", "optic_Hamr", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_01_F_blk"],
         ["LMG_Mk200_F", "", "acc_pointer_IR", "optic_NVS", ["200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Red", "200Rnd_65x39_cased_Box_Tracer_Red"], [], "bipod_01_F_blk"]
     ]];
-}
+};
 
 if (_hasMarksman) then {
     _marksmanRifles append [
@@ -713,7 +713,7 @@ if (_hasMarksman) then {
 
 if (_hasLawsOfWar) then {
     _militiaLoadoutData set ["helmets", ["H_HelmetIA", "H_PASGT_basic_olive_F", "H_Booniehat_dgtl", "H_Cap_blk_Raven"]];
-}
+};
 
 if (_hasMarksman) then {
     _marksmanRifles = [["srifle_DMR_06_olive_F", "", "", "optic_MRCO", [], [], ""]];

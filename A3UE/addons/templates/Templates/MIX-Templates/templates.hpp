@@ -48,7 +48,7 @@
         description = "Small MIX of OPFOR European Nations (AFRF, CSAT, AAF)";
     };
 
-    class OPFOR_MIX_Europe : CUSTOM_MIX_Base
+    class RIV_MIX_Europe : CUSTOM_MIX_Base
     {
         side = "Riv";
         flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";

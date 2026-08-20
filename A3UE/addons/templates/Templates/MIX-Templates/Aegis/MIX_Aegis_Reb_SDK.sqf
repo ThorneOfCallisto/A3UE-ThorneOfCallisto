@@ -541,7 +541,7 @@ if (_hasLawsOfWar) then {
         "B_LegStrapBag_coyote_F", 
         "B_LegStrapBag_olive_F"
     ];
-}
+};
 
 if (_hasContact) then {
     _initialRebelEquipment append [
@@ -559,7 +559,7 @@ if (_hasApex) then {
         ["launch_RPG7_F", 3], 
         ["RPG7_F", 9]
     ];
-}
+};
 
 if (_hasWs) then {
     _dlcUniforms append [

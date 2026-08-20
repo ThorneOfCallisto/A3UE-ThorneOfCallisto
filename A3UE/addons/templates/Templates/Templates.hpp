@@ -5,5 +5,5 @@ class Templates
 };
 
 /*
-    Climates: {"arid", "arctic", "temperate", "tropical"}
+    Climates: {"arid", "arctic", "temperate", "tropical"};
 */

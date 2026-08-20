@@ -720,11 +720,11 @@ _pilotfacewear append [];
 //    Conditional Gear     //
 /////////////////////////////
 
-if (_hasWs) then {["B_A_UAV_01_tna_F", "Aegis_B_A_UAV_02_tna_lxWS"]}
+if (_hasWs) then {["B_A_UAV_01_tna_F", "Aegis_B_A_UAV_02_tna_lxWS"]};
 
 if (_hasContact) then {
     ["B_GEN_Offroad_01_covered_F", "B_GEN_Offroad_01_comms_F", "B_GEN_Offroad_01_gen_F"]
-}
+};
 
 if (_hasMarksman) then {
     _marksmanRifles append [

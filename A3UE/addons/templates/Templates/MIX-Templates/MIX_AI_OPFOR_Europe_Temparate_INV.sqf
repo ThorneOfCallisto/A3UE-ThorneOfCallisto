@@ -22,6 +22,7 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
     #include "RHS\RHS_Vehicle_Attributes.sqf";
+    
     if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_FIA_B")) then {
         #include "3CBBAF\3CBBAF_Vehicle_Attributes.sqf";
 
@@ -41,6 +42,10 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
         #include "RHS\MIX_RHS_AI_AFRF.sqf";
         ["AFRF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     };
+
+    _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+    #include "RHS\MIX_RHS_AI_SAF.sqf";
+    ["SAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
 };
 
 //////////////////////////////////

@@ -725,7 +725,7 @@ if (_hasWs) then {
 
 if (_hasArtOfWar) then {
 	#include "..\DLC_content\gear\Artofwar\Vanilla_AAF.sqf"
-}
+};
 
 if (_hasTanks) then {
     _crewLoadoutData set ["uniforms", ["U_Tank_green_F", 10]];

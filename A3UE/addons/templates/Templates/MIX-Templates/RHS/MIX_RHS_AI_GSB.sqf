@@ -950,4 +950,4 @@ if (isClass (configFile >> "cfgPatches" >> "ACM_CDF_GSFL")) then {
     ["ACM_B_CDF_Vehicle_9K79_K", ["1_Rnd_RHS_9M79_1_K"]],
     ["ACM_B_CDF_Vehicle_2S3", ["rhs_mag_HE_2a33"]]
     ]] call _fnc_saveToTemplate;
-    }
+    };
