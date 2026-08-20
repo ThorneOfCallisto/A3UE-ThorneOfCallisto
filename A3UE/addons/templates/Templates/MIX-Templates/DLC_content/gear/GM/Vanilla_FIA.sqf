@@ -97,7 +97,7 @@ _dlcheadgear append [
     "gm_ge_headgear_hat_beanie_crew_blk"
 ];
 
-_loadoutData set ["facewearGM", [
+_facewear append [
     "gm_ge_facewear_acidgoggles",
     "gm_ge_facewear_dustglasses",
     "gm_gc_army_facewear_dustglasses",
@@ -128,5 +128,4 @@ _loadoutData set ["facewearGM", [
     "gm_ge_facewear_stormhood_dustglasses_blk",
     "gm_ge_facewear_stormhood_brd",
     "gm_ge_facewear_sunglasses"
-    ]
 ];

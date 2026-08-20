@@ -7,7 +7,7 @@ _helmets append [
 
 _crewhelmets append ["EF_H_HelmetCrew_Coy", "EF_H_HelmetCrew_White", "EF_H_HelmetCrew_Yellow"];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "EF_U_B_MarineCombatUniform_Wdl_6",
     "EF_U_B_MarineCombatUniform_Wdl_4",
     "EF_U_B_MarineCombatUniform_Wdl_3",
@@ -24,8 +24,8 @@ _crewhelmets append ["EF_H_HelmetCrew_Coy", "EF_H_HelmetCrew_White", "EF_H_Helme
 
 _backpacks append ["EF_B_AssaultPack_coy","EF_B_Carryall_coy","EF_B_Kitbag_coy","EF_B_RaiderPack_black","EF_B_RaiderPack_coy","EF_B_RaiderPack_olive", "EF_B_TacticalPack_coy"];
 
-(_pilotLoadoutData get "uniforms") pushback "EF_U_B_CrewCoveralls_Navy";
+_pilotuniforms pushback "EF_U_B_CrewCoveralls_Navy";
 
-_heavyVests append ["EF_V_AAV_Olive", "EF_V_AAV_Support_Olive", "EF_V_AAV_Coy", "EF_V_AAV_Support_Coy", "EF_V_AAV_Support_Black", "EF_V_AAV_Black"];
+_vests append ["EF_V_AAV_Olive", "EF_V_AAV_Support_Olive", "EF_V_AAV_Coy", "EF_V_AAV_Support_Coy", "EF_V_AAV_Support_Black", "EF_V_AAV_Black"];
 
 _vests append ["EF_V_CCR_Support_Black", "EF_V_CCR_Support_Coy", "EF_V_CCR_Support_Olive"];

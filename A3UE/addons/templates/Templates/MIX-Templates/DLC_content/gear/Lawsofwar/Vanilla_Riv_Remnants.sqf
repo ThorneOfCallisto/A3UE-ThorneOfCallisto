@@ -1,6 +1,6 @@
 _vests append ["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "U_BG_Guerilla1_2_F"
 ];
 

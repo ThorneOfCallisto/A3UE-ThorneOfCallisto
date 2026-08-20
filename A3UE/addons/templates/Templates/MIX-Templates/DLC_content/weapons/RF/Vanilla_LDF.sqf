@@ -1,4 +1,4 @@
-(_sfLoadoutData get "SMGs") append [
+_sfSMGs append [
     ["SMG_01_black_RF","muzzle_snds_acp","","optic_VRCO_RF",["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""]
 ];
 (_sfLoadoutData get "sidearms") append [
@@ -10,7 +10,7 @@
     ["hgun_DEagle_camo_RF", "", "", "optic_VRCO_pistol_RF", ["7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF"], [], ""]
 ];
 
-(_eliteLoadoutData get "SMGs") append [
+_eliteSMGs append [
     ["SMG_01_black_RF","","","optic_VRCO_RF",["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""]
 ];
 (_eliteLoadoutData get "sidearms") append [
@@ -22,7 +22,7 @@
     ["hgun_DEagle_camo_RF", "", "", "optic_VRCO_pistol_RF", ["7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF"], [], ""]
 ];
 
-(_militaryLoadoutData get "SMGs") append [
+_militarySMGs append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01","optic_VRCO_RF",["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""]
 ];
 (_militaryLoadoutData get "sidearms") append [
@@ -30,14 +30,14 @@
     ["hgun_Glock19_khk_RF","","acc_flashlight_IR_pistol_RF","optic_MRD_khk_RF",["33Rnd_9x19_Mag_khk_RF","33Rnd_9x19_Mag_khk_RF","33Rnd_9x19_Mag_khk_RF"],[],""]
 ];
 
-(_policeLoadoutData get "SMGs") append [
+_policeWeapons append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01","optic_Aco_smg",["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""]
 ];
 
-(_militiaLoadoutData get "SMGs") append [
+_militiaSMGs append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01","",["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""]
 ];
-(_militiaLoadoutData get "marksmanRifles") append [
+_militiamarksmanRifles append [
     ["srifle_h6_oli_rf","","","optic_MRCO",["10Rnd_556x45_AP_Stanag_red_khk_RF","10Rnd_556x45_AP_Stanag_red_khk_RF","20Rnd_556x45_AP_Stanag_red_khk_RF"],[],""],
     ["srifle_h6_blk_rf", "", "", "optic_MRCO",["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""],
     ["srifle_DMR_01_black_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]

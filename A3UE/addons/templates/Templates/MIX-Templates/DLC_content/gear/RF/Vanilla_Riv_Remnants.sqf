@@ -1,12 +1,12 @@
-(_loadoutData get "facewear") append [
+_facewear append [
     "G_Bandanna_yellow_RF",
     "G_Glasses_black_RF",
     "G_Glasses_white_RF"
 ];
 
-_heavyVests append ["V_PlateCarrierLite_black_noFlag_RF","V_TacVest_rig_oli_RF","V_TacVest_rig_khk_RF","V_TacVest_rig_blk_RF"];
+_vests append ["V_PlateCarrierLite_black_noFlag_RF","V_TacVest_rig_oli_RF","V_TacVest_rig_khk_RF","V_TacVest_rig_blk_RF"];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "U_BG_Guerrilla_RF",
     "U_BG_leader_RF"
 ];
@@ -24,7 +24,7 @@ _helmets append [
 
 _backpacks append ["B_DuffleBag_Olive_NoLogo_RF","B_DuffleBag_Black_NoLogo_RF","B_DuffleBag_Sand_RF","B_DuffleBag_Red_RF","B_DuffleBag_Olive_RF","B_DuffleBag_Blue_RF","B_DuffleBag_Black_RF","B_DuffleBag_VRANA_RF"];
 
-(_pilotLoadoutData get "uniforms") append [
+_pilotuniforms append [
     "U_C_PilotJacket_brown_RF",
     "U_C_PilotJacket_open_brown_RF",
     "U_C_PilotJacket_lbrown_RF",
@@ -38,7 +38,7 @@ _backpacks append ["B_DuffleBag_Olive_NoLogo_RF","B_DuffleBag_Black_NoLogo_RF","
     "U_C_HeliPilotCoveralls_Black_RF"
 ];
 
-(_pilotLoadoutData get "helmets") append [
+_pilothelmets append [
     "H_PilotHelmetHeli_White_RF",
     "H_PilotHelmetHeli_Yellow_RF",
     "H_PilotHelmetHeli_Green_RF",

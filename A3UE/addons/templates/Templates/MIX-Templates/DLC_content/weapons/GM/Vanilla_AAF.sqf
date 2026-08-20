@@ -11,15 +11,15 @@
     ["gm_fim43_oli", "", "", "", ["gm_1Rnd_70mm_he_m585_fim43"], [], ""], 3
 ];
 //////////////////////////////////////////////////////
-(_sfLoadoutData get "slRifles") append [
+_sfslRifles append [
     ["gm_g11k2_ris_blk","", _sfAccessories, _sfTlOptics, ["gm_50Rnd_473x33mm_B_DM11_g11_blk","gm_50Rnd_473x33mm_B_DM11_g11_blk","gm_50Rnd_473x33mm_B_DM11_g11_blk"], [], ""], 7,
     ["gm_sg551_swat_blk","gm_suppressor_atec150_556mm_blk", _sfAccessories, _sfTlOptics, ["gm_30Rnd_556x45mm_B_T_DM21_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_T_DM21_sg550_brn"], [], ""], 5
 ];
-(_sfLoadoutData get "rifles") append [
+_sfrifles append [
     ["gm_sg551_ris_blk", "gm_suppressor_atec150_556mm_blk","", _sfRifleOptics, ["gm_30Rnd_556x45mm_B_T_DM21_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_T_DM21_sg550_brn"], [], ""], 4,
     ["gm_sg542_ris_blk", "gm_suppressor_atec150_762mm_blk","", _sfRifleOptics, ["gm_20Rnd_762x51mm_B_T_DM21A2_sg542_blk","gm_20Rnd_762x51mm_AP_DM151_sg542_blk","gm_20Rnd_762x51mm_B_DM41_sg542_blk","gm_20Rnd_762x51mm_B_DM111_sg542_blk"], [], ""], 4
 ];
-(_sfLoadoutData get "marksmanRifles") append [
+_sfmarksmanRifles append [
     ["gm_msg90_blk","","","gm_feroz24_stanagHK_blk",["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 2,
     ["gm_msg90a1_blk","gm_suppressor_atec150_762mm_long_blk","","gm_feroz24_stanagHK_blk",["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 6
 ];
@@ -32,16 +32,16 @@
 ];
 //////////////////////////////////////////////////////
 
-(_eliteLoadoutData get "slRifles") append [
+_eliteslRifles append [
     ["gm_g11k2_ris_blk","", _eliteAccessories, _eliteSlOptics, ["gm_50Rnd_473x33mm_B_DM11_g11_blk","gm_50Rnd_473x33mm_B_DM11_g11_blk","gm_50Rnd_473x33mm_B_DM11_g11_blk"], [], ""], 3,
     ["gm_sg551_swat_blk","", _eliteAccessories, _eliteSlOptics, ["gm_30Rnd_556x45mm_B_T_DM21_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_T_DM21_sg550_brn"], [], ""], 4
 ];
-(_eliteLoadoutData get "rifles") append [
+_eliterifles append [
     ["gm_sg551_swat_blk","", _eliteAccessories, _eliteRifleOptics, ["gm_30Rnd_556x45mm_B_T_DM21_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_T_DM21_sg550_brn"], [], ""], 2,
     ["gm_sg551_ris_blk", "","", _eliteRifleOptics, ["gm_30Rnd_556x45mm_B_T_DM21_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_DM11_sg550_brn","gm_30Rnd_556x45mm_B_T_DM21_sg550_brn"], [], ""], 5,
     ["gm_sg542_ris_blk", "","", _eliteRifleOptics, ["gm_20Rnd_762x51mm_B_T_DM21A2_sg542_blk","gm_20Rnd_762x51mm_AP_DM151_sg542_blk","gm_20Rnd_762x51mm_B_DM41_sg542_blk","gm_20Rnd_762x51mm_B_DM111_sg542_blk"], [], ""], 2
 ];
-(_eliteLoadoutData get "marksmanRifles") append [
+_elitemarksmanRifles append [
     ["gm_msg90_blk","","","gm_feroz24_stanagHK_blk",["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 2,
     ["gm_msg90a1_blk","","","gm_feroz24_stanagHK_blk",["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 6
 ];
@@ -52,13 +52,13 @@
     ["gm_hk69a1_blk", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_HE_Grenade_shell"], ["1Rnd_Smoke_Grenade_shell"], ""], 4,
     ["gm_pallad_d_brn", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_HE_Grenade_shell"], [], ""], 2
 ];
-(_eliteLoadoutData get "SMGs") append [
+_eliteSMGs append [
     ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", "gm_rv_stanagClaw_blk", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""], 2,
     ["gm_mp5sd6_blk", "", "", "gm_rv_stanagClaw_blk", ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""], 1
 ];
 //////////////////////////////////////////////////////
 _militaryRifleOptics append ["gm_c79a1_blk", 1, "gm_blits_ris_blk", 0.5, "gm_rv_ris_blk", 2];
-(_militaryLoadoutData get "rifles") append [
+_militaryrifles append [
     ["gm_c7a1_oli", "", "", "gm_c79a1_oli", ["gm_30Rnd_556x45mm_B_M855_stanag_gry", "gm_30Rnd_556x45mm_B_M855_stanag_gry","gm_30Rnd_556x45mm_B_T_M856_stanag_gry"], [], ""], 4,
     ["gm_g36a1_blk", "", "", "", ["gm_30Rnd_556x45mm_B_DM11_g36_blk","gm_30Rnd_556x45mm_B_T_DM21_g36_blk","gm_30Rnd_556x45mm_B_DM11_g36_blk","gm_30Rnd_556x45mm_B_T_DM21_g36_blk"], [], ""], 2,
     ["gm_g36e_blk", "", "", "", ["gm_30Rnd_556x45mm_B_DM11_g36_blk","gm_30Rnd_556x45mm_B_T_DM21_g36_blk","gm_30Rnd_556x45mm_B_DM11_g36_blk","gm_30Rnd_556x45mm_B_T_DM21_g36_blk"], [], ""], 6,
@@ -66,12 +66,12 @@ _militaryRifleOptics append ["gm_c79a1_blk", 1, "gm_blits_ris_blk", 0.5, "gm_rv_
     ["gm_g3ka4a1_ris_blk", "", "", _militaryRifleOptics, ["gm_20Rnd_762x51mm_B_DM111_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk", "gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], ""], 2
 ];
 _gmMilitaryMG8Optics = ["gm_rv_stanagHK_blk", 2, "gm_blits_StanagHK_blk", 4, "gm_feroz24_stanagHK_blk", 1, "", 1];
-(_militaryLoadoutData get "machineGuns") append [
+_militarymachineGuns append [
     ["gm_mg3_blk", "", "", "", ["gm_120Rnd_762x51mm_B_T_DM21_mg3_grn","gm_120Rnd_762x51mm_B_T_DM21A2_mg3_grn"], [], ""], 4,
     ["gm_mg8a2_blk", "", "", _gmMilitaryMG8Optics, ["gm_100Rnd_762x51mm_B_T_DM21_mg8_oli","gm_100Rnd_762x51mm_B_T_DM21A2_mg8_oli"], [], "gm_g8_bipod_blk"], 5
 ];
 _gmMilitaryMarksmanOptics = ["gm_feroz24_stanagHK_blk", 3, "gm_blits_stanagHK_blk", 1];
-(_militaryLoadoutData get "marksmanRifles") append [
+_militarymarksmanRifles append [
     ["gm_msg90_blk","","", _gmMilitaryMarksmanOptics,["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM111_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 1,
     ["gm_msg90a1_blk","","", _gmMilitaryMarksmanOptics,["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM111_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 3
 ];
@@ -80,15 +80,15 @@ _gmMilitaryMarksmanOptics = ["gm_feroz24_stanagHK_blk", 3, "gm_blits_stanagHK_bl
 ];
 //////////////////////////////////////////////////////
 _gmMilitiaMP5Optics = ["gm_rv_StanagClaw_blk", 1, "", 4];
-(_militiaLoadoutData get "SMGs") append [
+_militiaSMGs append [
     ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", _gmMilitiaMP5Optics, ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""], 3,
     ["gm_mp5a2_blk", "", "", _gmMilitiaMP5Optics, ["gm_30Rnd_9x19mm_B_DM51_mp5_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk","gm_30Rnd_9x19mm_B_DM11_mp5_blk","gm_30Rnd_9x19mm_AP_DM91_mp5_blk"], [], ""], 6
 ];
 _gmMilitiaMG8Optics = ["gm_rv_stanagHK_blk", 3, "gm_blits_StanagHK_blk", 0.5, "gm_feroz24_stanagHK_blk", 1, "", 8];
-(_militiaLoadoutData get "machineGuns") append [
+_militiamachineGuns append [
     ["gm_mg8a1_blk", "", "", _gmMilitiaMG8Optics, ["gm_100Rnd_762x51mm_B_T_DM21_mg8_oli","gm_100Rnd_762x51mm_B_T_DM21A2_mg8_oli"], [], "gm_g8_bipod_blk"], 8
 ];
-(_militiaLoadoutData get "marksmanRifles") append [
+_militiamarksmanRifles append [
     ["gm_msg90_blk","","",_gmMilitaryMarksmanOptics,["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 2,
     ["gm_msg90a1_blk","","",_gmMilitaryMarksmanOptics,["gm_20Rnd_762x51mm_AP_DM151_g3_blk","gm_20Rnd_762x51mm_B_DM41_g3_blk", "gm_20Rnd_762x51mm_B_DM111_g3_blk","gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk"], [], "gm_msg90_bipod_blk"], 6
 ];
@@ -107,7 +107,7 @@ _gmMilitiaMG8Optics = ["gm_rv_stanagHK_blk", 3, "gm_blits_StanagHK_blk", 0.5, "g
 ];
 _gmPoliceShotgunAccessories = ["gm_surefire_l60_wht_hoseclamp_blk", 1, "", 1.5];
 _gmPoliceSMGOptics = ["gm_rv_stanagClaw_blk", 1, "", 3];
-(_policeLoadoutData get "SMGs") append [
+_policeWeapons append [
     ["gm_mp5n_surefire_blk", "", "gm_surefire_l60_wht_surefire_blk", _gmPoliceSMGOptics, ["gm_60Rnd_9x19mm_B_DM11_mp5a3_blk","gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk","gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""], 3,
     ["gm_hk512_wud", "", _gmPoliceShotgunAccessories, "", ["gm_7rnd_12ga_hk512_pellet","gm_7rnd_12ga_hk512_slug","gm_7rnd_12ga_hk512_pellet","gm_7rnd_12ga_hk512_slug"], [], ""], 1.5,
     ["gm_hk512_ris_wud", "", _gmPoliceShotgunAccessories, _policeSMGOptics, ["gm_7rnd_12ga_hk512_pellet","gm_7rnd_12ga_hk512_slug","gm_7rnd_12ga_hk512_pellet","gm_7rnd_12ga_hk512_slug"], [], ""], 3,

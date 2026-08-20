@@ -18,4 +18,4 @@ _dlchats append [
     "H_Hat_Tinfoil_F"
 ];
 
-_loadoutData set ["facewearContact", ["G_Blindfold_01_black_F", "G_Blindfold_01_white_F", "G_RegulatorMask_F"]];
+_facewear = ["G_Blindfold_01_black_F", "G_Blindfold_01_white_F", "G_RegulatorMask_F"];

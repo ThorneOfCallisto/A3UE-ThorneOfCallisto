@@ -1,4 +1,4 @@
-(_loadoutData get "facewear") append [
+_facewear append [
     "gm_ge_facewear_acidgoggles",
     "gm_ge_facewear_dustglasses",
     "gm_gc_army_facewear_dustglasses",
@@ -28,20 +28,20 @@
     "gm_ge_facewear_sunglasses"
 ];
 
-(_loadoutData get "fullmask") append [
+_facewear append [
     "gm_ge_facewear_stormhood_blk",
     "gm_ge_facewear_stormhood_dustglasses_blk",
     "gm_ge_facewear_stormhood_brd"
 ];
 
-(_loadoutData get "headgear") append [
+_helmets append [
     "gm_ge_headgear_headset_crew_oli",
     "gm_ge_headgear_beret_crew_blk",
     "gm_xx_headgear_headwrap_crew_01_grn",
     "gm_ge_headgear_hat_beanie_crew_blk"
 ];
 
-(_loadoutData get "headgear") append [        
+_helmets append [        
 	"gm_ge_headgear_headset_crew_oli",
     "gm_gc_headgear_fjh_model4_oli",
     "gm_ge_headgear_m92_cover_glasses_oli",
@@ -82,7 +82,7 @@ _vests append [
 "gm_pl_army_vest_80_rifleman_smg_gry"
 ];
 
-_heavyVests append [
+_vests append [
 "gm_ge_army_vest_pilot_oli", 
 "gm_ge_vest_armor_90_flk", 
 "gm_ge_vest_armor_90_crew_flk",
@@ -109,7 +109,7 @@ _heavyVests append [
 "gm_ge_bgs_vest_type3a1_gry"
 ];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "gm_ge_uniform_soldier_tshirt_90_oli",
     "gm_ge_uniform_soldier_tshirt_90_flk",
     "gm_xx_uniform_soldier_bdu_80_oli",

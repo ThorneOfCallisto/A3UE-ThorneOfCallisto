@@ -1,4 +1,4 @@
-(_policeLoadoutData get "SMGs") append [
+_policeWeapons append [
     ["vnx_m12_smg","","","",["vnx_m12_smg_32_mag","vnx_m12_smg_32_mag","vnx_m12_smg_32_mag"], [], ""],
     ["vnx_m12_smg_fold","","","",["vnx_m12_smg_32_mag","vnx_m12_smg_32_mag","vnx_m12_smg_32_mag"], [], ""],
     ["vnx_m50_smg","","","",["vnx_m50_smg_mag","vnx_m50_smg_mag","vnx_m50_smg_mag"], [], ""],
@@ -12,16 +12,16 @@
     ["vnx_gjet","","","",["vnx_gjet_mag","vnx_gjet_mag","vnx_gjet_mag","vnx_gjet_mag"], [], ""]
 ];
 
-(_militiaLoadoutData get "slRifles") append [
+_militiaslRifles append [
     ["vnx_l1a1_05","","","",["vn_l1a1_30_mag","vn_l1a1_30_mag","vn_l1a1_30_mag","vn_l1a1_30_t_mag"],[],""],
     ["vnx_type56_xm148","","","",["vn_type56_mag","vn_type56_mag","vn_type56_t_mag","vn_type56_t_mag"],["vn_40mm_m651_cs_mag","vn_40mm_m680_smoke_w_mag","vn_40mm_m381_he_mag","vn_40mm_m397_ab_mag","vn_40mm_m406_he_mag","vn_40mm_m433_hedp_mag"],""]
 ];
-(_militiaLoadoutData get "rifles") append [
+_militiarifles append [
     ["vnx_l1a1_05","","","",["vn_l1a1_30_mag","vn_l1a1_30_mag","vn_l1a1_30_mag","vn_l1a1_30_t_mag"],[],""]
 ];
-(_militiaLoadoutData get "grenadeLaunchers") append [
+_militiagrenadeLaunchers append [
     ["vnx_type56_xm148","","","",["vn_type56_mag","vn_type56_mag","vn_type56_t_mag","vn_type56_t_mag"],["vn_40mm_m651_cs_mag","vn_40mm_m680_smoke_w_mag","vn_40mm_m381_he_mag","vn_40mm_m397_ab_mag","vn_40mm_m406_he_mag","vn_40mm_m433_hedp_mag"],""]
 ];
-(_militiaLoadoutData get "carbines") append [
+_militiacarbines append [
     ["vnx_l1a1_04","","","",["vn_l1a1_30_mag","vn_l1a1_30_mag","vn_l1a1_30_mag","vn_l1a1_30_t_mag"],[],""]
 ];

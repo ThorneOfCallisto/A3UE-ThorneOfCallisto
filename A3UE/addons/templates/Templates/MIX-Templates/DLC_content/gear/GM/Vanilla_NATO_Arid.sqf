@@ -1,4 +1,4 @@
-(_militiaLoadoutData get "helmets") append [
+_militiahelmets append [
     "gm_ge_headgear_m92_cover_glasses_oli",
     "gm_ge_headgear_m92_cover_oli",
     "gm_dk_headgear_m96_cover_wdl",

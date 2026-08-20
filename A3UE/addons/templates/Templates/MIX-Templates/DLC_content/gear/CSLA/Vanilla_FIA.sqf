@@ -33,4 +33,4 @@ _dlcheadgear append [
     "FIA_Budajka"
 ];
 
-_loadoutData set ["facewearCLSA", ["CSLA_glsPlscSpring"]];
+_facewear append ["CSLA_glsPlscSpring"];

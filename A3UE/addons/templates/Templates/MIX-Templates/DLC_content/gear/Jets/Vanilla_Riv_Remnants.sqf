@@ -1,1 +1,1 @@
-_heavyVests pushBack "V_DeckCrew_brown_F";
+_vests pushBack "V_DeckCrew_brown_F";

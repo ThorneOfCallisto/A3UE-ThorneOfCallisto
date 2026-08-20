@@ -1,4 +1,4 @@
-(_loadoutData get "facewear") append [
+_facewear append [
     "vn_b_acc_towel_02",
     "vn_b_acc_towel_01",
     "vn_b_spectacles_tinted",
@@ -26,7 +26,7 @@
 	"vn_b_aviator"
 ];
 
-(_loadoutData get "fullmask") append ["vn_b_acc_m17_02","vn_b_acc_m17_01"];
+_facewear append ["vn_b_acc_m17_02","vn_b_acc_m17_01"];
 
 _vests append [
 "vn_o_vest_vc_02", 
@@ -73,7 +73,7 @@ _vests append [
 "vn_b_vest_anzac_04"
 ];
 
-_heavyVests append [
+_vests append [
 "vn_b_vest_usmc_02", 
 "vn_b_vest_usmc_01", 
 "vn_b_vest_usmc_06",

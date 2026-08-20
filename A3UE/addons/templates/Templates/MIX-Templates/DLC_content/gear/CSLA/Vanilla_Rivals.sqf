@@ -1,4 +1,4 @@
-(_loadoutData get "headgear") append [
+_helmets append [
     "US85_beanie",
     "CSLA_beretM",
     "CSLA_beretR",
@@ -48,7 +48,7 @@ _vests append [
 "US85_grY_snp"
 ];
 
-_heavyVests append [
+_vests append [
 "AFMC_grVest", 
 "AFMC_grV_M16", 
 "AFMC_grV_M24",
@@ -71,7 +71,7 @@ _heavyVests append [
 "US85_grSF_M24"
 ];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "FIA_uniwld11",
     "FIA_uniwld",
     "FIA_uniwld1",

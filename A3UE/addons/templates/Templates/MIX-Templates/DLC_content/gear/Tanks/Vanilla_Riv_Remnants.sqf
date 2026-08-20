@@ -1,3 +1,3 @@
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "U_Tank_green_F"
 ];

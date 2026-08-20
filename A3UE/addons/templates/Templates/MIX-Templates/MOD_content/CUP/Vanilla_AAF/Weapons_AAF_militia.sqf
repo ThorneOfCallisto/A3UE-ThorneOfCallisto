@@ -33,7 +33,7 @@
 ];
 
 ////////////////////////////////////
-(_militiaLoadoutData get "slRifles") append [
+_militiaslRifles append [
     ["CUP_arifle_XM8_Carbine_GL_Rail_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_StarFlare_Red_M203","CUP_1Rnd_StarCluster_Red_M203","CUP_FlareRed_M203","CUP_1Rnd_SmokeRed_M203"], ""],
 	["CUP_arifle_XM8_Carbine_GL_Rail", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_StarFlare_Red_M203","CUP_1Rnd_StarCluster_Red_M203","CUP_FlareRed_M203","CUP_1Rnd_SmokeRed_M203"], ""],
 	["CUP_arifle_XM8_Carbine_GL_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_AMO_PCAP_green",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_StarFlare_Red_M203","CUP_1Rnd_StarCluster_Red_M203","CUP_FlareRed_M203","CUP_1Rnd_SmokeRed_M203"], ""],
@@ -101,7 +101,7 @@
 	["CUP_arifle_M16A1GL", "","","",["CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag_Tracer_Green"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_StarFlare_Red_M203","CUP_1Rnd_StarCluster_Red_M203","CUP_FlareRed_M203","CUP_1Rnd_SmokeRed_M203"], ""]
 
 ];
-(_militiaLoadoutData get "rifles") append [
+_militiarifles append [
     ["CUP_arifle_XM8_Sharpshooter_FG_Rail_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], "CUP_bipod_VLTOR_Modpod_od"],
 	["CUP_arifle_XM8_Sharpshooter_Rail_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], "CUP_bipod_VLTOR_Modpod_od"],
 	["CUP_arifle_XM8_Sharpshooter_FG_Rail", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], "CUP_bipod_VLTOR_Modpod_od"],
@@ -251,7 +251,7 @@
 
 	["CUP_srifle_M14", "","","",["CUP_20Rnd_762x51_DMR","CUP_20Rnd_TE1_Green_Tracer_762x51_DMR","CUP_20Rnd_TE1_Green_Tracer_762x51_DMR","CUP_20Rnd_TE1_Green_Tracer_762x51_DMR"], [], ""]
 ];
-(_militiaLoadoutData get "machineGuns") append [
+_militiamachineGuns append [
     ["CUP_arifle_XM8_SAW_FG_Rail_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_100Rnd_556x45_BetaCMag","CUP_100Rnd_556x45_BetaCMag"], [], "CUP_bipod_VLTOR_Modpod_od"],
 	["CUP_arifle_XM8_SAW_FG_Rail", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_100Rnd_556x45_BetaCMag","CUP_100Rnd_556x45_BetaCMag"], [], "CUP_bipod_VLTOR_Modpod_od"],
 	["CUP_arifle_XM8_SAW_Rail_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_100Rnd_556x45_BetaCMag","CUP_100Rnd_556x45_BetaCMag"], [], "CUP_bipod_VLTOR_Modpod_od"],
@@ -316,7 +316,7 @@
 	["CUP_lmg_M240", "", "", "", ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"], [], ""],
 	["CUP_lmg_M240_norail", "", "", "", ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M","CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"], [], ""]
 ];
-(_militiaLoadoutData get "carbines") append [
+_militiacarbines append [
 	["CUP_arifle_XM8_Carbine_FG_Rail_Green","CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_HensoldtZO_low_RDS_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], ""],
 	["CUP_arifle_XM8_Carbine_FG_Rail","CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_HensoldtZO_low_RDS_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], ""],
 	["CUP_arifle_XM8_Carbine_Rail_Green","CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_HensoldtZO_low_RDS_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], "CUP_bipod_VLTOR_Modpod_od"],
@@ -395,7 +395,7 @@
 
 	["CUP_arifle_M4A1","","","",["CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag_Tracer_Green"], [], ""]
 ];
-(_militiaLoadoutData get "grenadeLaunchers") append [
+_militiagrenadeLaunchers append [
     ["CUP_arifle_XM8_Carbine_GL_Rail_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203"], ""],
 	["CUP_arifle_XM8_Carbine_GL_Rail", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_Elcan_SpecterDR_KF_RMR_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203"], ""],
 	["CUP_arifle_XM8_Carbine_GL_Green", "CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_AMO_PCAP_green",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203"], ""],
@@ -462,7 +462,7 @@
 	["CUP_arifle_M16A1GL", "","","",["CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag","CUP_20Rnd_556x45_Stanag_Tracer_Green"], ["CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203"], ""]
 
 ];
-(_militiaLoadoutData get "marksmanRifles") append [
+_militiamarksmanRifles append [
     ["CUP_srifle_RSASS_Jungle","CUP_muzzle_snds_socom762rc","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_SB_11_4x20_PM_od",["CUP_20Rnd_762x51_B_M110","CUP_20Rnd_762x51_B_M110", "CUP_20Rnd_762x51_B_M110","CUP_20Rnd_TE1_Green_Tracer_762x51_M110"], [], "CUP_bipod_VLTOR_Modpod_od"],
 	["CUP_srifle_RSASS_Black","CUP_muzzle_snds_socom762rc","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_SB_11_4x20_PM_od",["CUP_20Rnd_762x51_B_M110","CUP_20Rnd_762x51_B_M110", "CUP_20Rnd_762x51_B_M110","CUP_20Rnd_TE1_Green_Tracer_762x51_M110"], [], "CUP_bipod_VLTOR_Modpod_od"],
 
@@ -518,7 +518,7 @@
     ["CUP_glaunch_6G30", "", "", "", ["CUP_6Rnd_HE_GP25_M"], [], ""],
 	["CUP_glaunch_M79", "", "", "", ["CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203"], [], ""]
 ];
-(_militiaLoadoutData get "SMGs") append [
+_militiaSMGs append [
     ["CUP_arifle_XM8_Compact_FG_Rail_Green","CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_HensoldtZO_low_RDS_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], ""],
 	["CUP_arifle_XM8_Compact_FG_Rail","CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_HensoldtZO_low_RDS_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], ""],
 	["CUP_arifle_XM8_Compact_Rail_Green","CUP_muzzle_snds_XM8","CUP_acc_ANPEQ_15_Flashlight_OD_L","CUP_optic_HensoldtZO_low_RDS_od",["CUP_30Rnd_TE1_Green_Tracer_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8","CUP_30Rnd_556x45_XM8"], [], "CUP_bipod_VLTOR_Modpod_od"],
@@ -574,7 +574,7 @@
 
 	["CUP_hgun_Glock17_blk", "", "", "", ["CUP_17Rnd_9x19_glock17","CUP_17Rnd_9x19_glock17"], [], ""]
 ];
-(_policeLoadoutData get "SMGs") append [
+_policeWeapons append [
     ["CUP_smg_MP5A5","","","",["CUP_30Rnd_9x19_MP5","CUP_30Rnd_9x19_MP5","CUP_30Rnd_9x19_MP5","CUP_30Rnd_Green_Tracer_9x19_MP5"], [], ""],
 
 	["CUP_sgun_SPAS12","","","",["CUP_8Rnd_12Gauge_Pellets_No00_Buck","CUP_8Rnd_12Gauge_Pellets_No4_Buck","CUP_8Rnd_12Gauge_Slug","CUP_8Rnd_12Gauge_Slug"], [], ""],

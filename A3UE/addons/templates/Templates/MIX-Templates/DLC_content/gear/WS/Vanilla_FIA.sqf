@@ -19,5 +19,5 @@ _dlcheadgear append [
     "H_Beret_Headset_lxWS"
 ];
 
-_loadoutData set ["binoculars", ["Binocular","Camera_lxWS"]];
-_loadoutData set ["facewearWS", ["G_Balaclava_blk_lxWS", "G_Balaclava_oli_lxWS", "G_Balaclava_snd_lxWS", "G_Combat_lxWS", "G_Headset_lxWS"]];
+_loadoutData set ["binoculars", ["Binocular","Camera_lxWS"];
+_loadoutData set ["facewearWS", ["G_Balaclava_blk_lxWS", "G_Balaclava_oli_lxWS", "G_Balaclava_snd_lxWS", "G_Combat_lxWS", "G_Headset_lxWS"];

@@ -18,34 +18,34 @@ _psrlAttachments = ["", 2, "acc_pointer_IR", 1];
 ];
 
 _sfSMGOptics append ["optic_VRCO_RF", 4];
-(_sfLoadoutData get "SMGs") append [
+_sfSMGs append [
     ["SMG_01_black_RF","muzzle_snds_acp", "acc_flashlight_smg_01", _sfSMGOptics,["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""], 1
 ];
 _sfTlOptics append ["optic_VRCO_RF", 0.5];
 _sfRifleOptics append ["optic_VRCO_RF", 1.25];
 //////////////////////////////////////////////////////
 _eliteSMGOptics append ["optic_VRCO_RF", 5];
-(_eliteLoadoutData get "SMGs") append [
+_eliteSMGs append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01", _eliteSMGOptics,["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""], 2.5
 ];
 _eliteSlOptics append ["optic_VRCO_RF", 0.5];
 _eliteRifleOptics append ["optic_VRCO_RF", 3.5];
 //////////////////////////////////////////////////////
 _militarySMGOptics append ["optic_VRCO_RF", 3];
-(_militaryLoadoutData get "SMGs") append [
+_militarySMGs append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01", _militarySMGOptics,["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""], 2.5
 ];
 _militarySlRifleOptics append ["optic_VRCO_RF", 1];
 _militaryRifleOptics append ["optic_VRCO_RF", 2.5];
 //////////////////////////////////////////////////////
-(_policeLoadoutData get "SMGs") append [
+_policeWeapons append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01", _policeSMGOptics,["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""], 1.5 
 ];
 //////////////////////////////////////////////////////
-(_militiaLoadoutData get "SMGs") append [
+_militiaSMGs append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01", _militiaSMGOptics,["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""], 1
 ];
-(_militiaLoadoutData get "marksmanRifles") append [
+_militiamarksmanRifles append [
     ["srifle_h6_digi_rf", "", "", _militiaMarksmanOptics,["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""], 7.5,
     ["srifle_h6_oli_rf", "", "", _militiaMarksmanOptics,["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""], 7.5
 ];

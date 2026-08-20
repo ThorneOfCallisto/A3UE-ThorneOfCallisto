@@ -1,8 +1,8 @@
-_sfLoadoutData set ["binoculars", ["Laserdesignator_02"]];
+_sfbinoculars = ["Laserdesignator_02"];
 
-_eliteLoadoutData set ["binoculars", ["Laserdesignator_02"]];
+_elitebinoculars = ["Laserdesignator_02"];
 
-_militaryLoadoutData set ["binoculars", ["Laserdesignator_02"]];
+_militarybinoculars = ["Laserdesignator_02"];
 
 
-(_militiaLoadoutData get "binoculars") append ["Laserdesignator_03"];
+_militiabinoculars append ["Laserdesignator_03"];

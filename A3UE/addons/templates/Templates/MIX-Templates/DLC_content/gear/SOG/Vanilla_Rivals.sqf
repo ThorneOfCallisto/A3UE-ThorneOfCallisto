@@ -1,4 +1,4 @@
-(_loadoutData get "facewear") append [
+_facewear append [
     "vn_b_acc_towel_02",
     "vn_b_acc_towel_01",
     "vn_b_spectacles_tinted",
@@ -26,9 +26,9 @@
 	"vn_b_aviator"
 ];
 
-(_loadoutData get "fullmask") append ["vn_b_acc_m17_02","vn_b_acc_m17_01"];
+_facewear append ["vn_b_acc_m17_02","vn_b_acc_m17_01"];
 
-(_loadoutData get "headgear") append [
+_helmets append [
 	"vn_b_headband_02",
     "vn_b_headband_04",
     "vn_c_headband_01",
@@ -173,7 +173,7 @@ _vests append [
 "vn_b_vest_anzac_04"
 ];
 
-_heavyVests append [
+_vests append [
 "vn_b_vest_usmc_02", 
 "vn_b_vest_usmc_01", 
 "vn_b_vest_usmc_06",
@@ -189,7 +189,7 @@ _heavyVests append [
 "vn_b_vest_aircrew_01"
 ];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "vn_o_uniform_vc_mf_04_07",
     "vn_o_uniform_vc_mf_03_07",
     "vn_o_uniform_vc_mf_02_07",
@@ -465,7 +465,7 @@ _backpacks append [
 	"vn_b_pack_pfield_01"
 ];
 
-(_pilotLoadoutData get "uniforms") append [
+_pilotuniforms append [
     "vn_o_uniform_nva_air_01",
     "vn_b_uniform_k2b_02_03",
     "vn_b_uniform_k2b_01_04",
@@ -481,7 +481,7 @@ _backpacks append [
 	"vn_b_uniform_k2b_03_02"
 ];
 
-(_pilotLoadoutData get "helmets") append [
+_pilothelmets append [
     "vn_o_helmet_zsh3_02",
     "vn_o_helmet_zsh3_01",
     "vn_b_helmet_svh4_02_05",

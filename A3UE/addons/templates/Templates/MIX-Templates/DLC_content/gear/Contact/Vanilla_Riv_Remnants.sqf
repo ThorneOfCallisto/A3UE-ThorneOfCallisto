@@ -1,4 +1,4 @@
-(_loadoutData get "headgear") append [
+_helmets append [
 	"H_Booniehat_mgrn",
 	"H_Booniehat_taiga", 
 	"H_Booniehat_wdl", 
@@ -11,13 +11,13 @@
 
 _vests append ["V_SmershVest_01_F", "V_SmershVest_01_radio_F"];
 
-_heavyVests append ["V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F","V_CarrierRigKBT_01_light_Olive_F","V_CarrierRigKBT_01_heavy_Olive_F"];
+_vests append ["V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F","V_CarrierRigKBT_01_light_Olive_F","V_CarrierRigKBT_01_heavy_Olive_F"];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
 	"U_I_CBRN_Suit_01_AAF_F"
 ];
 
-(_loadoutData get "heavyUniforms") append [
+_ENGuniformsappend [
     "U_O_R_Gorka_01_F",
     "U_O_R_Gorka_01_brown_F",
     "U_O_R_Gorka_01_camo_F"

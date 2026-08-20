@@ -1,1 +1,1 @@
-(_loadoutData get "glasses") pushBack "CSLA_glsPlscSpring";
+_facewear pushBack "CSLA_glsPlscSpring";

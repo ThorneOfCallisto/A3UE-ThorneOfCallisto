@@ -1,1 +1,1 @@
-(_militiaLoadoutData get "binoculars") append ["Laserdesignator_03"];
+_militiabinoculars append ["Laserdesignator_03"];

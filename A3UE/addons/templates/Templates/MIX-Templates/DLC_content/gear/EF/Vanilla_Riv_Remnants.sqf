@@ -5,6 +5,6 @@ _helmets append [
 
 _backpacks append ["EF_B_RaiderPack_black", "EF_B_RaiderPack_olive"];
 
-_heavyVests append ["EF_V_AAV_Olive", "EF_V_AAV_Support_Olive", "EF_V_AAV_Support_Black", "EF_V_AAV_Black"];
+_vests append ["EF_V_AAV_Olive", "EF_V_AAV_Support_Olive", "EF_V_AAV_Support_Black", "EF_V_AAV_Black"];
 
 _vests append ["EF_V_CCR_Support_Black", "EF_V_CCR_Support_Olive"];

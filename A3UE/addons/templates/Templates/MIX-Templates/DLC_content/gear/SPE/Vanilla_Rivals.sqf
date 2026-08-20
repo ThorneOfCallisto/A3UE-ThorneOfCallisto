@@ -1,4 +1,4 @@
-(_loadoutData get "facewear") append [
+_facewear append [
     "G_SPE_GER_Headset",
 	"G_SPE_Sunglasses_US_Yellow",
 	"G_SPE_Sunglasses_US_Red",
@@ -84,7 +84,7 @@ _vests append [
 "V_SPE_FFI_Vest_Pouch"
 ];
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
     "U_SPE_US_CC_EM_trop_roll",
     "U_SPE_US_CC_EM_trop",
     "U_SPE_US_CC_HBT_EM_trop_roll",
@@ -195,7 +195,7 @@ _backpacks append [
 	"B_SPE_GER_A_frame_ST_Full"
 ];
 
-(_pilotLoadoutData get "uniforms") append [
+_pilotuniforms append [
     "U_SPE_US_S31A_glove",
     "U_SPE_US_S31A",
     "U_SPE_US_S31_erla_glove",
@@ -206,7 +206,7 @@ _backpacks append [
     "U_SPE_US_Pilot_lthr"
 ];
 
-(_loadoutData get "headgear") append [
+_helmets append [
 	"H_SPE_CIV_Worker_Cap_1",
     "H_SPE_CIV_Worker_Cap_2",
     "H_SPE_CIV_Worker_Cap_3"

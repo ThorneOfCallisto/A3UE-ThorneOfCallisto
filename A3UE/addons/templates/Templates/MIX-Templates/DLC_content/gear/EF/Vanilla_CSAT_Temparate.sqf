@@ -1,25 +1,25 @@
-(_sfLoadoutData get "backpacks") pushBack "EF_B_RaiderPack_black";
-(_sfLoadoutData get "helmets") pushBack "EF_H_Protecta";
-(_sfLoadoutData get "vests") pushBack "EF_V_AAV_Black";
-(_sfLoadoutData get "Hvests") pushBack "EF_V_AAV_Support_Black";
-(_sfLoadoutData get "glVests") pushBack "EF_V_AAV_Support_Black";
+_sfbackpacks pushBack "EF_B_RaiderPack_black";
+_sfhelmets pushBack "EF_H_Protecta";
+_sfvests pushBack "EF_V_AAV_Black";
+_sfHvests pushBack "EF_V_AAV_Support_Black";
+_sfGLvests pushBack "EF_V_AAV_Support_Black";
 
-(_eliteLoadoutData get "NVGs") pushBack "EF_LPNVG_T";
-(_eliteLoadoutData get "backpacks") pushBack "EF_B_RaiderPack_black";
-(_eliteLoadoutData get "helmets") pushBack "EF_H_Protecta";
-(_eliteLoadoutData get "vests") pushBack "EF_V_AAV_Black";
-(_eliteLoadoutData get "Hvests") pushBack "EF_V_AAV_Support_Black";
-(_eliteLoadoutData get "glVests") pushBack "EF_V_AAV_Support_Black";
+_eliteNVGs pushBack "EF_LPNVG_T";
+_elitebackpacks pushBack "EF_B_RaiderPack_black";
+_elitehelmets pushBack "EF_H_Protecta";
+_elitevests pushBack "EF_V_AAV_Black";
+_eliteHvests pushBack "EF_V_AAV_Support_Black";
+_eliteGLvests pushBack "EF_V_AAV_Support_Black";
 
-(_militaryLoadoutData get "NVGs") pushBack "EF_LPNVG";
-(_militaryLoadoutData get "backpacks") pushBack "EF_B_RaiderPack_black";
-(_militaryLoadoutData get "helmets") pushBack "EF_H_Protecta";
-(_militaryLoadoutData get "Hvests") pushBack "EF_V_CCR_Support_Black";
-(_militaryLoadoutData get "vests") pushBack "EF_V_CCR_Support_Black";
-(_militaryLoadoutData get "glVests") pushBack "EF_V_AAV_Support_Black";
+_militaryNVGs pushBack "EF_LPNVG";
+_militarybackpacks pushBack "EF_B_RaiderPack_black";
+_militaryhelmets pushBack "EF_H_Protecta";
+_militaryHvests pushBack "EF_V_CCR_Support_Black";
+_militaryvests pushBack "EF_V_CCR_Support_Black";
+_militaryGLvests pushBack "EF_V_AAV_Support_Black";
 
-(_militiaLoadoutData get "Hvests") pushBack "EF_V_CCR_Support_Black";
-(_militiaLoadoutData get "vests") pushBack "EF_V_CCR_Support_Black";
-(_militiaLoadoutData get "glVests") pushBack "EF_V_AAV_Support_Black";
-(_militiaLoadoutData get "helmets") pushback "EF_H_Protecta";
+_militiaHvests pushBack "EF_V_CCR_Support_Black";
+_militiavests pushBack "EF_V_CCR_Support_Black";
+_militiaGLvests pushBack "EF_V_AAV_Support_Black";
+_militiahelmets pushback "EF_H_Protecta";
 

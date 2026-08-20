@@ -1,13 +1,13 @@
-(_loadoutData get "headgear") append [
+_helmets append [
 	"lxWS_H_Headset",
 	"H_Beret_Headset_lxWS"	
 ];
 
 _vests pushback "V_lxWS_HarnessO_oli";
 
-_heavyVests pushBack "V_lxWS_TacVestIR_oli";
+_vests pushBack "V_lxWS_TacVestIR_oli";
 
-(_loadoutData get "uniforms") append [
+_uniforms append [
 	"U_SFIA_deserter_lxWS",
 	"U_lxWS_SFIA_pilot_O",
 	"U_lxWS_SFIA_Tanker_O"

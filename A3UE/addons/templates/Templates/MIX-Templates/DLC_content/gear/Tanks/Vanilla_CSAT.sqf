@@ -1,1 +1,1 @@
-(_crewLoadoutData get "helmets") pushBack "H_Tank_black_F";
+_crewhelmets pushBack "H_Tank_black_F";

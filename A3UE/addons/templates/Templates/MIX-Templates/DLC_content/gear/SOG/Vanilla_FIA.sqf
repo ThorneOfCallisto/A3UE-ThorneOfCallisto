@@ -267,4 +267,4 @@ _dlcheadgear append [
     "vn_b_bandana_06",
     "vn_b_bandana_03"
 ];
-_loadoutData set ["facewearSOG", ["vn_b_acc_towel_02","vn_b_acc_towel_01","vn_b_spectacles_tinted","vn_g_glasses_01","vn_b_acc_rag_02","vn_b_acc_rag_01","vn_o_scarf_01_01","vn_b_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_scarf_01_03","vn_o_poncho_01_01","vn_o_acc_goggles_02","vn_b_acc_goggles_01","vn_o_acc_goggles_01","vn_o_bandana_g","vn_o_bandana_b","vn_b_bandana_a","vn_b_aviator"]];
+_facewear append ["vn_b_acc_towel_02","vn_b_acc_towel_01","vn_b_spectacles_tinted","vn_g_glasses_01","vn_b_acc_rag_02","vn_b_acc_rag_01","vn_o_scarf_01_01","vn_b_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_scarf_01_03","vn_o_poncho_01_01","vn_o_acc_goggles_02","vn_b_acc_goggles_01","vn_o_acc_goggles_01","vn_o_bandana_g","vn_o_bandana_b","vn_b_bandana_a","vn_b_aviator"];
