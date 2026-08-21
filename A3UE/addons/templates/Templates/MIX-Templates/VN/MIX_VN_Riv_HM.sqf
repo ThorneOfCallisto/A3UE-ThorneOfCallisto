@@ -178,7 +178,7 @@ _facewear append [
 	"vn_o_bandana_g", 
 	"vn_o_bandana_b", 
 	"vn_b_bandana_a", 
-	"vn_o_acc_goggles_02",
+	"vn_o_acc_facewear_02",
 	"vn_g_spectacles_01"
 ];
 _fullmask append [];

@@ -45,14 +45,14 @@ private _gearFactionVariables = [
         "_eliteSLuniforms", "_eliteSLvests", "_eliteSMGs", "_eliteSNIhats",
         "_eliteSNIvests", "_eliteVoices", "_eliteantiInfantryGrenades", "_elitebackpacks",
         "_elitebinoculars", "_elitecarbines", "_elitecompasses", "_elitedesignatedGrenadeLaunchers",
-        "_eliteglasses", "_elitegoggles", "_elitegpses", "_elitegrenadeLaunchers",
+        "_elitefacewear", "_elitegpses", "_elitegrenadeLaunchers",
         "_eliteheavyExplosives", "_elitehelmets", "_elitelightATLaunchers", "_elitelightExplosives",
         "_elitelightHELaunchers", "_elitelongRangeRadios", "_elitemachineGuns", "_elitemaps",
         "_elitemarksmanRifles", "_elitemissleATLaunchers", "_eliteradios", "_eliterangefinders",
         "_eliterifles", "_elitesidearms", "_elitesignalsmokeGrenades", "_eliteslRifles",
         "_elitesmokeGrenades", "_elitesniperRifles", "_eliteuniforms", "_elitevests",
-        "_elitewatches", "_faces", "_gItems", "_glasses",
-        "_goggles", "_gpses", "_grenadeLaunchers", "_heavyExplosives",
+        "_elitewatches", "_faces", "_gItems", "_facewear",
+        "_gpses", "_grenadeLaunchers", "_heavyExplosives",
         "_helmets", "_insignia", "_latItems", "_lightATLaunchers",
         "_lightExplosives", "_lightHELaunchers", "_longRangeRadios", "_mItems",
         "_machineGuns", "_maps", "_marksmanRifles", "_mgItems",
@@ -65,7 +65,7 @@ private _gearFactionVariables = [
         "_militarySLhelmets", "_militarySLuniforms", "_militarySLvests", "_militarySMGs",
         "_militarySNIhats", "_militarySNIvests", "_militaryantiInfantryGrenades", "_militarybackpacks",
         "_militarybinoculars", "_militarycarbines", "_militarycompasses", "_militarydesignatedGrenadeLaunchers",
-        "_militaryglasses", "_militarygoggles", "_militarygpses", "_militarygrenadeLaunchers",
+        "_militaryfacewear", "_militarygpses", "_militarygrenadeLaunchers",
         "_militaryheavyExplosives", "_militaryhelmets", "_militarylightATLaunchers", "_militarylightExplosives",
         "_militarylightHELaunchers", "_militarylongRangeRadios", "_militarymachineGuns", "_militarymaps",
         "_militarymarksmanRifles", "_militarymissleATLaunchers", "_militaryradios", "_militaryrangefinders",
@@ -80,7 +80,7 @@ private _gearFactionVariables = [
         "_militiaSLhats", "_militiaSLhelmets", "_militiaSLuniforms", "_militiaSLvests",
         "_militiaSMGs", "_militiaSNIhats", "_militiaSNIvests", "_militiaantiInfantryGrenades",
         "_militiabackpacks", "_militiabinoculars", "_militiacarbines", "_militiacompasses",
-        "_militiadesignatedGrenadeLaunchers", "_militiafacewear", "_militiaglasses", "_militiagoggles",
+        "_militiadesignatedGrenadeLaunchers", "_militiafacewear", "_militiafacewear",
         "_militiagpses", "_militiagrenadeLaunchers", "_militiaheavyExplosives", "_militiahelmets",
         "_militialightATLaunchers", "_militialightExplosives", "_militialightHELaunchers", "_militialongRangeRadios",
         "_militiamachineGuns", "_militiamaps", "_militiamarksmanRifles", "_militiamissleATLaunchers",
@@ -102,7 +102,7 @@ private _gearFactionVariables = [
         "_sfSLhats", "_sfSLhelmets", "_sfSLuniforms", "_sfSLvests",
         "_sfSMGs", "_sfSNIhats", "_sfSNIvests", "_sfVoices",
         "_sfantiInfantryGrenades", "_sfbackpacks", "_sfbinoculars", "_sfcarbines",
-        "_sfcompasses", "_sfdesignatedGrenadeLaunchers", "_sfglasses", "_sfgoggles",
+        "_sfcompasses", "_sfdesignatedGrenadeLaunchers", "_sffacewear",
         "_sfgpses", "_sfgrenadeLaunchers", "_sfheavyExplosives", "_sfhelmets",
         "_sflightATLaunchers", "_sflightExplosives", "_sflightHELaunchers", "_sflongRangeRadios",
         "_sfmachineGuns", "_sfmaps", "_sfmarksmanRifles", "_sfmissleATLaunchers",
@@ -183,4 +183,13 @@ private _fnc_gearFactionApply = {
     } forEach _gearFactionVariables;
 
     diag_log format ["[GearFaction] Applied gear faction: %1", _factionName];
+};
+
+/*
+    Returns all captured faction tags.
+    Example:
+    ["AAF", "NATO", "US_ARMY", "BAF"]
+*/
+private _fnc_gearFactionGetTags = {
+    keys _gearFactionPools
 };

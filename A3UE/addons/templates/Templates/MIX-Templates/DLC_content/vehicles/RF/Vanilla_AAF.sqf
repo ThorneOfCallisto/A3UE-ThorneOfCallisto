@@ -1,9 +1,8 @@
-_unarmedVehicles append ["I_Pickup_rf","I_Pickup_Comms_rf"];
-_armedVehicles append ["I_Pickup_mmg_rf","I_Pickup_rcws_rf","AU_I_Pickup_Minigun_RF"];
+_lightUnarmed append ["I_Pickup_rf","I_Pickup_Comms_rf"];
+_lightArmed append ["I_Pickup_mmg_rf","I_Pickup_rcws_rf","AU_I_Pickup_Minigun_RF"];
 _militiaLightArmed append ["I_Pickup_mmg_rf","I_Pickup_hmg_rf"];
 _militiaCars append ["I_Pickup_rf","I_Pickup_Comms_rf"];
 _aa pushBack "I_Pickup_aat_rf";
-_SAM pushback "I_Pickup_aat_rf";
 _uavsPortable pushBack "I_UAV_RC40_SENSOR_RF";
 _howitzers pushBack "I_TwinMortar_RF";
 _policeVehs append ["a3a_police_Pickup_rf", "B_GEN_Pickup_covered_rf", "a3a_police_Pickup_comms_rf"];

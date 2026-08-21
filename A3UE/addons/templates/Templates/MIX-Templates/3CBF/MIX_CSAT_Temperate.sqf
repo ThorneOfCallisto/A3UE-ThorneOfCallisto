@@ -64,8 +64,6 @@ _staticAT       append ["UK3CB_CSAT_W_O_SPG9", "UK3CB_CSAT_W_O_Kornet"];
 _staticAA       append ["UK3CB_CSAT_W_O_ZU23", "UK3CB_CSAT_W_O_Igla_AA_pod"];
 _staticMortars  append ["rhs_2b14_82mm_msv"];
 _howitzers      append ["rhs_D30_msv"];
-_radar          append ["UK3CB_CSAT_W_O_Radar_System"];
-_SAM            append ["UK3CB_CSAT_W_O_SAMS_System"];
 
 _minefieldAT    append ["rhs_mine_tm62m"];
 _minefieldAPERS append ["rhs_mine_pmn2"];
@@ -176,8 +174,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append ["rhs_scarf","UK3CB_G_Tactical_Black_Shemagh_Tan_Headset","UK3CB_G_Tactical_Clear_Shemagh_Tan_Headset","UK3CB_G_Tactical_Black_Gloves_Tan","UK3CB_G_Neck_Shemag_KL_tan","UK3CB_G_Neck_Shemag_KLR_tan","UK3CB_G_Gloves_Tan","UK3CB_G_Gloves_Black"];
-_goggles append ["rhs_ess_black"];
+_facewear append ["rhs_scarf","UK3CB_G_Tactical_Black_Shemagh_Tan_Headset","UK3CB_G_Tactical_Clear_Shemagh_Tan_Headset","UK3CB_G_Tactical_Black_Gloves_Tan","UK3CB_G_Neck_Shemag_KL_tan","UK3CB_G_Neck_Shemag_KLR_tan","UK3CB_G_Gloves_Tan","UK3CB_G_Gloves_Black"];
+_facewear append ["rhs_ess_black"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -321,8 +319,8 @@ _sfhelmets append ["rhsusf_opscore_ut", "rhsusf_opscore_ut_pelt", "UK3CB_H_Balli
 _sfslHat append [];
 _sfsniHats append ["UK3CB_CSAT_W_O_H_Bandanna_HS", "UK3CB_CSAT_W_O_H_BoonieHat"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -425,8 +423,8 @@ _elitehelmets append ["UK3CB_CSAT_W_O_H_6b27m", "UK3CB_CSAT_W_O_H_6b27m_ESS", "U
 _eliteslHat append [];
 _elitesniHats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -583,8 +581,8 @@ _militaryhelmets append ["UK3CB_CSAT_W_H_PASGT", "UK3CB_CSAT_W_H_PASGT_RHINO"];
 _militaryslHat append [];
 _militarysniHats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -693,8 +691,8 @@ _militiahelmets append ["UK3CB_CSAT_W_H_PASGT", "UK3CB_CSAT_W_O_H_SSh68_Covered"
 _militiaslHat append ["UK3CB_CSAT_ARG_H_Beret"];
 _militiasniHats append ["UK3CB_CSAT_W_O_H_BoonieHat"];
 
-_militiaglasses append [];
-_militiagoggles append [];
+_militiafacewear append [];
+_militiafacewear append [];
 
 //////////////////////////
 //    Misc Loadouts     //

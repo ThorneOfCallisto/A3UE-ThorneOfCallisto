@@ -57,8 +57,6 @@ _staticAT append ["SPE_leFH18_AT", "SPE_Pak40"];
 _staticAA append ["SPE_FlaK_30", "SPE_FlaK_38"];
 _staticMortars append ["SPE_GrW278_1"];
 _howitzers append ["SPE_leFH18"];
-_radar append ["SPE_FlaK_36_AA"];
-_SAM append ["SPE_FlaK_36_AA"];
 
 _minefieldAT append ["SPE_US_M1A1_ATMINE"];
 _minefieldAPERS append ["SPE_US_M3_Pressure_MINE", "SPE_US_M3_MINE"];

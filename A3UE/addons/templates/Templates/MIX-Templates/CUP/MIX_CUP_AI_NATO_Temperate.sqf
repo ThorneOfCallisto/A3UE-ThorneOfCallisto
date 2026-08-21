@@ -55,8 +55,8 @@ _staticAT append ["CUP_B_TOW2_TriPod_US"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US","CUP_B_RBS70_ACR"];
 _staticMortars append ["CUP_B_M252_US"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
@@ -299,7 +299,7 @@ _sfENGBackpacks append [];
 _sfEXPBackpacks append [];
 _sfSLBackpacks append ["CUP_B_Motherlode_Radio_MTP"];
 _sflongRangeRadios append [];
-_sfhelmets append ["CUP_H_BAF_DPM_Mk6_NETTING_PRR", "CUP_H_BAF_DPM_Mk6_GOGGLES_PRR", "CUP_H_BAF_DPM_Mk6_GLASS_PRR", "CUP_H_BAF_DPM_Mk6_CREW_PRR"];
+_sfhelmets append ["CUP_H_BAF_DPM_Mk6_NETTING_PRR", "CUP_H_BAF_DPM_Mk6_facewear_PRR", "CUP_H_BAF_DPM_Mk6_GLASS_PRR", "CUP_H_BAF_DPM_Mk6_CREW_PRR"];
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append ["CUP_H_BAF_PARA_PRROVER_BERET"];

@@ -55,8 +55,8 @@ _staticAT append ["rhs_Kornet_9M133_2_msv"];
 _staticAA append ["rhs_igla_AA_pod_msv"];
 _staticMortars append ["rhs_2b14_82mm_msv"];
 _howitzers append ["rhs_D30_msv"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

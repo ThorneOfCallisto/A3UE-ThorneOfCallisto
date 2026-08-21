@@ -57,8 +57,6 @@ _staticAT append ["PRACS_SLA_SPG9M_tripod"];
 _staticAA append ["rhs_Igla_AA_pod_msv"];
 _staticMortars append ["B_Mortar_01_F"];
 _howitzers append ["PRACS_SLA_M46"];
-_radar append ["PRACS_P37_Radar"];
-_SAM append ["PRACS_SLA_S60"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

@@ -57,8 +57,8 @@ _staticAT append ["RHS_TOW_TriPod_D"];
 _staticAA append ["RHS_Stinger_AA_pod_D"];
 _staticMortars append ["RHS_M252_D"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["rhsusf_mine_M19"];
 _minefieldAPERS append ["rhsusf_mine_m14"];
@@ -195,9 +195,9 @@ _facewear append [
     "rhsusf_shemagh2_gogg_tan",
     "rhsusf_shemagh_gogg_od",
     "rhsusf_shemagh2_gogg_od",
-    "rhsusf_oakley_goggles_clr",
-    "rhsusf_oakley_goggles_blk",
-    "rhsusf_oakley_goggles_ylw"
+    "rhsusf_oakley_facewear_clr",
+    "rhsusf_oakley_facewear_blk",
+    "rhsusf_oakley_facewear_ylw"
 ];
 
 ///////////////////////////////////////

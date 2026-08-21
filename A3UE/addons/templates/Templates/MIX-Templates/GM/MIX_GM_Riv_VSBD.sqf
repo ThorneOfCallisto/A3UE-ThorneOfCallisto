@@ -192,7 +192,7 @@ _fullmask append [];
 
 _crewuniforms append [];
 _crewvests append ["gm_pl_army_vest_80_crew_gry"];
-_crewhelmets append ["gm_ge_bgs_headgear_m38_72_goggles_bgr"];
+_crewhelmets append ["gm_ge_bgs_headgear_m38_72_facewear_bgr"];
 _crewcarbines append [];
 _crewSMGs append [];
 _crewsidearms append [];

@@ -145,7 +145,7 @@ if (A3A_hasACE) then {
 
 _facewear append [
 	"G_Balaclava_blk", 
-	"OPTRE_HUD_r_Glasses"
+	"OPTRE_HUD_r_facewear"
 ];
 _fullmask append ["G_Balaclava_TI_blk_F"];
 

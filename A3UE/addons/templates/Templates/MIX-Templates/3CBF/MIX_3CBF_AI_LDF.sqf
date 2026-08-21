@@ -60,8 +60,8 @@ _staticAT append ["UK3CB_LDF_B_Kornet", "UK3CB_LDF_B_TOW_TriPod"];
 _staticAA append ["UK3CB_LDF_B_RBS70", "UK3CB_LDF_B_ZU23", "UK3CB_LDF_B_Igla_AA_pod"];
 _staticMortars append ["UK3CB_LDF_B_M252"];
 _howitzers append ["UK3CB_LDF_B_D30"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["rhsusf_mine_M19"];
 _minefieldAPERS append ["rhsusf_mine_m14"];
@@ -189,7 +189,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_facewear append ["rhsusf_oakley_goggles_clr", "rhsusf_oakley_goggles_ylw", "rhsusf_oakley_goggles_blk"];
+_facewear append ["rhsusf_oakley_facewear_clr", "rhsusf_oakley_facewear_ylw", "rhsusf_oakley_facewear_blk"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

@@ -1,22 +1,22 @@
 _militaryhelmets append [
-    "gm_ge_headgear_m92_cover_glasses_oli",
+    "gm_ge_headgear_m92_cover_facewear_oli",
     "gm_ge_headgear_m92_cover_oli",
     "gm_dk_headgear_m96_cover_wdl",
     "gm_dk_headgear_m96_oli",
     "gm_ge_headgear_m92_trp",
     "gm_ge_headgear_m92_flk",
     "gm_ge_headgear_m92_cover_blk",
-    "gm_ge_headgear_m92_glasses_flk",
-    "gm_ge_headgear_m92_glasses_trp",
-    "gm_ge_headgear_m92_cover_glasses_blk",
-    "gm_ge_headgear_m92_cover_glasses_oli"
+    "gm_ge_headgear_m92_facewear_flk",
+    "gm_ge_headgear_m92_facewear_trp",
+    "gm_ge_headgear_m92_cover_facewear_blk",
+    "gm_ge_headgear_m92_cover_facewear_oli"
 ];
 
 _militiabackpacks append ["gm_dk_army_backpack_73_oli","gm_ge_army_backpack_90_oli","gm_ge_army_backpack_80_oli"];
 _militiahelmets append [
 	"gm_dk_headgear_m96_oli",
 	"gm_ge_headgear_beret_crew_blk",
-	"gm_ge_headgear_m92_cover_glasses_oli",
+	"gm_ge_headgear_m92_cover_facewear_oli",
 	"gm_ge_headgear_m92_cover_oli",
 	"gm_ge_headgear_psh77_up_oli",
     "gm_ge_headgear_headset_crew_oli",

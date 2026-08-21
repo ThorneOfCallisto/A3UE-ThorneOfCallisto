@@ -56,8 +56,6 @@ _staticAT append [];
 _staticAA append [];
 _staticMortars append [];
 _howitzers append [];
-_radar append [];
-_SAM append [];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

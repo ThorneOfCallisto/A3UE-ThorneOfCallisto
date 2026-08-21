@@ -208,11 +208,11 @@ _facewear append [
 	""
 ];
 _fullmask append [
-	"CUP_G_PMC_Facewrap_Black_Glasses_Ember",
+	"CUP_G_PMC_Facewrap_Black_facewear_Ember",
 	"G_Balaclava_blk",
 	"CUP_G_RUS_Ratnik_Balaclava_Olive_2",
 	"CUP_PMC_Facewrap_Black",
-	"CUP_G_PMC_Facewrap_Black_Glasses_Ember",
+	"CUP_G_PMC_Facewrap_Black_facewear_Ember",
 	"G_Balaclava_oli"
 ];
 

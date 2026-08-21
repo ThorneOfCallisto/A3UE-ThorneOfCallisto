@@ -45,7 +45,7 @@ _militiamarksmanRifles append [
     ["CSLA_Pu52", "", "", "CSLA_ZD4x8_Pu52", ["CSLA_Pu52_10rnd_7_62vz52","CSLA_Pu52_10rnd_7_62vz52","CSLA_Pu52_10rnd_7_62Sv52","CSLA_Pu52_10rnd_7_62Sv52"], [], ""],
     ["CSLA_Pu57", "", "", "CSLA_ZD4x8_Pu52", ["CSLA_Pu57_10rnd_7_62vz43","CSLA_Pu57_10rnd_7_62vz43","CSLA_Pu57_10rnd_7_62vz43","CSLA_Pu57_10rnd_7_62vz43"], [], ""]
 ];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["CSLA_OP63","","","CSLA_PSO1_OP63",["CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62PZ59","CSLA_OP63_10rnd_7_62Odst59"],[],""],
     ["CSLA_HuntingRifle","","","",["CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt","CSLA_10Rnd_762hunt"],[],""],
     ["CSLA_OP54", "", "", "CSLA_PD54", ["CSLA_OP54_5rnd_7_62PZ59","CSLA_OP54_5rnd_7_62TzOdst59","CSLA_OP54_5rnd_7_62Odst59", "CSLA_OP54_5rnd_7_62Odst59"], [], ""]

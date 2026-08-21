@@ -7,9 +7,9 @@ _sffacewear append ["G_Balaclava_snd_lxWS","G_Balaclava_blk_lxWS","G_Combat_lxWS
 _elitehelmets append ["lxWS_H_bmask_white","H_bmask_snake_lxws","H_turban_02_mask_snake_lxws","lxWS_H_bmask_base","H_turban_02_mask_black_lxws","lxWS_H_bmask_camo01","lxWS_H_Bandanna_blk_hs","lxWS_H_Headset","H_Beret_Headset_lxWS"];
 _elitebackpacks pushBack "B_shield_backpack_lxWS";
 
-(_militaryLoadoutData get "uniforms") pushBack "U_lxWS_ION_Casual4";
+_militaryuniforms pushBack "U_lxWS_ION_Casual4";
 _militaryvests pushBack "V_lxWS_TacVestIR_oli";
-_militaryhelmets append ["lxWS_H_PASGT_goggles_olive_F","lxWS_H_PASGT_goggles_black_F"];
+_militaryhelmets append ["lxWS_H_PASGT_facewear_olive_F","lxWS_H_PASGT_facewear_black_F"];
 
 
 
@@ -22,5 +22,5 @@ _militiabackpacks pushBack "B_shield_backpack_lxWS";
 
 _militiavests pushBack "V_lxWS_TacVestIR_oli";
 
-_militiahelmets pushBack "lxWS_H_PASGT_goggles_olive_F";
+_militiahelmets pushBack "lxWS_H_PASGT_facewear_olive_F";
 _militiavests append ["V_lxWS_HarnessO_oli","V_lxWS_TacVestIR_oli"];

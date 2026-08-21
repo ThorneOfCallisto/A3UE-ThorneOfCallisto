@@ -22,8 +22,8 @@ _helmets append [
 	"lxWS_H_bmask_white", 
 	"lxWS_H_bmask_camo02", 
 	"lxWS_H_bmask_yellow", 
-	"lxWS_H_PASGT_goggles_black_F", 
-	"lxWS_H_PASGT_goggles_olive_F", 
+	"lxWS_H_PASGT_facewear_black_F", 
+	"lxWS_H_PASGT_facewear_olive_F", 
 	"lxWS_H_HelmetCrew_I"
 ];
 

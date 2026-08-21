@@ -58,8 +58,8 @@ _staticAT append ["CUP_B_SPG9_CDF"];
 _staticAA append ["CUP_B_Igla_AA_pod_CDF"];
 _staticMortars append ["CUP_B_2b14_82mm_CDF"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];

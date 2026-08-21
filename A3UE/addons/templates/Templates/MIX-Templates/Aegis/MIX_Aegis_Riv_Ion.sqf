@@ -301,7 +301,7 @@ _facewear append [
 	"G_Sport_Checkered",
 	"G_Sport_Blackred",
 	"G_Sport_Greenblack",
-	"G_Combat_Goggles_blk_F",
+	"G_Combat_facewear_blk_F",
 	"G_Bandanna_aviator",
 	"G_Bandanna_beast",
 	"G_Bandanna_blk",

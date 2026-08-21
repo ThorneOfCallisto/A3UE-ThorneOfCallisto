@@ -60,8 +60,6 @@ _staticAT       append ["rhs_Kornet_9M133_2_msv"];
 _staticAA       append ["rhs_Igla_AA_pod_msv", "RHS_ZU23_MSV"];
 _staticMortars  append ["rhs_2b14_82mm_msv"];
 _howitzers      append ["rhs_D30_msv"];
-_radar          append [];
-_SAM            append [];
 
 _minefieldAT    append ["rhs_mine_tm62m"];
 _minefieldAPERS append ["rhs_mine_pmn2"];
@@ -201,8 +199,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append ["G_Aviator","G_Balaclava_oli","G_Bandanna_oli","rhs_scarf","rhs_balaclava1_olive","rhs_balaclava"];
-_goggles append ["rhs_ess_black"];
+_facewear append ["G_Aviator","G_Balaclava_oli","G_Bandanna_oli","rhs_scarf","rhs_balaclava1_olive","rhs_balaclava"];
+_facewear append ["rhs_ess_black"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -356,8 +354,8 @@ _sfhelmets append ["rhs_altyn_novisor", "rhs_altyn_novisor_ess", "rhs_altyn_viso
 _sfslHat append [];
 _sfsniHats append ["rhs_Booniehat_digi", "rhs_beanie_green"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -460,8 +458,8 @@ _elitehelmets append ["rhs_6b47_bare", "rhs_6b47", "rhs_6b47_6m2", "rhs_6b47_ess
 _eliteslHat append ["rhs_6b47_6m2_1"];
 _elitesniHats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -617,8 +615,8 @@ _militaryhelmets append ["rhs_6b7_1m", "rhs_6b7_1m_emr", "rhs_6b7_1m_emr_ess", "
 _militaryslHat append [];
 _militarysniHats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -726,8 +724,8 @@ _militiahelmets append ["rhs_ssh60", "rhs_ssh68_2", "H_Bandanna_khk"];
 _militiaslHat append ["rhs_fieldcap"];
 _militiasniHats append ["rhs_Booniehat_flora"];
 
-_militiaglasses append [];
-_militiagoggles append [];
+_militiafacewear append [];
+_militiafacewear append [];
 
 //////////////////////////
 //    Misc Loadouts     //

@@ -55,8 +55,8 @@ _staticAT append ["CUP_O_SPG9_SLA"];
 _staticAA append ["CUP_O_Igla_AA_pod_SLA"];
 _staticMortars append ["CUP_O_2b14_82mm_RU"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];
@@ -621,7 +621,7 @@ _militiafacewear append [];
 
 _crewuniforms append ["SCE_Freedom_CBRN"];
 _crewvests append ["SCE_Sunrise_Freedom_1"];
-_crewhelmets append ["CUP_H_RUS_6B47_v2_GogglesUp_Summer"];
+_crewhelmets append ["CUP_H_RUS_6B47_v2_facewearUp_Summer"];
 _crewcarbines append [
     ["CUP_smg_MP5A5", "", "", "cup_optic_ac11704_black", ["CUP_30Rnd_9x19_MP5"], [], ""]
 ];
@@ -633,7 +633,7 @@ _crewfacewear append [];
 _pilotuniforms append ["SCE_Freedom_CBRN"];
 _pilotvests append ["SCE_Sunrise_Freedom_1"];
 _pilotbackpacks append [];
-_pilothelmets append ["CUP_H_RUS_6B47_v2_GogglesUp_Summer"];
+_pilothelmets append ["CUP_H_RUS_6B47_v2_facewearUp_Summer"];
 _pilotcarbines append [
     ["CUP_smg_MP5A5_Rail_AFG", "", "", "", ["CUP_30Rnd_9x19_MP5"], [], ""]
 ];

@@ -55,8 +55,6 @@ _staticAT append ["Flex_CUP_NOR_TOW2_TriPod"];
 _staticAA append ["Flex_CUP_NOR_Stinger_AA_pod"];
 _staticMortars append ["Flex_CUP_NOR_Mortar"];
 _howitzers append ["Flex_CUP_NOR_M119"];
-_radar append ["Flex_CUP_NOR_Radar_System"];
-_SAM append ["Flex_CUP_NOR_SAM_System"];
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];

@@ -57,8 +57,6 @@ _staticAT append ["Flex_CUP_PLA_Kornet"];
 _staticAA append ["Flex_CUP_PLA_ZU23", "Flex_CUP_PLA_Igla_AA_pod"];
 _staticMortars append ["Flex_CUP_PLA_Mortar"];
 _howitzers append ["Flex_CUP_PLA_D30"];
-_radar append ["Flex_CUP_PLA_Radar_System"];
-_SAM append ["Flex_CUP_PLA_SAM_System"];
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSBoundingMine"];

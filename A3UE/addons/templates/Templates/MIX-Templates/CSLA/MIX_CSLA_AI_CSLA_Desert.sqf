@@ -59,8 +59,8 @@ _staticAT append ["CSLA_9K113_Stat","CSLA_AGS17_Stat","CSLA_BzK59A_Stat","CSLA_T
 _staticAA append ["CSLA_PLdvK59_Stat"];
 _staticMortars append ["CSLA_M52_Stat"];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CSLA_PtMiBa3_charge"];
 _minefieldAPERS append ["CSLA_PPMiNa_charge"];

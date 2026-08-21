@@ -58,8 +58,6 @@ _staticAT append ["CUP_B_TOW2_TriPod_USMC"];
 _staticAA append ["CUP_B_Stinger_AA_pod_Base_USMC"];
 _staticMortars append ["B_Mortar_01_F"];
 _howitzers append ["EST_Army_M119A2_Turret"];
-_radar append ["EST_AirForce_Static_Radar"];
-_SAM append ["EST_AirForce_Static_SAM"];
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];

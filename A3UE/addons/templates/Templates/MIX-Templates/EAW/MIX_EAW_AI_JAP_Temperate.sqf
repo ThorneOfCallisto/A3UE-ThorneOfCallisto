@@ -57,8 +57,6 @@ _staticAT append ["EAW_Type1_47mm_J"];
 _staticAA append ["EAW_T98_20mm_AA_1941J"];
 _staticMortars append ["EAW_IJA_Type97_Mortar_1941J"];
 _howitzers append ["EAW_IJA_Type91_Gun_1941J_Arty"];
-_radar append ["EAW_IJA_Type99_88_AA_1941J"];
-_SAM append ["EAW_IJA_Type99_88_AA_1941J"];
 
 _minefieldAT append ["LIB_TMI_42_MINE"];
 _minefieldAPERS append ["LIB_shumine_42_MINE"];

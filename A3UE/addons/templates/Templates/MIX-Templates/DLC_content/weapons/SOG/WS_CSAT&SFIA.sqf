@@ -8,7 +8,7 @@ _policeWeapons append [
     ["vn_izh54_shorty","","","",["vn_izh54_so_mag","vn_izh54_so_mag","vn_izh54_so_mag","vn_izh54_so_mag"], [], ""],
     ["vn_izh54","","","",["vn_izh54_mag","vn_izh54_mag","vn_izh54_mag","vn_izh54_mag"], [], ""]
 ];
-(_policeLoadoutData get "sidearms") append [
+_policesidearms append [
     ["vn_vz61_p","","","",["vn_vz61_mag","vn_vz61_mag","vn_vz61_t_mag","vn_vz61_t_mag"], [], ""],
     ["vn_type64","","","",["vn_type64_mag","vn_type64_mag","vn_type64_mag","vn_type64_mag"], [], ""],
     ["vn_tt33","","","",["vn_tt33_mag","vn_tt33_mag","vn_tt33_mag","vn_tt33_mag"], [], ""],
@@ -65,7 +65,7 @@ _militarymachineGuns append [
     ["vn_pk","","","",["vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag"],[],""],
     ["vn_dp28","","","",["vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag"],[],""]
 ];
-(_militaryLoadoutData get "sniperRifles") append [
+_militarysniperRifles append [
     ["vn_vz54","","","vn_o_3x_vz54",["vn_m38_mag","vn_m38_mag","vn_m38_mag","vn_m38_t_mag"],[],"vn_b_camo_vz54"],
     ["vn_vz54","","","vn_o_3x_vz54",["vn_m38_mag","vn_m38_mag","vn_m38_mag","vn_m38_t_mag"],[],""],
     ["vn_m9130","","vn_b_m38","vn_o_3x_m9130",["vn_m38_mag","vn_m38_mag","vn_m38_mag","vn_m38_t_mag"],[],"vn_b_camo_m9130"],
@@ -104,7 +104,7 @@ _militiamachineGuns append [
     ["vn_pk","","","",["vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag"],[],""],
     ["vn_dp28","","","",["vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag","vn_pk_100_mag"],[],""]
 ];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["vn_vz54","","","vn_o_3x_vz54",["vn_m38_mag","vn_m38_mag","vn_m38_mag","vn_m38_t_mag"],[],"vn_b_camo_vz54"],
     ["vn_vz54","","","vn_o_3x_vz54",["vn_m38_mag","vn_m38_mag","vn_m38_mag","vn_m38_t_mag"],[],""],
     ["vn_m9130","","vn_b_m38","vn_o_3x_m9130",["vn_m38_mag","vn_m38_mag","vn_m38_mag","vn_m38_t_mag"],[],"vn_b_camo_m9130"],
@@ -123,15 +123,15 @@ _militiaSMGs append [
 	["vn_mpu","vn_s_mpu","","",["vn_mpu_mag","vn_mpu_t_mag","vn_mpu_mag","vn_mpu_t_mag"], [], ""]
 ];
 
-(_loadoutData get "lightATLaunchers") append [
+_lightATLaunchers append [
     ["vn_m72", "", "", "", ["vn_m72_mag"], [], ""],
     ["vn_rpg7", "", "", "", ["vn_rpg7_mag","vn_rpg7_mag","vn_rpg7_mag"], [], ""],
     ["vn_rpg2", "", "", "", ["vn_rpg2_fuze_mag","vn_rpg2_fuze_mag","vn_rpg2_mag"], [], ""]
 ];
-(_loadoutData get "ATLaunchers") append [
+_ATLaunchers append [
     ["vn_m20a1b1_01", "", "", "", ["vn_m20a1b1_wp_mag", "vn_m20a1b1_heat_mag", "vn_m20a1b1_heat_mag"], [], ""]
 ];
-(_loadoutData get "AALaunchers") append [
+_AALaunchers append [
     ["vn_sa7b", "", "", "", ["vn_sa7b_mag"], [], ""],
     ["vn_sa7", "", "", "", ["vn_sa7_mag"], [], ""]
 ];

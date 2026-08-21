@@ -55,8 +55,8 @@ _staticAT append ["CUP_O_Metis_TK"];
 _staticAA append ["CUP_O_Igla_AA_pod_TK"];
 _staticMortars append ["CUP_O_2b14_82mm_TK"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];
@@ -301,7 +301,7 @@ _sfENGBackpacks append [];
 _sfEXPBackpacks append [];
 _sfSLBackpacks append ["B_Kitbag_rgr"];
 _sflongRangeRadios append [];
-_sfhelmets append ["CUP_H_RUS_K6_3_Goggles", "CUP_H_RUS_Altyn_Goggles_khaki"];
+_sfhelmets append ["CUP_H_RUS_K6_3_facewear", "CUP_H_RUS_Altyn_facewear_khaki"];
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append ["CUP_H_TK_Beret"];

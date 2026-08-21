@@ -57,8 +57,8 @@ _staticAT append ["ffp_pstohj83"];
 _staticAA append ["CUP_B_ZU23_CDF", "ffp_ito2005m"];
 _staticMortars append ["B_Mortar_01_F"];
 _howitzers append ["ffp_122h63"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["ffp_telamiina"];
 _minefieldAPERS append ["ffp_sm_65_98"];
@@ -729,7 +729,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["ffp_m05w_helmet", "ffp_m05w_helmet_glasses", "ffp_m05w_helmet_peltor"];
+_militaryhelmets append ["ffp_m05w_helmet", "ffp_m05w_helmet_facewear", "ffp_m05w_helmet_peltor"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];

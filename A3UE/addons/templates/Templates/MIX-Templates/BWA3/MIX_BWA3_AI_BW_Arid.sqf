@@ -58,8 +58,6 @@ _staticAT       append ["BWA3_MELLS_static_Fleck"];
 _staticAA       append [];
 _staticMortars  append ["BWA3_MRS120_Tropen"];
 _howitzers      append [];
-_radar          append ["B_Radar_System_01_F"];
-_SAM            append ["B_SAM_System_03_F"];
 
 _minefieldAT    append ["BWA3_DM31AT","BWA3_AT2"];
 _minefieldAPERS append ["APERSMine"];
@@ -195,8 +193,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append ["G_Bandanna_tan", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
-_goggles append ["G_Bandanna_tan", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
+_facewear append ["G_Bandanna_tan", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
+_facewear append ["G_Bandanna_tan", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -310,8 +308,8 @@ _sfSLhelmets append [];
 _sfSLhats append ["BWA3_Beret_Falli"];
 _sfSNIhats append [];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -433,8 +431,8 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["BWA3_Beret_Pz"];
 _eliteSNIhats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -557,8 +555,8 @@ _militarySLhelmets append [];
 _militarySLhats append ["BWA3_Beret_Pz"];
 _militarySNIhats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -658,8 +656,8 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["BWA3_Beret_Wach_blue"];
 _militiaSNIhats append [];
 
-_militiaglasses append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
-_militiagoggles append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
+_militiafacewear append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
+_militiafacewear append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
 
 //////////////////////////
 //    Misc Loadouts     //

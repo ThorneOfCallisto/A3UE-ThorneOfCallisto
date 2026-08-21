@@ -59,8 +59,6 @@ _staticAT append ["Flex_CUP_FIN_TOW2"];
 _staticAA append ["Flex_CUP_FIN_Stinger_AA_pod", "Flex_CUP_FIN_ZU23"];
 _staticMortars append ["Flex_CUP_FIN_Mortar"];
 _howitzers append ["Flex_CUP_FIN_D30"];
-_radar append ["Flex_CUP_FIN_Radar_System"];
-_SAM append ["Flex_CUP_FIN_SAM_System"];
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSBoundingMine"];

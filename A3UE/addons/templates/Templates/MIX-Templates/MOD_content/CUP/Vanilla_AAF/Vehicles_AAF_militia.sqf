@@ -3,7 +3,6 @@ _militiaCars append ["CUP_I_LR_Transport_AAF","CUP_O_UAZ_Open_SLA","CUP_O_UAZ_Un
 _militiaTrucks append ["CUP_O_Ural_RU","CUP_V3S_Open_NAPA"];
 _militiaAPCs append ["CUP_I_M113A3_AAF","CUP_O_BTR60_Green_RU","CUP_O_BTR80A_GREEN_RU","CUP_O_BTR80_CAMO_RU","CUP_O_MTLB_pk_Green_RU","CUP_O_BMP2_SLA","CUP_O_BTR90_RU"];
 _aa append ["CUP_I_ZSU23_Afghan_AAF","CUP_I_ZSU23_AAF","CUP_I_LR_AA_AAF","CUP_I_M163_Vulcan_AAF","CUP_O_Ural_ZU23_SLA","CUP_O_UAZ_AA_SLA"];
-//_SAM pushback ["CUP_WV_B_CRAM","CUP_WV_B_SS_Launcher","CUP_WV_B_RAM_Launcher"];
 _planesCAS append ["CUP_I_AV8B_DYN_AAF","CUP_I_L39_AAF","CUP_I_SU34_AAF","CUP_B_GR9_DYN_GB"];
 _planesAA append ["CUP_I_AV8B_DYN_AAF","CUP_I_L39_AAF","CUP_I_SU34_AAF","CUP_B_GR9_DYN_GB"];
 _planesTransport append ["CUP_I_C130J_AAF"];

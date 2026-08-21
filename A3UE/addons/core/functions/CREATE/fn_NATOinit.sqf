@@ -142,125 +142,105 @@ _unit addEventHandler ["Deleted", A3A_fnc_enemyUnitDeletedEH];
 //Calculates the skill of the given unit
 //private _skill = (0.15 * skillMult) + (0.04 * difficultyCoef) + (0.02 * tierWar);
 private _skill = (0.1 * A3A_enemySkillMul) + (0.07 * (1 max A3A_activePlayerCount^0.5)) + (0.01 * tierWar);
-private _regularFaces = nil;
-private _regularVoices = nil;
-private _regularInsignia = nil;
-private _face = nil;
-private _voice = nil;
-private _insignia = nil;
+private _regularFaces = [];
+private _regularVoices = [];
+private _regularInsignia = [];
+private _face = "";
+private _voice = "";
+private _insignia = "";
+
+// SQF note: assigning nil makes a variable undefined again. Do not initialize
+// _face/_voice/etc. with nil, because passing an undefined value into params
+// leaves the parameter undefined as well.
+private _fnc_thorneStringPool = {
+    params ["_pool"];
+    if !(_pool isEqualType []) exitWith { [] };
+    _pool select { _x isEqualType "" && { _x isNotEqualTo "" } }
+};
+
+private _fnc_thornePickRandomString = {
+    params ["_pool", ["_fallback", ""]];
+    private _valid = [_pool] call _fnc_thorneStringPool;
+    if (_valid isEqualTo []) exitWith { _fallback };
+    selectRandom _valid
+};
 
 if (_isRival) then {
-    _regularFaces = A3A_faction_riv get "faces";
-    _regularVoices = A3A_faction_riv get "voices";
-    _regularInsignia = A3A_faction_riv get "insignia";
+    _regularFaces = A3A_faction_riv getOrDefault ["faces", []];
+    _regularVoices = A3A_faction_riv getOrDefault ["voices", []];
+    _regularInsignia = A3A_faction_riv getOrDefault ["insignia", []];
 } else {
-    _regularFaces = _faction get "faces";
-    _regularVoices = _faction get "voices";
-    _regularInsignia = _faction get "insignia";
+    _regularFaces = _faction getOrDefault ["faces", []];
+    _regularVoices = _faction getOrDefault ["voices", []];
+    _regularInsignia = _faction getOrDefault ["insignia", []];
+};
+
+// Make the base pools safe before any selectRandom happens.
+_regularFaces = [_regularFaces] call _fnc_thorneStringPool;
+_regularVoices = [_regularVoices] call _fnc_thorneStringPool;
+_regularInsignia = [_regularInsignia] call _fnc_thorneStringPool;
+
+private _defaultFace = if (_regularFaces isEqualTo []) then { "WhiteHead_01" } else { selectRandom _regularFaces };
+private _defaultVoice = if (_regularVoices isEqualTo []) then {
+    switch (_gearTag) do {
+        case "AMF": { "Male01FRE" };
+        default { "Male01ENG" };
+    };
+} else {
+    selectRandom _regularVoices
 };
 
 switch (true) do {
     case (_isRival): {
         _skill = _skill * 0.9;
-        _face = selectRandom (A3A_faction_riv get "faces");
-        _voice = selectRandom (A3A_faction_riv get "voices");
+        _face = [A3A_faction_riv getOrDefault ["faces", []], _defaultFace] call _fnc_thornePickRandomString;
+        _voice = [A3A_faction_riv getOrDefault ["voices", []], _defaultVoice] call _fnc_thornePickRandomString;
     };
     case (_unitPrefix isEqualTo "militia"): {
         _skill = _skill * 0.7;
-        _face = selectRandom (_faction getOrDefault ["milFaces", _regularFaces]);
-        _voice = selectRandom (_faction getOrDefault ["milVoices", _regularVoices]);
-        _insignia = selectRandom (_faction getOrDefault ["milInsignia", _regularInsignia]);
+        _face = [_faction getOrDefault ["milFaces", _regularFaces], _defaultFace] call _fnc_thornePickRandomString;
+        _voice = [_faction getOrDefault ["milVoices", _regularVoices], _defaultVoice] call _fnc_thornePickRandomString;
+        _insignia = [_faction getOrDefault ["milInsignia", _regularInsignia], ""] call _fnc_thornePickRandomString;
     };
     case (_unitPrefix isEqualTo "police"): {
         _skill = _skill * 0.5;
-        _face = selectRandom (_faction getOrDefault ["polFaces", _regularFaces]);
-        _voice = selectRandom (_faction getOrDefault ["polVoices", _regularVoices]);
-        _insignia = selectRandom (_faction getOrDefault ["polInsignia", _regularInsignia]);
+        _face = [_faction getOrDefault ["polFaces", _regularFaces], _defaultFace] call _fnc_thornePickRandomString;
+        _voice = [_faction getOrDefault ["polVoices", _regularVoices], _defaultVoice] call _fnc_thornePickRandomString;
+        _insignia = [_faction getOrDefault ["polInsignia", _regularInsignia], ""] call _fnc_thornePickRandomString;
     };
     case (_unitPrefix isEqualTo "elite"): {
         _skill = _skill * 1.1;
-        _face = selectRandom (_faction getOrDefault ["eliteFaces", _regularFaces]);
-        _voice = selectRandom (_faction getOrDefault ["eliteVoices", _regularVoices]);
-        _insignia = selectRandom (_faction getOrDefault ["eliteInsignia", _regularInsignia]);
+        _face = [_faction getOrDefault ["eliteFaces", _regularFaces], _defaultFace] call _fnc_thornePickRandomString;
+        _voice = [_faction getOrDefault ["eliteVoices", _regularVoices], _defaultVoice] call _fnc_thornePickRandomString;
+        _insignia = [_faction getOrDefault ["eliteInsignia", _regularInsignia], ""] call _fnc_thornePickRandomString;
     };
     case (_unitPrefix isEqualTo "SF"): {
         _skill = _skill * 1.2;
-        _face = selectRandom (_faction getOrDefault ["sfFaces", _regularFaces]);
-        _voice = selectRandom (_faction getOrDefault ["sfVoices", _regularVoices]);
-        _insignia = selectRandom (_faction getOrDefault ["sfInsignia", _regularInsignia]);
+        _face = [_faction getOrDefault ["sfFaces", _regularFaces], _defaultFace] call _fnc_thornePickRandomString;
+        _voice = [_faction getOrDefault ["sfVoices", _regularVoices], _defaultVoice] call _fnc_thornePickRandomString;
+        _insignia = [_faction getOrDefault ["sfInsignia", _regularInsignia], ""] call _fnc_thornePickRandomString;
     };
     case ("Traitor" in _type): {
-        _face = selectRandom (A3A_faction_reb get "faces");
+        _face = [A3A_faction_reb getOrDefault ["faces", []], _defaultFace] call _fnc_thornePickRandomString;
         _voice = "NoVoice";
     };
     default {
-        _face = selectRandom _regularFaces;
-        _voice = selectRandom _regularVoices;
-        _insignia = selectRandom _regularInsignia;
+        _face = _defaultFace;
+        _voice = _defaultVoice;
+        _insignia = [_regularInsignia, ""] call _fnc_thornePickRandomString;
     };
 };
-private _fnc_thorneValidFace = {
-    params ["_faceName"];
-    (_faceName isEqualType "") && {_faceName isNotEqualTo ""} && {isClass (configFile >> "CfgFaces" >> "Man_A3" >> _faceName)}
-};
 
-private _fnc_thornePickFirstValidFace = {
-    params ["_faces"];
-    private _result = "";
-    if (_faces isEqualType []) then {
-        {
-            if ([_x] call _fnc_thorneValidFace) exitWith {
-                _result = _x;
-            };
-        } forEach _faces;
-    };
-    _result
-};
-
-private _fnc_thorneValidVoice = {
-    params ["_voiceName"];
-    (_voiceName isEqualType "") && {_voiceName isNotEqualTo ""}
-};
-
-private _fnc_thornePickFirstValidVoice = {
-    params ["_voices"];
-    private _result = "";
-    if (_voices isEqualType []) then {
-        {
-            if ([_x] call _fnc_thorneValidVoice) exitWith {
-                _result = _x;
-            };
-        } forEach _voices;
-    };
-    _result
-};
-
-if !([_face] call _fnc_thorneValidFace) then {
-    private _fallbackFace = [_regularFaces] call _fnc_thornePickFirstValidFace;
-    if (_fallbackFace isEqualTo "") then {
-        _fallbackFace = "WhiteHead_01";
-    };
-    _face = _fallbackFace;
-};
-
-if !([_voice] call _fnc_thorneValidVoice) then {
-    private _fallbackVoice = [_regularVoices] call _fnc_thornePickFirstValidVoice;
-    if (_fallbackVoice isEqualTo "") then {
-        _fallbackVoice = switch (_gearTag) do {
-            case "AMF": { "Male01FRE" };
-            default { "Male01ENG" };
-        };
-    };
-    _voice = _fallbackVoice;
-};
-
-if (isNil "_insignia") then {
-    _insignia = "";
-};
+// Absolute last-resort guards. These always remain defined strings.
+if !(_face isEqualType "") then { _face = "WhiteHead_01"; };
+if (_face isEqualTo "") then { _face = "WhiteHead_01"; };
+if !(_voice isEqualType "") then { _voice = _defaultVoice; };
+if (_voice isEqualTo "") then { _voice = _defaultVoice; };
+if !(_insignia isEqualType "") then { _insignia = ""; };
 
 [_unit, createHashMapFromArray [["face", _face], ["speaker", _voice], ["pitch", (random [0.9, 1, 1.1])]]] call A3A_fnc_setIdentity;
 _unit setSkill _skill;
-if (!isNil "_insignia" && {_insignia isNotEqualTo ""}) then {
+if (_insignia isNotEqualTo "") then {
    [_unit, _insignia] call BIS_fnc_setUnitInsignia;
 };
 

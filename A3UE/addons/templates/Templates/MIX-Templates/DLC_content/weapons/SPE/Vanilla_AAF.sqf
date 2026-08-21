@@ -9,7 +9,7 @@
     ["SPE_Model_37_Riotgun","","","",["SPE_5Rnd_12x70_No4_Buck","SPE_5Rnd_12x70_Pellets","SPE_5Rnd_12x70_Slug","SPE_5Rnd_12x70_Slug"], [], ""], 2
 ];
 
-(_policeLoadoutData get "sidearms") append [
+_policesidearms append [
     ["SPE_M1911","","","",["SPE_7Rnd_45ACP_1911","SPE_7Rnd_45ACP_1911","SPE_7Rnd_45ACP_1911"], [], ""], 4,
     ["SPE_P08","","","",["SPE_8Rnd_9x19_P08","SPE_8Rnd_9x19_P08","SPE_8Rnd_9x19_P08"], [], ""], 2
 ];
@@ -39,12 +39,12 @@ _militiamachineGuns append [
     ["SPE_FM_24_M29","","","",["SPE_25Rnd_75x54","SPE_25Rnd_75x54","SPE_25Rnd_75x54_35P_AP","SPE_25Rnd_75x54_35P_AP","SPE_25Rnd_75x54_35P_AP","SPE_25Rnd_75x54_35P_AP"],[],""], 1,
     ["SPE_LMG_303_Mk2","","","",["SPE_30Rnd_770x56","SPE_30Rnd_770x56_AP_MKI","SPE_30Rnd_770x56_MKVIII"],[],""], 2
 ]; */
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["SPE_M1903A4_Springfield","","","",["SPE_5Rnd_762x63","SPE_5Rnd_762x63_M1","SPE_5Rnd_762x63_t","SPE_5Rnd_762x63_M2_AP"],[],""], 3,
     ["SPE_K98ZF39","","","",["SPE_5Rnd_792x57","SPE_5Rnd_792x57_t","SPE_5Rnd_792x57_SMK","SPE_5Rnd_792x57_sS"],[],""], 3
 ];
 //////////////////////////////////////////////////////
-(_loadoutData get "lightATLaunchers") append [
+_lightATLaunchers append [
     ["SPE_M1A1_Bazooka", "", "", "", ["SPE_1Rnd_60mm_M6","SPE_1Rnd_60mm_M6","SPE_1Rnd_60mm_M6"], [], ""], 0.5,
     ["SPE_M9A1_Bazooka", "", "", "", ["SPE_1Rnd_60mm_M6A3","SPE_1Rnd_60mm_M6A3","SPE_1Rnd_60mm_M6A3"], [], ""], 2,
     ["SPE_M9_Bazooka", "", "", "", ["SPE_1Rnd_60mm_M6","SPE_1Rnd_60mm_M6","SPE_1Rnd_60mm_M6"], [], ""], 2

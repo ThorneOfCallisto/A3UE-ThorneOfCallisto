@@ -57,8 +57,8 @@ _staticAT append ["LIB_Pak40_w"];
 _staticAA append ["LIB_FlaK_38_w"];
 _staticMortars append ["LIB_GrWr34_g"];
 _howitzers append ["LIB_leFH18"];
-_radar append ["LIB_FlaK_36_AA_w"];
-_SAM append ["LIB_FlaK_36_AA_w"];
+
+
 
 _minefieldAT append ["LIB_TMI_42_MINE"];
 _minefieldAPERS append ["LIB_shumine_42_MINE"];
@@ -336,11 +336,11 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append [];
 _elitelongRangeRadios append [];
-_elitehelmets append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_Glasses_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
+_elitehelmets append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_facewear_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append ["H_LIB_GER_Helmet_w"];
-_eliteSNIhats append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_Glasses_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
+_eliteSNIhats append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_facewear_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
 
 _elitefacewear append [];
 
@@ -418,11 +418,11 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_Glasses_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
+_militaryhelmets append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_facewear_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append ["H_LIB_GER_Helmet_w"];
-_militarySNIhats append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_Glasses_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
+_militarySNIhats append ["H_LIB_GER_Helmet_w","H_LIB_GER_Helmet_facewear_w","H_LIB_GER_Helmet_net_w","H_LIB_GER_Helmet_ns_w","H_LIB_GER_HelmetCamo_w"];
 
 _militaryfacewear append [];
 

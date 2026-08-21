@@ -1,5 +1,5 @@
 _facewear append [
-    "vn_g_glasses_01", 2.5,
+    "vn_g_facewear_01", 2.5,
     "vn_g_spectacles_01", 1.5,
     "vn_g_spectacles_02", 2
 ];
@@ -9,8 +9,8 @@ _facewear append [
     "vn_b_acc_rag_02", 1,
     "vn_b_acc_rag_01", 1,
     "vn_o_poncho_01_01", 2,
-    "vn_o_acc_goggles_02", 3,
-    "vn_b_acc_goggles_01", 3,
+    "vn_o_acc_facewear_02", 3,
+    "vn_b_acc_facewear_01", 3,
     "vn_b_acc_m17_01", 1,
     "vn_o_bandana_g", 1.5, // These bandanas are identical to vanilla items but the latter aren't included in the base AAF file so they get to stay for now.
     "vn_o_bandana_b", 1.5,

@@ -34,7 +34,7 @@ _militarySniperOptics append ["optic_AMS", 4, "optic_KHS_blk", 2];
 _militiamarksmanRifles append [
     ["srifle_DMR_06_olive_F", "", "", _militiaMarksmanOptics, [], [], ""], 15
 ];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["srifle_DMR_06_olive_F", "", "", _militiaSniperOptics, [], [], ""], 8
 ];
 

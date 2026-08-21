@@ -58,8 +58,6 @@ _staticAT       append ["sfp_rbs55_un","sfp_rbs56"];
 _staticAA       append ["sfp_rbs97"];
 _staticMortars  append ["sfp_grk84"];
 _howitzers      append ["sfp_fh77"];
-_radar          append ["B_Radar_System_01_F"];
-_SAM            append ["B_SAM_System_03_F"];
 
 _minefieldAT    append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];
@@ -167,8 +165,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -263,8 +261,8 @@ _sfhelmets append ["sfp_m90w_helmet", "sfp_m90w_helmet_headset_nvg", "sfp_m90w_h
 _sfslHat append ["sfp_sf_beret"];
 _sfsniHats append ["sfp_m90w_booniehat"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -360,8 +358,8 @@ _elitehelmets append ["sfp_m90w_helmet", "sfp_m90w_helmet_headset_nvg", "sfp_m90
 _eliteslHat append ["sfp_army_beret"];
 _elitesniHats append ["sfp_m90w_booniehat"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -457,8 +455,8 @@ _militaryhelmets append ["sfp_m90w_helmet", "sfp_m90w_helmet_headset_nvg", "sfp_
 _militaryslHat append ["sfp_army_beret"];
 _militarysniHats append ["sfp_m90w_booniehat"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -556,8 +554,8 @@ _militiahelmets append ["sfp_m37w_helmet", "sfp_m37w_helmet_dok3", "sfp_m37w_hel
 _militiaslHat append ["sfp_homeguard_beret"];
 _militiasniHats append ["sfp_wool_beanie_green"];
 
-_militiaglasses append [];
-_militiagoggles append [];
+_militiafacewear append [];
+_militiafacewear append [];
 
 //////////////////////////
 //    Misc Loadouts     //

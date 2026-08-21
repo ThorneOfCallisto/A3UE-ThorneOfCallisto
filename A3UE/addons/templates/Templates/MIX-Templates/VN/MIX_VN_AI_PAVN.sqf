@@ -58,8 +58,6 @@ _staticAT append ["vn_o_nva_65_static_type56rr"];
 _staticAA append ["vn_o_nva_static_sgm_high_01", "vn_o_nva_static_dshkm_high_02", "vn_o_nva_static_zpu4", "vn_o_nva_65_static_zgu1_01"];
 _staticMortars append ["vn_o_vc_static_mortar_type53"];
 _howitzers append ["vn_o_nva_static_d44_01"];
-_radar append ["vn_o_static_rsna75"];
-_SAM append ["vn_sa2"];
 
 _minefieldAT append ["vn_mine_tripwire_arty"];
 _minefieldAPERS append ["vn_mine_punji_02"];
@@ -179,7 +177,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_facewear append ["vn_o_acc_goggles_01"];
+_facewear append ["vn_o_acc_facewear_01"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

@@ -1,6 +1,6 @@
 _facewear append [
     "vn_b_spectacles_tinted",
-    "vn_g_glasses_01",
+    "vn_g_facewear_01",
     "vn_b_squares_tinted",
     "vn_b_squares",
     "vn_g_spectacles_01",
@@ -14,8 +14,8 @@ _facewear append [
     "vn_b_acc_rag_02",
     "vn_b_acc_rag_01",
     "vn_o_poncho_01_01",
-    "vn_o_acc_goggles_02",
-    "vn_b_acc_goggles_01",
+    "vn_o_acc_facewear_02",
+    "vn_b_acc_facewear_01",
     "vn_b_acc_m17_01",
     "vn_o_bandana_g",
     "vn_o_bandana_b",

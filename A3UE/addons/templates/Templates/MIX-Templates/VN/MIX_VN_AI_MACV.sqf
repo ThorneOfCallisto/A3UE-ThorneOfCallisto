@@ -57,8 +57,8 @@ _staticAT append ["vn_b_army_static_tow", "vn_b_army_static_m40a1rr"];
 _staticAA append ["vn_b_army_static_m45", "vn_b_navy_static_l70mk2", "vn_b_navy_static_l60mk3"];
 _staticMortars append ["vn_b_army_static_mortar_m2"];
 _howitzers append ["vn_b_sf_static_m101_02"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["vn_mine_m15"];
 _minefieldAPERS append ["vn_mine_m14"];
@@ -186,7 +186,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_facewear append ["vn_b_acc_goggles_01"];
+_facewear append ["vn_b_acc_facewear_01"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

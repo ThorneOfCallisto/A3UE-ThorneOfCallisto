@@ -1,7 +1,7 @@
 _facewear append [
     "G_Bandanna_yellow_RF",
-    "G_Glasses_black_RF",
-    "G_Glasses_white_RF"
+    "G_facewear_black_RF",
+    "G_facewear_white_RF"
 ];
 
 _helmets append [

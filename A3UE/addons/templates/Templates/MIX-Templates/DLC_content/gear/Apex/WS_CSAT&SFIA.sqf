@@ -5,7 +5,7 @@ _sfHvests = ["V_TacVest_brn","V_TacVest_khk","V_TacVestIR_blk"];
 _sfbackpacks = ["B_ViperHarness_hex_F","B_ViperLightHarness_hex_F"];
 _sfhelmets = ["H_HelmetO_ViperSP_hex_F"];
 _sfNVGs = [];
-_sfglasses = ["G_Balaclava_TI_blk_F"];
+_sffacewear = ["G_Balaclava_TI_blk_F"];
 _sffacewear = ["G_Balaclava_TI_blk_F"];
 
 _eliteNVGs = ["O_NVGoggles_hex_F","O_NVGoggles_urb_F"];

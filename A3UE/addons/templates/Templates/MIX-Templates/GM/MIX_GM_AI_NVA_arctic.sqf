@@ -71,8 +71,8 @@ _staticAT append ["gm_gc_army_spg9_tripod", "gm_gc_army_fagot_launcher_tripod", 
 _staticAA append ["CUP_O_Igla_AA_pod_RU", "CUP_O_ZU23_RU"];
 _staticMortars append ["CUP_O_2b14_82mm_RU"];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["gm_minestatic_at_tm46"];
 _minefieldAPERS append ["gm_minestatic_ap_pfm1"];

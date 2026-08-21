@@ -60,8 +60,8 @@ _staticAT append ["uns_M40_106mm_US", "CUP_B_TOW2_TriPod_US"];
 _staticAA append ["Uns_M55_Quad", "CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["uns_M2_60mm_mortar"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["uns_mine_tm57", "LIB_US_M1A1_ATMINE", "CUP_Mine"];
 _minefieldAPERS append ["uns_mine_m16", "LIB_M3_MINE", "APERSMine"];

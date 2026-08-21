@@ -7,8 +7,8 @@ _militiaAPCs append ["gm_pl_army_ot64a_noinsignia","gm_gc_army_brdm2_noinsignia"
 _IFVs append ["gm_ge_army_marder1a1plus_noinsignia","gm_ge_army_marder1a1a_noinsignia","gm_ge_army_marder1a2_noinsignia","gm_dk_army_m113a1dk_apc_noinsignia","gm_dk_army_m113a1dk_command_noinsignia","gm_dk_army_m113a1dk_engineer_noinsignia","gm_dk_army_m113a2dk_noinsignia","gm_ge_army_m113a1g_apc_noinsignia","gm_ge_army_m113a1g_apc_milan_noinsignia","gm_ge_army_m113a1g_command_noinsignia"];
 _APCs append ["gm_ge_army_luchsa1_noinsignia","gm_ge_army_luchsa2_noinsignia"];
 _militiaTrucks append ["gm_pl_army_ural4320_cargo","gm_ge_army_u1300l_cargo"];
-_armedVehicles append ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3"];
-_unarmedVehicles append ["gm_gc_army_brdm2um_noinsignia","US85_M1043_ua"];
+_lightArmed append ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3"];
+_lightUnarmed append ["gm_gc_army_brdm2um_noinsignia","US85_M1043_ua"];
 _militiaCars append ["gm_ge_army_iltis_cargo","gm_pl_army_uaz469_cargo","gm_dk_army_typ253_cargo","gm_dk_army_typ247_cargo","gm_dk_army_typ1200_cargo","gm_gc_army_p601_noinsignia"];
 _militiaLightArmed append ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3","gm_pl_army_uaz469_dshkm","gm_gc_army_uaz469_spg9_noinsignia"];
 _policeVehs append ["gm_gc_pol_p601","gm_ge_pol_typ1200","gm_ge_pol_typ253","gm_ge_pol_w123"];

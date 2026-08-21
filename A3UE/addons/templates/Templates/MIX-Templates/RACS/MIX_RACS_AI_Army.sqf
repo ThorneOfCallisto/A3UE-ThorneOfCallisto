@@ -57,8 +57,6 @@ _staticAT append ["RHS_TOW_TriPod_WD"];
 _staticAA append ["RHS_Stinger_AA_pod_WD"];
 _staticMortars append ["B_Mortar_01_F"];
 _howitzers append ["PRACS_M1"];
-_radar append ["PRACS_MPQ64_Sentinel"];
-_SAM append ["PRACS_MiM23_HAWK"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

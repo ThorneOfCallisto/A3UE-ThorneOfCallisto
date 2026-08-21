@@ -1,13 +1,13 @@
-(_loadoutData get "antiInfantryGrenades") append [
+_antiInfantryGrenades append [
     "CSLA_F1","CSLA_RG4o","CSLA_RG4u","CSLA_URG86u","CSLA_URG86o"
 ];
-(_loadoutData get "lightExplosives") append [
+_lightExplosives append [
     "CSLA_TNT0100g"
 ];
-(_loadoutData get "APMines") append [
+_APMines append [
     "CSLA_F1m_mag","US85_M67m_mag","CSLA_NO2","CSLA_RG4m_mag","CSLA_URG86m_mag","CSLA_PPMiNa_mag"
 ];
-(_loadoutData get "ATMines") append [
+_ATMines append [
     "CSLA_PtMiBa3_mag"
 ];
 
@@ -18,12 +18,12 @@ _rpgs append [
 	["CSLA_RPG75", "", "", "", ["CSLA_RPG75_Mag", "CSLA_RPG75_Mag"], [], ""],
 	["CSLA_RPG7", "", "", "CSLA_PGO7", ["CSLA_PG7M110V", "CSLA_PG7M110V"], [], ""]
 ];
-(_loadoutData get "lightHELaunchers") append [
+_lightHELaunchers append [
     ["US85_LAW72", "", "", "", ["US85_LAW72_Mag", "US85_LAW72_Mag"], [], ""],
     ["US85_MAAWS", "", "", "", ["US85_MAAWS_HEDP","US85_MAAWS_HEDP","US85_MAAWS_HEAT"], [], ""],
 	["US85_SMAW", "", "", "", ["US85_SMAW_HEAA","US85_SMAW_HEAA","US85_SMAW_HEDP"], [], ""]
 ];
-(_loadoutData get "AALaunchers") append [
+_AALaunchers append [
     ["CSLA_9K32", "", "", "", ["CSLA_9M32M","CSLA_9M32M"], [], ""],
 	["US85_FIM92", "", "", "", ["US85_FIM92_Mag","US85_FIM92_Mag"], [], ""]
 ];

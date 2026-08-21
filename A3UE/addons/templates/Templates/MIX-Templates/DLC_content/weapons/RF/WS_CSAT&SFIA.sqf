@@ -42,7 +42,7 @@ _militiamarksmanRifles append [
     ["srifle_DMR_01_black_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""],
 	["srifle_DMR_01_tan_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]
 ];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["srifle_h6_blk_rf", "", "", "optic_MRCO",["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""],
     ["srifle_DMR_01_black_RF","","","optic_DMS",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""],
 	["srifle_DMR_01_tan_RF","","","optic_VRCO_RF",["10Rnd_762x54_Mag","10Rnd_762x54_Mag","10Rnd_762x54_Mag"],[],""]
@@ -51,9 +51,9 @@ _militiamarksmanRifles append [
 _policeWeapons append [
     ["SMG_01_black_RF","","acc_flashlight_smg_01","optic_Aco_smg",["30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01","30Rnd_45ACP_Mag_SMG_01_Tracer_Green"], [], ""]
 ];
-(_policeLoadoutData get "sidearms") append ["hgun_Glock19_RF"];
+_policesidearms append ["hgun_Glock19_RF"];
 
-(_loadoutData get "lightATLaunchers") append [
+_lightATLaunchers append [
     ["launch_PSRL1_black_RF", "", "", "", ["PSRL1_AT_RF","PSRL1_FRAG_RF","PSRL1_HE_RF","PSRL1_HEAT_RF"], [], ""],
     ["launch_PSRL1_sand_RF", "", "", "", ["PSRL1_AT_RF","PSRL1_FRAG_RF","PSRL1_HE_RF","PSRL1_HEAT_RF"], [], ""],
     ["launch_PSRL1_PWS_black_RF", "", "", "", ["PSRL1_AT_RF","PSRL1_FRAG_RF","PSRL1_HE_RF","PSRL1_HEAT_RF"], [], ""],

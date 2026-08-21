@@ -1,12 +1,12 @@
 _sfslRifles append [
     ["arifle_AK12_lush_F","muzzle_snds_B_khk_F","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""],
-    ["arifle_AK12_GL_F","muzzle_snds_B_khk_F","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],_slglammo,""]
+    ["arifle_AK12_GL_F","muzzle_snds_B_khk_F","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"],""]
 ];
 _sfrifles append [
     ["arifle_AK12_lush_F","muzzle_snds_B_khk_F","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""]
 ];
 _sfgrenadeLaunchers append [
-    ["arifle_AK12_GL_lush_F","muzzle_snds_B_khk_F","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],_glammo,""]
+    ["arifle_AK12_GL_lush_F","muzzle_snds_B_khk_F","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"],""]
 ];
 _sfcarbines append [
     ["arifle_AK12U_F","muzzle_snds_B","acc_pointer_IR","optic_Arco_AK_blk_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""],
@@ -19,13 +19,13 @@ _sfmachineGuns append [
 
 _eliteslRifles append [
     ["arifle_AK12_lush_F","","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""],
-    ["arifle_AK12_GL_F","","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],_slglammo,""]
+    ["arifle_AK12_GL_F","","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"],""]
 ];
 _eliterifles append [
     ["arifle_AK12_lush_F","","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""]
 ];
 _elitegrenadeLaunchers append [
-    ["arifle_AK12_GL_lush_F","","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],_glammo,""]
+    ["arifle_AK12_GL_lush_F","","acc_pointer_IR","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"],""]
 ];
 _elitecarbines append [
     ["arifle_AK12U_F","","acc_pointer_IR","optic_Arco_AK_blk_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""],
@@ -38,13 +38,13 @@ _elitemachineGuns append [
 
 _militaryslRifles append [
     ["arifle_AK12_lush_F","","acc_flashlight","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""],
-    ["arifle_AK12_GL_F","","acc_flashlight","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],_slglammo,""]
+    ["arifle_AK12_GL_F","","acc_flashlight","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"],""]
 ];
 _militaryrifles append [
     ["arifle_AK12_lush_F","","acc_flashlight","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""]
 ];
 _militarygrenadeLaunchers append [
-    ["arifle_AK12_GL_lush_F","","acc_flashlight","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],_glammo,""]
+    ["arifle_AK12_GL_lush_F","","acc_flashlight","optic_Arco_AK_lush_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"],""]
 ];
 _militarycarbines append [
     ["arifle_AK12U_F","","acc_flashlight","optic_Arco_AK_blk_F",["30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_F","30rnd_762x39_AK12_Lush_Mag_Tracer_F"],[],""],

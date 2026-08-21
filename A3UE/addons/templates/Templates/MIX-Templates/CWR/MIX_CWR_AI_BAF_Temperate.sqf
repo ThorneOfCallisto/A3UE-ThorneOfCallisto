@@ -55,8 +55,8 @@ _staticAT append ["cwr3_b_tow"];
 _staticAA append ["cwr3_b_uk_javelin_lml"];
 _staticMortars append ["cwr3_b_m252"];
 _howitzers append ["cwr3_b_m119"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];

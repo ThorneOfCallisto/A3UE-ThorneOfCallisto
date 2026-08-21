@@ -58,8 +58,6 @@ _staticAT append ["CUP_B_TOW2_TriPod_US"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["PUP_CAF_Mortar_01_F"];
 _howitzers append ["CUP_B_M119_USMC"];
-_radar append ["PUP_CAF_Radar_System_01_F"];
-_SAM append ["PUP_CAF_SAM_System_03_F"];
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
@@ -1307,7 +1305,7 @@ _militiaENGBackpacks append [];
 _militiaEXPBackpacks append [];
 _militiaSLBackpacks append [];
 _militialongRangeRadios append [];
-_militiahelmets append ["H_PASGT_basic_sand_F", "H_PASGT_goggles_sand_F", "lxWS_H_PASGT_goggles_olive_F"];
+_militiahelmets append ["H_PASGT_basic_sand_F", "H_PASGT_facewear_sand_F", "lxWS_H_PASGT_facewear_olive_F"];
 _militiaMEDhelmets append [];
 _militiaSLhelmets append [];
 _militiaSLhats append [];

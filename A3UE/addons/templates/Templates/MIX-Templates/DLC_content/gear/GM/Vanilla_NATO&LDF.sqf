@@ -1,15 +1,15 @@
 _militaryhelmets append [
-    "gm_ge_headgear_m92_cover_glasses_oli",
+    "gm_ge_headgear_m92_cover_facewear_oli",
     "gm_ge_headgear_m92_cover_oli",
     "gm_dk_headgear_m96_cover_wdl",
     "gm_dk_headgear_m96_oli",
     "gm_ge_headgear_m92_trp",
     "gm_ge_headgear_m92_flk",
     "gm_ge_headgear_m92_cover_blk",
-    "gm_ge_headgear_m92_glasses_flk",
-    "gm_ge_headgear_m92_glasses_trp",
-    "gm_ge_headgear_m92_cover_glasses_blk",
-    "gm_ge_headgear_m92_cover_glasses_oli"
+    "gm_ge_headgear_m92_facewear_flk",
+    "gm_ge_headgear_m92_facewear_trp",
+    "gm_ge_headgear_m92_cover_facewear_blk",
+    "gm_ge_headgear_m92_cover_facewear_oli"
 ];
 
 _crewhelmets pushBack "gm_ge_headgear_crewhat_80_blk";
@@ -23,12 +23,12 @@ _militiahelmets append [
     "gm_xx_headgear_headwrap_crew_01_oli",
     "gm_ge_headgear_hat_beanie_crew_blk",
     "gm_gc_headgear_fjh_model4_oli",
-    "gm_ge_headgear_m92_cover_glasses_oli",
+    "gm_ge_headgear_m92_cover_facewear_oli",
     "gm_ge_headgear_m92_cover_oli",
     "gm_dk_headgear_m96_cover_wdl",
     "gm_dk_headgear_m96_cover_m84",
     "gm_ge_headgear_m92_flk",
-    "gm_ge_headgear_m92_glasses_flk",
+    "gm_ge_headgear_m92_facewear_flk",
     "gm_ge_headgear_m92_cover_oli"
 ];
 _militiahelmets append [

@@ -1,4 +1,4 @@
-_facewear append ["G_Glasses_black_RF","G_Glasses_white_RF"];
+_facewear append ["G_facewear_black_RF","G_facewear_white_RF"];
 
 _sfNVGs append ["TiGoggles_grn_RF","TiGoggles_RF"];
 _sfhelmets pushBack "H_HelmetB_plain_sb_tna_RF";

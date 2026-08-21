@@ -58,8 +58,6 @@ _staticAT append ["SPE_57mm_M1", "SPE_105mm_M3_Direct"];
 _staticAA append ["SPE_FR_M45_Quadmount"];
 _staticMortars append ["SPE_M1_81"];
 _howitzers append ["SPE_105mm_M3"];
-_radar append ["SPE_FlaK_36_AA"];
-_SAM append ["SPE_FlaK_36_AA"];
 
 _minefieldAT append ["SPE_US_M1A1_ATMINE"];
 _minefieldAPERS append ["SPE_US_M3_Pressure_MINE", "SPE_US_M3_MINE"];

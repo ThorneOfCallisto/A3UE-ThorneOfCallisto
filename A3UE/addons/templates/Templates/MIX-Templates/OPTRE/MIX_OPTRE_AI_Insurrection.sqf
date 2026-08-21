@@ -57,8 +57,6 @@ _staticAT append ["OPTRE_Static_Gauss"];
 _staticAA append ["OPTRE_Static_AA"];
 _staticMortars append ["OPTRE_AU_44_INS_Mortar"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["OPTRE_Lance_INS"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

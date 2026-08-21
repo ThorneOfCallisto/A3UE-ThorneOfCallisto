@@ -26,6 +26,9 @@ _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 #include "Vanilla\MIX_Vanilla_AI_NATO_Arid.sqf";
 ["NATO", _gearFactionSnapshot] call _fnc_gearFactionCapture;
 
+_radar = "B_Radar_System_01_F";
+_SAM = "B_SAM_System_03_F";
+
 #include "Vanilla\Vanilla_Vehicle_Attributes.sqf";
 
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
@@ -79,5 +82,7 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
 //////////////////////////////////
 //  End Include Factions here   //
 //////////////////////////////////
+
+["RANDOM"] call _fnc_gearFactionApply;
 
 #include "INCLUDES\Init_Layouts.sqf"

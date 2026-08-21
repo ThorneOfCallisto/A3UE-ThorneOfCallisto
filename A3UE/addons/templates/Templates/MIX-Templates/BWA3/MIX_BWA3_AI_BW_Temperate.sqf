@@ -58,8 +58,6 @@ _staticAT       append ["BWA3_MELLS_static_Fleck"];
 _staticAA       append [];
 _staticMortars  append ["BWA3_MRS120_Fleck"];
 _howitzers      append [];
-_radar          append ["B_Radar_System_01_F"];
-_SAM            append ["B_SAM_System_03_F"];
 
 _minefieldAT    append ["BWA3_DM31AT", "BWA3_AT2"];
 _minefieldAPERS append ["APERSMine"];
@@ -188,8 +186,8 @@ _pItems append [];
 _cItems append [];
 _uItems append [];
 
-_glasses append ["G_Bandanna_oli", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
-_goggles append ["G_Bandanna_oli", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
+_facewear append ["G_Bandanna_oli", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
+_facewear append ["G_Bandanna_oli", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "G_Bandanna_blk", "None"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -305,8 +303,8 @@ _sfSLhelmets append [];
 _sfSLhats append ["BWA3_Beret_Falli"];
 _sfSNIhats append [];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -428,8 +426,8 @@ _eliteSLhelmets append [];
 _eliteSLhats append ["BWA3_Beret_Pz"];
 _eliteSNIhats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -552,8 +550,8 @@ _militarySLhelmets append [];
 _militarySLhats append ["BWA3_Beret_Pz"];
 _militarySNIhats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -653,8 +651,8 @@ _militiaSLhelmets append [];
 _militiaSLhats append ["BWA3_Beret_Wach_blue"];
 _militiaSNIhats append [];
 
-_militiaglasses append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
-_militiagoggles append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
+_militiafacewear append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
+_militiafacewear append ["G_Spectacles", "None", "BWA3_G_Combat_black", "BWA3_G_Combat_clear", "BWA3_G_Combat_orange"];
 
 _militiafacewear append [];
 
@@ -811,6 +809,4 @@ if (isClass (configFile >> "CfgVehicles" >> "clv_BEGLEITPANZER")) then {
     _aa append ["clv_VCLM", "clv_Dragon"];
     _staticAA append ["CLV_OERLIKON"];
     _howitzers append ["CLV_OMM56"];
-    _radar append ["CLV_Skyguard"];
-    _SAM append ["CLV_RolandTurret"];
 };

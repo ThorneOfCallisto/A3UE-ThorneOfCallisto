@@ -7,7 +7,7 @@ _elitebackpacks pushBack "B_shield_backpack_lxWS";
 
 _militaryvests pushBack "V_lxWS_TacVestIR_oli";
 
-_militiahelmets pushBack "lxWS_H_PASGT_goggles_olive_F";
+_militiahelmets pushBack "lxWS_H_PASGT_facewear_olive_F";
 _militiavests append ["V_lxWS_HarnessO_oli","V_lxWS_TacVestIR_oli"];
 
 

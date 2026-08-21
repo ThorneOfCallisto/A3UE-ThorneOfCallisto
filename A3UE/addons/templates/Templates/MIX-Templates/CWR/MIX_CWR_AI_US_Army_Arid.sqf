@@ -55,8 +55,8 @@ _staticAT append ["cwr3_b_tow"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["cwr3_b_m252"];
 _howitzers append ["cwr3_b_m119"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
@@ -278,7 +278,7 @@ _sfENGBackpacks append [];
 _sfEXPBackpacks append [];
 _sfSLBackpacks append ["cwr3_b_backpack_alice_specop_black"];
 _sflongRangeRadios append [];
-_sfhelmets append ["cwr3_b_headgear_pasgt_desert_6color", "cwr3_b_headgear_pasgt_desert_6color_goggles"];
+_sfhelmets append ["cwr3_b_headgear_pasgt_desert_6color", "cwr3_b_headgear_pasgt_desert_6color_facewear"];
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append ["cwr3_b_headgear_cap_desert_6color"];
@@ -377,7 +377,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append ["cwr3_o_backpack_harness_roll"];
 _elitelongRangeRadios append [];
-_elitehelmets append ["cwr3_b_headgear_pasgt_desert_6color", "cwr3_b_headgear_pasgt_desert_6color_goggles"];
+_elitehelmets append ["cwr3_b_headgear_pasgt_desert_6color", "cwr3_b_headgear_pasgt_desert_6color_facewear"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append [];
@@ -610,7 +610,7 @@ _militiafacewear append [];
 
 _crewuniforms append ["cwr3_b_uniform_tanksuit"];
 _crewvests append ["cwr3_b_vest_pasgt_alice_od_crew"];
-_crewhelmets append ["cwr3_b_headgear_cvc","cwr3_b_headgear_cvc_goggles"];
+_crewhelmets append ["cwr3_b_headgear_cvc","cwr3_b_headgear_cvc_facewear"];
 _crewcarbines append [
     ["cwr3_arifle_xm177e2", "", "", "", ["CUP_30Rnd_556x45_Stanag"], [], ""]
 ];

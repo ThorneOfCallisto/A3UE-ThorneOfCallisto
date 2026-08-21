@@ -8,12 +8,12 @@ _crewhelmets append [
 	"vnx_b_helmet_hgu7_01_04"
 ];
 
-(_pilotLoadoutData get "uniforms") append [
+_pilotuniforms append [
     "vnx_b_uniform_cwu_02",
     "vnx_b_uniform_cwu_01"
 ];
 
-(_pilotLoadoutData get "helmets") append [
+_pilothelmets append [
     "vnx_b_helmet_hgu7_01_01",
     "vnx_b_helmet_hgu7_01_03",
     "vnx_b_helmet_hgu7_02_01",

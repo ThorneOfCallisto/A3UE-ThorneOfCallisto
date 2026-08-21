@@ -57,8 +57,8 @@ _staticAT append ["AFMC_TOW_Stat","AFMC_Mk19"];
 _staticAA append [];
 _staticMortars append ["AFMC_M252_Stat"];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["US85_ATMine_ammo"];
 _minefieldAPERS append ["US85_M14Mine_ammo"];
@@ -126,7 +126,7 @@ _watches append ["US85_watch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append [];
-_NVGs append ["US85_ANPVS5_Goggles"];
+_NVGs append ["US85_ANPVS5_facewear"];
 _binoculars append ["US85_bino"];
 _rangefinders append ["US85_bino"];
 

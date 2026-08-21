@@ -63,8 +63,8 @@ _staticAT append ["UK3CB_CW_SOV_O_Late_SPG9", "UK3CB_CW_SOV_O_Late_Metis"];
 _staticAA append ["UK3CB_CW_SOV_O_Late_VDV_ZU23", "UK3CB_CW_SOV_O_Late_Igla_AA_pod"];
 _staticMortars append ["UK3CB_CW_SOV_O_Late_2b14_82mm"];
 _howitzers append ["UK3CB_CW_SOV_O_Late_D30"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["rhs_mine_tm62m"];
 _minefieldAPERS append ["rhs_mine_pmn2"];

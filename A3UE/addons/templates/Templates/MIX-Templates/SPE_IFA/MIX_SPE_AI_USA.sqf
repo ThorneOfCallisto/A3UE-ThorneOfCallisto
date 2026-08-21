@@ -58,8 +58,6 @@ _staticAT append ["SPE_57mm_M1", "SPE_105mm_M3_Direct"];
 _staticAA append ["SPE_FR_M45_Quadmount"];
 _staticMortars append ["SPE_M1_81"];
 _howitzers append ["SPE_105mm_M3"];
-_radar append ["SPE_FlaK_36_AA"];
-_SAM append ["SPE_FlaK_36_AA"];
 
 _minefieldAT append ["SPE_US_M1A1_ATMINE"];
 _minefieldAPERS append ["SPE_US_M3_Pressure_MINE", "SPE_US_M3_MINE"];
@@ -585,7 +583,7 @@ _crewfacewear append [];
 _pilotuniforms append ["U_SPE_US_Pilot","U_SPE_US_Pilot_boot","U_SPE_US_Pilot_glove"];
 _pilotvests append ["V_SPE_US_Vest_45_high"];
 _pilotbackpacks append [];
-_pilothelmets append ["H_SPE_US_Helmet_Pilot","H_SPE_US_Helmet_Pilot_Glasses_Up","H_SPE_US_Helmet_Pilot_Glasses_Down","H_SPE_US_Helmet_Pilot_Op"];
+_pilothelmets append ["H_SPE_US_Helmet_Pilot","H_SPE_US_Helmet_Pilot_facewear_Up","H_SPE_US_Helmet_Pilot_facewear_Down","H_SPE_US_Helmet_Pilot_Op"];
 _pilotcarbines append [
     ["SPE_M3_GreaseGun", "", "", "", ["SPE_30Rnd_M3_GreaseGun_45ACP"], [], ""]
 ];

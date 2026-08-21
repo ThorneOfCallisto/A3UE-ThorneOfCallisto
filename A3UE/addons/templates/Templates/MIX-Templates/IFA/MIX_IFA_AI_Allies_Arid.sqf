@@ -57,8 +57,8 @@ _staticAT append ["LIB_Zis3"];
 _staticAA append ["LIB_61k"];
 _staticMortars append ["LIB_M2_60"];
 _howitzers append ["LIB_leFH18"];
-_radar append ["LIB_DAK_FlaK_36_AA"];
-_SAM append ["LIB_DAK_FlaK_36_AA"];
+
+
 
 _minefieldAT append ["LIB_US_M1A1_ATMINE"];
 _minefieldAPERS append ["LIB_M3_MINE"];
@@ -504,7 +504,7 @@ _crewfacewear append [];
 _pilotuniforms append ["U_LIB_US_Pilot","U_LIB_US_Bomber_Pilot"];
 _pilotvests append ["V_LIB_US_LifeVest"];
 _pilotbackpacks append [];
-_pilothelmets append ["H_LIB_US_Helmet_Pilot","H_LIB_US_Pilot_Glasses_Down","H_LIB_US_Helmet_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Down","H_LIB_US_Helmet_Pilot_Respirator_Glasses_Up","H_LIB_US_Helmet_Pilot_Respirator"];
+_pilothelmets append ["H_LIB_US_Helmet_Pilot","H_LIB_US_Pilot_facewear_Down","H_LIB_US_Helmet_facewear_Up","H_LIB_US_Helmet_Pilot_Respirator_facewear_Down","H_LIB_US_Helmet_Pilot_Respirator_facewear_Up","H_LIB_US_Helmet_Pilot_Respirator"];
 _pilotcarbines append [
     ["LIB_M3_GreaseGun", "", "", "", ["LIB_30Rnd_M3_GreaseGun_45ACP"], [], ""]
 ];

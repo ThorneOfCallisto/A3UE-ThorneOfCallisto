@@ -30,4 +30,4 @@ _dlcheadgear append [
 ];
 
 _facewear pushBack "G_Bandanna_yellow_RF";
-_facewear append ["G_Glasses_black_RF","G_Glasses_white_RF"];
+_facewear append ["G_facewear_black_RF","G_facewear_white_RF"];

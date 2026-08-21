@@ -7,7 +7,7 @@ _policeWeapons append [
     ["vnx_m45_sf","vn_s_m45","","",["vn_m45_mag","vn_m45_mag","vn_m45_mag"], [], ""],
     ["vnx_m45_sf","vn_s_mpu","","",["vn_m45_mag","vn_m45_mag","vn_m45_mag"], [], ""]
 ];
-(_policeLoadoutData get "sidearms") append [
+_policesidearms append [
     ["vnx_hd_02","","","",["vnx_hd_02_mag","vnx_hd_02_mag","vnx_hd_02_mag"], [], ""],
     ["vnx_gjet","","","",["vnx_gjet_mag","vnx_gjet_mag","vnx_gjet_mag","vnx_gjet_mag"], [], ""]
 ];

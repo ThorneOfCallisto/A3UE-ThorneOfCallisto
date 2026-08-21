@@ -9,12 +9,12 @@ _militiahelmets append [
     "gm_xx_headgear_headwrap_crew_01_oli",
     "gm_ge_headgear_hat_beanie_crew_blk",
     "gm_gc_headgear_fjh_model4_oli",
-    "gm_ge_headgear_m92_cover_glasses_oli",
+    "gm_ge_headgear_m92_cover_facewear_oli",
     "gm_ge_headgear_m92_cover_oli",
     "gm_dk_headgear_m96_cover_wdl",
     "gm_dk_headgear_m96_cover_m84",
     "gm_ge_headgear_m92_flk",
-    "gm_ge_headgear_m92_glasses_flk",
+    "gm_ge_headgear_m92_facewear_flk",
     "gm_ge_headgear_m92_cover_oli"
 ];
 _elitehelmets append [

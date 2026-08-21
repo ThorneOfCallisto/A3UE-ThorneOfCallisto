@@ -169,7 +169,7 @@ _facewear append [
 	"rhs_googles_clear", 
 	"rhs_googles_orange", 
 	"rhs_googles_yellow", 
-	"rhsusf_oakley_goggles_blk"
+	"rhsusf_oakley_facewear_blk"
 ];
 _fullmask append ["G_Balaclava_TI_blk_F"];
 

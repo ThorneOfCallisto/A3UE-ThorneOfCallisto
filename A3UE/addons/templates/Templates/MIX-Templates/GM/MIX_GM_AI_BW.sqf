@@ -66,8 +66,8 @@ _staticAT append ["gm_ge_army_milan_launcher_tripod"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["CUP_B_M252_US"];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["gm_minestatic_at_dm21", "gm_minestatic_at_dm1233"];
 _minefieldAPERS append ["gm_minestatic_ap_dm31"];
@@ -410,7 +410,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append [];
 _elitelongRangeRadios append [];
-_elitehelmets append ["gm_ge_headgear_m62", "gm_ge_headgear_m62_net", "gm_ge_headgear_m92_flk", "gm_ge_headgear_m92_glasses_flk"];
+_elitehelmets append ["gm_ge_headgear_m62", "gm_ge_headgear_m62_net", "gm_ge_headgear_m92_flk", "gm_ge_headgear_m92_facewear_flk"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append [];
@@ -520,7 +520,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["gm_ge_headgear_m62", "gm_ge_headgear_m62_net", "gm_ge_headgear_m92_flk", "gm_ge_headgear_m92_glasses_flk"];
+_militaryhelmets append ["gm_ge_headgear_m62", "gm_ge_headgear_m62_net", "gm_ge_headgear_m92_flk", "gm_ge_headgear_m92_facewear_flk"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];

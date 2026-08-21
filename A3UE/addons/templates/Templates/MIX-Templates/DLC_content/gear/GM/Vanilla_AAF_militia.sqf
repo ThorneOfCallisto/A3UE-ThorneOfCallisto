@@ -2,7 +2,7 @@ _militiabackpacks append ["gm_dk_army_backpack_73_oli","gm_ge_army_backpack_90_o
 _militiahelmets append [
 	"gm_dk_headgear_m96_oli",
 	"gm_ge_headgear_beret_crew_blk",
-	"gm_ge_headgear_m92_cover_glasses_oli",
+	"gm_ge_headgear_m92_cover_facewear_oli",
 	"gm_ge_headgear_m92_cover_oli",
 	"gm_ge_headgear_psh77_up_oli",
     "gm_ge_headgear_headset_crew_oli",

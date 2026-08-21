@@ -1,6 +1,6 @@
 _militaryhelmets append [
     "gm_ge_headgear_m92_trp",
-    "gm_ge_headgear_m92_glasses_trp"
+    "gm_ge_headgear_m92_facewear_trp"
 ];
 
 _militiabackpacks append ["gm_ge_army_backpack_90_trp"];

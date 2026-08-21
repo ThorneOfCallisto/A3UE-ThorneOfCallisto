@@ -55,8 +55,8 @@ _staticAT append ["CUP_B_TOW2_TriPod_US"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["CUP_B_M252_US"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
@@ -489,7 +489,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append ["braf_modular_assault_olive"];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["braf_eb_ccb", "braf_eb_ccb_cover", "braf_eb_ccb_cover_goggles_down", "braf_eb_ccb_cover_goggles_up", "braf_eb_ccb_nvg"];
+_militaryhelmets append ["braf_eb_ccb", "braf_eb_ccb_cover", "braf_eb_ccb_cover_facewear_down", "braf_eb_ccb_cover_facewear_up", "braf_eb_ccb_nvg"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];

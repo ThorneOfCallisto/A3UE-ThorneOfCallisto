@@ -46,7 +46,7 @@ _militiamarksmanRifles append [
 	["srifle_DMR_06_camo_F","","","optic_DMS_weathered_F",["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"],[],"bipod_02_F_lush"],
     ["srifle_DMR_06_olive_F","","","optic_DMS_weathered_F",["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"],[],"bipod_02_F_lush"]
 ];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["srifle_DMR_06_camo_F","","","optic_DMS_weathered_F",["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"],[],"bipod_02_F_lush"],
     ["srifle_DMR_06_olive_F","","","optic_DMS_weathered_F",["20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"],[],"bipod_02_F_lush"]
 ];

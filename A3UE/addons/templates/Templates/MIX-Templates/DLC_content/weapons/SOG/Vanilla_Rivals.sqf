@@ -2,11 +2,11 @@ _rpgs append [
 	["vn_m72", "", "", "", ["vn_m72_mag"], [], ""],
     ["vn_rpg7", "", "", "", ["vn_rpg7_mag","vn_rpg7_mag","vn_rpg7_mag"], [], ""]
 ];
-(_loadoutData get "lightHELaunchers") append [
+_lightHELaunchers append [
     ["vn_rpg2", "", "", "", ["vn_rpg2_fuze_mag","vn_rpg2_fuze_mag","vn_rpg2_mag"], [], ""],
 	["vn_m20a1b1_01", "", "", "", ["vn_m20a1b1_wp_mag", "vn_m20a1b1_heat_mag", "vn_m20a1b1_heat_mag"], [], ""]
 ];
-(_loadoutData get "AALaunchers") append [
+_AALaunchers append [
 	["vn_sa7b", "", "", "", ["vn_sa7b_mag"], [], ""],
     ["vn_sa7", "", "", "", ["vn_sa7_mag"], [], ""]
 ];

@@ -1,6 +1,6 @@
 _cupRPGOptics = ["CUP_optic_PGO7V", 3, "CUP_optic_PGO7V2", 2, "CUP_optic_PGO7V3", 1];
 
-(_loadoutData get "lightATLaunchers") append [
+_lightATLaunchers append [
     ["CUP_launch_BF3", "", "", "", [], [], ""], 0.5,
     ["CUP_launch_M136", "", "", "", [], [], ""], 2.5,
     ["CUP_launch_M72A6", "", "", "", [""], [], ""], 5,
@@ -14,7 +14,7 @@ _cupRPGOptics = ["CUP_optic_PGO7V", 3, "CUP_optic_PGO7V2", 2, "CUP_optic_PGO7V3"
 _cupMAAAWSOptics = ["CUP_optic_MAAWS_Scope", 2, "", 1];
 _cupSMAWOptics = ["CUP_optic_ACOG_TA01NSN_RMR_OD", 2, "", 1];
 
-(_loadoutData get "ATLaunchers") append [
+_ATLaunchers append [
     ["CUP_launch_Javelin", "", "", "", ["CUP_Javelin_M", "CUP_Javelin_M"], [], ""], 0.5,
     ["CUP_launch_M47", "", "", "", ["CUP_Dragon_EP1_M", "CUP_Dragon_EP1_M"], [], ""], 2,
 	["CUP_launch_APILAS", "", "", "", ["CUP_APILAS_M", "CUP_APILAS_M"], [], ""], 1,
@@ -23,7 +23,7 @@ _cupSMAWOptics = ["CUP_optic_ACOG_TA01NSN_RMR_OD", 2, "", 1];
 	["CUP_launch_Mk153Mod0_blk", "", "", _cupSMAWOptics, ["CUP_SMAW_HEDP_M", "CUP_SMAW_HEAA_M", "CUP_SMAW_NE_M"], [], ""], 0.75
 ];
 
-(_loadoutData get "AALaunchers") append [
+_AALaunchers append [
     ["CUP_launch_9K32Strela", "", "", "", [], [], ""], 1,
 	["CUP_launch_Igla", "", "", "", [], [], ""], 1,
 	["CUP_launch_FIM92Stinger", "", "", "", [], [], ""], 5
@@ -116,7 +116,7 @@ _sfmarksmanRifles append [
 
 _cupSFSniperOptics = ["CUP_optic_LeupoldMk4_20x40_LRT", 5, "CUP_optic_LeupoldMk4", 1, "CUP_optic_LeupoldM3LR", 2];
 
-(_sfLoadoutData get "sniperRifles") append [
+_sfsniperRifles append [
     ["CUP_srifle_M2010_blk","muzzle_snds_B","acc_pointer_IR",_cupSFSniperOptics,["CUP_5Rnd_762x67_M2010_M","CUP_5Rnd_762x67_M2010_M","CUP_5Rnd_TE1_Red_Tracer_762x67_M2010_M"], [], "CUP_bipod_VLTOR_Modpod_black"], 3,
 
 	["CUP_srifle_M107_Pristine","CUP_muzzle_mfsup_Suppressor_M107_Black","",_cupSFSniperOptics,["CUP_10Rnd_127x99_M107","CUP_10Rnd_127x99_M107","CUP_10Rnd_127x99_M107"], [], "CUP_bipod_VLTOR_Modpod_black"], 2.5,
@@ -130,7 +130,7 @@ _cupSFSniperOptics = ["CUP_optic_LeupoldMk4_20x40_LRT", 5, "CUP_optic_LeupoldMk4
 
 	["CUP_srifle_AS50","","CUP_acc_ANPEQ_15_Black",_cupSFSniperOptics,["CUP_5Rnd_127x99_as50_M","CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M","CUP_5Rnd_127x99_as50_M"], [], ""], 4
 ];
-(_sfLoadoutData get "designatedGrenadeLaunchers") append [
+_sfdesignatedGrenadeLaunchers append [
     ["CUP_glaunch_6G30", "", "", "", ["CUP_6Rnd_HE_GP25_M"], [], ""], 2
 ];
 
@@ -416,7 +416,7 @@ _elitemarksmanRifles append [
 	["CUP_srifle_m110_kac_black","",_cupEliteAttachments,_eliteMarksmanOptics,["CUP_20Rnd_762x51_B_M110","CUP_20Rnd_762x51_B_M110", "CUP_20Rnd_762x51_B_M110","CUP_20Rnd_TE1_Green_Tracer_762x51_M110"], [], "CUP_bipod_VLTOR_Modpod_black"], 0.75
 ];
 _eliteSniperOptics append ["CUP_optic_LeupoldMk4", 5, "CUP_optic_LeupoldMk4_20x40_LRT", 3, "CUP_optic_LeupoldM3LR", 2, "CUP_optic_AN_PVS_10_black", 0.75, "CUP_optic_CWS", 0.5];
-(_eliteLoadoutData get "sniperRifles") append [
+_elitesniperRifles append [
     ["CUP_srifle_M2010_blk","","acc_pointer_IR",_eliteSniperOptics,["CUP_5Rnd_762x67_M2010_M","CUP_5Rnd_762x67_M2010_M","CUP_5Rnd_TE1_Red_Tracer_762x67_M2010_M"], [], "CUP_bipod_VLTOR_Modpod_black"], 3,
 
 	["CUP_srifle_M107_Pristine","","",_eliteSniperOptics,["CUP_10Rnd_127x99_M107","CUP_10Rnd_127x99_M107","CUP_10Rnd_127x99_M107"], [], ""], 4,
@@ -431,7 +431,7 @@ _eliteSniperOptics append ["CUP_optic_LeupoldMk4", 5, "CUP_optic_LeupoldMk4_20x4
 
 	["CUP_srifle_AS50","","",_eliteSniperOptics,["CUP_5Rnd_127x99_as50_M","CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M","CUP_5Rnd_127x99_as50_M"], [], ""], 1.5
 ];   
-(_eliteLoadoutData get "designatedGrenadeLaunchers") append [
+_elitedesignatedGrenadeLaunchers append [
     ["CUP_glaunch_6G30", "", "", "", ["CUP_6Rnd_HE_GP25_M"], [], ""], 5
 ];
 
@@ -576,7 +576,7 @@ _militarymarksmanRifles append [
 ];
 _cupMilitarySniperCamo = ["CUP_Mxx_camo", 1, "CUP_Mxx_camo_half", 1.5, "", 1];
 _militarySniperOptics append ["CUP_optic_LeupoldMk4_20x40_LRT", 3];
-(_militaryLoadoutData get "sniperRifles") append [
+_militarysniperRifles append [
 	["CUP_srifle_M40A3","",_cupMilitarySniperCamo, _militarySniperOptics,["CUP_5Rnd_762x51_M24","CUP_5Rnd_762x51_M24","CUP_5Rnd_762x51_M24"], [], "CUP_bipod_Harris_1A2_L_BLK"], 5
 ];
 _militarySMGOptics append ["CUP_optic_HoloBlack", 7, "CUP_optic_Eotech553_black", 3];
@@ -656,7 +656,7 @@ _militiagrenadeLaunchers append [
 _militiaSMGs append [
     ["CUP_smg_MP5A5","","","",["CUP_30Rnd_9x19_MP5","CUP_30Rnd_9x19_MP5","CUP_30Rnd_9x19_MP5","CUP_30Rnd_Green_Tracer_9x19_MP5"], [], ""], 8
 ];
-(_militiaLoadoutData get "designatedGrenadeLaunchers") append [
+_militiadesignatedGrenadeLaunchers append [
     ["CUP_glaunch_M79", "", "", "", ["CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203","CUP_1Rnd_HE_M203","CUP_1Rnd_HEDP_M203"], [], ""], 5
 ];
 _militiaMGOptics = ["CUP_optic_Aimpoint_5000", 0.25, "CUP_optic_AC11704_Black", 0.25, "CUP_optic_HoloBlack", 0.25];
@@ -689,14 +689,14 @@ _militiamarksmanRifles append [
 
 ];
 _militiaSniperOptics append ["CUP_optic_SB_11_4x20_PM", 7.5];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["CUP_srifle_Remington700","","","CUP_optic_Remington",["CUP_6Rnd_762x51_R700","CUP_6Rnd_762x51_R700","CUP_6Rnd_762x51_R700"], [], ""], 1,
 	["CUP_srifle_LeeEnfield_rail","","",_militiaSniperOptics,["CUP_10x_303_M","CUP_10x_303_M","CUP_10x_303_M"], [], "CUP_bipod_Harris_1A2_L_BLK"], 0.25,
 	["CUP_srifle_M24_blk","","",_militiaSniperOptics,["CUP_5Rnd_762x51_M24","CUP_5Rnd_762x51_M24","CUP_5Rnd_762x51_M24"], [], "CUP_bipod_Harris_1A2_L_BLK"], 2
 ];
 ///////////
 
-(_policeLoadoutData get "sidearms") append [
+_policesidearms append [
     ["CUP_hgun_Browning_HP", "", "", "", ["CUP_13Rnd_9x19_Browning_HP","CUP_13Rnd_9x19_Browning_HP"], [], ""], 1,
 
 	["CUP_hgun_CZ75", "", "", "", ["CUP_16Rnd_9x19_cz75","CUP_16Rnd_9x19_cz75"], [], ""], 1.5,

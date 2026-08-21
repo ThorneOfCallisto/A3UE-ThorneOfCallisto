@@ -59,8 +59,8 @@ _staticAT append ["uns_M40_106mm_US"];
 _staticAA append ["Uns_M55_Quad"];
 _staticMortars append ["uns_M2_60mm_mortar"];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["uns_mine_tm57"];
 _minefieldAPERS append ["uns_mine_m16"];

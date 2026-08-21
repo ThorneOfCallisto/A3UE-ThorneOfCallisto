@@ -55,8 +55,8 @@ _staticAT append ["CUP_O_SPG9_SLA"];
 _staticAA append ["CUP_O_Igla_AA_pod_SLA"];
 _staticMortars append ["CUP_O_2b14_82mm_RU"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];
@@ -397,7 +397,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append ["CUP_B_Kombat_Radio_Olive"];
 _elitelongRangeRadios append [];
-_elitehelmets append ["CUP_H_RUS_6B27", "CUP_H_RUS_6B27_headset", "CUP_H_RUS_6B27_goggles"];
+_elitehelmets append ["CUP_H_RUS_6B27", "CUP_H_RUS_6B27_headset", "CUP_H_RUS_6B27_facewear"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append [];
@@ -512,7 +512,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append ["CUP_B_Kombat_Radio_Olive"];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["CUP_H_RUS_6B27", "CUP_H_RUS_6B27_headset", "CUP_H_RUS_6B27_goggles"];
+_militaryhelmets append ["CUP_H_RUS_6B27", "CUP_H_RUS_6B27_headset", "CUP_H_RUS_6B27_facewear"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];

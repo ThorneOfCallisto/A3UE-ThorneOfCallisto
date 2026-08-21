@@ -55,8 +55,8 @@ _staticAT append ["Flex_CUP_NLAF_SPG9"];
 _staticAA append ["Flex_CUP_NLAF_ZU23"];
 _staticMortars append ["Flex_CUP_NLAF_Mortar"];
 _howitzers append ["Flex_CUP_NLAF_D30"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];

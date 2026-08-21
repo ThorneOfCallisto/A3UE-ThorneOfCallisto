@@ -57,8 +57,8 @@ _staticAT append ["B_static_AT_F"];
 _staticAA append ["B_static_AA_F"];
 _staticMortars append ["B_Mortar_01_F"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

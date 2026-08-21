@@ -57,8 +57,8 @@ _staticAT append ["LIB_Zis3_w"];
 _staticAA append ["LIB_61k"];
 _staticMortars append ["LIB_BM37"];
 _howitzers append ["LIB_leFH18"];
-_radar append ["LIB_FlaK_36_AA_w"];
-_SAM append ["LIB_FlaK_36_AA_w"];
+
+
 
 _minefieldAT append ["LIB_TM44_MINE"];
 _minefieldAPERS append ["LIB_PMD6_MINE"];

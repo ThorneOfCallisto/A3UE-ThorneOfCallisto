@@ -60,4 +60,4 @@ _militiamachineGuns append [
     ["MMG_02_black_F", "", "acc_pointer_IR", "optic_NVS", ["130Rnd_338_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag"], [], "bipod_03_F_blk"]
 ];
 
-(_militiaLoadoutData get "sniperRifles") append [["srifle_DMR_06_olive_F", "", "", "optic_SOS", [], [], ""];
+_militiasniperRifles append [["srifle_DMR_06_olive_F", "", "", "optic_SOS", [], [], ""];

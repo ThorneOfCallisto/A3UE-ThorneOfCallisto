@@ -1,25 +1,25 @@
-(_loadoutData get "antiInfantryGrenades") append [
+_antiInfantryGrenades append [
     "gm_handgrenade_conc_dm51","gm_handgrenade_conc_dm51a1","gm_handgrenade_frag_dm41","gm_handgrenade_frag_dm41a1","gm_handgrenade_frag_dm51","gm_handgrenade_frag_dm51a1","gm_handgrenade_frag_m26",
     "gm_handgrenade_frag_m26a1", "gm_handgrenade_frag_rgd5"
 ];
-(_loadoutData get "smokeGrenades") append [
+_smokeGrenades append [
     "gm_smokeshell_wht_gc",
     "gm_smokeshell_wht_dm25"
 ];
-(_loadoutData get "signalsmokeGrenades") append [
+_signalsmokeGrenades append [
     "gm_smokeshell_blk_gc","gm_smokeshell_blu_gc","gm_smokeshell_grn_gc","gm_smokeshell_org_gc","gm_smokeshell_red_gc","gm_smokeshell_yel_gc","gm_smokeshell_grn_dm21",
     "gm_smokeshell_red_dm23","gm_smokeshell_yel_dm26","gm_smokeshell_org_dm32"
 ];
-(_loadoutData get "lightExplosives") append [
+_lightExplosives append [
     "gm_explosive_plnp_charge"
 ];
-(_loadoutData get "heavyExplosives") append [
+_heavyExplosives append [
     "gm_explosive_petn_charge"
 ];
-(_loadoutData get "ATMines") append [
+_ATMines append [
     "gm_mine_at_dm21","gm_mine_at_tm46"
 ];
-(_loadoutData get "APMines") append [
+_APMines append [
     "gm_mine_ap_dm31"
 ];
 
@@ -28,11 +28,11 @@ _rpgs append [
     ["gm_rpg18_oli", "", "", "", ["gm_1Rnd_64mm_heat_pg18"], [], ""],
     ["gm_pzf44_2_oli", "", "", "gm_feroz2x17_pzf44_2_blk", ["gm_1Rnd_44x537mm_heat_dm32_pzf44_2", "gm_1Rnd_44x537mm_heat_dm32_pzf44_2"], [], ""]
 ];
-(_loadoutData get "lightHELaunchers") append [
+_lightHELaunchers append [
     ["gm_pzf3_blk", "", "", "", ["gm_1Rnd_60mm_heat_dm22_pzf3", "gm_1Rnd_60mm_heat_dm32_pzf3"], [], ""],
     ["gm_pzf84_oli", "", "", "gm_feroz2x17_pzf84_blk", ["gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf","gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf","gm_1Rnd_84x245mm_heat_t_DM12a1_carlgustaf","gm_1Rnd_84x245mm_heat_t_DM12_carlgustaf"], [], ""]
 ];
-(_loadoutData get "AALaunchers") append [
+_AALaunchers append [
     ["gm_fim43_oli", "", "", "", ["gm_1Rnd_70mm_he_m585_fim43"], [], ""]
 ];
 _gls append [

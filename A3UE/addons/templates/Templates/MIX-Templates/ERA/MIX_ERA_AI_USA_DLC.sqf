@@ -60,8 +60,8 @@ _staticAT append ["SPE_57mm_M1", "SPE_105mm_M3_Direct", "CUP_B_TOW2_TriPod_US", 
 _staticAA append ["SPE_FR_M45_Quadmount", "CUP_B_CUP_Stinger_AA_pod_US", "vn_b_army_static_m45", "vn_b_navy_static_l70mk2", "vn_b_navy_static_l60mk3"];
 _staticMortars append ["SPE_M1_81"];
 _howitzers append ["SPE_105mm_M3"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["SPE_US_M1A1_ATMINE", "vn_mine_m15", "CUP_Mine"];
 _minefieldAPERS append ["SPE_US_M3_Pressure_MINE", "SPE_US_M3_MINE", "vn_mine_m14", "APERSMine"];

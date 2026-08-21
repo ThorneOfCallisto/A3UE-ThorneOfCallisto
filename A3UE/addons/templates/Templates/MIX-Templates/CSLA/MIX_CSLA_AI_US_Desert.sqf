@@ -57,8 +57,8 @@ _staticAT append ["US85_TOW_Stat_DES","US85_Mk19_stat_DES"];
 _staticAA append [];
 _staticMortars append ["US85_M252_Stat_DES"];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["US85_ATMine_ammo"];
 _minefieldAPERS append ["US85_M14Mine_ammo"];
@@ -126,7 +126,7 @@ _watches append ["US85_watch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append [];
-_NVGs append ["US85_ANPVS5_Goggles"];
+_NVGs append ["US85_ANPVS5_facewear"];
 _binoculars append ["US85_bino"];
 _rangefinders append ["Rangefinder"];
 
@@ -252,7 +252,7 @@ _sfwatches append [];
 _sfcompasses append [];
 _sfradios append [];
 _sfgpses append [];
-_sfNVGs append ["US85_ANPVS5_Goggles"];
+_sfNVGs append ["US85_ANPVS5_facewear"];
 _sfbinoculars append ["US85_bino"];
 _sfrangefinders append [];
 
@@ -344,7 +344,7 @@ _elitewatches append [];
 _elitecompasses append [];
 _eliteradios append [];
 _elitegpses append [];
-_eliteNVGs append ["US85_ANPVS5_Goggles"];
+_eliteNVGs append ["US85_ANPVS5_facewear"];
 _elitebinoculars append ["US85_bino"];
 _eliterangefinders append [];
 

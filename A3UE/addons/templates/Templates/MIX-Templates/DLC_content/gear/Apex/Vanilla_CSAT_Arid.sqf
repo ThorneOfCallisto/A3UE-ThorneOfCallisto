@@ -5,8 +5,8 @@ _Hvests = ["V_TacVest_brn","V_TacVest_khk","V_TacVestIR_blk"];
 _backpacks = ["B_ViperHarness_hex_F","B_ViperLightHarness_hex_F"];
 _helmets = ["H_HelmetO_ViperSP_hex_F"];
 _NVGs = [];
-_glasses = ["G_Balaclava_TI_blk_F"];
-_goggles = ["G_Balaclava_TI_blk_F"];
+_facewear = ["G_Balaclava_TI_blk_F"];
+_facewear = ["G_Balaclava_TI_blk_F"];
 
 _eliteNVGs = ["O_NVGoggles_hex_F","O_NVGoggles_urb_F"];
 _eliteuniforms pushBack "U_O_V_Soldier_Viper_hex_F";

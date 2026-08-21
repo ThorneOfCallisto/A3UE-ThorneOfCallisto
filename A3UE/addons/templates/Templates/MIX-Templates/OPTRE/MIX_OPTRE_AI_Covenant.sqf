@@ -57,8 +57,7 @@ _staticAT append ["OPTRE_FC_T26_AT"];
 _staticAA append ["OPTRE_FC_T26_AA"];
 _staticMortars append ["Plasma_Mortar"];
 _howitzers append [];
-_radar append ["O_Radar_System_02_F"];
-_SAM append ["OPTRE_FC_TyrantAA"];
+
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];

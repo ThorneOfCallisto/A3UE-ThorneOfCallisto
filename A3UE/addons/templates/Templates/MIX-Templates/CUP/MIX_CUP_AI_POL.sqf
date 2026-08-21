@@ -58,8 +58,6 @@ _staticAT append ["Flex_CUP_POL_TOW2"];
 _staticAA append ["Flex_CUP_POL_ZU23", "Flex_CUP_POL_Igla_AA_pod"];
 _staticMortars append ["Flex_CUP_POL_Mortar"];
 _howitzers append ["Flex_CUP_POL_D30"];
-_radar append ["Flex_CUP_POL_Radar_System"];
-_SAM append ["Flex_CUP_POL_SAM_System"];
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSBoundingMine"];

@@ -80,8 +80,8 @@ private _staticAA = [];
 private _staticMortars = [];
 private _howitzers =  [];
 
-private _radar = [];
-private _SAM = [];
+private _radar = "";
+private _SAM = "";
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;

@@ -62,8 +62,6 @@ _staticAT append ["O_T_Static_AT_F"];
 _staticAA append ["O_T_Static_AA_F"];
 _staticMortars append ["O_T_Mortar_01_F"];
 _howitzers append [];
-_radar append ["O_T_Radar_System_02_F"];
-_SAM append ["O_T_SAM_System_04_F"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine", "APERSBoundingMine"];
@@ -747,7 +745,7 @@ _militiaENGBackpacks append [];
 _militiaEXPBackpacks append [];
 _militiaSLBackpacks append [];
 _militialongRangeRadios append [];
-_militiahelmets append ["H_Beret_ocamo", "H_Bandanna_khk", "H_O_Helmet_canvas_owcamo", "lxWS_H_PASGT_goggles_olive_F", "H_PASGT_basic_olive_F"];
+_militiahelmets append ["H_Beret_ocamo", "H_Bandanna_khk", "H_O_Helmet_canvas_owcamo", "lxWS_H_PASGT_facewear_olive_F", "H_PASGT_basic_olive_F"];
 _militiaMEDhelmets append [];
 _militiaSLhelmets append [];
 _militiaSLhats append [];

@@ -55,8 +55,8 @@ _staticAT append ["cwr3_b_tow"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["cwr3_b_m252"];
 _howitzers append ["cwr3_b_m119"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
@@ -377,7 +377,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append ["cwr3_o_backpack_harness_roll"];
 _elitelongRangeRadios append [];
-_elitehelmets append ["cwr3_b_headgear_pasgt_m81_woodland_usmc", "cwr3_b_headgear_pasgt_m81_woodland_usmc_goggles"];
+_elitehelmets append ["cwr3_b_headgear_pasgt_m81_woodland_usmc", "cwr3_b_headgear_pasgt_m81_woodland_usmc_facewear"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append [];
@@ -478,7 +478,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append ["cwr3_o_backpack_harness_roll"];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["cwr3_b_headgear_m1_m81_woodland_usmc", "cwr3_b_headgear_m1_goggles_m81_woodland_usmc"];
+_militaryhelmets append ["cwr3_b_headgear_m1_m81_woodland_usmc", "cwr3_b_headgear_m1_facewear_m81_woodland_usmc"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];
@@ -596,7 +596,7 @@ _militiaENGBackpacks append [];
 _militiaEXPBackpacks append [];
 _militiaSLBackpacks append ["cwr3_o_backpack_harness_roll"];
 _militialongRangeRadios append [];
-_militiahelmets append ["cwr3_b_headgear_cap_m81_usmc_olive", "cwr3_b_headgear_m1_mitchell_usmc", "cwr3_b_headgear_cap_m81_usmc_olive", "cwr3_b_headgear_m1_mitchell_usmc", "cwr3_b_headgear_m1_goggles_mitchell_usmc"];
+_militiahelmets append ["cwr3_b_headgear_cap_m81_usmc_olive", "cwr3_b_headgear_m1_mitchell_usmc", "cwr3_b_headgear_cap_m81_usmc_olive", "cwr3_b_headgear_m1_mitchell_usmc", "cwr3_b_headgear_m1_facewear_mitchell_usmc"];
 _militiaMEDhelmets append [];
 _militiaSLhelmets append [];
 _militiaSLhats append [];
@@ -610,7 +610,7 @@ _militiafacewear append [];
 
 _crewuniforms append ["cwr3_b_uniform_m81_woodland_usmc"];
 _crewvests append ["cwr3_b_vest_flak_alice_crew_mc"];
-_crewhelmets append ["cwr3_b_headgear_cvc","cwr3_b_headgear_cvc_goggles"];
+_crewhelmets append ["cwr3_b_headgear_cvc","cwr3_b_headgear_cvc_facewear"];
 _crewcarbines append [
     ["cwr3_arifle_xm177e2", "", "", "", ["CUP_30Rnd_556x45_Stanag"], [], ""]
 ];

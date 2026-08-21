@@ -44,7 +44,7 @@ _helmets append [
 _helmets append [        
 	"gm_ge_headgear_headset_crew_oli",
     "gm_gc_headgear_fjh_model4_oli",
-    "gm_ge_headgear_m92_cover_glasses_oli",
+    "gm_ge_headgear_m92_cover_facewear_oli",
     "gm_ge_headgear_m92_cover_oli"
 ];
 

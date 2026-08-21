@@ -57,8 +57,8 @@ _staticAT append ["CUP_B_TOW2_TriPod_US"];
 _staticAA append ["CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["B_Mortar_01_F"];
 _howitzers append ["CUP_B_M119_US"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];
@@ -193,7 +193,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_facewear append ["None", "HAFM_Goggles_black", "HAFM_Goggles_Clear", "HAFM_Goggles_Green", "HAFM_Goggles_Khaki", "HAFM_Goggles_Tan"];
+_facewear append ["None", "HAFM_facewear_black", "HAFM_facewear_Clear", "HAFM_facewear_Green", "HAFM_facewear_Khaki", "HAFM_facewear_Tan"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

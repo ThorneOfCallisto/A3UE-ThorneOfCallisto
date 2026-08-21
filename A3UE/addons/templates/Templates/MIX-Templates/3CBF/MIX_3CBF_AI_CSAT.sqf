@@ -59,8 +59,6 @@ _staticAT append ["UK3CB_CSAT_B_O_SPG9", "UK3CB_CSAT_B_O_Kornet"];
 _staticAA append ["UK3CB_CSAT_B_O_ZU23", "UK3CB_CSAT_B_O_Igla_AA_pod"];
 _staticMortars append ["rhs_2b14_82mm_msv"];
 _howitzers append ["rhs_D30_msv"];
-_radar append ["UK3CB_CSAT_B_O_Radar_System"];
-_SAM append ["UK3CB_CSAT_B_O_SAMS_System"];
 
 _minefieldAT append ["rhs_mine_tm62m"];
 _minefieldAPERS append ["rhs_mine_pmn2"];

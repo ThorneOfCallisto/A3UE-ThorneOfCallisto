@@ -58,8 +58,8 @@ _staticAT append ["rhsgref_cdf_b_SPG9", "rhsgref_cdf_b_SPG9M"];
 _staticAA append ["rhsgref_cdf_b_ZU23", "rhsgref_cdf_b_Igla_AA_pod"];
 _staticMortars append ["rhsgref_ins_2b14"];
 _howitzers append ["rhsgref_cdf_b_reg_d30"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["rhsusf_mine_M19"];
 _minefieldAPERS append ["rhsusf_mine_m14"];

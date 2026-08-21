@@ -57,8 +57,6 @@ _staticAT append ["SPE_leFH18_AT", "SPE_Pak40"];
 _staticAA append ["SPE_FlaK_30", "SPE_FlaK_38"];
 _staticMortars append ["SPE_GrW278_1"];
 _howitzers append ["SPE_leFH18"];
-_radar append ["SPE_FlaK_36_AA"];
-_SAM append ["SPE_FlaK_36_AA"];
 
 _minefieldAT append ["SPE_TMI_42_MINE"];
 _minefieldAPERS append ["SPE_SMI_35_Pressure_MINE", "SPE_SMI_35_MINE"];
@@ -451,7 +449,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet_Glasses","H_SPE_GER_Helmet_net","H_SPE_GER_Helmet_ns","H_SPE_GER_Helmet_os","H_SPE_GER_Helmet_ns_wire"];
+_militaryhelmets append ["H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet_facewear","H_SPE_GER_Helmet_net","H_SPE_GER_Helmet_ns","H_SPE_GER_Helmet_os","H_SPE_GER_Helmet_ns_wire"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append ["H_SPE_GER_Cap_Offz"];

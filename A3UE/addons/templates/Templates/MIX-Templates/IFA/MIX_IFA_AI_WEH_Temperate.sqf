@@ -57,8 +57,8 @@ _staticAT append ["LIB_Pak40"];
 _staticAA append ["LIB_FlaK_38"];
 _staticMortars append ["LIB_GrWr34"];
 _howitzers append ["LIB_leFH18"];
-_radar append ["LIB_FlaK_36_AA"];
-_SAM append ["LIB_FlaK_36_AA"];
+
+
 
 _minefieldAT append ["LIB_TMI_42_MINE"];
 _minefieldAPERS append ["LIB_shumine_42_MINE"];
@@ -336,11 +336,11 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append [];
 _elitelongRangeRadios append [];
-_elitehelmets append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_Glasses","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
+_elitehelmets append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_facewear","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append ["H_LIB_GER_Helmet"];
-_eliteSNIhats append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_Glasses","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
+_eliteSNIhats append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_facewear","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
 
 _elitefacewear append [];
 
@@ -418,11 +418,11 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_Glasses","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
+_militaryhelmets append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_facewear","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append ["H_LIB_GER_Helmet"];
-_militarySNIhats append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_Glasses","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
+_militarySNIhats append ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_facewear","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"];
 
 _militaryfacewear append [];
 

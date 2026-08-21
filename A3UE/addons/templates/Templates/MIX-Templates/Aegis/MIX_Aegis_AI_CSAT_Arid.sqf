@@ -62,8 +62,6 @@ _staticAT append ["O_static_AT_F"];
 _staticAA append ["O_static_AA_F"];
 _staticMortars append ["O_Mortar_01_F"];
 _howitzers append [];
-_radar append ["O_Radar_System_02_F"];
-_SAM append ["O_SAM_System_04_F"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine", "APERSBoundingMine"];
@@ -681,10 +679,10 @@ if (_hasWs) then {
 };
 
 if (_hasWs) then {
-    _sfLoadoutData set ["designatedGrenadeLaunchers", [
+    _sfdesignatedGrenadeLaunchers append [
         ["glaunch_GLX_lxWS", "", "acc_pointer_IR", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Pellet_Grenade_shell_lxWS", "1Rnd_Smoke_Grenade_shell", "3Rnd_HE_Grenade_shell"], ["1Rnd_Smoke_Grenade_shell"], ""],
         ["glaunch_GLX_hex_lxWS", "", "acc_pointer_IR", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Pellet_Grenade_shell_lxWS", "1Rnd_Smoke_Grenade_shell", "3Rnd_HE_Grenade_shell"], [], ""]
-    ]];
+    ];
 };
 
 if (_hasWs) then {

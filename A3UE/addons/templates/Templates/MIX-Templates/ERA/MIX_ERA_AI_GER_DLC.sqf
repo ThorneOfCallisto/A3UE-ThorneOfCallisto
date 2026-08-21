@@ -67,8 +67,8 @@ _staticAT append ["gm_ge_army_milan_launcher_tripod", "SPE_leFH18_AT", "SPE_Pak4
 _staticAA append ["SPE_FlaK_30", "SPE_FlaK_38", "CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["SPE_GrW278_1"];
 _howitzers append ["SPE_leFH18"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["SPE_TMI_42_MINE","gm_minestatic_at_dm21", "gm_minestatic_at_dm1233", "BWA3_DM31AT", "BWA3_AT2"];
 _minefieldAPERS append ["SPE_SMI_35_Pressure_MINE", "SPE_SMI_35_MINE", "gm_minestatic_ap_dm31"];
@@ -571,7 +571,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["gm_ge_headgear_m62", "gm_ge_headgear_m62_net", "gm_ge_headgear_m92_flk", "gm_ge_headgear_m92_glasses_flk"];
+_militaryhelmets append ["gm_ge_headgear_m62", "gm_ge_headgear_m62_net", "gm_ge_headgear_m92_flk", "gm_ge_headgear_m92_facewear_flk"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append ["gm_ge_headgear_beret_grn_infantry"];
@@ -693,7 +693,7 @@ _militiaENGBackpacks append [];
 _militiaEXPBackpacks append [];
 _militiaSLBackpacks append [];
 _militialongRangeRadios append ["B_SPE_GER_Radio", "B_SPE_GER_Radio_battery"];
-_militiahelmets append ["H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet_Glasses","H_SPE_GER_Helmet_net","H_SPE_GER_Helmet_ns","H_SPE_GER_Helmet_os","H_SPE_GER_Helmet_ns_wire"];
+_militiahelmets append ["H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet","H_SPE_GER_Helmet_facewear","H_SPE_GER_Helmet_net","H_SPE_GER_Helmet_ns","H_SPE_GER_Helmet_os","H_SPE_GER_Helmet_ns_wire"];
 _militiaMEDhelmets append [];
 _militiaSLhelmets append [];
 _militiaSLhats append ["H_SPE_GER_Cap_Offz"];

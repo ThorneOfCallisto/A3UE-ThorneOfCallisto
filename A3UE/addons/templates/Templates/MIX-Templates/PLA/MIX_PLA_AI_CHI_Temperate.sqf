@@ -55,8 +55,7 @@ _staticAT append ["O_mas_chi_static_AT_F"];
 _staticAA append ["O_mas_chi_static_AA_F"];
 _staticMortars append ["O_mas_chi_Mortar_01_F"];
 _howitzers append [];
-_radar append ["O_Radar_System_02_F"];
-_SAM append ["O_SAM_System_04_F"];
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];

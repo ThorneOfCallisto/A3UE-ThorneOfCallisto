@@ -57,8 +57,7 @@ _staticAT append ["NORTH_SOV_76mm1936"];
 _staticAA append ["NORTH_SOV_Maxim_Quad"];
 _staticMortars append ["LIB_BM37"];
 _howitzers append ["NORTH_SOV_152mm1938"];
-_radar append ["LIB_61k"];
-_SAM append ["LIB_61k"];
+
 
 _minefieldAT append ["LIB_TM44_MINE"];
 _minefieldAPERS append ["LIB_PMD6_MINE"];
@@ -541,7 +540,7 @@ _crewfacewear append [];
 _pilotuniforms append ["U_NORTH_SOV_Obr43_Uniform_AIR_Private","U_NORTH_SOV_Obr43_Uniform_AIR_Private_2"];
 _pilotvests append ["V_NORTH_SOV_Belt_Late_Pistol","V_NORTH_SOV_Belt_Late_Pistol_3"];
 _pilotbackpacks append [];
-_pilothelmets append ["H_NORTH_SOV_AIR_helmet","H_NORTH_SOV_AIR_helmet_goggles","H_NORTH_SOV_AIR_helmet_goggles_2"];
+_pilothelmets append ["H_NORTH_SOV_AIR_helmet","H_NORTH_SOV_AIR_helmet_facewear","H_NORTH_SOV_AIR_helmet_facewear_2"];
 _pilotcarbines append [
     ["NORTH_PPS43", "", "", "", ["NORTH_35rnd_pps43_mag"], [], ""]
 ];

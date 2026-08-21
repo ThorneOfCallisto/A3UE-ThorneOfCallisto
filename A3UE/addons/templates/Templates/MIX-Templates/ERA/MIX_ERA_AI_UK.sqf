@@ -57,8 +57,8 @@ _staticAT append ["cwr3_b_tow", "CUP_B_TOW2_TriPod_US"];
 _staticAA append ["cwr3_b_uk_javelin_lml", "CUP_B_CUP_Stinger_AA_pod_US"];
 _staticMortars append ["LIB_M2_60"];
 _howitzers append ["cwr3_b_m119"];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["LIB_US_M1A1_ATMINE", "CUP_Mine"];
 _minefieldAPERS append ["LIB_M3_MINE", "APERSMine"];
@@ -411,7 +411,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append [];
 _elitelongRangeRadios append [];
-_elitehelmets append ["CUP_H_BAF_DPM_Mk6_NETTING_PRR", "CUP_H_BAF_DPM_Mk6_GOGGLES_PRR", "CUP_H_BAF_DPM_Mk6_GLASS_PRR", "CUP_H_BAF_DPM_Mk6_CREW_PRR"];
+_elitehelmets append ["CUP_H_BAF_DPM_Mk6_NETTING_PRR", "CUP_H_BAF_DPM_Mk6_facewear_PRR", "CUP_H_BAF_DPM_Mk6_GLASS_PRR", "CUP_H_BAF_DPM_Mk6_CREW_PRR"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append ["CUP_H_FR_PRR_BoonieWDL"];

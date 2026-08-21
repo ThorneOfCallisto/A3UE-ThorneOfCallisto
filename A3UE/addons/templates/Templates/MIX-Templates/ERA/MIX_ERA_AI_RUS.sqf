@@ -58,8 +58,8 @@ _staticAT append ["cwr3_o_konkurs_tripod", "NORTH_SOV_76mm1936", "CUP_O_Kornet_R
 _staticAA append ["CUP_O_Igla_AA_pod_ChDKZ", "NORTH_SOV_Maxim_Quad"];
 _staticMortars append ["CUP_O_2b14_82mm_RU"];
 _howitzers append ["CUP_O_D30_RU"];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_MineE"];
 _minefieldAPERS append ["APERSMine"];
@@ -309,7 +309,7 @@ _sfENGBackpacks append [];
 _sfEXPBackpacks append [];
 _sfSLBackpacks append ["B_Kitbag_rgr"];
 _sflongRangeRadios append [];
-_sfhelmets append ["CUP_H_RUS_K6_3_Goggles", "CUP_H_RUS_Altyn_Goggles_khaki"];
+_sfhelmets append ["CUP_H_RUS_K6_3_facewear", "CUP_H_RUS_Altyn_facewear_khaki"];
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append ["CUP_H_RUS_Beret_Spetsnaz"];
@@ -418,7 +418,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append [];
 _elitelongRangeRadios append [];
-_elitehelmets append ["CUP_H_RUS_6B27_cover", "CUP_H_RUS_6B46", "CUP_H_RUS_6B27_cover_headset_goggles", "CUP_H_RUS_6B27_cover_headset", "CUP_H_RUS_6B47_v2_Summer", "CUP_H_RUS_6B47_headset"];
+_elitehelmets append ["CUP_H_RUS_6B27_cover", "CUP_H_RUS_6B46", "CUP_H_RUS_6B27_cover_headset_facewear", "CUP_H_RUS_6B27_cover_headset", "CUP_H_RUS_6B47_v2_Summer", "CUP_H_RUS_6B47_headset"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append ["H_Booniehat_oli"];

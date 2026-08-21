@@ -58,8 +58,6 @@ _staticAT       append ["RHS_TOW_TriPod_USMC_WD"];
 _staticAA       append ["RHS_Stinger_AA_pod_USMC_WD"];
 _staticMortars  append ["RHS_M252_USMC_WD"];
 _howitzers      append [];
-_radar          append ["B_Radar_System_01_F"];
-_SAM            append ["B_SAM_System_03_F"];
 
 _minefieldAT    append ["rhsusf_mine_M19"];
 _minefieldAPERS append ["rhsusf_mine_m14"];
@@ -166,8 +164,8 @@ if (A3A_hasACE) then {
 	_mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
 };
 
-_glasses append ["G_Aviator","G_Squares_Tinted","G_Squares","rhsusf_shemagh_od","rhsusf_shemagh2_od","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhs_googles_black", "rhs_googles_clear", "rhs_googles_orange"];
-_goggles append ["rhs_ess_black", "rhs_googles_yellow","rhsusf_shemagh_gogg_grn","rhsusf_shemagh2_gogg_grn","rhsusf_shemagh_gogg_od","rhsusf_shemagh2_gogg_od","rhsusf_oakley_goggles_clr","rhsusf_oakley_goggles_blk","rhsusf_oakley_goggles_ylw"];
+_facewear append ["G_Aviator","G_Squares_Tinted","G_Squares","rhsusf_shemagh_od","rhsusf_shemagh2_od","rhsusf_shemagh_grn","rhsusf_shemagh2_grn","rhs_googles_black", "rhs_googles_clear", "rhs_googles_orange"];
+_facewear append ["rhs_ess_black", "rhs_googles_yellow","rhsusf_shemagh_gogg_grn","rhsusf_shemagh2_gogg_grn","rhsusf_shemagh_gogg_od","rhsusf_shemagh2_gogg_od","rhsusf_oakley_facewear_clr","rhsusf_oakley_facewear_blk","rhsusf_oakley_facewear_ylw"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -320,8 +318,8 @@ _sfhelmets append ["H_Bandanna_khk_hs", "rhsusf_opscore_mar_fg", "rhsusf_opscore
 _sfslHat append [];
 _sfsniHats append [];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -457,8 +455,8 @@ _elitehelmets append ["rhsusf_opscore_mar_fg", "rhsusf_opscore_mar_fg_pelt"];
 _eliteslHat append [];
 _elitesniHats append [];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -574,8 +572,8 @@ _militaryhelmets append ["rhsusf_lwh_helmet_marpatwd", "rhsusf_lwh_helmet_marpat
 _militaryslHat append [];
 _militarysniHats append [];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -671,8 +669,8 @@ _militiahelmets append ["rhsusf_lwh_helmet_marpatwd", "rhsusf_lwh_helmet_marpatw
 _militiaslHat append [];
 _militiasniHats append [];
 
-_militiaglasses append [];
-_militiagoggles append [];
+_militiafacewear append [];
+_militiafacewear append [];
 
 //////////////////////////
 //    Misc Loadouts     //

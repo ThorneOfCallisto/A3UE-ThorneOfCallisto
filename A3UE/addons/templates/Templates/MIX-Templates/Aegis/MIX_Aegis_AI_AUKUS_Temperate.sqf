@@ -62,8 +62,6 @@ _staticAT append ["B_A_Static_AT_wdl_F"];
 _staticAA append ["B_A_Static_AA_wdl_F"];
 _staticMortars append ["B_A_Mortar_01_wdl_F"];
 _howitzers append [];
-_radar append ["B_A_Radar_System_01_wdl_F"];
-_SAM append ["B_A_SAM_System_03_wdl_F"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];
@@ -200,7 +198,7 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_facewear append ["G_Combat", "G_Combat_Goggles_blk_F"];
+_facewear append ["G_Combat", "G_Combat_facewear_blk_F"];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //

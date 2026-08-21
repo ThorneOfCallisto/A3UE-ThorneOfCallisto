@@ -8,7 +8,7 @@ _sfmarksmanRifles append [
     ["srifle_DMR_02_sniper_F","muzzle_snds_338_sand","acc_pointer_IR","optic_AMS_snd",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_snd"],
     ["srifle_DMR_02_camo_F", "muzzle_snds_338_green", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
-(_sfLoadoutData get "sniperRifles") append [
+_sfsniperRifles append [
     ["srifle_DMR_02_F","muzzle_snds_338_black","acc_pointer_IR","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_sniper_F","muzzle_snds_338_sand","acc_pointer_IR","optic_AMS_snd",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_snd"],
     ["srifle_DMR_02_camo_F", "muzzle_snds_338_green", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
@@ -34,7 +34,7 @@ _elitemarksmanRifles append [
     ["srifle_DMR_02_sniper_F","","acc_pointer_IR","optic_AMS_snd",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_snd"],
     ["srifle_DMR_02_camo_F", "", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
-(_sfLoadoutData get "sniperRifles") append [
+_sfsniperRifles append [
     ["srifle_DMR_02_F","","acc_pointer_IR","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_sniper_F","","acc_pointer_IR","optic_AMS_snd",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_snd"],
     ["srifle_DMR_02_camo_F", "", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]

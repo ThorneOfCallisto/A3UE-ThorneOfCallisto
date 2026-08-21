@@ -180,7 +180,7 @@ _ENGBackpacks append [];
 _EXPBackpacks append [];
 _SLBackpacks append [];
 _longRangeRadios append [];
-_helmets append ["lxWS_H_PASGT_goggles_black_F", "lxWS_H_PASGT_goggles_olive_F", "H_HelmetB_black"];
+_helmets append ["lxWS_H_PASGT_facewear_black_F", "lxWS_H_PASGT_facewear_olive_F", "H_HelmetB_black"];
 _MEDhelmets append [];
 _SLhelmets append [];
 _SLhats append [];
@@ -357,7 +357,7 @@ if (_hasRF) then {
 };
 
 if (_hasRF) then {
-	_facewear pushBack "G_Glasses_black_RF";
+	_facewear pushBack "G_facewear_black_RF";
 };
 
 if (_hasLawsOfWar) then {

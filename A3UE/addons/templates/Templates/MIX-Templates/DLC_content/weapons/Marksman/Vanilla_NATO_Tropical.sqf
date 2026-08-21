@@ -6,7 +6,7 @@ _sfmarksmanRifles append [
     ["srifle_DMR_02_F","muzzle_snds_338_black","acc_pointer_IR","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_camo_F", "muzzle_snds_338_green", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
-(_sfLoadoutData get "sniperRifles") append [
+_sfsniperRifles append [
     ["srifle_DMR_02_F","muzzle_snds_338_black","acc_pointer_IR","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_camo_F", "muzzle_snds_338_green", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
@@ -38,7 +38,7 @@ _elitemarksmanRifles append [
     ["srifle_DMR_02_F","","acc_pointer_IR","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_camo_F", "", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
-(_eliteLoadoutData get "sniperRifles") append [
+_elitesniperRifles append [
     ["srifle_DMR_02_F","","acc_pointer_IR","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_camo_F", "", "acc_pointer_IR", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
@@ -49,7 +49,7 @@ _elitemachineGuns append [
     ["MMG_02_black_F", "", "acc_pointer_IR", "optic_NVS", ["130Rnd_338_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag"], [], "bipod_03_F_blk"]
 ];
 
-(_militaryLoadoutData  get "machineGuns") append [
+_militarymachineGuns append [
     ["MMG_02_black_F", "", "acc_flashlight", "optic_Holosight_blk_F", [], [], "bipod_01_F_blk"],
     ["MMG_02_black_F", "", "acc_flashlight", "optic_tws_mg", [], [], "bipod_01_F_blk"]
 ];
@@ -74,7 +74,7 @@ _militarymarksmanRifles append [
     ["srifle_DMR_02_F","","acc_flashlight","optic_AMS",["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"],[],"bipod_01_F_blk"],
     ["srifle_DMR_02_camo_F", "", "acc_flashlight", "optic_AMS_khk", ["10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag"], [], "bipod_01_F_mtp"]
 ];
-(_militaryLoadoutData  get "machineGuns") append [
+_militarymachineGuns append [
     ["MMG_02_black_F", "", "acc_flashlight", "optic_Holosight_blk_F", ["130Rnd_338_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag"], [], "bipod_03_F_blk"],
     ["MMG_02_black_F", "", "acc_flashlight", "optic_MRCO", ["130Rnd_338_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag"], [], "bipod_03_F_blk"],
     ["MMG_02_black_F", "", "acc_flashlight", "optic_Hamr", ["130Rnd_338_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag"], [], "bipod_03_F_blk"],

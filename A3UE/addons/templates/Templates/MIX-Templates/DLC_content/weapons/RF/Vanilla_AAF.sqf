@@ -1,6 +1,6 @@
 _psrlAttachments = ["", 2, "acc_pointer_IR", 1];
 
-(_loadoutData get "lightATLaunchers") append [
+_lightATLaunchers append [
     ["launch_PSRL1_digi_RF", "", _psrlAttachments, "", ["PSRL1_AT_RF","PSRL1_AT_RF","PSRL1_FRAG_RF"], [], ""], 4,
     ["launch_PSRL1_digi_RF", "", _psrlAttachments, "", ["PSRL1_AT_RF","PSRL1_AT_RF","PSRL1_HE_RF"], [], ""], 2,
 
@@ -9,7 +9,7 @@ _psrlAttachments = ["", 2, "acc_pointer_IR", 1];
 ];
 
 //dedicated AT troops get the heavier AT rockets as well as more common PWS-equipped launchers
-(_loadoutData get "ATLaunchers") append [
+_ATLaunchers append [
     ["launch_PSRL1_digi_RF", "",_psrlAttachments, "", ["PSRL1_HEAT_RF","PSRL1_HEAT_RF","PSRL1_AT_RF"], [], ""], 2,
     ["launch_PSRL1_digi_RF", "",_psrlAttachments, "", ["PSRL1_HEAT_RF","PSRL1_AT_RF","PSRL1_HE_RF"], [], ""], 1,
 
@@ -49,13 +49,13 @@ _militiamarksmanRifles append [
     ["srifle_h6_digi_rf", "", "", _militiaMarksmanOptics,["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""], 7.5,
     ["srifle_h6_oli_rf", "", "", _militiaMarksmanOptics,["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""], 7.5
 ];
-(_militiaLoadoutData get "sniperRifles") append [
+_militiasniperRifles append [
     ["srifle_h6_digi_rf", "", "", _militiaSniperOptics,["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""], 10,
     ["srifle_h6_oli_rf", "", "", _militiaSniperOptics,["10Rnd_556x45_AP_Stanag_RF","10Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF","20Rnd_556x45_AP_Stanag_RF"], [], ""], 10
 ];
 //////////////////////////////////////////////////////
 _rfSFDeagleOptics = ["optic_VRCO_pistol_RF", 8, "optic_rds_RF", 2]; // Better than making variants of each Deagle with different Optics and separately balancing their weights.
-(_sfLoadoutData get "sidearms") append [
+_sfsidearms append [
     ["hgun_Glock19_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", ["17Rnd_9x19_Mag_RF","33Rnd_9x19_Mag_RF"], [], ""], 2.5,
     ["hgun_Glock19_auto_Tan_RF", "muzzle_snds_L", "acc_flashlight_IR_pistol_RF", "optic_MRD_tan_RF", ["17Rnd_9x19_Mag_RF","33Rnd_9x19_Mag_RF","65Rnd_9x19_Mag_RF"], [], ""], 7.5,
     ["hgun_DEagle_RF", "", "", _rfSFDeagleOptics, ["7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF"], [], ""], 5, 
@@ -68,7 +68,7 @@ _rfSFDeagleOptics = ["optic_VRCO_pistol_RF", 8, "optic_rds_RF", 2]; // Better th
 ];
 _rfEliteDeagleOptics = ["optic_VRCO_pistol_RF", 6, "optic_rds_RF", 4];
 _rfEliteGlockOptics = ["optic_MRD_tan_RF", 3, "", 1];
-(_eliteLoadoutData get "sidearms") append [
+_elitesidearms append [
     ["hgun_Glock19_Tan_RF", "", "acc_flashlight_IR_pistol_RF", _rfEliteGlockOptics, ["17Rnd_9x19_Mag_RF","33Rnd_9x19_Mag_RF"], [], ""], 7,
     ["hgun_Glock19_auto_Tan_RF", "", "acc_flashlight_IR_pistol_RF", _rfEliteGlockOptics, ["17Rnd_9x19_Mag_RF","33Rnd_9x19_Mag_RF","65Rnd_9x19_Mag_RF"], [], ""], 3,
     ["hgun_DEagle_RF", "", "", _rfEliteDeagleOptics, ["7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF"], [], ""], 1,
@@ -82,7 +82,7 @@ _rfEliteGlockOptics = ["optic_MRD_tan_RF", 3, "", 1];
 
 _rfMilitaryDeagleOptics = ["optic_rds_RF", 1, "", 2];
 _rfMilitaryGlockOptics = ["optic_MRD_tan_RF", 1, "", 3];
-(_militaryLoadoutData get "sidearms") append [
+_militarysidearms append [
     ["hgun_Glock19_Tan_RF", "", "acc_flashlight_pistol", _rfMilitaryGlockOptics, ["17Rnd_9x19_Mag_RF","33Rnd_9x19_Mag_RF"], [], ""], 9,
     ["hgun_Glock19_auto_Tan_RF", "", "acc_flashlight_pistol", _rfMilitaryGlockOptics, ["17Rnd_9x19_Mag_RF","33Rnd_9x19_Mag_RF"], [], ""], 1, // Full auto Glocks aren't something the usual soldier is gonna carry around often.
     ["hgun_DEagle_RF", "", "", _rfMilitaryDeagleOptics, ["7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF"], [], ""], 0.3,
@@ -91,15 +91,15 @@ _rfMilitaryGlockOptics = ["optic_MRD_tan_RF", 1, "", 3];
     ["hgun_DEagle_camo_RF", "", "", _rfMilitaryDeagleOptics, ["7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF","7Rnd_50AE_Mag_RF"], [], ""], 0.1
     // Make the Deagle super rare, since it's an unusual gun for a normal soldier to have.
 ];
-(_militiaLoadoutData get "sidearms") append [
+_militiasidearms append [
     ["hgun_Glock19_Tan_RF", "", "", "", ["17Rnd_9x19_Mag_RF","17Rnd_9x19_Mag_RF"], [], ""], 10
 ];
 
-(_policeLoadoutData get "sidearms") append [
+_policesidearms append [
     ["hgun_Glock19_RF", "", "", "", ["17Rnd_9x19_Mag_RF","17Rnd_9x19_Mag_RF"], [], ""], 10
 ];
 
-(_loadoutData get "lightATLaunchers") append [
+_lightATLaunchers append [
     ["launch_PSRL1_black_RF", "", "", "", ["PSRL1_AT_RF","PSRL1_FRAG_RF","PSRL1_HE_RF","PSRL1_HEAT_RF"], [], ""],
     ["launch_PSRL1_digi_RF", "", "", "", ["PSRL1_AT_RF","PSRL1_FRAG_RF","PSRL1_HE_RF","PSRL1_HEAT_RF"], [], ""],
     ["launch_PSRL1_olive_RF", "", "", "", ["PSRL1_AT_RF","PSRL1_FRAG_RF","PSRL1_HE_RF","PSRL1_HEAT_RF"], [], ""],

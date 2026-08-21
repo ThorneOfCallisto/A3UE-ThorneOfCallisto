@@ -55,8 +55,8 @@ _staticAT append [];
 _staticAA append ["Flex_CUP_AAF_Stinger_AA_pod", "Flex_CUP_AAF_ZU23"];
 _staticMortars append [];
 _howitzers append [];
-_radar append [];
-_SAM append [];
+
+
 
 _minefieldAT append ["CUP_Mine"];
 _minefieldAPERS append ["APERSMine"];

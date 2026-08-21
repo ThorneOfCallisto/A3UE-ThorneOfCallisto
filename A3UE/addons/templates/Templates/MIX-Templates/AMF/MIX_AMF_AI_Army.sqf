@@ -58,8 +58,8 @@ _staticAT append ["AMF_TVGuided_mmp_F", "AMF_WiredGuided_mmp_F"];
 _staticAA append ["B_static_AA_F"];
 _staticMortars append ["AMF_Mo120_01_CE_F"];
 _howitzers append [];
-_radar append ["B_Radar_System_01_F"];
-_SAM append ["B_SAM_System_03_F"];
+
+
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];
@@ -178,8 +178,8 @@ if (A3A_hasACE) then {
 	_mmItems append [];
 };
 
-_glasses append [];
-_goggles append [];
+_facewear append [];
+_facewear append [];
 
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
@@ -296,8 +296,7 @@ _sfSLhelmets append [];
 _sfSLhats append ["AMF_BERET_MARINE_PARA"];
 _sfSNIhats append ["AMF_F3_L02"];
 
-_sfglasses append [];
-_sfgoggles append [];
+_sffacewear append [];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
@@ -410,8 +409,7 @@ _eliteSLhelmets append [];
 _eliteSLhats append [];
 _eliteSNIhats append ["AMF_FELIN_L06_TAN", "AMF_FELIN_L04_TAN"];
 
-_eliteglasses append [];
-_elitegoggles append [];
+_elitefacewear append [];
 
 /////////////////////////////////
 //    Military Loadout Data    //
@@ -515,8 +513,7 @@ _militarySLhelmets append [];
 _militarySLhats append [];
 _militarySNIhats append ["AMF_FELIN_L05_TAN", "AMF_FELIN_L05_CE", "AMF_FELIN_L06_CE", "AMF_FELIN_L06_TAN"];
 
-_militaryglasses append [];
-_militarygoggles append [];
+_militaryfacewear append [];
 
 ///////////////////////////////
 //    Police Loadout Data    //
@@ -629,9 +626,6 @@ _militiaSLhelmets append [];
 _militiaSLhats append [];
 _militiaSNIhats append ["AMF_FELIN_L06_CE", "AMF_FELIN_L06_TAN"];
 
-
-_militiaglasses append [];
-_militiagoggles append [];
 _militiafacewear append [];
 
 //////////////////////////
@@ -686,6 +680,4 @@ if (isClass (configFile >> "CfgVehicles" >> "clv_Aml20")) then {
     _aa append ["clv_VCLM", "clv_Dragon"];
     _staticAA append ["CLV_OERLIKON"];
     _howitzers append ["CLV_OMM56"];
-    _radar append ["CLV_Skyguard"];
-    _SAM append ["CLV_RolandTurret"];
 };

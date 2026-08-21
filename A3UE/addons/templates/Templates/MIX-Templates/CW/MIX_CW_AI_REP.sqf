@@ -57,8 +57,6 @@ _staticAT append ["3as_ParticleCannon"];
 _staticAA append ["AA_Turret"];
 _staticMortars append ["3AS_Republic_Mortar"];
 _howitzers append [];
-_radar append ["ls_vehicle_radarDish"];
-_SAM append ["3AS_Keeradak_F"];
 
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine", "APERSBoundingMine_Range_Mag"];

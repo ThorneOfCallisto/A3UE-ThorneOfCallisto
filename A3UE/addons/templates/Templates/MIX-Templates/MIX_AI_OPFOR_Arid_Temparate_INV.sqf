@@ -15,6 +15,9 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 ["flagTexture", "rhsafrf\addons\rhs_main\data\flag_rus_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_Russia"] call _fnc_saveToTemplate;
 
+_radar = "O_Radar_System_02_F";
+_SAM = "O_SAM_System_04_F";
+
 
 /////////////////////////////////
 //    Include Factions here    //

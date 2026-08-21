@@ -11,9 +11,9 @@ _elitebackpacks pushBack "O_shield_backpack_lxWS";
 _militaryhelmets append ["lxWS_H_bmask_base","lxWS_H_bmask_hex","H_HelmetHeavy_Simple_Hex_RF","H_HelmetHeavy_Hex_RF"];
 _militaryHvests pushBack "V_lxWS_TacVestIR_oli";
 _militaryvests pushBack "V_lxWS_HarnessO_oli";
-(_militaryLoadoutData get "uniforms") pushBack "U_O_LCF_noInsignia_hex_lxws";
+_militaryuniforms pushBack "U_O_LCF_noInsignia_hex_lxws";
 
-_militiahelmets append ["lxWS_H_bmask_camo02","lxWS_H_Headset","lxWS_H_PASGT_goggles_olive_F","H_Beret_Headset_lxWS"];
+_militiahelmets append ["lxWS_H_bmask_camo02","lxWS_H_Headset","lxWS_H_PASGT_facewear_olive_F","H_Beret_Headset_lxWS"];
 
 _militiabackpacks pushBack "I_shield_backpack_lxWS";
 

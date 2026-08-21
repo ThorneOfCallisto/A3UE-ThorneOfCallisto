@@ -57,8 +57,6 @@ _staticAT append ["fow_w_pak40_camo_ger_heer"];
 _staticAA append ["LIB_FlaK_38"];
 _staticMortars append ["LIB_GrWr34"];
 _howitzers append ["LIB_leFH18"];
-_radar append ["fow_w_flak36_camo_ger_heer"];
-_SAM append ["fow_w_flak36_camo_ger_heer"];
 
 _minefieldAT append ["LIB_TMI_42_MINE"];
 _minefieldAPERS append ["LIB_shumine_42_MINE"];

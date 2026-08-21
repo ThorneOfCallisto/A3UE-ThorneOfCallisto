@@ -41,7 +41,7 @@ _carbines append [
 	["arifle_AKS_F", "", "", "", ["30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Tracer_F"], [], ""]
 ];
 _grenadeLaunchers append [
-	["arifle_AK12_GL_F", "", "", "", ["30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_Tracer_F"], _glammo, ""]
+	["arifle_AK12_GL_F", "", "", "", ["30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_Tracer_F"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ];
 _designatedGrenadeLaunchers append [];
 _SMGs append [
@@ -295,11 +295,11 @@ if (_hasSPE) then {
 };
 
 if (_hasRF) then {
-    _glammo pushBack "1Rnd_RC40_HE_shell_RF";
+    ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"] pushBack "1Rnd_RC40_HE_shell_RF";
 };
 
 if (_hasWs) then {
-	_glammo pushBack "1Rnd_Pellet_Grenade_shell_lxWS";
+	["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"] pushBack "1Rnd_Pellet_Grenade_shell_lxWS";
 };
 
 if (_hasGM) then {
