@@ -2,7 +2,7 @@
  * Converted from: AMF_AI_Army.sqf
  */
 _basic append ["B_Quadbike_01_F"];
-_lightUnarmed append ["B_AMF_VAB_ULTIMA_X8_F", "amf_pvp_01_mag_CE_f", "amf_pvp_01_top_CE_f"];
+_lightUnarmed append ["B_AMF_VAB_ULTIMA_X8_F", "amf_pvp_01_mag_CE_f", "amf_pvp_01_top_CE_f", "AMF_VBL_CCE_AANF1_F"];
 _lightArmed append ["AMF_VB2L_CE_762_01_F", "AMF_VB2L_CCE", "amf_VBAE_01_CE_f", "amf_VBAE_03_CE_f", "amf_VBAE_02_CE_f", "AMF_VBL_CE_127_01_F", "AMF_VBL_CE_762_01_F", "AMF_VBL_127_CCE", "AMF_VBL_762_CCE", "B_AMF_VAB_ULTIMA_TOP_X8_F"];
 _Trucks append ["AMF_GBC180_PERS_01"];
 _cargoTrucks append ["AMF_GBC180_PLATEAU_01", "AMF_GBC180_PERS_01"];
@@ -10,9 +10,9 @@ _ammoTrucks append ["AMF_GBC180_AmmoTruck"];
 _repairTrucks append ["AMF_GBC180_MECA_01"];
 _fuelTrucks append ["B_Truck_01_fuel_F"];
 _medicalTrucks append ["AMF_VBMR_SAN_CE"];
-_lightAPCs append ["AMF_VBMRL_127_CCE", "AMF_VBMR_L_CE_01", "AMF_VBMR_L_CE_02", "AMF_VBMRL_762_CCE"];
-_APCs append ["B_AMF_AMX10_RCR_01_F", "AMF_VBMR_COMMANDEMENT_CE", "AMF_VBMR_VOA_CE", "AMF_VBMR_HMG_CE", "AMF_VBMR_MMP_CE", "AMF_VBMR_GMG_CE", "AMF_VBMR_DEF_CE", "AMF_VBMR_ARX30_CE", "AMF_VBMR_GENIE_CE"];
-_IFVs append ["AMF_VBCI_CE_01_F", "B_AMF_AMX10_RCR_01_F", "AMF_EBRC_CE_01"];
+_lightAPCs append ["AMF_VBMRL_127_CCE", "AMF_VBMR_L_CE_01", "AMF_VBMR_L_CE_02", "AMF_VBMRL_762_CCE", "AMF_VBMR_GENIE_CE"];
+_APCs append ["B_AMF_AMX10_RCR_01_F", "AMF_VBMR_COMMANDEMENT_CE", "AMF_VBMR_VOA_CE", "AMF_VBMR_HMG_CE", "AMF_VBMR_MMP_CE", "AMF_VBMR_GMG_CE", "AMF_VBMR_DEF_CE", "AMF_VBMR_ARX30_CE", "AMF_VBMR_CE"];
+_IFVs append ["AMF_VBCI_CE_01_F", "AMF_VBCI_CE", "AMF_EBRC_CE_01"];
 _airborneVehicles append ["B_AMF_VAB_ULTIMA_X8_F", "AMF_VBMR_HMG_CE", "AMF_VBCI_CE_01_F", "AMF_EBRC_CE_01", "B_AMF_AMX10_RCR_01_F"];
 _tanks append ["AMF_Leclerc_S2_CCE", "AMF_Leclerc_XLR_CCE", "B_AMF_TANK_01", "B_AMF_TANK_CE_02_F"];
 _lightTanks append ["B_AMF_AMX10_RCR_SEPAR_01_F", "AMF_AMX10RCR_SEPAR_CCE", "B_AMF_AMX10_RCR_01_F", "AMF_AMX10RCR_CCE"];
@@ -25,28 +25,27 @@ _transportBoat append ["B_Boat_Transport_01_F"];
 _gunBoat append ["B_Boat_Armed_01_minigun_F"];
 _Amphibious append [];
 
-_planesCAS append ["AMF_RAFALE_B_01_F"];
-_planesAA append ["AMF_RAFALE_B_01_F", "AMF_RAFALE_C_01_F", "B_AMF_PLANE_FIGHTER_02_F"];
+_planesCAS append ["AMF_RAFALE_B_01_F", "AMF_RAFALE_C_01_F", "AMF_RAFALE_M_01_F"];
+_planesAA append ["AMF_RAFALE_B_01_F", "B_AMF_PLANE_FIGHTER_02_F"];
 
 _planesTransport append ["B_AMF_PLANE_TRANSPORT_01_F"];
 _gunship append [];
 
 _helisLight append ["AMF_gazelle_afte_f", "AMF_panther_FRA"];
-_transportHelicopters append ["amf_nh90_tth_transport", "amf_cougar", "B_AMF_Heli_Transport_01_F"];
-_helisLightAttack append ["AMF_gazelle_minigun_f"];
+_transportHelicopters append ["amf_nh90_tth_transport", "amf_cougar"];
+_helisLightAttack append ["AMF_gazelle_hot_f", "AMF_gazelle_minigun_f"];
 _helisAttack append ["AMF_TIGRE_01"];
 _airPatrol append [];
 
-_artillery append ["B_T_MBT_01_arty_F","B_T_MBT_01_mlrs_F"];
+_artillery append ["amf_CAESAR_01_CE_f"];
 _artilleryMags append [
-    ["B_T_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"]],
-    ["B_T_MBT_01_mlrs_F",["12Rnd_230mm_rockets"]]
+    ["amf_CAESAR_01_CE_f",["32Rnd_155mm_CAESAR_explo"]]
 ];
 
 _uavsAttack append ["B_AMF_REAPER_dynamicLoadout_F"];
 _uavsPortable append ["AMF_Anafi_01_F"];
 
-_militiaLightArmed append ["amf_pvp_01_mag_CE_f"];
+_militiaLightArmed append ["amf_pvp_01_mag_CE_f", "AMF_VBL_CCE_AANF1_F"];
 _militiaTrucks append ["AMF_GBC180_PERS_01"];
 _militiaCars append ["amf_pvp_01_top_CE_f"];
 _militiaAPCs append ["B_AMF_VAB_ULTIMA_TOP_X8_F"];
@@ -57,7 +56,7 @@ _staticMG append ["B_G_HMG_02_high_F"];
 _staticAT append ["AMF_TVGuided_mmp_F", "AMF_WiredGuided_mmp_F"];
 _staticAA append ["B_static_AA_F"];
 _staticMortars append ["AMF_Mo120_01_CE_F"];
-_howitzers append [];
+_howitzers append ["AMF_Mo120_01_CE_F"];
 
 
 
@@ -670,6 +669,13 @@ if (_hasContact) then {
 
 if (_hasRF) then {
     _policeVehs append ["B_GEN_Pickup_covered_rf"];
+    _airPatrol append ["B_GEN_Heli_EC_01_RF"];
+    _transportBoat append ["EF_B_CombatBoat_Unarmed_NATO", "EF_B_CombatBoat_Unarmed_GEN"];
+    _gunBoat append ["EF_B_CombatBoat_HMG_NATO", "EF_B_CombatBoat_AT_NATO"];
+};
+
+if (_hasEF) then {
+    _policeVehs append ["EF_B_Gyra_GEN", "EF_B_Gyra_HMG_GEN"];
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "clv_Aml20")) then {
