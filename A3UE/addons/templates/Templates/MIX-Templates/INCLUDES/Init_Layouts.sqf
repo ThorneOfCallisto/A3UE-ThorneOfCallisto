@@ -979,6 +979,44 @@ private _patrolSpotterTemplate = {
 //  Things below here can and will break the gamemode if improperly changed.
 ////////////////////////////////////////////////////////////////////////////////////////
 
+
+/*
+    Thorne MIX wrapper.
+
+    IMPORTANT:
+    Do not manually call _fnc_buildLoadouts. That helper does not exist in
+    current A3AU fn_loadFaction.
+
+    A3AU's _fnc_generateAndSaveUnitsToTemplate creates:
+        <prefix>_<role>
+
+    In MIX mode we simply turn:
+        military -> military_BAF
+    so A3AU itself creates:
+        military_BAF_Rifleman
+
+    Compatibility loading will later expose this as:
+        loadouts_occ_military_BAF_Rifleman
+*/
+private _fnc_thorneGenerateAndSaveUnits = {
+    params ["_basePrefix", "_unitTypes", "_loadoutData"];
+
+    private _finalPrefix = _basePrefix;
+
+    if (!isNil "_gearFactionTag" && { _gearFactionTag isEqualType "" } && { _gearFactionTag != "" }) then {
+        _finalPrefix = format ["%1_%2", _basePrefix, _gearFactionTag];
+    };
+
+    diag_log format [
+        "[Thorne MIX] Generate category '%1' -> prefix '%2' tag='%3'",
+        _basePrefix,
+        _finalPrefix,
+        if (isNil "_gearFactionTag") then {"BASE"} else {_gearFactionTag}
+    ];
+
+    [_finalPrefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+};
+
 /////////////////////////////
 //  Special Forces Units   //
 /////////////////////////////
@@ -999,7 +1037,7 @@ private _unitTypes = [
 	["Sniper", _sniperTemplate, [], [_prefix]]
 ];
 
-[_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes, _sfLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 
 /*{
     params ["_name", "_loadoutTemplate"];
@@ -1031,7 +1069,7 @@ private _unitTypes = [
     	["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
 ];
 
-[_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes, _militaryLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 
 ////////////////////////
 //    Police Units    //
@@ -1042,7 +1080,7 @@ private _unitTypes = [
 	["Standard", _policeTemplate, [], [_prefix]]
 ];
 
-[_prefix, _unitTypes, _policeLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes, _policeLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 
 ////////////////////////
 //    Militia Units    //
@@ -1066,7 +1104,7 @@ private _unitTypes = [
     ["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
 ];
 
-[_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes, _militiaLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 
 ///////////////////////
 //  Elite Units   //
@@ -1090,19 +1128,19 @@ private _unitTypes = [
     	["PatrolSpotter", _patrolSpotterTemplate, [], [_prefix]]
 ];
 
-[_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes, _eliteLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 
 //////////////////////
 //    Misc Units    //
 //////////////////////
 
 //The following lines are determining the loadout of vehicle crew
-["other", [["Crew", _crewTemplate, [], ["other"]]], _crewLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Crew", _crewTemplate, [], ["other"]]], _crewLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 
-["other", [["Pilot", _crewTemplate, [], ["other"]]], _pilotLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Pilot", _crewTemplate, [], ["other"]]], _pilotLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 //The following lines are determining the loadout for the unit used in the "kill the official" mission
-["other", [["Official", _officerTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Official", _officerTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 //The following lines are determining the loadout for the AI used in the "kill the traitor" mission
-["other", [["Traitor", _traitorTemplate, [], ["other"]]], _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Traitor", _traitorTemplate, [], ["other"]]], _militiaLoadoutData] call _fnc_thorneGenerateAndSaveUnits;
 //The following lines are determining the loadout for the AI used in the "Invader Punishment" mission
-["other", [["Unarmed", _UnarmedTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Unarmed", _UnarmedTemplate, [], ["other"]]], _militaryLoadoutData] call _fnc_thorneGenerateAndSaveUnits;

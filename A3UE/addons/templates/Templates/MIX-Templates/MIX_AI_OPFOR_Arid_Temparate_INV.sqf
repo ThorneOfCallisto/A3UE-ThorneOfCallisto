@@ -55,4 +55,27 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
 //  End Include Factions here   //
 //////////////////////////////////
 
-#include "INCLUDES\Init_Layouts.sqf"
+/*
+    Generate one full set of A3AU loadouts per captured coalition member.
+    No RANDOM here: RANDOM would generate only one faction snapshot.
+*/
+private _mixedFactionTags = call _fnc_gearFactionGetTags;
+
+diag_log format [
+    "[Thorne MIX] Captured gear factions: %1",
+    _mixedFactionTags
+];
+
+{
+    private _gearFactionTag = _x;
+
+    [_gearFactionTag] call _fnc_gearFactionApply;
+
+    diag_log format [
+        "[Thorne MIX] ===== Generating A3AU loadouts for %1 =====",
+        _gearFactionTag
+    ];
+
+    #include "INCLUDES\Init_Layouts.sqf"
+
+} forEach _mixedFactionTags;

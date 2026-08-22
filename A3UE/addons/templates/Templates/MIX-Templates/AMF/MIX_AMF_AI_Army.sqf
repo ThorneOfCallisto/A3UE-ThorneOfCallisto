@@ -273,7 +273,7 @@ _sfENGuniforms append [];
 _sfSLuniforms append [];
 _sfvests append ["amf_SMB_FUS", "amf_SMB_FUS_FAMAS"];
 _sfHvests append [];
-_sfMGvests append ["amf_SMB_ART_TDF"];
+_sfMGvests append ["amf_SMB_ART"];
 _sfMEDvests append ["amf_SMB_AUXSAN", "amf_SMB_AUXSAN_FAMAS"];
 _sfSLvests append ["amf_SMB_LEADER_FAMAS", "amf_SMB_LEADER"];
 _sfSNIvests append ["amf_SMB_TP_SCAR", "amf_SMB_TP_HK417", "amf_SMB_TP_FRF2"];
@@ -343,8 +343,8 @@ _elitemarksmanRifles append [
 ];
 _elitesniperRifles append [
     ["AMF_PGM_ULTIMA_RATIO_01_F", "", "", "AMF_schmidt_benderx4", ["10Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
-    ["R3F_PGM_ULTIMA_RATIO", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""]
-    ["R3F_PGM_Hecate_II_DES", "", "", "R3F_J8_DES", ["R3F_7Rnd_127x99_PGM"], [], ""]
+    ["R3F_PGM_ULTIMA_RATIO", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
+    ["R3F_PGM_Hecate_II_DES", "", "", "R3F_J8_DES", ["R3F_7Rnd_127x99_PGM"], [], ""],
     ["R3F_TAC50", "", "", "R3F_ZEISS_DES", ["R3F_5Rnd_127x99_TAC50"], [], ""]
 ];
 _elitelightATLaunchers append ["AMF_AT4CS_Loaded"];
@@ -386,7 +386,7 @@ _eliteuniforms append ["amf_uniform_01_CE_HX", "amf_uniform_01_RE_NG_CE_HX", "am
 _eliteSLuniforms append [];
 _elitevests append ["amf_SMB_FUS", "amf_SMB_FUS_FAMAS"];
 _eliteHvests append [];
-_eliteMGvests append ["amf_SMB_ART_TDF"];
+_eliteMGvests append ["amf_SMB_ART"];
 _eliteMEDvests append ["amf_SMB_AUXSAN", "amf_SMB_AUXSAN_FAMAS"];
 _eliteSLvests append ["amf_SMB_LEADER_FAMAS", "amf_SMB_LEADER"];
 _eliteSNIvests append ["amf_SMB_TP_SCAR", "amf_SMB_TP_HK417", "amf_SMB_TP_FRF2"];
@@ -490,7 +490,7 @@ _militaryENGuniforms append [];
 _militarySLuniforms append ["AMF_CRY_G3_RolledSleeve_CCE"];
 _militaryvests append ["amf_SMB_FUS", "amf_SMB_FUS_FAMAS"];
 _militaryHvests append [];
-_militaryMGvests append ["amf_SMB_ART_TDF"];
+_militaryMGvests append ["amf_SMB_ART"];
 _militaryMEDvests append ["amf_SMB_AUXSAN", "amf_SMB_AUXSAN_FAMAS"];
 _militarySLvests append ["amf_SMB_LEADER_FAMAS", "amf_SMB_LEADER"];
 _militarySNIvests append ["amf_SMB_TP_SCAR", "amf_SMB_TP_HK417", "amf_SMB_TP_FRF2"];
@@ -566,7 +566,7 @@ _militiamarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["20Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
 ];
 _militiasniperRifles append [
-    ["AMF_RFF2_01_F", "", "", "ScromeJ8", ["AMF_10Rnd_762x51_BO_F3"], [], ""],
+    ["AMF_RFF2_01_F", "", "", "ScromeJ8", ["AMF_10Rnd_762x51_BO_F3"], [], ""]
 ];
 _militialightATLaunchers append ["AMF_AT4CS_Loaded"];
 _militialightHELaunchers append ["AMF_LRAC89_F"];

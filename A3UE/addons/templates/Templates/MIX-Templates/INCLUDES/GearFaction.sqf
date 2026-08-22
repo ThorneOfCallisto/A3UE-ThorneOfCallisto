@@ -185,10 +185,9 @@ private _fnc_gearFactionApply = {
     diag_log format ["[GearFaction] Applied gear faction: %1", _factionName];
 };
 
+
 /*
-    Returns all captured faction tags.
-    Example:
-    ["AAF", "NATO", "US_ARMY", "BAF"]
+    Returns every captured faction tag.
 */
 private _fnc_gearFactionGetTags = {
     keys _gearFactionPools

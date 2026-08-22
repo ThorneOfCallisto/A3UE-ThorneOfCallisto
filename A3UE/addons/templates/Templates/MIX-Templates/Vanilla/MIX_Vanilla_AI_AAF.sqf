@@ -297,12 +297,12 @@ _sfNVGs append [];
 _sfbinoculars append ["Rangefinder"];
 _sfrangefinders append [];
 
-_sfuniforms append ["U_I_CombatUniform", 4, "U_I_CombatUniform_shortsleeve", 6];
+_sfuniforms append ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve"];
 _sfMEDuniforms append [];
 _sfENGuniforms append [];
 _sfSLuniforms append [];
-_sfvests append ["V_TacVest_oli", 2, "V_PlateCarrierIA2_dgtl", 4, "V_PlateCarrierIA1_dgtl", 4];
-_sfHvests append ["V_PlateCarrierIAGL_dgtl", 4, "V_PlateCarrierIAGL_oli", 6];
+_sfvests append ["V_TacVest_oli", "V_PlateCarrierIA2_dgtl", "V_PlateCarrierIA1_dgtl"];
+_sfHvests append ["V_PlateCarrierIAGL_dgtl", "V_PlateCarrierIAGL_oli"];
 _sfMGvests append [];
 _sfMEDvests append [];
 _sfSLvests append [];
@@ -310,7 +310,7 @@ _sfSNIvests append [];
 _sfGLvests append [];
 _sfATvests append [];
 _sfENGvests append [];
-_sfbackpacks append ["B_TacticalPack_oli", 2, "B_FieldPack_oli", 1, "B_Carryall_oli", 1, "B_AssaultPack_dgtl", 3, "B_Kitbag_sgg", 3];
+_sfbackpacks append ["B_TacticalPack_oli", "B_FieldPack_oli", "B_Carryall_oli", "B_AssaultPack_dgtl", "B_Kitbag_sgg"];
 _sfATBackpacks append [];
 _sfAABackpacks append [];
 _sfMGbackpacks append [];
@@ -320,7 +320,7 @@ _sfENGBackpacks append [];
 _sfEXPBackpacks append [];
 _sfSLBackpacks append [];
 _sflongRangeRadios append [];
-_sfhelmets append ["H_HelmetIA", 5, "H_Cap_blk_Raven", 1, "H_Cap_oli_hs", 0.25, "H_Cap_headphones", 0.25,"H_Booniehat_khk_hs", 0.25, "H_Booniehat_oli", 0.5, "H_Booniehat_dgtl", 1.5, "H_Watchcap_camo", 0.25,"H_Shemag_olive", 0.5, "H_Shemag_olive_hs", 0.5];
+_sfhelmets append ["H_HelmetIA", "H_Cap_blk_Raven", "H_Cap_oli_hs", "H_Cap_headphones","H_Booniehat_khk_hs", "H_Booniehat_oli", "H_Booniehat_dgtl", "H_Watchcap_camo","H_Shemag_olive", "H_Shemag_olive_hs"];
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append [];
@@ -401,10 +401,10 @@ _eliteNVGs append [];
 _elitebinoculars append ["Rangefinder"];
 _eliterangefinders append [];
 
-_eliteuniforms append ["U_I_CombatUniform_shortsleeve", 5, "U_I_CombatUniform", 5];
-_eliteSLuniforms append ["U_I_OfficerUniform", 10];
-_elitevests append ["V_PlateCarrierIA2_dgtl", 3.75, "V_PlateCarrierIA1_dgtl", 3.75, "V_PlateCarrierIAGL_dgtl", 1.5,"V_PlateCarrierIAGL_oli", 1];
-_eliteHvests append ["V_PlateCarrierIAGL_dgtl", 6,"V_PlateCarrierIAGL_oli", 4];
+_eliteuniforms append ["U_I_CombatUniform_shortsleeve", "U_I_CombatUniform"];
+_eliteSLuniforms append ["U_I_OfficerUniform"];
+_elitevests append ["V_PlateCarrierIA2_dgtl", "V_PlateCarrierIA1_dgtl", "V_PlateCarrierIAGL_dgtl","V_PlateCarrierIAGL_oli"];
+_eliteHvests append ["V_PlateCarrierIAGL_dgtl", "V_PlateCarrierIAGL_oli"];
 _eliteMGvests append [];
 _eliteMEDvests append [];
 _eliteSLvests append [];
@@ -412,7 +412,7 @@ _eliteSNIvests append [];
 _eliteGLvests append [];
 _eliteATvests append [];
 _eliteENGvests append [];
-_elitebackpacks append ["B_TacticalPack_oli", 2, "B_FieldPack_oli", 0.5, "B_Carryall_oli", 1, "B_AssaultPack_dgtl", 3,"B_Kitbag_sgg", 3.5];
+_elitebackpacks append ["B_TacticalPack_oli", "B_FieldPack_oli", "B_Carryall_oli", "B_AssaultPack_dgtl","B_Kitbag_sgg"];
 _eliteATBackpacks append [];
 _eliteAABackpacks append [];
 _eliteMGBackpacks append [];
@@ -422,7 +422,7 @@ _eliteENGBackpacks append [];
 _eliteEXPBackpacks append [];
 _eliteSLBackpacks append [];
 _elitelongRangeRadios append [];
-_elitehelmets append ["H_HelmetIA", 6.75, "H_Cap_blk_Raven", 0.5, "H_Cap_oli_hs", 0.25, "H_Cap_headphones", 0.25, "H_Booniehat_oli", 0.5, "H_Booniehat_dgtl", 1.25, "H_Watchcap_camo", 0.25, "H_Booniehat_khk_hs", 0.25];
+_elitehelmets append ["H_HelmetIA", "H_Cap_blk_Raven", "H_Cap_oli_hs", "H_Cap_headphones", "H_Booniehat_oli", "H_Booniehat_dgtl", "H_Watchcap_camo", "H_Booniehat_khk_hs"];
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append [];
@@ -501,11 +501,11 @@ _militaryNVGs append [];
 _militarybinoculars append ["Rangefinder"];
 _militaryrangefinders append [];
 
-_militaryuniforms append ["U_I_CombatUniform_shortsleeve", 3, "U_I_CombatUniform", 3, "U_BG_Guerilla1_2_F", 2];
+_militaryuniforms append ["U_I_CombatUniform_shortsleeve", "U_I_CombatUniform", "U_BG_Guerilla1_2_F"];
 _militaryENGuniforms append [];
-_militarySLuniforms append ["U_I_OfficerUniform", 10];
-_militaryvests append ["V_TacVest_oli", 2, "V_PlateCarrierIA2_dgtl", 5, "V_PlateCarrierIA1_dgtl", 3];
-_militaryHvests append ["V_PlateCarrierIAGL_dgtl", 7,"V_PlateCarrierIAGL_oli", 3];
+_militarySLuniforms append ["U_I_OfficerUniform"];
+_militaryvests append ["V_TacVest_oli", "V_PlateCarrierIA2_dgtl", "V_PlateCarrierIA1_dgtl"];
+_militaryHvests append ["V_PlateCarrierIAGL_dgtl","V_PlateCarrierIAGL_oli"];
 _militaryMGvests append [];
 _militaryMEDvests append [];
 _militarySLvests append [];
@@ -513,7 +513,7 @@ _militarySNIvests append [];
 _militaryGLvests append [];
 _militaryATvests append [];
 _militaryENGvests append [];
-_militarybackpacks append ["B_TacticalPack_oli", 2.5, "B_FieldPack_oli", 1, "B_Carryall_oli", 1.5, "B_AssaultPack_dgtl", 2.5, "B_Kitbag_sgg", 2.5];
+_militarybackpacks append ["B_TacticalPack_oli", "B_FieldPack_oli", "B_Carryall_oli", "B_AssaultPack_dgtl", "B_Kitbag_sgg"];
 _militaryATBackpacks append [];
 _militaryAABackpacks append [];
 _militaryMGBackpacks append [];
@@ -523,7 +523,7 @@ _militaryENGBackpacks append [];
 _militaryEXPBackpacks append [];
 _militarySLBackpacks append [];
 _militarylongRangeRadios append [];
-_militaryhelmets append ["H_HelmetIA", 6.9, "H_Cap_blk_Raven", 1, "H_Cap_oli_hs", 0.5, "H_Cap_headphones", 0.1, "H_Booniehat_oli", 0.25, "H_Booniehat_dgtl", 1.25];
+_militaryhelmets append ["H_HelmetIA", "H_Cap_blk_Raven", "H_Cap_oli_hs", "H_Cap_headphones", "H_Booniehat_oli", "H_Booniehat_dgtl"];
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append [];
@@ -623,12 +623,12 @@ _militiaNVGs append [];
 _militiabinoculars append [];
 _militiarangefinders append [];
 
-_militiauniforms append ["U_I_CombatUniform", 3, "U_I_CombatUniform_shortsleeve", 3, "U_BG_Guerilla1_2_F", 4];
+_militiauniforms append ["U_I_CombatUniform", "U_I_CombatUniform_shortsleeve", "U_BG_Guerilla1_2_F"];
 _militiaMEDuniforms append [];
 _militiaENGuniforms append [];
 _militiaSLuniforms append [];
-_militiavests append ["V_BandollierB_oli", 1.25, "V_Chestrig_oli", 5, "V_TacVest_oli", 3.75];
-_militiaHvests append ["V_TacVest_oli", 10];
+_militiavests append ["V_BandollierB_oli", "V_Chestrig_oli", "V_TacVest_oli"];
+_militiaHvests append ["V_TacVest_oli"];
 _militiaMGvests append [];
 _militiaMEDvests append [];
 _militiaSLvests append [];
@@ -636,7 +636,7 @@ _militiaSNIvests append [];
 _militiaGLvests append [];
 _militiaATvests append [];
 _militiaENGvests append [];
-_militiabackpacks append ["B_TacticalPack_oli", 4, "B_FieldPack_oli", 4, "B_AssaultPack_dgtl", 2];
+_militiabackpacks append ["B_TacticalPack_oli", "B_FieldPack_oli", "B_AssaultPack_dgtl"];
 _militiaATBackpacks append [];
 _militiaAABackpacks append [];
 _militiaMGBackpacks append [];
@@ -646,7 +646,7 @@ _militiaENGBackpacks append [];
 _militiaEXPBackpacks append [];
 _militiaSLBackpacks append [];
 _militialongRangeRadios append [];
-_militiahelmets append ["H_HelmetIA", 4, "H_Booniehat_dgtl", 3, "H_Cap_blk_Raven", 2];
+_militiahelmets append ["H_HelmetIA", "H_Booniehat_dgtl", "H_Cap_blk_Raven"];
 _militiaMEDhelmets append [];
 _militiaSLhelmets append [];
 _militiaSLhats append [];
@@ -658,19 +658,19 @@ _militiafacewear append [];
 //    Misc Loadouts     //
 //////////////////////////
 
-_crewuniforms append ["U_Tank_green_F", 10];
-_crewvests append ["V_BandollierB_oli", 10];
-_crewhelmets append ["H_HelmetCrew_I", 10];
+_crewuniforms append ["U_Tank_green_F"];
+_crewvests append ["V_BandollierB_oli"];
+_crewhelmets append ["H_HelmetCrew_I"];
 _crewcarbines append [];
 _crewSMGs append [];
 _crewsidearms append [];
 
 _crewfacewear append [];
 
-_pilotuniforms append ["U_I_HeliPilotCoveralls", 5, "U_I_pilotCoveralls", 5];
-_pilotvests append ["V_TacVest_oli", 10];
+_pilotuniforms append ["U_I_HeliPilotCoveralls", "U_I_pilotCoveralls"];
+_pilotvests append ["V_TacVest_oli"];
 _pilotbackpacks append [];
-_pilothelmets append ["H_PilotHelmetHeli_I", 5, "H_CrewHelmetHeli_I", 5];
+_pilothelmets append ["H_PilotHelmetHeli_I", "H_CrewHelmetHeli_I"];
 _pilotcarbines append [];
 _pilotSMGs append [];
 _pilotsidearms append [];
@@ -745,16 +745,6 @@ if (_hasSOG) then {
     _faces append [
         #include "..\DLC_content\faces\SOG\SOG_faces_greek.sqf"
     ];
-};
-
-if (_hasRF) then {
-    ["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"] pushBack "1Rnd_RC40_HE_shell_RF";
-    ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"] pushBack "1Rnd_RC40_HE_shell_RF";
-};
-
-if (_hasWs) then {
-    ["UGL_FlareWhite_F", "UGL_FlareWhite_F", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"] pushBack "1Rnd_Pellet_Grenade_shell_lxWS";
-	["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"] pushBack "1Rnd_Pellet_Grenade_shell_lxWS";
 };
 
 if (_hasArtOfWar) then {
