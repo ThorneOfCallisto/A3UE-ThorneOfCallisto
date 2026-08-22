@@ -1,146 +1,304 @@
 /*
-    ThorneOfCallisto MIX override for A3A_fnc_spawnGroup
-
-    Behaviour:
-    - Picks ONE coalition tag for the entire group.
-    - Prefers tags for which every generated loadout in _typesX exists.
-    - Never changes the selected tag after units have started spawning.
-    - Non-loadout CfgVehicles classes do not affect tag compatibility.
-*/
+ * ThorneOfCallisto MIX override of A3A_fnc_spawnGroup
+ *
+ * Behaviour:
+ *   Group A -> choose one coalition faction -> every MIX unit uses it
+ *   Group B -> choose again independently (same faction may be selected)
+ *
+ * The generic A3AU group definitions remain untouched.
+ */
 
 #include "..\..\script_component.hpp"
+FIX_LINE_NUMBERS()
 
 params ["_positionX", "_sideX", "_typesX"];
 
 private _groupX = createGroup _sideX;
+
 private _faction = Faction(_sideX);
 
-private _tags = _faction getOrDefault ["mixedFactionTags", []];
-_tags = _tags select { _x isEqualType "" && { _x != "" } };
+private _mixVariants =
+    _faction getOrDefault [
+        "Thorne_MIX_unitVariants",
+        createHashMap
+    ];
 
-private _fnc_customTypeExists = {
-    params ["_type"];
-    if !(_type isEqualType "") exitWith { false };
-    !(A3A_customUnitTypes getVariable [_type, []] isEqualTo [])
-};
+private _mixTags =
+    _faction getOrDefault [
+        "Thorne_MIX_tags",
+        []
+    ];
 
-private _fnc_makeTaggedType = {
-    params ["_type", "_tag"];
 
-    if !(_type isEqualType "") exitWith { _type };
-    if ((_type find "loadouts_") != 0) exitWith { _type };
+// -------------------------------------------------------------------------
+// Determine which requested roles are MIX roles.
+// -------------------------------------------------------------------------
 
-    private _parts = _type splitString "_";
-    if ((count _parts) < 4) exitWith { _type };
+private _mixRequestedTypes = [];
 
-    private _unitSide = _parts # 1;
-    private _category = _parts # 2;
-    private _role = (_parts select [3]) joinString "_";
+{
+    private _variants =
+        _mixVariants getOrDefault [
+            _x,
+            createHashMap
+        ];
 
-    format ["loadouts_%1_%2_%3_%4", _unitSide, _category, _tag, _role]
-};
+    if ((count (keys _variants)) > 0) then {
+        _mixRequestedTypes pushBackUnique _x;
+    };
+} forEach _typesX;
 
-if (_tags isNotEqualTo []) then {
+
+// -------------------------------------------------------------------------
+// Pick ONE faction for this group.
+// -------------------------------------------------------------------------
+
+private _selectedTag = "";
+
+if (_mixRequestedTypes isNotEqualTo []) then {
     private _compatibleTags = [];
-    private _bestTag = "";
-    private _bestScore = -1;
 
+    /*
+        A faction is fully compatible only if it has a tagged loadout for
+        every MIX role requested by this group.
+    */
     {
         private _tag = _x;
-        private _score = 0;
-        private _required = 0;
+        private _supportsAll = true;
 
         {
-            private _type = _x;
+            private _variants =
+                _mixVariants getOrDefault [
+                    _x,
+                    createHashMap
+                ];
 
-            // Only generated loadout classes need a coalition-tagged equivalent.
-            if (_type isEqualType "" && {(_type find "loadouts_") == 0}) then {
-                _required = _required + 1;
-
-                private _candidate = [_type, _tag] call _fnc_makeTaggedType;
-                if ([_candidate] call _fnc_customTypeExists) then {
-                    _score = _score + 1;
-                } else {
-                    // A generic custom type is also acceptable if the template still provides one.
-                    if ([_type] call _fnc_customTypeExists) then {
-                        _score = _score + 1;
-                    };
-                };
+            if !(_tag in (keys _variants)) exitWith {
+                _supportsAll = false;
             };
-        } forEach _typesX;
+        } forEach _mixRequestedTypes;
 
-        if (_score > _bestScore) then {
-            _bestScore = _score;
-            _bestTag = _tag;
-        };
-
-        if (_score == _required) then {
+        if (_supportsAll) then {
             _compatibleTags pushBack _tag;
         };
-    } forEach _tags;
+    } forEach _mixTags;
 
-    private _selectedTag = "";
 
     if (_compatibleTags isNotEqualTo []) then {
-        _selectedTag = selectRandom _compatibleTags;
+        _selectedTag =
+            selectRandom _compatibleTags;
     } else {
-        // Keep the group consistent even when a faction is missing a role.
-        // createUnit will fall back for that individual missing role WITHOUT changing this tag.
-        _selectedTag = if (_bestTag != "") then { _bestTag } else { selectRandom _tags };
-        diag_log format [
-            "[Thorne MIX] WARNING spawnGroup: no tag supports every generated type. Keeping best tag '%1' (%2 matches). types=%3 tags=%4",
+        /*
+            Broken/incomplete template fallback:
+            choose the faction that covers the most requested roles.
+            Missing soldiers are logged and skipped, NEVER replaced.
+        */
+        private _bestScore = -1;
+        private _bestTags = [];
+
+        {
+            private _tag = _x;
+            private _score = 0;
+
+            {
+                private _variants =
+                    _mixVariants getOrDefault [
+                        _x,
+                        createHashMap
+                    ];
+
+                if (_tag in (keys _variants)) then {
+                    _score = _score + 1;
+                };
+            } forEach _mixRequestedTypes;
+
+            if (_score > _bestScore) then {
+                _bestScore = _score;
+                _bestTags = [_tag];
+            } else {
+                if (_score == _bestScore) then {
+                    _bestTags pushBack _tag;
+                };
+            };
+        } forEach _mixTags;
+
+        if (_bestTags isNotEqualTo []) then {
+            _selectedTag =
+                selectRandom _bestTags;
+
+            diag_log format [
+                "[Thorne MIX] WARNING spawnGroup: no faction covers whole group. selected='%1' coverage=%2/%3 types=%4",
+                _selectedTag,
+                _bestScore,
+                count _mixRequestedTypes,
+                _mixRequestedTypes
+            ];
+        };
+    };
+
+
+    if (_selectedTag != "") then {
+        _groupX setVariable [
+            "Thorne_MIX_selectedTag",
             _selectedTag,
-            _bestScore,
-            _typesX,
-            _tags
+            false
+        ];
+
+        diag_log format [
+            "[Thorne MIX] spawnGroup selected faction='%1' compatible=%2 types=%3",
+            _selectedTag,
+            _compatibleTags,
+            _typesX
+        ];
+    } else {
+        diag_log format [
+            "[Thorne MIX] ERROR spawnGroup: MIX roles exist but no faction tag could be selected. tags=%1 types=%2",
+            _mixTags,
+            _mixRequestedTypes
         ];
     };
-
-    _groupX setVariable ["Thorne_MIX_selectedTag", _selectedTag, false];
-
-    diag_log format [
-        "[Thorne MIX] spawnGroup side=%1 selectedTag=%2 compatibleTags=%3 types=%4",
-        _sideX,
-        _selectedTag,
-        _compatibleTags,
-        _typesX
-    ];
 };
 
-// Original A3AU spawnGroup behaviour below.
-private _ranks = ["LIEUTENANT", "SERGEANT", "CORPORAL"];
-private _countX = count _typesX;
+
+// -------------------------------------------------------------------------
+// Original A3AU ranking behaviour.
+// -------------------------------------------------------------------------
+
+private _ranks = [
+    "LIEUTENANT",
+    "SERGEANT",
+    "CORPORAL"
+];
+
+private _countX =
+    count _typesX;
 
 if (_countX < 4) then {
-    _ranks = _ranks - ["LIEUTENANT", "SERGEANT"];
+    _ranks =
+        _ranks - ["LIEUTENANT", "SERGEANT"];
 } else {
     if (_countX < 8) then {
-        _ranks = _ranks - ["LIEUTENANT"];
+        _ranks =
+            _ranks - ["LIEUTENANT"];
     };
 };
 
-private _countRanks = count _ranks - 1;
-Debug_2("Side: %1 spawning group composition: %2", _sideX, _typesX);
+private _countRanks =
+    count _ranks - 1;
+
+Debug_2(
+    "Side: %1 spawning group composition: %2",
+    _sideX,
+    _typesX
+);
+
+
+// -------------------------------------------------------------------------
+// Spawn every unit.
+// -------------------------------------------------------------------------
 
 for "_i" from 0 to (_countX - 1) do {
-    private _unit = [_groupX, (_typesX select _i), _positionX, [], 0, "NONE"] call A3A_fnc_createUnit;
+    private _requestedType =
+        _typesX select _i;
 
-    if (!isNull _unit) then {
-        _unit allowDamage false;
+    private _spawnType =
+        _requestedType;
 
-        if (_i <= _countRanks) then {
-            _unit setRank (_ranks select _i);
+    private _skipUnit =
+        false;
+
+    private _variants =
+        _mixVariants getOrDefault [
+            _requestedType,
+            createHashMap
+        ];
+
+
+    /*
+        This requested role belongs to the MIX faction.
+        Always use the group-selected tagged variant even though
+        EnemyDefaults also registered a generic loadout with the same name.
+    */
+    if ((count (keys _variants)) > 0) then {
+        if (_selectedTag == "") then {
+            _skipUnit = true;
+
+            diag_log format [
+                "[Thorne MIX] ERROR spawnGroup: no selected faction for MIX role '%1'. Unit skipped.",
+                _requestedType
+            ];
+        } else {
+            _spawnType =
+                _variants getOrDefault [
+                    _selectedTag,
+                    ""
+                ];
+
+            if (_spawnType == "") then {
+                _skipUnit = true;
+
+                diag_log format [
+                    "[Thorne MIX] ERROR spawnGroup: faction '%1' has no variant for '%2'. Unit skipped.",
+                    _selectedTag,
+                    _requestedType
+                ];
+            } else {
+                diag_log format [
+                    "[Thorne MIX] spawnGroup resolve '%1' -> '%2'",
+                    _requestedType,
+                    _spawnType
+                ];
+            };
         };
+    };
 
-        if ((_typesX select _i) in FactionGet(all, "SquadLeaders")) then {
-            _groupX selectLeader _unit;
+
+    if (!_skipUnit) then {
+        private _unit = [
+            _groupX,
+            _spawnType,
+            _positionX,
+            [],
+            0,
+            "NONE"
+        ] call A3A_fnc_createUnit;
+
+
+        if (!isNull _unit) then {
+            _unit allowDamage false;
+
+            if (_i <= _countRanks) then {
+                _unit setRank (
+                    _ranks select _i
+                );
+            };
+
+            /*
+                Keep checking the ORIGINAL generic type because A3AU's
+                SquadLeaders arrays contain generic logical role names.
+            */
+            if (
+                _requestedType
+                in FactionGet(all, "SquadLeaders")
+            ) then {
+                _groupX selectLeader _unit;
+            };
+        } else {
+            diag_log format [
+                "[Thorne MIX] ERROR spawnGroup: createUnit returned objNull requested='%1' resolved='%2' faction='%3'",
+                _requestedType,
+                _spawnType,
+                _selectedTag
+            ];
         };
-    } else {
-        diag_log format ["[Thorne MIX] ERROR spawnGroup: createUnit returned objNull for '%1'", _typesX select _i];
     };
 
     sleep 0.25;
 };
 
-{ _x allowDamage true } forEach units _groupX;
+
+{
+    _x allowDamage true
+} forEach units _groupX;
+
 _groupX

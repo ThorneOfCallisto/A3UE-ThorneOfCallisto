@@ -12,7 +12,7 @@ _policehelmets append [ // Police helmets.
 	"H_MilCap_gen_F",
 	"H_Beret_gen_F"
 ];
-_policeuniforms append [
+_policevests append [
 	"V_TacVest_gen_F"
 ];
 _policeuniforms append [

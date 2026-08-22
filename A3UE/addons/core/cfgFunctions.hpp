@@ -8,5 +8,9 @@ class CfgFunctions
             class NATOinit { file = QPATHTOFOLDER(functions\CREATE\fn_NATOinit.sqf); };
             class spawnGroup { file = QPATHTOFOLDER(functions\CREATE\fn_spawnGroup.sqf); };
         };
+        
+        class FunctionsTemplates {
+            class compatibilityLoadFaction { file = QPATHTOFOLDER(functions\Templates\fn_compatibilityLoadFaction.sqf); };
+        };
     };
 };

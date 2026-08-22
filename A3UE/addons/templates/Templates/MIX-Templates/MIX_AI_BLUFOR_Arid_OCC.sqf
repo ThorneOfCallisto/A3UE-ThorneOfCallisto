@@ -19,9 +19,9 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 //    Include Factions here    //
 /////////////////////////////////
 
-_gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-#include "Vanilla\MIX_Vanilla_AI_AAF.sqf";
-["AAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+// _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+// #include "Vanilla\MIX_Vanilla_AI_AAF.sqf";
+// ["AAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
 _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 #include "Vanilla\MIX_Vanilla_AI_NATO_Arid.sqf";
 ["NATO", _gearFactionSnapshot] call _fnc_gearFactionCapture;
@@ -93,6 +93,11 @@ diag_log format [
     "[Thorne MIX] Captured gear factions: %1",
     _mixedFactionTags
 ];
+
+// Persist MIX metadata into the faction HashMap.
+// compatibilityLoadFaction can read this after A3A_fnc_loadFaction returns.
+["mixedFactionTags", +_mixedFactionTags] call _fnc_saveToTemplate;
+["isMixedFaction", true] call _fnc_saveToTemplate;
 
 {
     private _gearFactionTag = _x;
