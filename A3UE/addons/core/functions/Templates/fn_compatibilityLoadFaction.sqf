@@ -43,7 +43,7 @@ private _factionDefaultFile = [
     Use the original A3A path explicitly.
 */
 _factionDefaultFile =
-    "\\x\\A3A\\addons\\core\\Templates\\Templates\\FactionDefaults\\"
+    "\x\A3A\addons\core\Templates\Templates\FactionDefaults\"
     + _factionDefaultFile
     + ".sqf";
 
