@@ -1,29 +1,29 @@
 _sfhelmets append [
-	"lxWS_H_bmask_camo02", 3,
-	"lxWS_H_Headset", 0.25,
-	"lxWS_H_PASGT_facewear_olive_F", 0.5,
-	"H_Beret_Headset_lxWS", 0.25
+	"lxWS_H_bmask_camo02",
+	"lxWS_H_Headset",
+	"lxWS_H_PASGT_facewear_olive_F",
+	"H_Beret_Headset_lxWS"
 ];
 //////////////////////////////////////////////////////
 _elitebackpacks append [
-	"I_shield_backpack_lxWS", 1
+	"I_shield_backpack_lxWS"
 ];
 _elitehelmets append [
-	"lxWS_H_bmask_camo02", 2,
-	"lxWS_H_Headset", 0.25,
-	"lxWS_H_PASGT_facewear_olive_F", 1.5,
-	"H_Beret_Headset_lxWS", 0.25
+	"lxWS_H_bmask_camo02",
+	"lxWS_H_Headset",
+	"lxWS_H_PASGT_facewear_olive_F",
+	"H_Beret_Headset_lxWS"
 ];
 //////////////////////////////////////////////////////
 _militaryhelmets append [
-	"lxWS_H_bmask_camo02", 0.5,
-	"lxWS_H_Headset", 0.25,
-	"lxWS_H_PASGT_facewear_olive_F", 1
+	"lxWS_H_bmask_camo02",
+	"lxWS_H_Headset",
+	"lxWS_H_PASGT_facewear_olive_F"
 ];
 //////////////////////////////////////////////////////
 _militiavests append [
-	"V_lxWS_HarnessO_oli", 4
+	"V_lxWS_HarnessO_oli"
 ];
 _militiaHvests append [
-	"V_lxWS_TacVestIR_oli", 7.5
+	"V_lxWS_TacVestIR_oli"
 ];

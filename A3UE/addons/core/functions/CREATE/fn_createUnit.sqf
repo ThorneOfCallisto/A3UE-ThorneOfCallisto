@@ -1,33 +1,72 @@
 /*
-    Thorne MIX createUnit override - restored to the working mixed-spawn version.
+    ThorneOfCallisto MIX override for A3A_fnc_createUnit
 
-    Changes compared to the broken identity attempt:
-    - Keeps createUnit focused on creating the unit and resolving loadout classnames.
-    - Does NOT do mixed face/voice logic here anymore.
-    - Avoids A3AU CBA macros like Faction(...) so it compiles safely from the extender.
-    - Stores small metadata variables that fn_NATOinit can use later.
+    Main rules:
+    - loadouts_occ_military_Rifleman + group tag BAF
+        -> loadouts_occ_military_BAF_Rifleman
+    - Tags containing underscores (for example US_ARMY) are supported.
+    - The group tag is NEVER changed because one role is missing.
+    - Standalone createUnit calls choose a compatible tag once and store it on the group.
+    - Empty/malformed generated loadouts do not strip the base-class gear.
 */
+
+#include "..\..\script_component.hpp"
 
 params ["_group", "_type", "_position", ["_markers", []], ["_placement", 0], ["_special", "NONE"], "_identity"];
 
-private _fnc_thorneFactionFromSide = {
-    params ["_side"];
-    switch (_side) do {
-        case west: { missionNamespace getVariable ["A3A_faction_occ", createHashMap] };
-        case east: { missionNamespace getVariable ["A3A_faction_inv", createHashMap] };
-        case independent: { missionNamespace getVariable ["A3A_faction_reb", createHashMap] };
-        case civilian: { missionNamespace getVariable ["A3A_faction_civ", createHashMap] };
-        default { missionNamespace getVariable ["A3A_faction_occ", createHashMap] };
-    };
+private _originalType = _type;
+private _side = side _group;
+private _faction = Faction(_side);
+
+private _tags = _faction getOrDefault ["mixedFactionTags", []];
+_tags = _tags select { _x isEqualType "" && { _x != "" } };
+
+private _fnc_customTypeExists = {
+    params ["_candidate"];
+    if !(_candidate isEqualType "") exitWith { false };
+    !(A3A_customUnitTypes getVariable [_candidate, []] isEqualTo [])
 };
 
-private _fnc_thorneCustomTypeExists = {
-    params ["_className"];
-    if !(_className isEqualType "") exitWith { false };
-    !(A3A_customUnitTypes getVariable [_className, []] isEqualTo [])
+private _fnc_makeTaggedType = {
+    params ["_unitType", "_tag"];
+
+    if !(_unitType isEqualType "") exitWith { _unitType };
+    if ((_unitType find "loadouts_") != 0) exitWith { _unitType };
+
+    private _parts = _unitType splitString "_";
+    if ((count _parts) < 4) exitWith { _unitType };
+
+    private _unitSide = _parts # 1;
+    private _category = _parts # 2;
+    private _role = (_parts select [3]) joinString "_";
+
+    format ["loadouts_%1_%2_%3_%4", _unitSide, _category, _tag, _role]
 };
 
-private _fnc_thorneFallbackVehicleClass = {
+private _fnc_findExistingTag = {
+    params ["_unitType", "_knownTags"];
+
+    if !(_unitType isEqualType "") exitWith { "" };
+    if ((_unitType find "loadouts_") != 0) exitWith { "" };
+
+    private _parts = _unitType splitString "_";
+    if ((count _parts) < 4) exitWith { "" };
+
+    private _unitSide = _parts # 1;
+    private _category = _parts # 2;
+    private _found = "";
+
+    {
+        private _prefix = format ["loadouts_%1_%2_%3_", _unitSide, _category, _x];
+        if ((_unitType find _prefix) == 0) exitWith {
+            _found = _x;
+        };
+    } forEach _knownTags;
+
+    _found
+};
+
+private _fnc_safeVehicleClass = {
     params ["_side"];
     switch (_side) do {
         case west: { "B_Soldier_F" };
@@ -35,110 +74,79 @@ private _fnc_thorneFallbackVehicleClass = {
         case independent: { "I_Soldier_F" };
         case civilian: { "C_man_1" };
         default { "B_Soldier_F" };
-    };
+    }
 };
 
-private _fnc_thorneExtractTag = {
-    params ["_unitType", ["_tags", []]];
+private _resolvedTag = "";
 
-    private _tag = "BASE";
-    if !(_unitType isEqualType "") exitWith { _tag };
+// Resolve generic generated loadout names to the coalition member selected for this group.
+if (_type isEqualType "" && {(_type find "loadouts_") == 0} && {_tags isNotEqualTo []}) then {
+    private _alreadyTagged = [_type, _tags] call _fnc_findExistingTag;
 
-    private _parts = _unitType splitString "_";
-    if ((count _parts) >= 5) then {
-        private _possibleTag = _parts # 3;
-        if (_possibleTag in _tags) then {
-            _tag = _possibleTag;
+    if (_alreadyTagged != "") then {
+        // Explicitly-tagged type: respect it.
+        _resolvedTag = _alreadyTagged;
+
+        if ((_group getVariable ["Thorne_MIX_selectedTag", ""]) == "") then {
+            _group setVariable ["Thorne_MIX_selectedTag", _alreadyTagged, false];
+        };
+    } else {
+        private _selectedTag = _group getVariable ["Thorne_MIX_selectedTag", ""];
+
+        // Standalone unit creation may not pass through spawnGroup.
+        // Pick a tag that actually has this role, once, and persist it on the group.
+        if !(_selectedTag in _tags) then {
+            private _compatibleTags = _tags select {
+                private _candidate = [_type, _x] call _fnc_makeTaggedType;
+                [_candidate] call _fnc_customTypeExists
+            };
+
+            if (_compatibleTags isNotEqualTo []) then {
+                _selectedTag = selectRandom _compatibleTags;
+            } else {
+                _selectedTag = selectRandom _tags;
+            };
+
+            _group setVariable ["Thorne_MIX_selectedTag", _selectedTag, false];
+
+            diag_log format [
+                "[Thorne MIX] createUnit assigned tag '%1' to standalone group for '%2' (compatible=%3)",
+                _selectedTag,
+                _type,
+                _compatibleTags
+            ];
+        };
+
+        _resolvedTag = _selectedTag;
+        private _candidate = [_type, _selectedTag] call _fnc_makeTaggedType;
+
+        if ([_candidate] call _fnc_customTypeExists) then {
+            _type = _candidate;
+            diag_log format ["[Thorne MIX] createUnit %1 -> %2", _originalType, _type];
+        } else {
+            // IMPORTANT: do not switch the entire group to another faction here.
+            // Prefer a generic generated entry if one still exists.
+            if ([_type] call _fnc_customTypeExists) then {
+                diag_log format [
+                    "[Thorne MIX] WARNING: tag '%1' has no '%2'. Keeping group tag and using generic custom type.",
+                    _selectedTag,
+                    _originalType
+                ];
+            } else {
+                diag_log format [
+                    "[Thorne MIX] ERROR: tag '%1' has no generated type for '%2' (expected '%3'). Group tag will NOT change.",
+                    _selectedTag,
+                    _originalType,
+                    _candidate
+                ];
+
+                // Prevent Arma from trying to create a fake CfgVehicles classname like
+                // 'loadouts_occ_militia_Rifleman'.
+                _type = [_side] call _fnc_safeVehicleClass;
+            };
         };
     };
-
-    _tag
 };
-
-private _fnc_thorneExtractPrefix = {
-    params ["_unitType"];
-
-    private _prefix = "";
-    if !(_unitType isEqualType "") exitWith { _prefix };
-
-    private _parts = _unitType splitString "_";
-    if ((count _parts) >= 3) then {
-        _prefix = _parts # 2;
-    };
-
-    _prefix
-};
-
-private _originalType = _type;
-
-private _fnc_thorneResolveMixedUnitType = {
-    params ["_group", "_unitType"];
-
-    if !(_unitType isEqualType "") exitWith { _unitType };
-    if !(_unitType select [0, 9] isEqualTo "loadouts_") exitWith { _unitType };
-
-    private _parts = _unitType splitString "_";
-    if ((count _parts) < 4) exitWith { _unitType };
-
-    private _unitSide = _parts # 1;
-    private _category = _parts # 2;
-    private _roleParts = _parts select [3];
-    private _role = _roleParts joinString "_";
-
-    private _side = side _group;
-    private _faction = [_side] call _fnc_thorneFactionFromSide;
-    private _tags = _faction getOrDefault ["mixedFactionTags", []];
-    _tags = _tags select { _x isEqualType "" && { _x isNotEqualTo "" } };
-
-    if (_tags isEqualTo []) exitWith { _unitType };
-
-    // Do not double-tag a classname that is already tag-specific.
-    if ((count _parts) >= 5 && { (_parts # 3) in _tags }) exitWith { _unitType };
-
-    private _selectedTag = _group getVariable ["Thorne_MIX_selectedTag", ""];
-    if !(_selectedTag in _tags) then {
-        _selectedTag = selectRandom _tags;
-        _group setVariable ["Thorne_MIX_selectedTag", _selectedTag, false];
-    };
-
-    private _fnc_makeCandidate = {
-        params ["_tag"];
-        format ["loadouts_%1_%2_%3_%4", _unitSide, _category, _tag, _role]
-    };
-
-    private _candidate = [_selectedTag] call _fnc_makeCandidate;
-    if ([_candidate] call _fnc_thorneCustomTypeExists) exitWith { _candidate };
-
-    // Selected tag missed this exact role/category. Try every other generated tag before falling back.
-    {
-        private _fallbackCandidate = [_x] call _fnc_makeCandidate;
-        if ([_fallbackCandidate] call _fnc_thorneCustomTypeExists) exitWith {
-            _group setVariable ["Thorne_MIX_selectedTag", _x, false];
-            _candidate = _fallbackCandidate;
-            diag_log format ["[Thorne MIX] Selected tag '%1' missing '%2'. Using tag '%3' -> '%4'.", _selectedTag, _unitType, _x, _candidate];
-        };
-    } forEach _tags;
-
-    if ([_candidate] call _fnc_thorneCustomTypeExists) exitWith { _candidate };
-
-    if ([_unitType] call _fnc_thorneCustomTypeExists) exitWith {
-        diag_log format ["[Thorne MIX] No tagged class found for '%1'. Using base generated class.", _unitType];
-        _unitType
-    };
-
-    // Last-resort safe fallback to stop engine spam: Cannot create non-ai vehicle loadouts_...
-    private _safeClass = [_side] call _fnc_thorneFallbackVehicleClass;
-    diag_log format ["[Thorne MIX] ERROR: No generated custom unit exists for '%1' or tagged variants %2. Falling back to CfgVehicles class '%3'. Check Init_Layouts generation.", _unitType, _tags, _safeClass];
-    _safeClass
-};
-
-_type = [_group, _type] call _fnc_thorneResolveMixedUnitType;
-
-private _resolvedSide = side _group;
-private _resolvedFaction = [_resolvedSide] call _fnc_thorneFactionFromSide;
-private _resolvedTags = _resolvedFaction getOrDefault ["mixedFactionTags", []];
-private _gearTag = [_type, _resolvedTags] call _fnc_thorneExtractTag;
-private _basePrefix = [_type] call _fnc_thorneExtractPrefix;
 
 private _unitDefinition = A3A_customUnitTypes getVariable [_type, []];
 
@@ -146,38 +154,73 @@ if !(_unitDefinition isEqualTo []) exitWith {
     _unitDefinition params ["_loadouts", "_traits", "_unitProperties", "_unitClass"];
 
     private _canSkip = false;
+
     {
-        if (_x select 0 isEqualTo "baseClass") then {
+        if ((_x select 0) isEqualTo "baseClass") then {
             _unitClass = _x select 1;
+
             if (_unitClass isEqualType []) then {
-                if ((_unitClass select 0) isEqualType []) exitWith {
-                    private _weights = ((_x select 1) select 1);
-                    private _units = ((_x select 1) select 0);
-                    _unitClass = _units selectRandomWeighted _weights;
+                if (_unitClass isEqualTo []) then {
+                    _unitClass = [_side] call _fnc_safeVehicleClass;
+                } else {
+                    if ((_unitClass # 0) isEqualType []) then {
+                        private _weights = (_x select 1) select 1;
+                        private _units = (_x select 1) select 0;
+                        _unitClass = _units selectRandomWeighted _weights;
+                    } else {
+                        _unitClass = selectRandom (_x select 1);
+                    };
                 };
-                _unitClass = selectRandom (_x select 1);
             };
-            if (_x select 2 isEqualTo true) then { _canSkip = true; };
+        };
+
+        if ((count _x) > 2 && {(_x select 2) isEqualTo true}) then {
+            _canSkip = true;
         };
     } forEach _traits;
+
+    if !(_unitClass isEqualType "") then {
+        diag_log format ["[Thorne MIX] ERROR: invalid baseClass for '%1': %2. Using safe fallback.", _type, _unitClass];
+        _unitClass = [_side] call _fnc_safeVehicleClass;
+    };
+
+    if !(isClass (configFile >> "CfgVehicles" >> _unitClass)) then {
+        diag_log format ["[Thorne MIX] ERROR: missing CfgVehicles baseClass '%1' for '%2'. Using safe fallback.", _unitClass, _type];
+        _unitClass = [_side] call _fnc_safeVehicleClass;
+    };
 
     private _unit = _group createUnit [_unitClass, _position, _markers, _placement, _special];
     [_unit] joinSilent _group;
 
     if (_canSkip isEqualTo false) then {
-        _unit setUnitLoadout selectRandom _loadouts;
+        if (_loadouts isEqualType [] && {_loadouts isNotEqualTo []}) then {
+            private _selectedLoadout = selectRandom _loadouts;
+
+            if (_selectedLoadout isEqualType [] && {_selectedLoadout isNotEqualTo []}) then {
+                _unit setUnitLoadout _selectedLoadout;
+            } else {
+                diag_log format [
+                    "[Thorne MIX] WARNING: malformed/empty selected loadout for '%1'. Keeping baseClass gear. selected=%2",
+                    _type,
+                    _selectedLoadout
+                ];
+            };
+        } else {
+            diag_log format [
+                "[Thorne MIX] WARNING: no valid loadouts generated for '%1'. Keeping baseClass gear. loadouts=%2",
+                _type,
+                _loadouts
+            ];
+        };
     };
 
     _unit setVariable ["unitType", _type, true];
-    _unit setVariable ["Thorne_MIX_ResolvedUnitType", _type, true];
     _unit setVariable ["Thorne_MIX_BaseUnitType", _originalType, true];
-    _unit setVariable ["Thorne_MIX_GearTag", _gearTag, true];
-    _unit setVariable ["Thorne_MIX_BaseUnitPrefix", _basePrefix, true];
+    _unit setVariable ["Thorne_MIX_ResolvedUnitType", _type, true];
+    _unit setVariable ["Thorne_MIX_GearTag", _resolvedTag, true];
 
-    // Keep identity creation close to original A3AU createUnit behavior.
-    // The faction-aware correction happens later in fn_NATOinit.
     private _identityFinal = if (isNil "_identity") then {
-        [[side _unit] call _fnc_thorneFactionFromSide, _type] call A3A_fnc_createRandomIdentity;
+        [Faction(side _unit), _type] call A3A_fnc_createRandomIdentity;
     } else {
         _identity;
     };
@@ -185,13 +228,17 @@ if !(_unitDefinition isEqualTo []) exitWith {
 
     {
         switch (true) do {
-            case (_x isEqualType true): { _unit setVariable ["isRival", _x, true]; };
-            case (_x isEqualType ""): { _unit setVariable ["unitPrefix", _x, true]; };
+            case (_x isEqualType true): {
+                _unit setVariable ["isRival", _x, true];
+            };
+            case (_x isEqualType ""): {
+                _unit setVariable ["unitPrefix", _x, true];
+            };
         };
     } forEach _unitProperties;
 
     {
-        if (_x select 0 isNotEqualTo "baseClass") then {
+        if ((_x select 0) isNotEqualTo "baseClass") then {
             _unit setUnitTrait _x;
         };
     } forEach _traits;
@@ -199,10 +246,28 @@ if !(_unitDefinition isEqualTo []) exitWith {
     _unit
 };
 
-private _unit = _group createUnit [_type, _position, _markers, _placement, _special];
-_unit setVariable ["unitType", _type, true];
-_unit setVariable ["Thorne_MIX_ResolvedUnitType", _type, true];
-_unit setVariable ["Thorne_MIX_BaseUnitType", _originalType, true];
-_unit setVariable ["Thorne_MIX_GearTag", _gearTag, true];
-_unit setVariable ["Thorne_MIX_BaseUnitPrefix", _basePrefix, true];
-_unit
+// Normal CfgVehicles classname path.
+if (_type isEqualType "" && {isClass (configFile >> "CfgVehicles" >> _type)}) then {
+    private _unit = _group createUnit [_type, _position, _markers, _placement, _special];
+    _unit setVariable ["unitType", _type, true];
+    _unit setVariable ["Thorne_MIX_BaseUnitType", _originalType, true];
+    _unit setVariable ["Thorne_MIX_ResolvedUnitType", _type, true];
+    _unit setVariable ["Thorne_MIX_GearTag", _resolvedTag, true];
+    _unit
+} else {
+    // Last guard against engine spam from unresolved loadouts_* names.
+    private _safeClass = [_side] call _fnc_safeVehicleClass;
+    diag_log format [
+        "[Thorne MIX] ERROR: unresolved unit type '%1' resolved as '%2'. Creating '%3' instead.",
+        _originalType,
+        _type,
+        _safeClass
+    ];
+
+    private _unit = _group createUnit [_safeClass, _position, _markers, _placement, _special];
+    _unit setVariable ["unitType", _originalType, true];
+    _unit setVariable ["Thorne_MIX_BaseUnitType", _originalType, true];
+    _unit setVariable ["Thorne_MIX_ResolvedUnitType", _safeClass, true];
+    _unit setVariable ["Thorne_MIX_GearTag", _resolvedTag, true];
+    _unit
+}

@@ -1,46 +1,46 @@
 _sfbackpacks append [
-	"B_DuffleBag_Olive_NoLogo_RF", 1.5
+	"B_DuffleBag_Olive_NoLogo_RF"
 ];
 _sfhelmets append [
-	"H_HelmetIA_sb_digital_RF", 5,
-	"H_HelmetHeavy_Olive_RF", 2,
-	"H_HelmetHeavy_Simple_Olive_RF", 1.25,
-	"H_HelmetHeavy_VisorUp_Olive_RF", 1.25
+	"H_HelmetIA_sb_digital_RF",
+	"H_HelmetHeavy_Olive_RF",
+	"H_HelmetHeavy_Simple_Olive_RF",
+	"H_HelmetHeavy_VisorUp_Olive_RF"
 ];
 //////////////////////////////////////////////////////
-_elitebackpacks append ["B_DuffleBag_Olive_NoLogo_RF", 1.5,"I_CommandoMortar_weapon_RF", 0.25];
+_elitebackpacks append ["B_DuffleBag_Olive_NoLogo_RF","I_CommandoMortar_weapon_RF"];
 _elitehelmets append [
-	"H_HelmetIA_sb_digital_RF", 5,
-	"H_HelmetHeavy_Olive_RF", 1.34,
-	"H_HelmetHeavy_Simple_Olive_RF", 1.33,
-	"H_HelmetHeavy_VisorUp_Olive_RF", 1.33
+	"H_HelmetIA_sb_digital_RF",
+	"H_HelmetHeavy_Olive_RF",
+	"H_HelmetHeavy_Simple_Olive_RF",
+	"H_HelmetHeavy_VisorUp_Olive_RF"
 ];
 //////////////////////////////////////////////////////
 _militaryvests append [
-	"V_TacVest_rig_oli_RF", 1
+	"V_TacVest_rig_oli_RF"
 ];
 _militaryhelmets append [
-	"H_HelmetIA_sb_digital_RF", 4.5
+	"H_HelmetIA_sb_digital_RF"
 ];
 //////////////////////////////////////////////////////
 _militiavests append [
-	"V_TacVest_rig_oli_RF", 1.75
+	"V_TacVest_rig_oli_RF"
 ];
 _militiaHvests append [
-	"V_TacVest_rig_oli_RF", 7.5
+	"V_TacVest_rig_oli_RF"
 ];
 _militiahelmets append [
-	"H_HelmetIA_sb_digital_RF", 0.5
+	"H_HelmetIA_sb_digital_RF"
 ];
 //////////////////////////////////////////////////////
 _pilotuniforms append [
-	"U_C_HeliPilotCoveralls_Green_RF", 2.5
+	"U_C_HeliPilotCoveralls_Green_RF"
 ];
 
 //Gendarmerie vest w/holster only makes sense to add if Apex also enabled
 if (_hasApex) then {
 	_policevests append [
-		"V_TacVest_gen_holster_RF", 4
+		"V_TacVest_gen_holster_RF"
 	];
 };
 
