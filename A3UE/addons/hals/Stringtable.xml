@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="HALLYG_STORE">
+    <Package name="General">
+            <Key ID="STR_A3AU_Tier1">
+                <Original>Tier1</Original>
+                <English>Tier1</English>
+                <Russian>Tier1</Russian>
+                <Korean>Tier1</Korean>
+                <French>Tier1</French>
+            </Key>
+            <Key ID="STR_A3AU_SIGXM7">
+                <Original>SIG Sauer XM7</Original>
+                <English>SIG Sauer XM7</English>
+                <Russian>SIG Sauer XM7</Russian>
+                <Korean>SIG Sauer XM7</Korean>
+                <French>SIG Sauer XM7</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>
