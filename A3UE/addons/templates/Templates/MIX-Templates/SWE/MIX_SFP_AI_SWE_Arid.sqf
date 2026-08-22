@@ -5,10 +5,10 @@ _basic append ["sfp_cykel42"];
 _lightUnarmed append ["sfp_tgb11", "sfp_81_tgb1112", "sfp_tgb1317"];
 _lightArmed append ["sfp_tgb13_ksp58", "sfp_tgb1111", "sfp_tgb1111_sog_rbs56"];
 _Trucks append ["sfp_tgb20"];
-_cargoTrucks append ["CUP_B_MTVR_BAF_DES"];
-_ammoTrucks append ["CUP_B_MTVR_Ammo_BAF_DES"];
-_repairTrucks append ["CUP_B_MTVR_Repair_BAF_DES"];
-_fuelTrucks append ["CUP_B_MTVR_Refuel_BAF_DES"];
+_cargoTrucks append [];
+_ammoTrucks append [];
+_repairTrucks append [];
+_fuelTrucks append [];
 _medicalTrucks append ["sfp_tgb1314"];
 _lightAPCs append ["sfp_patgb360", "sfp_bv206"];
 _APCs append ["sfp_81_pbv302_mounted", "sfp_pbv302_mounted", "sfp_pbv302", "sfp_81_pbv302"];
@@ -25,8 +25,8 @@ _transportBoat append ["sfp_gruppbat"];
 _gunBoat append ["sfp_strb90", "sfp_rbb_norrkoping"];
 _Amphibious append [];
 
-_planesCAS append ["CUP_I_JAS39_RACS"];
-_planesAA append ["CUP_I_JAS39_RACS"];
+_planesCAS append ["sfp_jas39","sfp_jas39_bk90","sfp_jas39_gbu39"];
+_planesAA append ["sfp_jas39_cap"];
 
 _planesTransport append ["sfp_tp84_2015", "sfp_s100b"];
 _gunship append [];
@@ -34,13 +34,13 @@ _gunship append [];
 _helisLight append ["sfp_hkp9", "sfp_hkp6"];
 _transportHelicopters append ["sfp_hkp9_sog", "sfp_hkp16", "sfp_hkp16_ffv","sfp_hkp4"];
 _helisLightAttack append ["sfp_hkp9_rb55"];
-_helisAttack append ["CUP_B_AH64_DL_BAF"];
-_airPatrol append [];
+_helisAttack append [];
+_airPatrol append ["sfp_hkp6"];
 
 _artillery append ["sfp_grkpbv90120"];
 _artilleryMags append [["sfp_grkpbv90120", ["sfp_2Rnd_120mm_Mo_shells"]]];
 
-_uavsAttack append ["CUP_B_USMC_DYN_MQ9"];
+_uavsAttack append [];
 _uavsPortable append ["B_UAV_01_F"];
 
 _militiaLightArmed append ["sfp_tgb16_ksp58", "sfp_tgb16_rws"];
@@ -50,15 +50,15 @@ _militiaAPCs append ["sfp_patgb360", "sfp_bv206"];
 
 _policeVehs append ["sfp_tgb16_ksp58_mp"];
 
-_staticMG append ["CUP_B_M2StaticMG_USMC"];
-_staticAT append ["CUP_B_TOW2_TriPod_USMC"];
-_staticAA append ["CUP_B_Stinger_AA_pod_Base_USMC"];
-_staticMortars append ["CUP_B_M252_USMC"];
-_howitzers append [];
+_staticMG append [];
+_staticAT append ["sfp_rbs55_un","sfp_rbs56"];
+_staticAA append ["sfp_rbs97"];
+_staticMortars append ["sfp_grk84"];
+_howitzers append ["sfp_fh77"];
 
 
 
-_minefieldAT append ["CUP_Mine"];
+_minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];
 
 _animations append [];
@@ -95,8 +95,8 @@ _sniperRifles append [];
 _lightATLaunchers append ["sfp_rb57", "sfp_pskott86", "sfp_pskott68"];
 _lightHELaunchers append [];
 _ATLaunchers append [
-    ["sfp_grg48", "", "", "", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""],
-    ["sfp_grg86", "", "", "", ["CUP_MAAWS_HEDP_M", "CUP_MAAWS_HEAT_M"], [], ""]
+    ["sfp_grg48", "", "", "", ["sfp_grg_he_mag", "sfp_grg_heat_mag"], [], ""],
+    ["sfp_grg86", "", "", "", ["sfp_grg_he_mag", "sfp_grg_heat_mag"], [], ""]
 ];
 _missleATLaunchers append [
 
@@ -122,13 +122,13 @@ _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
 _gpses append ["ItemGPS"];
-_NVGs append ["CUP_NVG_PVS15_black"];
+_NVGs append ["NVGoggles"];
 _binoculars append ["Binocular"];
-_rangefinders append ["CUP_LRTV"];
+_rangefinders append ["Rangefinder"];
 
 _traitorUniforms append ["sfp_m90d_uniform_folded"];
 _traitorVests append ["sfp_kroppskydd94_rifle1"];
-_traitorHats append ["sfp_m90w_booniehat"];
+_traitorHats append ["sfp_m90d_cap_peltor"];
 
 _officerUniforms append ["sfp_m90d_uniform_tucked_m08"];
 _officerVests append ["sfp_kroppsskydd94"];
@@ -220,8 +220,8 @@ _sfcarbines append [
 ["sfp_ak5d", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], [], ""]
 ];
 _sfgrenadeLaunchers append [
-["sfp_ak5c_m203", "", "", "sfp_optic_aimpoint_t1", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""],
-["sfp_ak5_m203", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""]
+["sfp_ak5c_m203", "", "", "sfp_optic_aimpoint_t1", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""],
+["sfp_ak5_m203", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""]
 ];
 _sfdesignatedGrenadeLaunchers append [];
 _sfSMGs append [
@@ -240,7 +240,7 @@ _sfmarksmanRifles append [
 ["sfp_ak5c", "muzzle_snds_m", "", "sfp_optic_susat_4x", ["sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_plastic"], [], ""]
 ];
 _sfsniperRifles append [
-["sfp_psg90_base", "", "", "sfp_optic_kikarsikte90b_10x", ["sfp_9Rnd_762x51_psg90"], [], ""]
+["sfp_psg90_camo", "", "", "sfp_optic_kikarsikte90b_10x", ["sfp_9Rnd_762x51_psg90"], [], ""]
 ];
 _sflightATLaunchers append [];
 _sflightHELaunchers append [];
@@ -248,8 +248,7 @@ _sfATLaunchers append [];
 _sfmissleATLaunchers append [];
 _sfAALaunchers append [];
 _sfsidearms append [
-["CUP_hgun_Glock17", "", "", "", [], [], ""],
-["CUP_hgun_Glock17_blk", "", "", "", [], [], ""]
+["sfp_p226", "muzzle_snds_L", "sfp_tlr2", "", ["sfp_15Rnd_9x19_Mag"], [], ""]
 ];
 _sfGLsidearms append [];
 
@@ -267,9 +266,9 @@ _sfwatches append [];
 _sfcompasses append [];
 _sfradios append [];
 _sfgpses append [];
-_sfNVGs append ["CUP_NVG_PVS15_black"];
-_sfbinoculars append ["CUP_SOFLAM"];
-_sfrangefinders append [];
+_sfNVGs append ["NVGoggles"];
+_sfbinoculars append ["Laserdesignator"];
+_sfrangefinders append ["Rangefinder"];
 
 _sfuniforms append ["sfp_m90d_uniform", "sfp_m90d_uniform_folded", "sfp_m90d_uniform_tucked_m08", "sfp_m90d_uniform_long_m08", "sfp_m90d_uniform_fs18"];
 _sfMEDuniforms append [];
@@ -298,7 +297,7 @@ _sfhelmets append ["sfp_m90d_helmet", "sfp_m90d_helmet_headset_nvg", "sfp_m90d_h
 _sfMEDhelmets append [];
 _sfSLhelmets append [];
 _sfSLhats append ["sfp_sf_beret"];
-_sfSNIhats append ["CUP_H_CZ_Booniehat_vz95_des"];
+_sfSNIhats append ["sfp_m90d_cap_peltor"];
 
 _sffacewear append [];
 
@@ -332,8 +331,8 @@ _elitecarbines append [
 ["sfp_ak5d", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], [], ""]
 ];
 _elitegrenadeLaunchers append [
-["sfp_ak5c_m203", "", "", "sfp_optic_aimpoint_t1", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""],
-["sfp_ak5_m203", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""]
+["sfp_ak5c_m203", "", "", "sfp_optic_aimpoint_t1", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""],
+["sfp_ak5_m203", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""]
 ];
 _elitedesignatedGrenadeLaunchers append [];
 _eliteSMGs append [
@@ -360,8 +359,7 @@ _eliteATLaunchers append [];
 _elitemissleATLaunchers append [];
 _eliteAALaunchers append [];
 _elitesidearms append [
-["CUP_hgun_Glock17", "", "", "", [], [], ""],
-["CUP_hgun_Glock17_blk", "", "", "", [], [], ""]
+["sfp_p226", "", "sfp_tlr2", "", ["sfp_15Rnd_9x19_Mag"], [], ""]
 ];
 _eliteGLsidearms append [];
 
@@ -380,7 +378,7 @@ _elitecompasses append [];
 _eliteradios append [];
 _elitegpses append [];
 _eliteNVGs append [];
-_elitebinoculars append ["CUP_LRTV"];
+_elitebinoculars append ["Binocular"];
 _eliterangefinders append [];
 
 _eliteuniforms append ["sfp_m90d_uniform", "sfp_m90d_uniform_folded", "sfp_m90d_uniform_tucked_m08", "sfp_m90d_uniform_long_m08", "sfp_m90d_uniform_fs18"];
@@ -408,7 +406,7 @@ _elitehelmets append ["sfp_m90d_helmet", "sfp_m90d_helmet_headset_nvg", "sfp_m90
 _eliteMEDhelmets append [];
 _eliteSLhelmets append [];
 _eliteSLhats append ["sfp_army_beret"];
-_eliteSNIhats append ["CUP_H_CZ_Booniehat_vz95_des"];
+_eliteSNIhats append ["sfp_m90d_cap_peltor"];
 
 _elitefacewear append [];
 
@@ -442,8 +440,8 @@ _militarycarbines append [
 ["sfp_ak5d", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], [], ""]
 ];
 _militarygrenadeLaunchers append [
-["sfp_ak5c_m203", "", "", "sfp_optic_aimpoint_t1", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""],
-["sfp_ak5_m203", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""]
+["sfp_ak5c_m203", "", "", "sfp_optic_aimpoint_t1", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""],
+["sfp_ak5_m203", "", "", "", ["sfp_30Rnd_556x45_Stanag_plastic", "sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""]
 ];
 _militarydesignatedGrenadeLaunchers append [];
 _militarySMGs append [
@@ -470,8 +468,7 @@ _militaryATLaunchers append [];
 _militarymissleATLaunchers append [];
 _militaryAALaunchers append [];
 _militarysidearms append [
-["CUP_hgun_Glock17", "", "", "", [], [], ""],
-["CUP_hgun_Glock17_blk", "", "", "", [], [], ""]
+["sfp_p226", "", "", "", ["sfp_15Rnd_9x19_Mag"], [], ""]
 ];
 _militaryGLsidearms append [];
 
@@ -490,7 +487,7 @@ _militarycompasses append [];
 _militaryradios append [];
 _militarygpses append [];
 _militaryNVGs append [];
-_militarybinoculars append ["CUP_LRTV"];
+_militarybinoculars append ["Binocular"];
 _militaryrangefinders append [];
 
 _militaryuniforms append ["sfp_m90d_uniform", "sfp_m90d_uniform_folded", "sfp_m90d_uniform_tucked_m08", "sfp_m90d_uniform_long_m08", "sfp_m90d_uniform_fs18"];
@@ -519,7 +516,7 @@ _militaryhelmets append ["sfp_m90d_helmet", "sfp_m90d_helmet_headset_nvg", "sfp_
 _militaryMEDhelmets append [];
 _militarySLhelmets append [];
 _militarySLhats append ["sfp_army_beret"];
-_militarySNIhats append ["CUP_H_CZ_Booniehat_vz95_des"];
+_militarySNIhats append ["sfp_m90d_cap_peltor"];
 
 _militaryfacewear append [];
 
@@ -537,7 +534,7 @@ _policeWeapons append [
 	["sfp_mp5_rail", "", "", "", ["sfp_30Rnd_9mm_mp5", "sfp_30Rnd_9mm_mp5_JHP"], [], ""]
 ];
 _policesidearms append [
-    "CUP_hgun_Glock17"
+	["sfp_p226", "", "", "", ["sfp_15Rnd_9x19_Mag"], [], ""]
 ];
 
 _policefacewear append [];
@@ -557,7 +554,7 @@ _militiacarbines append [
 ["sfp_ak5c", "", "", "", ["sfp_30Rnd_556x45_Stanag", "sfp_30Rnd_556x45_Stanag_plastic"], [], ""]
 ];
 _militiagrenadeLaunchers append [
-["sfp_ak4_m203", "", "", "", ["sfp_20Rnd_762x51_ak4", "sfp_20Rnd_762x51_ak4_tracer"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_White_M203"], ""]
+["sfp_ak4_m203", "", "", "", ["sfp_20Rnd_762x51_ak4", "sfp_20Rnd_762x51_ak4_tracer"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "UGL_FlareWhite_F"], ""]
 ];
 _militiadesignatedGrenadeLaunchers append [];
 _militiaSMGs append [
@@ -576,13 +573,13 @@ _militiamarksmanRifles append [
 _militiasniperRifles append [
 ["sfp_psg90_base", "", "", "sfp_optic_kikarsikte90b_10x", ["sfp_9Rnd_762x51_psg90"], [], ""]
 ];
-_militialightATLaunchers append ["CUP_launch_M72A6"];
+_militialightATLaunchers append ["sfp_pskott68"];
 _militialightHELaunchers append [];
 _militiaATLaunchers append [];
 _militiamissleATLaunchers append [];
 _militiaAALaunchers append [];
 _militiasidearms append [
-    "CUP_hgun_Glock17"
+["sfp_p226", "", "", "", ["sfp_15Rnd_9x19_Mag"], [], ""]
 ];
 _militiaGLsidearms append [];
 
@@ -631,7 +628,7 @@ _militiahelmets append ["sfp_m90d_helmet", "sfp_m90d_helmet_headset_nvg", "sfp_m
 _militiaMEDhelmets append [];
 _militiaSLhelmets append [];
 _militiaSLhats append ["sfp_homeguard_beret"];
-_militiaSNIhats append ["CUP_H_CZ_Booniehat_vz95_des"];
+_militiaSNIhats append ["sfp_m90d_cap_peltor"];
 
 _militiafacewear append [];
 
@@ -641,7 +638,7 @@ _militiafacewear append [];
 
 _crewuniforms append ["sfp_m69p_uniform", "sfp_m69p_uniform_hood"];
 _crewvests append ["sfp_kroppsskydd12_crew"];
-_crewhelmets append ["CUP_H_CZ_Helmet05"];
+_crewhelmets append ["H_HelmetCrew_I"];
 _crewcarbines append [
 	["sfp_kpistm45", "", "", "", ["sfp_36Rnd_9mm_kpistm45"], [], ""],
 	["sfp_kpistm45", "", "", "", ["sfp_71Rnd_9mm_kpistm45"], [], ""],
@@ -669,3 +666,72 @@ _pilotfacewear append [];
 /////////////////////////////
 //    Conditional Gear     //
 /////////////////////////////
+
+if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
+	if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") && !isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
+		_cargoTrucks        append ["CUP_B_MTVR_BAF_DES"];
+		_ammoTrucks         append ["CUP_B_MTVR_Ammo_BAF_DES"];
+		_repairTrucks       append ["CUP_B_MTVR_Repair_BAF_DES"];
+		_fuelTrucks         append ["CUP_B_MTVR_Refuel_BAF_DES"];
+		_planesCAS  		append ["CUP_I_JAS39_RACS"];
+		_planesAA   		append ["CUP_I_JAS39_RACS"];
+		_helisAttack        append ["CUP_B_AH64_DL_BAF"];
+		_uavsAttack     	append ["CUP_B_USMC_DYN_MQ9"];
+		_staticMG       	append ["CUP_B_M2StaticMG_USMC"];
+		_staticAT			append ["CUP_B_TOW2_TriPod_USMC"];
+		_staticAA       	append ["CUP_B_Stinger_AA_pod_Base_USMC"];
+		_staticMortars  	append ["CUP_B_M252_USMC"];
+		_minefieldAT 		append ["CUP_Mine"];
+		
+		_NVGs append ["CUP_NVG_PVS15_black"];
+		_rangefinders append ["CUP_LRTV"];
+		
+		_sfbinoculars append ["CUP_SOFLAM"];
+		_elitebinoculars append ["CUP_LRTV"];
+		_militarybinoculars append ["CUP_LRTV"];
+		_militialightATLaunchers append ["CUP_launch_M72A6"];
+	}; 
+	if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
+		_cargoTrucks        append ["rhsusf_M1084A1R_SOV_M2_WD_fmtv_socom", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_WD_fmtv_usarmy", "rhsusf_M1084A1P2_B_WD_fmtv_usarmy", "rhsusf_M1084A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M977A4_usarmy_wd", "rhsusf_M977A4_BKIT_usarmy_wd", "rhsusf_M977A4_BKIT_M2_usarmy_wd"];
+		_ammoTrucks         append ["rhsusf_M977A4_AMMO_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"];
+		_repairTrucks       append ["rhsusf_M977A4_REPAIR_usarmy_wd", "rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd", "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd"];
+		_fuelTrucks         append ["rhsusf_M978A4_usarmy_wd", "rhsusf_M978A4_BKIT_usarmy_wd"];
+		_planesCAS  		append ["RHS_A10"];
+		_planesAA   		append ["rhsusf_f22"];
+		_helisAttack        append ["RHS_AH64D_wd"];
+		_uavsAttack     	append ["B_UAV_02_CAS_F"];
+		_staticMG       	append ["RHS_M2StaticMG_WD"];
+		_staticAA       	append ["RHS_Stinger_AA_pod_WD"];
+		_staticMortars  	append ["B_Mortar_01_F"];
+
+		_NVGs append ["rhsusf_ANPVS_14"];
+		_rangefinders append ["rhsusf_bino_lerca_1200_black"];
+
+		_sfbinoculars append ["Laserdesignator"];
+		_elitebinoculars append ["Laserdesignator"];
+		_militarybinoculars append ["Laserdesignator"];
+		if (isClass (configFile >> "CfgFactionClasses" >> "rhssaf_faction_army")) then {
+			_militialightATLaunchers append ["rhs_weap_rpg75"];
+		};
+	};
+} else {
+	_cargoTrucks        append ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"];
+	_ammoTrucks         append ["B_T_Truck_01_ammo_F"];
+	_repairTrucks       append ["B_T_Truck_01_Repair_F"];
+	_fuelTrucks         append ["B_T_Truck_01_fuel_F"];
+	_planesCAS  		append ["B_Plane_CAS_01_dynamicLoadout_F"];
+	_planesAA   		append ["B_Plane_Fighter_01_F"];
+	_helisAttack        append [];
+	_uavsAttack     	append ["B_UAV_02_CAS_F"];
+	_staticMG       	append ["B_G_HMG_02_high_F"];
+	_staticAA       	append ["B_static_AA_F"];
+	_staticMortars  	append ["B_Mortar_01_F"];
+	
+	_NVGs append ["NVGoggles"];
+	_rangefinders append ["Rangefinder"];
+
+	_sfbinoculars append ["Laserdesignator"];
+	_elitebinoculars append ["Laserdesignator"];
+	_militarybinoculars append ["Laserdesignator"];
+	_militialightATLaunchers append [];
+};

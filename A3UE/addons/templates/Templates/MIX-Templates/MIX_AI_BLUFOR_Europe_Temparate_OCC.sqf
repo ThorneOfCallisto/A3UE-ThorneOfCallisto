@@ -59,7 +59,7 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
 
     if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-        #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
+        #include "SWE\MIX_FFP_AI_FIN_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
         ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
         #include "SWE\FFP_Vehicle_Attributes.sqf";
     };
@@ -79,6 +79,11 @@ diag_log format [
     "[Thorne MIX] Captured gear factions: %1",
     _mixedFactionTags
 ];
+
+// Persist MIX metadata into the faction HashMap.
+// compatibilityLoadFaction can read this after A3A_fnc_loadFaction returns.
+["mixedFactionTags", +_mixedFactionTags] call _fnc_saveToTemplate;
+["isMixedFaction", true] call _fnc_saveToTemplate;
 
 {
     private _gearFactionTag = _x;

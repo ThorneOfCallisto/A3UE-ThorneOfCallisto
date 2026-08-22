@@ -328,7 +328,7 @@ _elitegrenadeLaunchers append [
 ];
 _elitedesignatedGrenadeLaunchers append [];
 _eliteSMGs append [
-    ["amf_hk_mp5_02_f", "", "", "AMF_specter", ["30Rnd_9x19_mag"], [], "amf_acc_hkmp5_grip3"]
+    ["amf_hk_mp5_02_f", "", "", "AMF_specter", ["AMF_30Rnd_9x19_MP5_BO_123GR], [], "amf_acc_hkmp5_grip3"]
 ];
 _elitemachineGuns append [
     ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip2"],
@@ -436,7 +436,7 @@ _militarygrenadeLaunchers append [
 ];
 _militarydesignatedGrenadeLaunchers append [];
 _militarySMGs append [
-    ["amf_hk_mp5_02_f", "", "", "AMF_Red_Dot_Sight", ["30Rnd_9x19_mag"], [], ""]
+    ["amf_hk_mp5_02_f", "", "", "AMF_Red_Dot_Sight", ["AMF_30Rnd_9x19_MP5_BO_123GR], [], ""]
 ];
 _militarymachineGuns append [
     ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip2"],
@@ -523,7 +523,7 @@ _policevests append ["V_TacVest_gen_F"];
 _policehelmets append ["H_Beret_gen_F"];
 _policeWeapons append [
     ["R3F_M4S90", "", "", "", ["R3F_7Rnd_M4S90"], [], ""],
-    ["amf_hk_mp5_01_f", "", "", "", ["30Rnd_9x19_mag"], [], ""]
+    ["amf_hk_mp5_01_f", "", "", "", ["AMF_30Rnd_9x19_MP5_BO_123GR], [], ""]
 ];
 _policesidearms append [
     ["R3F_G17", "", "", "", ["R3F_17Rnd_9x19_G17"], [], ""]
@@ -634,7 +634,7 @@ _crewuniforms append ["amf_uniform_01_CE_HX"];
 _crewvests append ["amf_SMB"];
 _crewhelmets append ["AMF_ELNO_DH_586"];
 _crewcarbines append [
-    ["amf_hk_mp5_01_f", "", "", "", ["30Rnd_9x19_mag"], [], ""]
+    ["amf_hk_mp5_01_f", "", "", "", ["AMF_30Rnd_9x19_MP5_BO_123GR], [], ""]
 ];
 _crewSMGs append [];
 _crewsidearms append [];
@@ -646,7 +646,7 @@ _pilotvests append ["AMF_Pilot_Vest"];
 _pilotbackpacks append [];
 _pilothelmets append ["AMF_ALPHA900"];
 _pilotcarbines append [
-    ["amf_hk_mp5_01_f", "", "", "", ["30Rnd_9x19_mag"], [], ""],
+    ["amf_hk_mp5_01_f", "", "", "", ["AMF_30Rnd_9x19_MP5_BO_123GR], [], ""],
     ["R3F_SIG551", "", "", "", ["R3F_30Rnd_556x45_SIG551"], [], ""]
 ];
 _pilotSMGs append [];

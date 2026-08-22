@@ -99,6 +99,11 @@ diag_log format [
     _mixedFactionTags
 ];
 
+// Persist MIX metadata into the faction HashMap.
+// compatibilityLoadFaction can read this after A3A_fnc_loadFaction returns.
+["mixedFactionTags", +_mixedFactionTags] call _fnc_saveToTemplate;
+["isMixedFaction", true] call _fnc_saveToTemplate;
+
 {
     private _gearFactionTag = _x;
 

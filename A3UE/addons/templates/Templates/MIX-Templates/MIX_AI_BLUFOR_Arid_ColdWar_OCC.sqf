@@ -19,8 +19,8 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 //    Include Factions here    //
 /////////////////////////////////
 
-_radar = "B_Radar_System_01_F";
-_SAM = "B_SAM_System_03_F";
+_radar = "";
+_SAM = "";
 
 #include "Vanilla\Vanilla_Vehicle_Attributes.sqf";
 
@@ -70,11 +70,6 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
     #include "SWE\MIX_SFP_AI_SWE_Arid.sqf";
     ["SFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     #include "SWE\SFP_Vehicle_Attributes.sqf";
-};
-
-if (isClass (configFile >> "CfgVehicles" >> "E22_B_JC_D_Radar_system_01_F") && isClass (configFile >> "CfgVehicles" >> "E22_B_JC_D_SAM_system_01_F")) then {
-    _radar = "E22_B_JC_D_Radar_system_01_F";
-    _SAM = "E22_B_JC_D_SAM_system_01_F";
 };
 
 //////////////////////////////////

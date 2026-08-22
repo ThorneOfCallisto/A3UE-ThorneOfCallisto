@@ -10,12 +10,34 @@
 
     class CUSTOM_MIX_BLUFOR_Arid : CUSTOM_MIX_Base
     {
+        requiredAddons[] = {};
         side = "Occ";
         flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
-        name = "MIX - NATO All Arid";
+        name = "MIX - NATO Arid";
         file = "MIX_AI_BLUFOR_Arid_OCC";
         climate[] = {"arid"};
-        description = "Mix of all Blufor factions (AAF, NATO, USMC, US Army, BAF, BW, AMF, SFP)";
+        description = "Mix of Modern Day NATO (Needs either CUP or RHS to fill most spots)";
+    };
+
+    class CUSTOM_MIX_BLUFOR_2035_Arid : CUSTOM_MIX_Base
+    {
+        side = "Occ";
+        flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+        name = "MIX - NATO Arid (2035)";
+        file = "MIX_AI_BLUFOR_Arid_OCC";
+        climate[] = {"arid"};
+        description = "Mix of 2035 NATO";
+    };
+
+    class CUSTOM_MIX_BLUFOR_ColdWar_Arid : CUSTOM_MIX_Base
+    {
+        requiredAddons[] = {};
+        side = "Occ";
+        flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+        name = "MIX - NATO Arid (Cold War)";
+        file = "MIX_AI_BLUFOR_Arid_2035_OCC";
+        climate[] = {"arid"};
+        description = "Mix of Modern Day NATO (Needs either CUP or RHS to fill most spots)";
     };
 
     class CUSTOM_MIX_BLUFOR_Temparate : CUSTOM_MIX_Base
