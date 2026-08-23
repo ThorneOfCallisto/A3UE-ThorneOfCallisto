@@ -1,8 +1,6 @@
 #include "INCLUDES\Init_Base.sqf"
 #include "INCLUDES\GearFaction.sqf"
-
 private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-
 
 //////////////////////////
 //   Side Information   //
@@ -23,19 +21,40 @@ _SAM = "B_SAM_System_03_F";
 //    Include Factions here    //
 /////////////////////////////////
 
+_gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+#include "Vanilla\MIX_Vanilla_AI_AAF.sqf";
+["AAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+_gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+#include "Vanilla\MIX_Vanilla_AI_NATO_Temperate.sqf";
+["NATO", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
+#include "Vanilla\Vanilla_Vehicle_Attributes.sqf"
+
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
 
     if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_FIA_B")) then {
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "3CBF\MIX_3CBF_AI_US_Army_Temperate.sqf";
+        ["US", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "3CBF\MIX_3CBF_AI_USMC_Temperate.sqf";
+        ["USMC", _gearFactionSnapshot] call _fnc_gearFactionCapture;
         #include "3CBF\3CBF_Vehicle_Attributes.sqf";
-        #include "3CBF\RHS_Vehicle_Attributes.sqf";
-
         if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_BAF_Faction_Army_MTP")) then {
             _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
             #include "3CBBAF\MIX_3CB_AI_BAF_Temperate.sqf";
             ["BAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
             #include "3CBBAF\3CBBAF_Vehicle_Attributes.sqf";
         };
+    } else {
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "RHS\MIX_RHS_AI_US_Army_Temperate.sqf";
+        ["US", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "RHS\MIX_RHS_AI_USMC_Temperate.sqf";
+        ["USMC", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     };
+    #include "RHS\RHS_Vehicle_Attributes.sqf";
 };
 
 if (isClass (configFile >> "CfgVehicles" >> "BWA3_Dingo2_FLW200_M2_CG13_Fleck")) then {
@@ -59,7 +78,7 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
 
     if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-        #include "SWE\MIX_FFP_AI_FIN_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
+        #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
         ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
         #include "SWE\FFP_Vehicle_Attributes.sqf";
     };

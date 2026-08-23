@@ -21,13 +21,6 @@ _SAM = "B_SAM_System_03_F";
 //    Include Factions here    //
 /////////////////////////////////
 
-_gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-#include "Vanilla\MIX_Vanilla_AI_AAF.sqf";
-["AAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-_gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-#include "Vanilla\MIX_Vanilla_AI_NATO_Temperate.sqf";
-["NATO", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-
 #include "Vanilla\Vanilla_Vehicle_Attributes.sqf"
 
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
@@ -76,12 +69,13 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
     ["SFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     #include "SWE\SFP_Vehicle_Attributes.sqf";
 
-    if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
-        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-        #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
-        ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-        #include "SWE\FFP_Vehicle_Attributes.sqf";
-    };
+    // TODO Make CUP Optional and add RHS variants
+    // if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
+    //     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+    //     #include "SWE\MIX_FFP_Temperate.sqf";
+    //     ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+    //     #include "SWE\FFP_Vehicle_Attributes.sqf";
+    // };
 };
 
 //////////////////////////////////
