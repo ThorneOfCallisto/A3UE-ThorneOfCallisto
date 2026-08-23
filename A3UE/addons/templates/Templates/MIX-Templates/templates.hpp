@@ -28,17 +28,17 @@
         description = "Mix of 2035 NATO";
     };
 
-    class MIX_BLUFOR_ColdWar_Arid : MIX_Base
-    {
-        side = "Occ";
-        flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
-        name = "MIX - NATO Arid (Cold War)";
-        file = "MIX_AI_BLUFOR_Arid_2035_OCC";
-        climate[] = {"arid"};
-        description = "Mix of Modern Day NATO (Needs either CUP or RHS to fill most spots)";
-    };
+    // class MIX_BLUFOR_ColdWar_Arid : MIX_Base
+    // {
+    //     side = "Occ";
+    //     flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+    //     name = "MIX - NATO Arid (Cold War)";
+    //     file = "MIX_AI_BLUFOR_Arid_2035_OCC";
+    //     climate[] = {"arid"};
+    //     description = "Mix of Cold War NATO (Needs either CUP or RHS to fill most spots)";
+    // };
 
-    class MIX_BLUFOR_Temparate : MIX_Base
+    class MIX_BLUFOR_Temperate : MIX_Base
     {
         side = "Occ";
         flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
@@ -48,7 +48,7 @@
         description = "Mix of Modern Day NATO (Needs either CUP or RHS to fill most spots)";
     };
 
-    class MIX_BLUFOR_Temparate : MIX_Base
+    class MIX_BLUFOR_2035_Temparate : MIX_Base
     {
         side = "Occ";
         flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
@@ -58,7 +58,7 @@
         description = "Mix of 2035 NATO";
     };
 
-    class OPFOR_MIX : MIX_Base
+    class MIX_OPFOR_Temperate : MIX_Base
     {
         requiredAddons[] = {"rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"};
         side = "Inv";
@@ -69,7 +69,7 @@
         description = "Small MIX of OPFOR";
     };
 
-    class RIV_MIX_Europe : MIX_Base
+    class MIX_OPFOR_2035_Temperate : MIX_Base
     {
         side = "Riv";
         flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
