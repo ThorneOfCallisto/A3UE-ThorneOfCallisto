@@ -14,14 +14,13 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 ["flagTexture", "a3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate;
 
+_radar = "";
+_SAM = "";
+
 
 /////////////////////////////////
 //    Include Factions here    //
 /////////////////////////////////
-
-_radar = "";
-_SAM = "";
-
 #include "Vanilla\Vanilla_Vehicle_Attributes.sqf";
 
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {

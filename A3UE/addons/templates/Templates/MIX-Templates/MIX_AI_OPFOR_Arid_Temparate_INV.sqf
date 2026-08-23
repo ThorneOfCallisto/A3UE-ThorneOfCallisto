@@ -8,7 +8,7 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 //   Side Information   //
 //////////////////////////
 
-["name", "OPFOR - Arid"] call _fnc_saveToTemplate;
+["name", "OPFOR"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "OPFOR"]] call _fnc_saveToTemplate;
 
 ["flag", "rhs_Flag_Russia_F"] call _fnc_saveToTemplate;

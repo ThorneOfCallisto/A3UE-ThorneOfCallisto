@@ -16,7 +16,6 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 _radar = "B_Radar_System_01_F";
 _SAM = "B_SAM_System_03_F";
 
-
 /////////////////////////////////
 //    Include Factions here    //
 /////////////////////////////////
@@ -26,13 +25,16 @@ _SAM = "B_SAM_System_03_F";
 if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
 
     if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_FIA_B")) then {
+        #include "3CBF\3CBF_Vehicle_Attributes.sqf";
+
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "3CBF\MIX_3CBF_AI_US_Army_Temperate.sqf";
         ["US", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "3CBF\MIX_3CBF_AI_USMC_Temperate.sqf";
         ["USMC", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-        #include "3CBF\3CBF_Vehicle_Attributes.sqf";
+
         if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_BAF_Faction_Army_MTP")) then {
             _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
             #include "3CBBAF\MIX_3CB_AI_BAF_Temperate.sqf";
@@ -43,6 +45,7 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "RHS\MIX_RHS_AI_US_Army_Temperate.sqf";
         ["US", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "RHS\MIX_RHS_AI_USMC_Temperate.sqf";
         ["USMC", _gearFactionSnapshot] call _fnc_gearFactionCapture;

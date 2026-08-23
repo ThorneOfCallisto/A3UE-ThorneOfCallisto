@@ -14,6 +14,8 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 ["flagTexture", "a3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate;
 
+_radar = "B_Radar_System_01_F";
+_SAM = "B_SAM_System_03_F";
 
 /////////////////////////////////
 //    Include Factions here    //
@@ -25,9 +27,6 @@ _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 #include "Vanilla\MIX_Vanilla_AI_NATO_Arid.sqf";
 ["NATO", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-
-_radar = "B_Radar_System_01_F";
-_SAM = "B_SAM_System_03_F";
 
 #include "Vanilla\Vanilla_Vehicle_Attributes.sqf";
 

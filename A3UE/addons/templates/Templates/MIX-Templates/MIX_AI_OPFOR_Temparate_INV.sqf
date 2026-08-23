@@ -8,13 +8,15 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 //   Side Information   //
 //////////////////////////
 
-["name", "OPFOR - Europe"] call _fnc_saveToTemplate;
+["name", "OPFOR"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "OPFOR"]] call _fnc_saveToTemplate;
 
 ["flag", "rhs_Flag_Russia_F"] call _fnc_saveToTemplate;
 ["flagTexture", "rhsafrf\addons\rhs_main\data\flag_rus_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_Russia"] call _fnc_saveToTemplate;
 
+_radar = "O_Radar_System_02_F";
+_SAM = "O_SAM_System_04_F";
 
 /////////////////////////////////
 //    Include Factions here    //
@@ -25,6 +27,9 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
     
     if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_FIA_B")) then {
         #include "3CBBAF\3CBBAF_Vehicle_Attributes.sqf";
+        
+        _radar = "UK3CB_CSAT_W_O_Radar_System";
+        _SAM = "UK3CB_CSAT_W_O_SAMS_System";
 
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "3CBF\MIX_3CBF_AI_AFRF.sqf";

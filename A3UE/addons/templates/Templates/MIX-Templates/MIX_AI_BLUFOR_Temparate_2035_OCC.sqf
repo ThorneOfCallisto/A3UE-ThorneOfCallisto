@@ -16,7 +16,6 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 _radar = "B_Radar_System_01_F";
 _SAM = "B_SAM_System_03_F";
 
-
 /////////////////////////////////
 //    Include Factions here    //
 /////////////////////////////////

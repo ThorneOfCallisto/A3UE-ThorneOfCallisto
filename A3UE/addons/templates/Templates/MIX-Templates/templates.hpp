@@ -63,7 +63,7 @@
         requiredAddons[] = {"rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"};
         side = "Inv";
         flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
-        name = "MIX - OPFOR Europe Temperate";
+        name = "MIX - OPFOR Temperate";
         file = "MIX_AI_OPFOR_Temparate_INV";
         climate[] = {"temperate", "tropical", "arctic"};
         description = "Small MIX of OPFOR";
@@ -71,9 +71,9 @@
 
     class MIX_OPFOR_2035_Temperate : MIX_Base
     {
-        side = "Riv";
+        side = "Inv";
         flagTexture = "rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
-        name = "MIX - Rivals Temperate";
+        name = "MIX - OPFOR Temperate (2035)";
         file = "MIX_AI_OPFOR_Temparate_2035_INV";
         climate[] = {"temperate", "tropical", "arctic"};
         description = "Small MIX of 2035 OPFOR";
