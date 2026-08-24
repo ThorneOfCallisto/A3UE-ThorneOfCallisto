@@ -558,7 +558,7 @@ _militiaSMGs append [
 ];
 _militiamachineGuns append [
     ["amf_mag58_01_f", "", "", "", ["50Rnd_mag58_mag"], [], ""],
-    ["amf_aanf1_01_f", "", "", "", ["50Rnd_762x51_band"], [], ""]
+    ["AANF1_LB", "", "", "", ["AMF_50Rnd_762x51_AANF1_BO_BT_F3"], [], ""]
 ];
 _militiamarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
