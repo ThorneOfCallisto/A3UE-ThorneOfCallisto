@@ -59,7 +59,6 @@ _staticMortars append ["AMF_Mo120_01_CE_F"];
 _howitzers append ["AMF_Mo120_01_CE_F"];
 
 
-
 _minefieldAT append ["ATMine"];
 _minefieldAPERS append ["APERSMine"];
 
@@ -220,7 +219,8 @@ _sfmachineGuns append [
 _sfmarksmanRifles append [
     ["AMF_714_Long_01_F", "", "AMF_AN_PEQ_15_black", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "bipod_03_F_blk"],
     ["AMF_714_Long_01_F", "", "AMF_AN_PEQ_15_black", "R3F_NF", ["20Rnd_762x51_HK417_mag"], [], "bipod_03_F_blk"],
-    ["R3F_SCAR_H_TPR_20pcs_blk", "", "AMF_AN_PEQ_15_black", "R3F_NF42", ["R3F_20Rnd_762x51_SCAR"], [], "R3F_BIPIED_HK417"]
+    ["R3F_SCAR_H_TPR_20pcs_blk", "", "AMF_AN_PEQ_15_black", "R3F_NF42", ["R3F_20Rnd_762x51_SCAR"], [], "R3F_BIPIED_HK417"],
+    ["AMF_714_Long_01_F", "muzzle_snds_B", "", "AMF_schmidt_benderx4", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "amf_acc_714_long_grip3"]
 ];
 _sfsniperRifles append [   
     ["AMF_PGM_ULTIMA_RATIO_F", "", "", "optic_LRPS", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "bipod_01_F_blk"],
@@ -228,10 +228,11 @@ _sfsniperRifles append [
     ["AMF_PGM_Hecate_II_Poly_RIS", "", "", "optic_LRPS", ["AMF_7Rnd_127x99_HECATE2_IMI_661GR_FMJ"], [], ""],
     ["R3F_PGM_ULTIMA_RATIO_ghillie", "R3F_SILENCIEUX_HK417", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
     ["R3F_PGM_ULTIMA_RATIO_ghillie", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
+    ["R3F_M107", "", "", "optic_LRPS", ["R3F_10Rnd_127x99_M107"], [], ""],
     ["R3F_PGM_ULTIMA_RATIO", "R3F_SILENCIEUX_HK417", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""],
     ["R3F_PGM_ULTIMA_RATIO", "", "", "optic_LRPS", ["R3F_PGM_ULTIMA_RATIO_10Rnd_762x54"], [], ""]
 ];
-_sflightATLaunchers append ["AMF_AT4CS_Loaded"];
+_sflightATLaunchers append ["AMF_NLAW_Loaded"];
 _sflightHELaunchers append ["AMF_LRAC89_F"];
 _sfATLaunchers append [
     ["AMF_Eryx", "", "", "", ["Eryx_HEAT"], [], ""]
@@ -338,7 +339,8 @@ _elitemachineGuns append [
 _elitemarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], ""],
     ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], "bipod_01_F_blk"],
-    ["AMF_HK417_F", "", "", "AMF_schmidt_benderx4", ["AMF_20Rnd_762x51_HK417_BO_F3"], [], "amf_acc_714_long_grip3"]
+    ["AMF_HK417_F", "", "", "AMF_schmidt_benderx4", ["AMF_20Rnd_762x51_HK417_BO_F3"], [], "amf_acc_714_long_grip3"],
+    ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "amf_acc_714_long_grip3"]
 ];
 _elitesniperRifles append [
     ["AMF_PGM_ULTIMA_RATIO_01_F", "", "", "AMF_schmidt_benderx4", ["10Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
@@ -446,7 +448,8 @@ _militarymachineGuns append [
 _militarymarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
     ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
-    ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "amf_acc_714_long_grip3"]
+    ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "amf_acc_714_long_grip3"],
+    ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "amf_acc_714_long_grip3"]
 ];
 _militarysniperRifles append [
     ["AMF_PGM_ULTIMA_RATIO_01_F", "", "", "AMF_schmidt_benderx4", ["10Rnd_762x51_Mag"], [], "bipod_01_F_blk"]
@@ -546,8 +549,8 @@ _militiarifles append [
 _militiacarbines append [
     ["R3F_HK416F_short", "", "", "", ["R3F_30Rnd_556x45"], [], ""],
     ["R3F_SCAR_L_CQC_CAM", "", "", "", ["R3F_30Rnd_Magpul_556x45_tan"], [], ""],
-    ["R3F_Famas_surb", "", "", "AMF_Red_Dot_Sight", ["R3F_30Rnd_556x45_FAMAS"], [], ""],
-    ["R3F_Famas_surb", "", "", "", ["R3F_30Rnd_556x45_FAMAS"], [], ""]
+    ["R3F_Famas_surb", "", "", "AMF_Red_Dot_Sight", ["R3F_30Rnd_556x45_FAMAS", "R3F_30Rnd_556x45_TRACER_FAMAS"], [], ""],
+    ["R3F_Famas_surb", "", "", "", ["R3F_30Rnd_556x45_FAMAS", "R3F_30Rnd_556x45_TRACER_FAMAS"], [], ""]
 ];
 _militiagrenadeLaunchers append [
     ["R3F_SCAR_L_CQC_LG_CAM", "", "", "AMF_EOTECH_553_painted", ["R3F_30Rnd_Magpul_556x45_tan"], ["1Rnd_HE_Grenade_shell", "UGL_FlareGreen_F", "1Rnd_Smoke_Grenade_shell"], ""]
@@ -557,7 +560,7 @@ _militiaSMGs append [
     ["amf_hk_mp5_01_f", "", "", "", [], [], ""]
 ];
 _militiamachineGuns append [
-    ["amf_mag58_01_f", "", "", "", ["50Rnd_mag58_mag"], [], ""],
+    ["amf_mag58_01_f", "", "", "", ["AMF_50Rnd_762x51_MAG58_BO_F3", "AMF_75Rnd_762x51_MAG58_BO_F3"], [], ""],
     ["AANF1_LB", "", "", "", ["AMF_50Rnd_762x51_AANF1_BO_BT_F3"], [], ""]
 ];
 _militiamarksmanRifles append [

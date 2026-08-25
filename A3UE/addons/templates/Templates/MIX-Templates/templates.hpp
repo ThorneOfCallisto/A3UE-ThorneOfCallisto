@@ -42,7 +42,7 @@
     {
         side = "Occ";
         flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
-        name = "MIX - NATO All Temperate";
+        name = "MIX - NATO Temperate";
         file = "MIX_AI_BLUFOR_Temparate_OCC";
         climate[] = {"temperate", "tropical", "arctic"};
         description = "Mix of Modern Day NATO (Needs either CUP or RHS to fill most spots)";
@@ -52,7 +52,7 @@
     {
         side = "Occ";
         flagTexture = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
-        name = "MIX - NATO All Temperate";
+        name = "MIX - NATO Temperate (2035)";
         file = "MIX_AI_BLUFOR_Temparate_2035_OCC";
         climate[] = {"temperate", "tropical", "arctic"};
         description = "Mix of 2035 NATO";

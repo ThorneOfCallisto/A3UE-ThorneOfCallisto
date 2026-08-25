@@ -7,7 +7,7 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 //   Rivals Information   //
 ////////////////////////////
 
-["name", "OPFOR - Europe"] call _fnc_saveToTemplate;
+["name", "Rivals"] call _fnc_saveToTemplate;
 ["nameLeader", "Mikola Bardak"] call _fnc_saveToTemplate;
 
 /////////////////////////////////

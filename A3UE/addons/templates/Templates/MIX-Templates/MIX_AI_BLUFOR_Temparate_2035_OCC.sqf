@@ -75,12 +75,13 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
     ["SFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     #include "SWE\SFP_Vehicle_Attributes.sqf";
 
-    if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
-        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
-        #include "SWE\MIX_FFP_Temperate.sqf"; // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
-        ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
-        #include "SWE\FFP_Vehicle_Attributes.sqf";
-    };
+    // Lacking standalone content, needs other mods to be more usefull... (Only CUP for now)
+    // if (isClass(configFile >> "CfgVehicles" >> "ffp_leopard2a4") && isClass(configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
+    //     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+    //     #include "SWE\MIX_FFP_AI_FIN_Temperate.sqf"; 
+    //     ["FFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+    //     #include "SWE\FFP_Vehicle_Attributes.sqf";
+    // };
 };
 
 //////////////////////////////////
