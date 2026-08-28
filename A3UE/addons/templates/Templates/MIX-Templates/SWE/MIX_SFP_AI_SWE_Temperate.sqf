@@ -231,9 +231,7 @@ _sfSMGs append [
 ];
 _sfmachineGuns append [
 ["sfp_ksp58B2", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
-["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ];
 _sfmarksmanRifles append [
 ["sfp_ak4", "", "", "sfp_optic_kikarsikte09_4x", ["sfp_20Rnd_762x51_ak4_ap", "sfp_20Rnd_762x51_ak4"], [], ""],
@@ -342,9 +340,7 @@ _eliteSMGs append [
 ];
 _elitemachineGuns append [
 ["sfp_ksp58B2", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
-["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ];
 _elitemarksmanRifles append [
 ["sfp_ak4", "", "", "sfp_optic_kikarsikte09_4x", ["sfp_20Rnd_762x51_ak4_ap", "sfp_20Rnd_762x51_ak4"], [], ""],
@@ -451,9 +447,7 @@ _militarySMGs append [
 ];
 _militarymachineGuns append [
 ["sfp_ksp58B2", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
-["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ];
 _militarymarksmanRifles append [
 ["sfp_ak4", "", "", "sfp_optic_kikarsikte09_4x", ["sfp_20Rnd_762x51_ak4_ap", "sfp_20Rnd_762x51_ak4"], [], ""],
@@ -689,6 +683,19 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (c
 		_elitebinoculars append ["CUP_LRTV"];
 		_militarybinoculars append ["CUP_LRTV"];
 		_militialightATLaunchers append ["CUP_launch_M72A6"];
+
+		_sfmachineGuns append [
+			["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_elitemachineGuns append [
+			["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_militarymachineGuns append [
+			["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
 	}; 
 	if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
 		_cargoTrucks        append ["rhsusf_M1084A1R_SOV_M2_WD_fmtv_socom", "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1078A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_WD_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_WD_flatbed_fmtv_usarmy", "rhsusf_M1083A1P2_B_M2_WD_flatbed_fmtv_usarmy", "rhsusf_M1084A1P2_WD_fmtv_usarmy", "rhsusf_M1084A1P2_B_WD_fmtv_usarmy", "rhsusf_M1084A1P2_B_M2_WD_fmtv_usarmy", "rhsusf_M977A4_usarmy_wd", "rhsusf_M977A4_BKIT_usarmy_wd", "rhsusf_M977A4_BKIT_M2_usarmy_wd"];
@@ -712,6 +719,19 @@ if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (c
 		if (isClass (configFile >> "CfgFactionClasses" >> "rhssaf_faction_army")) then {
 			_militialightATLaunchers append ["rhs_weap_rpg75"];
 		};
+
+		_sfmachineGuns append [
+			["sfp_ksp90b", "", "", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_elitemachineGuns append [
+			["sfp_ksp90b", "", "", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_militarymachineGuns append [
+			["sfp_ksp90b", "", "", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
 	};
 } else {
 	_cargoTrucks        append ["B_T_Truck_01_cargo_F", "B_T_Truck_01_flatbed_F"];

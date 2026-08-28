@@ -341,8 +341,8 @@ _eliteSMGs append [
     ["amf_hk_mp5_02_f", "", "", "AMF_specter", ["AMF_30Rnd_9x19_MP5_BO_123GR"], [], "amf_acc_hkmp5_grip3"]
 ];
 _elitemachineGuns append [
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip2"],
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip3"]
+    ["FN_Minimi_MK3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "Minimi_Grip_MK2"],
+    ["FN_Minimi_MK3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "Minimi_Grip_MK2"]
 ];
 _elitemarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], ""],
@@ -450,8 +450,8 @@ _militarySMGs append [
     ["amf_hk_mp5_02_f", "", "", "AMF_Red_Dot_Sight", ["AMF_30Rnd_9x19_MP5_BO_123GR"], [], ""]
 ];
 _militarymachineGuns append [
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip2"],
-    ["amf_mini_mg_tactical_mk3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "amf_acc_mini_grip3"]
+    ["FN_Minimi_MK3", "", "", "AMF_specter", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "Minimi_Grip_MK2"],
+    ["FN_Minimi_MK3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "Minimi_Grip_MK2"]
 ];
 _militarymarksmanRifles append [
     ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],

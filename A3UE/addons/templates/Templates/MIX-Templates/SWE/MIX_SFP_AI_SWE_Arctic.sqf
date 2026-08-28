@@ -231,9 +231,7 @@ _sfSMGs append [
 ];
 _sfmachineGuns append [
 ["sfp_ksp58B2", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
-["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ];
 _sfmarksmanRifles append [
 ["sfp_ak4", "", "", "sfp_optic_kikarsikte09_4x", ["sfp_20Rnd_762x51_ak4_ap", "sfp_20Rnd_762x51_ak4"], [], ""],
@@ -343,9 +341,7 @@ _eliteSMGs append [
 ];
 _elitemachineGuns append [
 ["sfp_ksp58B2", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
-["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ];
 _elitemarksmanRifles append [
 ["sfp_ak4", "", "", "sfp_optic_kikarsikte09_4x", ["sfp_20Rnd_762x51_ak4_ap", "sfp_20Rnd_762x51_ak4"], [], ""],
@@ -453,9 +449,7 @@ _militarySMGs append [
 ];
 _militarymachineGuns append [
 ["sfp_ksp58B2", "", "", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""],
-["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
-["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+["sfp_ksp58f", "", "sfp_dbal2", "sfp_optic_susat_4x", ["sfp_100Rnd_762x51_ksp58"], [], ""]
 ];
 _militarymarksmanRifles append [
 ["sfp_ak4", "", "", "sfp_optic_kikarsikte09_4x", ["sfp_20Rnd_762x51_ak4_ap", "sfp_20Rnd_762x51_ak4"], [], ""],
@@ -669,3 +663,35 @@ _pilotfacewear append [];
 /////////////////////////////
 //    Conditional Gear     //
 /////////////////////////////
+
+if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") || isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
+	if (isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core") && !isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
+		_sfmachineGuns append [
+			["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_elitemachineGuns append [
+			["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_militarymachineGuns append [
+			["sfp_ksp90b", "", "", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "cup_optic_acog2", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+	};
+
+    if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy") && !isClass (configFile >> "CfgPatches" >> "CUP_AirVehicles_Core")) then {
+		_sfmachineGuns append [
+			["sfp_ksp90b", "", "", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_elitemachineGuns append [
+			["sfp_ksp90b", "", "", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+		_militarymachineGuns append [
+			["sfp_ksp90b", "", "", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""],
+			["sfp_ksp90c", "", "sfp_dbal2", "rhsusf_acc_ACOG", ["sfp_200Rnd_556x45_ksp90"], [], ""]
+		];
+	};
+};
