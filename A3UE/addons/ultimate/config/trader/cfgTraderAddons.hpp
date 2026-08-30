@@ -18,3 +18,8 @@
         addons[] = {"Tier1_Weapons_cfg"};
         weapons = "weapons_Tier1";
     };
+    class addons_mss : addons_base
+    {
+        addons[] = {"MSS_Core"};
+        weapons = "weapons_mss";
+    };

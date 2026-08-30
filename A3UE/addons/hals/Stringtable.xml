@@ -15,6 +15,13 @@
                 <Korean>SIG Sauer XM7</Korean>
                 <French>SIG Sauer XM7</French>
             </Key>
+            <Key ID="STR_A3AU_mss">
+                <Original>MSS</Original>
+                <Russian>MSS</Russian>
+                <Korean>MSS</Korean>
+                <French>MSS</French>
+                <Chinesesimp>MSS</Chinesesimp>
+            </Key>
         </Container>
     </Package>
 </Project>
