@@ -810,3 +810,28 @@ if (isClass (configFile >> "CfgVehicles" >> "clv_BEGLEITPANZER")) then {
     _staticAA append ["CLV_OERLIKON"];
     _howitzers append ["CLV_OMM56"];
 };
+
+if (isClass (configfile >> "CfgWeapons" >> "MSS_G29_338LM")) then {
+    _sfsniperRifles append [
+        ["MSS_G29_338LM", "MSS_SOCOM338_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_AML338_CYT_C", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_UltraSR_RR_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_TI", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_MagnusSR_RR_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_MagnusSR_K_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_MagnusSR_K_RR_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"]
+    ];
+
+    _elitesniperRifles append [
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_LRF_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_LRF_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_LRF_TI", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_NO_TI", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_NO_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"]
+    ];
+
+    _militarysniperRifles append [
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"]
+    ];
+};

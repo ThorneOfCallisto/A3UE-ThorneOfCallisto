@@ -874,3 +874,79 @@ if (isClass (configfile >> "CfgPatches" >> "USAF_MQ9")) then {
     _planesTransport append ["USAF_C130J", "USAF_C17"];
 };
 
+if (isClass (configfile >> "CfgWeapons" >> "MSS_G29_338LM")) then {
+	_sfmarksmanRifles append [
+        ["MSS_VSASS_MRGG_MK1_65CM_16_DDC", "MSS_AU_Dual_762_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_16_DDC", "MSS_AU_Dual_762_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "MSS_AU_Dual_762_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "MSS_AU_Dual_762_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "MSS_TBAC_MagnusSR_RR_C_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "MSS_TBAC_MagnusSR_RR_C_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+	];
+    _sfsniperRifles append [
+        ["MSS_RS8_65CM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_65CM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_65CM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_65CM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_762_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_762_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_762_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_762_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8S_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8S_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS9_338LM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS9_338LM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Harris_SBRMP"],
+        ["MSS_G29_338LM", "MSS_SOCOM338_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_AML338_CYT_C", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_UltraSR_RR_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_TI", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_MagnusSR_RR_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_MagnusSR_K_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_TBAC_MagnusSR_K_RR_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"]
+    ];
+
+	_elitemarksmanRifles append [
+        ["MSS_VSASS_MRGG_MK1_65CM_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+	];
+    _elitesniperRifles append [
+        ["MSS_RS8_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8S_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8S_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS9_338LM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS9_338LM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_LRF_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Harris_SBRMP"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_LRF_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_LRF_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_LRF_TI", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_NO_TI", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_SB_PMII_525_FDE_GM_NO_NO_NV", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"]
+    ];
+
+	_militarymarksmanRifles append [
+        ["MSS_VSASS_MRGG_MK1_65CM_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+	];
+    _militarysniperRifles append [
+        
+        ["MSS_RS8_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8C_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS8S_762_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_762_Mk316Mod0_RS8", "MSS_10rnd_762_M852_RS8", "MSS_10rnd_762_M80A1_RS8"], [], "MSS_Harris_SBRMP"],
+        ["MSS_RS9_338LM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Harris_SBRMP"],
+        ["MSS_G29_338LM", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_338LM_Lap_250_RS9", "MSS_10rnd_338LM_Lap_300_RS9", "MSS_10rnd_338LM_TAC_API526_RS9"], [], "MSS_Magpul_FDE"]
+    ];
+};

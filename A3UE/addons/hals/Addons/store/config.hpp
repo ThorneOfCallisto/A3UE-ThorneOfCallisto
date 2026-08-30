@@ -51,7 +51,7 @@ class cfgHALsStore
 				"magazinesTier1"
 			};
 		};
-		
+
 		class SIGXM7_stock
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
