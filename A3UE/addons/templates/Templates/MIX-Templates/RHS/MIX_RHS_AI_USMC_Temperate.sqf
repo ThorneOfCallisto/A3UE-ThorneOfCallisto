@@ -912,7 +912,7 @@ if (isClass (configfile >> "CfgWeapons" >> "Mss_M107A1_50_20_GRN")) then {
         ["MSS_SR25_762_22_B5_BLK", "", "rhsusf_acc_anpeq15side_bk", "MSS_ZCO_25_BLK_GM_NO_NO_NO", ["MSS_20rnd_AR10_GI_762_MK316Mod0", "MSS_20rnd_AR10_MP_762_M80A1", "MSS_20rnd_AR10_MP_762_SUB"], [], "MSS_Harris_SBRMP"],
         ["MSS_SR25_65CM_14_B5_BLK", "", "rhsusf_acc_anpeq15side_bk", "MSS_ZCO_25_BLK_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"],
         ["MSS_SR25_65CM_20_B5_BLK", "", "rhsusf_acc_anpeq15side_bk", "MSS_ZCO_25_BLK_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"],
-        ["MSS_SR25_65CM_22_B5_BLK", "", "rhsusf_acc_anpeq15side_bk", "MSS_ZCO_25_BLK_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"],
+        ["MSS_SR25_65CM_22_B5_BLK", "", "rhsusf_acc_anpeq15side_bk", "MSS_ZCO_25_BLK_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"]
     ];
     _militarysniperRifles append [
         ["MSS_MRAD_Covert_65CM_OD_17", "", "", "MSS_M7_28_OD_GM_NO_NO_NO", ["MSS_10rnd_65CM_140ELDM_MRAD", "MSS_10rnd_65CM_136_MRAD", "MSS_10rnd_65CM_143ELDX_MRAD"], [], "MSS_Atlas_BT72"],

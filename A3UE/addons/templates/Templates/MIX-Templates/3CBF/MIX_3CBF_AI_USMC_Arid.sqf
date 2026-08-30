@@ -956,7 +956,7 @@ if (isClass (configfile >> "CfgWeapons" >> "Mss_M107A1_50_20_FDE")) then {
         ["MSS_SR25_762_22_B5_FDE", "", "rhsusf_acc_anpeq15side", "MSS_ZCO_25_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_MK316Mod0_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_SUB_FDE"], [], "MSS_Harris_SBRMP"],
         ["MSS_SR25_65CM_14_B5_FDE", "", "rhsusf_acc_anpeq15side", "MSS_ZCO_25_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"],
         ["MSS_SR25_65CM_20_B5_FDE", "", "rhsusf_acc_anpeq15side", "MSS_ZCO_25_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"],
-        ["MSS_SR25_65CM_22_B5_FDE", "", "rhsusf_acc_anpeq15side", "MSS_ZCO_25_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"],
+        ["MSS_SR25_65CM_22_B5_FDE", "", "rhsusf_acc_anpeq15side", "MSS_ZCO_25_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP", "MSS_20rnd_AR10_MP_65CM_143ELDX", "MSS_20rnd_AR10_MP_65CM_140Berg"], [], "MSS_Harris_SBRMP"]
     ];
     _militarysniperRifles append [
         ["MSS_Mk18_24_300NM_CPS_FDE", "", "rhsusf_acc_anpeq15side", "MSS_TT_Pro_FDE_GM_NO_NO_NO", ["MSS_10rnd_MK18_300NM_225ELDM", "MSS_10rnd_MK18_300NM_M1163", "MSS_10rnd_MK18_300NM_ATIP"], [], "MSS_Magpul_FDE"],
