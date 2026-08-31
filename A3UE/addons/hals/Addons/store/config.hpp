@@ -33,11 +33,13 @@ class cfgHALsStore
 		#include "config\SIGXM7.hpp"
 		#include "config\Tier1.hpp"
 		#include "config\mss.hpp"
+		#include "config\R3F.hpp"
+		#include "config\qdi.hpp"
 	};
 
 	class stores 
 	{
-		class Tier1_stock
+		class Tier1
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
@@ -52,7 +54,7 @@ class cfgHALsStore
 			};
 		};
 
-		class SIGXM7_stock
+		class SIGXM7
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
@@ -70,6 +72,29 @@ class cfgHALsStore
 				"muzzlesMss",
 				"bipodsMss",
 				"magazinesMss"
+			};
+		};
+
+		class R3F
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesR3F",
+				"muzzlesR3F",
+				"opticsR3F"
+			};
+		};
+		
+		class qdi
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsQDI",
+				"riflesQDI",
+				"mgQDI",
+				"sniperRiflesQDI",
+				"opticsQDI",
+				"magazinesQDI"
 			};
 		};
 	};

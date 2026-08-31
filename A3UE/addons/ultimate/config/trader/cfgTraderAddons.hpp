@@ -24,3 +24,13 @@
         addons[] = {"MSS_Core"};
         weapons = "weapons_mss";
     };
+    class addons_R3F : addons_base
+    {
+        addons[] = {"R3F_G_SCAR"};
+        weapons = "weapons_R3F";
+    };
+    class addons_QDI : addons_base
+    {
+        addons[] = {"qdi_core"};
+        weapons = "weapons_QDI";
+    };

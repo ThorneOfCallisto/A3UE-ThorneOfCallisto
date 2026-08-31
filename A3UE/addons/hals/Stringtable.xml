@@ -22,6 +22,21 @@
                 <French>MSS</French>
                 <Chinesesimp>MSS</Chinesesimp>
             </Key>
+            <Key ID="STR_A3AU_R3F">
+                <Original>R3F</Original>
+                <Russian>R3F</Russian>
+                <Korean>R3F</Korean>
+                <French>R3F</French>
+                <Chinesesimp>R3F</Chinesesimp>
+            </Key>
+            <Key ID="STR_A3AU_QDI">
+                <Original>QDI</Original>
+                <German>QDI</German>
+                <Russian>QDI</Russian>
+                <Chinesesimp>QDI</Chinesesimp>
+                <Korean>QDI</Korean>
+                <French>QDI</French>
+            </Key>
         </Container>
     </Package>
 </Project>

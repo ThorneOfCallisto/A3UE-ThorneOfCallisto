@@ -4,14 +4,14 @@
 _basic append ["B_Quadbike_01_F"];
 _lightUnarmed append ["amf_pvp_01_mag_TDF_f", "amf_pvp_01_top_TDF_f", "B_AMF_VAB_ULTIMA_X8_TDF_F", "AMF_VBL_TDF_762_01_F"];
 _lightArmed append ["AMF_VB2L_TDF_762_01_F", "amf_VBAE_02_TDF_f", "amf_VBAE_03_TDF_f", "amf_VBAE_01_TDF_f", "AMF_VB2L_TDF", "AMF_VBL_TDF_127_01_F", "AMF_VBL_127_TDF", "AMF_VBL_762_TDF"];
-_Trucks append ["AMF_GBC180_PERS_02", "R3F_KAMAZ_DA_trans"];
+_Trucks append ["AMF_GBC180_PERS_02"];
 _cargoTrucks append ["AMF_GBC180_PLATEAU_02", "AMF_GBC180_PERS_02"];
 _ammoTrucks append ["AMF_GBC180_AmmoTruck_02"];
 _repairTrucks append ["AMF_GBC180_MECA_02"];
 _fuelTrucks append ["B_Truck_01_fuel_F"];
 _medicalTrucks append ["AMF_VBMR_SAN_TDF"];
 _lightAPCs append ["AMF_VBMR_HMG_TDF", "AMF_VBMR_L_TDF_02", "AMF_VBMR_GENIE_TDF", "AMF_VBMR_L_TDF_01", "AMF_VBMRL_762_Tundra", "AMF_VBMRL_127_DA", "AMF_VBMR_L_TDF_01"];
-_APCs append ["R3F_PANDUR_DA", "B_AMF_AMX10_RCR_02_F", "B_AMF_VAB_ULTIMA_TOP_X8_TDF_F", "AMF_VBMR_COMMANDEMENT_TDF", "AMF_VBMR_GMG_TDF", "AMF_VBMR_TDF", "AMF_VBMR_VOA_TDF", "AMF_VBMR_ARX30_TDF", "AMF_VBMR_DEF_TDF", "AMF_VBMR_HMG_TDF", "AMF_VBMR_MMP_TDF"];
+_APCs append ["B_AMF_AMX10_RCR_02_F", "B_AMF_VAB_ULTIMA_TOP_X8_TDF_F", "AMF_VBMR_COMMANDEMENT_TDF", "AMF_VBMR_GMG_TDF", "AMF_VBMR_TDF", "AMF_VBMR_VOA_TDF", "AMF_VBMR_ARX30_TDF", "AMF_VBMR_DEF_TDF", "AMF_VBMR_HMG_TDF", "AMF_VBMR_MMP_TDF"];
 _IFVs append ["AMF_VBCI_TDF_01_F", "AMF_VBCI_TDF", "AMF_EBRC_TDF_01"];
 _airborneVehicles append ["B_AMF_VAB_ULTIMA_X8_TDF_F", "AMF_VBMR_HMG_TDF", "AMF_VBCI_TDF_01_F", "AMF_EBRC_TDF_01", "B_AMF_AMX10_RCR_02_F"];
 _tanks append ["AMF_Leclerc_S2_TDF", "AMF_Leclerc_XLR_TDF", "B_AMF_TANK_TDF_01_F", "B_AMF_TANK_TDF_02_F"];
@@ -23,7 +23,7 @@ _DropPod append ["SpaceshipCapsule_01_F"];
 
 _transportBoat append ["B_Boat_Transport_01_F"];
 _gunBoat append ["B_Boat_Armed_01_minigun_F"];
-_Amphibious append ["R3F_PANDUR_DA"];
+_Amphibious append [];
 
 _planesCAS append ["AMF_RAFALE_B_01_F", "AMF_RAFALE_C_01_F", "AMF_RAFALE_M_01_F"];
 _planesAA append ["AMF_RAFALE_B_01_F", "B_AMF_PLANE_FIGHTER_02_F"];
