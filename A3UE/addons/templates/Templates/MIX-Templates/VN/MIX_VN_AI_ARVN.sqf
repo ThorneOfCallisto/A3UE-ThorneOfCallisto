@@ -712,5 +712,5 @@ _pilotfacewear append [];
 /////////////////////////////
 
 if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
-	_transportplanes append ["vnx_i_air_ac119_02_01"];
+	_planesTransport append ["vnx_i_air_ac119_02_01"];
 };

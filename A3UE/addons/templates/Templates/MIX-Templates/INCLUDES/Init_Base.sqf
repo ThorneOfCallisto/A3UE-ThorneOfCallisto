@@ -18,10 +18,6 @@ private _hasEF = "ef" in A3A_enabledDLC;
 //       Vehicles       //
 //////////////////////////
 
-["ammobox", "I_supplyCrate_F"] call _fnc_saveToTemplate;     //Don't touch or you die a sad and lonely death!
-["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
-["equipmentBox", "Box_AAF_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
-
 private _basic = [];
 private _lightUnarmed = [];
 private _lightArmed = [];
@@ -83,10 +79,11 @@ private _howitzers =  [];
 private _radar = "";
 private _SAM = "";
 
-["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
-["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
-["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
-["howitzerMagazineHE", "6Rnd_120mm_HE_shells_RF","2Rnd_120mm_Mo_Cluster_RF"] call _fnc_saveToTemplate;
+// Override these if needed
+private _mortarMagazineHE = "8Rnd_82mm_Mo_shells";
+private _mortarMagazineSmoke = "8Rnd_82mm_Mo_Smoke_white";
+private _mortarMagazineFlare = "8Rnd_82mm_Mo_Flare_white";
+private _howitzerMagazineHE = "6Rnd_120mm_HE_shells_RF","2Rnd_120mm_Mo_Cluster_RF";
 
 private _minefieldAT = [];
 private _minefieldAPERS = [];

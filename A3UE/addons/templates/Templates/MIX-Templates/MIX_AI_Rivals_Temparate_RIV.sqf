@@ -10,6 +10,9 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 ["name", "Rivals"] call _fnc_saveToTemplate;
 ["nameLeader", "Mikola Bardak"] call _fnc_saveToTemplate;
 
+["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
+["surrenderCrate", "Box_Syndicate_Wps_F"] call _fnc_saveToTemplate;
+
 /////////////////////////////////
 //    Include Factions here    //
 /////////////////////////////////

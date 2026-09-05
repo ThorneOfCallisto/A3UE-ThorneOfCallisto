@@ -14,6 +14,10 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 ["flagTexture", "a3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate;
 
+["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;     //Don't touch or you die a sad and lonely death!
+["surrenderCrate", "Box_NATO_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+
 _radar = "B_Radar_System_01_F";
 _SAM = "B_SAM_System_03_F";
 
@@ -32,14 +36,20 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "3CBF\MIX_3CBF_AI_USMC_Arid.sqf";
         ["USMC", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
         #include "3CBF\3CBF_Vehicle_Attributes.sqf";
 
         if (isClass (configFile >> "CfgFactionClasses" >> "UK3CB_BAF_Faction_Army_MTP")) then {
             _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
             #include "3CBBAF\MIX_3CB_AI_BAF_Arid.sqf";
             ["BAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
             #include "3CBBAF\3CBBAF_Vehicle_Attributes.sqf";
         };
+        
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "3CBF\MIX_3CBF_AI_AAF.sqf";
+        ["AAF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     } else {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "RHS\MIX_RHS_AI_US_Army_Arid.sqf";
@@ -48,6 +58,7 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_usarmy")) then {
         #include "RHS\MIX_RHS_AI_USMC_Arid.sqf";
         ["USMC", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     };
+
     #include "RHS\RHS_Vehicle_Attributes.sqf";
 };
 
@@ -55,6 +66,7 @@ if (isClass (configFile >> "CfgVehicles" >> "BWA3_Dingo2_FLW200_M2_CG13_Fleck"))
     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
     #include "BWA3\MIX_BWA3_AI_BW_Arid.sqf";
     ["BW", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
     #include "BWA3\BWA3_Vehicle_Attributes.sqf";
 };
 
@@ -68,6 +80,7 @@ if (isClass (configFile >> "CfgVehicles" >> "sfp_strv122b")) then {
     _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
     #include "SWE\MIX_SFP_AI_SWE_Arid.sqf";
     ["SFP", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
     #include "SWE\SFP_Vehicle_Attributes.sqf";
 };
 

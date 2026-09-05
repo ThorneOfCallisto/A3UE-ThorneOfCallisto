@@ -75,9 +75,9 @@ class opticsR3F
 
 };
 
-class magazinesQDI
+class magazinesR3F
 {
-	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_QDI", localize "STR_A3AU_magazines"]);
+	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_R3F", localize "STR_A3AU_magazines"]);
 	picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 	
 	///////////////////////////////////////////////////////

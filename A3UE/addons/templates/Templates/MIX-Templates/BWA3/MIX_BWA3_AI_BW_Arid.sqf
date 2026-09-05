@@ -881,7 +881,7 @@ if (isClass (configfile >> "CfgWeapons" >> "MSS_G29_338LM")) then {
         ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "MSS_AU_Dual_762_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
         ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "MSS_AU_Dual_762_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
         ["MSS_VSASS_MRGG_MK1_762_16_DDC", "MSS_TBAC_MagnusSR_RR_C_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
-        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "MSS_TBAC_MagnusSR_RR_C_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "MSS_TBAC_MagnusSR_RR_C_DE", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"]
 	];
     _sfsniperRifles append [
         ["MSS_RS8_65CM_FDE", "MSS_RS9_Suppressor_FDE", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
@@ -911,7 +911,7 @@ if (isClass (configfile >> "CfgWeapons" >> "MSS_G29_338LM")) then {
         ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
         ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
         ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
-        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_LRF_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"]
 	];
     _elitesniperRifles append [
         ["MSS_RS8_65CM_FDE", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_M5_25_FDE_GM_NO_NO_NO", ["MSS_10rnd_65CM_136Lap_RS8", "MSS_10rnd_65CM_143ELDX_RS8", "MSS_10rnd_65CM_147ELDM_RS8"], [], "MSS_Harris_SBRMP"],
@@ -937,7 +937,7 @@ if (isClass (configfile >> "CfgWeapons" >> "MSS_G29_338LM")) then {
 	_militarymarksmanRifles append [
         ["MSS_VSASS_MRGG_MK1_65CM_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
         ["MSS_VSASS_MRGG_MK1_65CM_20_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_65CM_136LAP_FDE", "MSS_20rnd_AR10_MP_65CM_143ELDX_FDE", "MSS_20rnd_AR10_MP_65CM_M1200_FDE"], [], "MSS_Harris_SBRMP"],
-        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"],
+        ["MSS_VSASS_MRGG_MK1_762_16_DDC", "", "BWA3_acc_LLM01_irlaser_tan", "MSS_Mark5_18_FDE_GM_NO_NO_NO", ["MSS_20rnd_AR10_MP_762_M852_FDE", "MSS_20rnd_AR10_MP_762_M80A1_FDE", "MSS_20rnd_AR10_MP_762_M62_FDE"], [], "MSS_Harris_SBRMP"]
 	];
     _militarysniperRifles append [
         

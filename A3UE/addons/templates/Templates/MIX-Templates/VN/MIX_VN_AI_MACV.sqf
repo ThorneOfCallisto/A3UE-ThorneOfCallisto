@@ -25,7 +25,7 @@ _transportBoat append ["vn_o_boat_02_01", "vn_b_boat_10_01", "vn_b_boat_09_01"];
 _gunBoat append ["vn_b_boat_13_02", "vn_b_boat_06_02", "vn_b_boat_05_02", "vn_b_boat_12_02"];
 _Amphibious append [];
 
-_planesCAS append ["vn_b_air_f4c_at", "vn_b_air_f100d_at"];
+_planesCAS append ["vn_b_air_f4c_at", "vn_b_air_f4c_bmb", "vn_b_air_f4c_ehcas", "vn_b_air_f4c_lbmb", "vn_b_air_f100d_at", "vn_b_air_f100d_bmb", "vn_b_air_f100d_ehcas", "vn_b_air_f100d_mr", ""];
 _planesAA append ["vn_b_air_f4c_cap", "vn_b_air_f100d_cap"];
 
 _planesTransport append [];
@@ -709,9 +709,59 @@ _pilotfacewear append [];
 /////////////////////////////
 //    Conditional Gear     //
 /////////////////////////////
-
+// S.O.G. Nickel Steel
 if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
+	_APCs append ["vnx_b_armor_lvte1_01_usmc", "vnx_b_armor_lvtp5_01", "vnx_b_armor_lvtp5c_01_usmc"];
+	_lightTanks append ["vnx_b_armor_m50_01", "vnx_b_armor_m50a1_01"];
+	_aa append ["vnx_b_armor_m163_01"];
+
 	_gunship pushBack "vnx_b_air_ac119_01_01";
-  	_transportplanes append ["vnx_b_air_ac119_02_01","vnx_b_air_ac119_02_02"];
-	_planesCAS pushBack "vnx_b_air_ac119_04_01";
+  	_planesTransport append ["vnx_b_air_ac119_02_01","vnx_b_air_ac119_02_02"];
+	_planesCAS append ["vnx_b_air_ac119_04_01", "vnx_b_air_a4e_usn_at", "vnx_b_air_a4e_usn_cas", "vnx_b_air_a4e_usn_cbu", "vnx_b_air_a4e_usn_mr", "vnx_b_air_ov10a_navy_at", "vnx_b_air_ov10a_navy_bmb", "vnx_b_air_ov10a_navy_cas", "vnx_b_air_ov10a_navy_killer"];
+	_planesAA append ["vnx_b_air_a4e_usn_cap", "vnx_b_air_ov10a_navy_cap"];
+};
+
+// UNSUNG Redux
+if (isClass (configFile >> "cfgVehicles" >> "uns_A1J_navy_CAS")) then {
+	_lightArmed append ["uns_xm706e1", "uns_xm706e2"];
+	_lightTanks append ["uns_m551"];
+
+	_gunBoat append ["uns_PBR_M10"];
+
+	_planesTransport append ["uns_c1a6", "uns_AC47", "uns_c123b", "uns_c123", "uns_C130_H"];
+	_planesCAS append [
+		"uns_A1J_navy_CAS", "uns_A1J_navy_BMB", "uns_A1J_navy_EHCAS", "uns_A1J_navy_LBMB", 
+		"uns_A1J_CAS", "uns_A1J_LBMB", "uns_A1J", "uns_A1J_CMU", 
+		"uns_A4B_skyhawk_CAS", "uns_A4B_skyhawk_BMB", "uns_A4B_skyhawk_MBMB", "uns_A4B_skyhawk_CBU",
+		"uns_A4E_skyhawk_BMB", "uns_A4E_skyhawk_AGM", "uns_A4E_skyhawk_LRBMB", "uns_A4E_skyhawk_HCAS",
+		"uns_A6_Intruder_LRBMB", "uns_A6_Intruder_AGM", "uns_A6_Intruder_BMB", "uns_A6_Intruder_CAS", "uns_A6_Intruder_GBU",
+		"uns_A7N_CAS", "uns_A7N_BMB", "uns_A7N_LBMB", "uns_A7N_HBMB",
+		"uns_f8e_CAS", "uns_f8e_BMB", "uns_f8e_HBMB",
+		"uns_ov10_navy_CAS", "uns_ov10_navy_CBU", "uns_ov10_navy_FAC", "uns_ov10_navy_HCAS",
+		"uns_a37_bmb", "uns_a37_cbu", "uns_a37_sbmb", "uns_a37_scbu", 
+		"uns_A7_CAS", "uns_A7_AGM", "uns_A7_CBU", "uns_A7_HBMB", 
+		"uns_f105D_BMB", "uns_f105D_CAS", "uns_f105D_HCAS", "uns_f105D_LRBMB", 
+		"uns_f105F_BMB", "uns_f105F_AGM", "uns_f105F_CBU", "uns_f105F_MR", 
+		"UNS_F111_D_CAS", "UNS_F111_D_CBU", "UNS_F111_D_LBMB", "UNS_F111_D_LRBMB", 
+		"UNS_F111_MR", "UNS_F111_HCAS", "UNS_F111_CAS", "UNS_F111_BMB", 
+		"uns_skymaster_CAS", "UNS_skymaster_EHCAS", "UNS_skymaster_FACwdw", "UNS_skymaster_HCAS", 
+		"uns_ov10_usaf_CAS", "uns_ov10_usaf_FAC", "uns_ov10_usaf_HCAS", "uns_ov10_usaf_MR", 
+		"uns_a3avah1", "uns_a3bvah11", "uns_EA6B", "uns_a3b", "uns_ov1a", "uns_b52h_alu", "uns_b52h_lb2", "uns_c130_h_blu82", "uns_EA6A_Intruder"
+	];
+	_planesAA append ["uns_A4B_skyhawk_CAP", "uns_A4E_skyhawk_CAP", "uns_A7N_CAP", "uns_f8e_CAP", "uns_A7_CAP", "uns_f105D_CAP"];
+	
+	_helisLight append ["uns_H13_gunship_USN", "uns_H13_amphib_USN", "uns_H13_transport_USN"];
+	_transportHelicopters append ["uns_rh53a_m2_usn", "uns_h21c", "uns_h21c_mg", "uns_ch47_m60_army", "uns_hh53b_m134_usaf", "uns_ch46d", "uns_ch46d_armed", "uns_ch53a_m60_usmc"];
+	_helisLightAttack append ["uns_ach47_m134"];
+	_airPatrol append ["uns_H13_transport_USN"];
+
+	_staticAT append ["uns_M40_106mm_US"];
+	_staticMortars append ["uns_M1_81mm_mortar", "uns_M1_81mm_mortar_arty", "uns_M2_60mm_mortar", "uns_M30_107mm_mortar"];
+	_howitzers append ["Uns_M102_artillery", "Uns_M114_artillery"];
+
+	_artillery append ["uns_m107sp", "uns_m110sp"];
+	_artilleryMags append [
+		["uns_m107sp", ["vn_cannon_m101_mag_he_x8", "vn_cannon_m101_mag_ab_x8", "vn_cannon_m101_mag_wp_x8"]],
+		["uns_m110sp", ["vn_cannon_m101_mag_he_x8", "vn_cannon_m101_mag_ab_x8", "vn_cannon_m101_mag_wp_x8"]]
+	];
 };

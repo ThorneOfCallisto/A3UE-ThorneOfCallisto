@@ -630,3 +630,17 @@ _pilotfacewear append [];
 /////////////////////////////
 //    Conditional Gear     //
 /////////////////////////////
+
+// UNSUNG Redux
+if (isClass (configFile >> "cfgVehicles" >> "uns_ot34_85_nva")) then {
+	_tanks append ["uns_ot34_85_nva", "uns_t34_85_nva", "uns_t54_nva", "uns_t55_nva", "uns_to55_nva"];
+
+	_planesTransport append ["uns_an2_transport"];
+	_planesCAS append ["uns_Mig21_CAS", "uns_Mig21_BMB", "uns_Mig21_HCAS", "uns_Mig21_HBMB"];
+	_planesAA append ["uns_Mig21_CAP"];
+
+	_staticAT append ["uns_Type36_57mm_NVA", "uns_SPG9_73mm_NVA", "uns_M40_106mm_NVA"];
+	_staticAA append ["uns_S60_NVA", "uns_ZPU2_NVA", "uns_ZU23_NVA", "uns_Type74_NVA"];
+	_staticMortars append ["uns_m1941_82mm_mortarNVA", "uns_m1941_82mm_mortarNVA_arty"];
+	_howitzers append ["Uns_D20_artillery", "Uns_D30_artillery"];
+};

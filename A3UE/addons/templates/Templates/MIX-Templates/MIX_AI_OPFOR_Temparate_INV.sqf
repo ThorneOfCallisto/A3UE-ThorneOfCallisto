@@ -15,6 +15,10 @@ private _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
 ["flagTexture", "rhsafrf\addons\rhs_main\data\flag_rus_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_Russia"] call _fnc_saveToTemplate;
 
+["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;     //Don't touch or you die a sad and lonely death!
+["surrenderCrate", "Box_East_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+["equipmentBox", "Box_CSAT_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
+
 _radar = "O_Radar_System_02_F";
 _SAM = "O_SAM_System_04_F";
 
@@ -33,6 +37,10 @@ if (isClass (configFile >> "CfgFactionClasses" >> "rhs_faction_vvs_c")) then {
 
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
         #include "3CBF\MIX_3CBF_AI_AFRF.sqf";
+        ["AFRF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
+
+        _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
+        #include "3CBF\MIX_3CBF_AI_CSAT_Temperate.sqf";
         ["AFRF", _gearFactionSnapshot] call _fnc_gearFactionCapture;
     } else {
         _gearFactionSnapshot = call _fnc_gearFactionSnapshot;
