@@ -1,9 +1,9 @@
     // Custom ones
     class addons_thorne : addons_base
     {
-        addons[] = {};
-        vehicles = "vehicles_thorne";
+        addons[] = {"EF_Marines"};
         weapons = "weapons_thorne";
+        vehicles = "vehicles_thorne";
     };
     class addons_fir : addons_base
     {
