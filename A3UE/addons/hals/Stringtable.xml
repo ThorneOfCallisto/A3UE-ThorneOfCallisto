@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="HALLYG_STORE">
     <Package name="General">
+            <Key ID="STR_A3AU_Thorne">
+                <Original>Thorne</Original>
+                <German>Thorne</German>
+                <Russian>Thorne</Russian>
+                <Chinesesimp>Thorne</Chinesesimp>
+                <Korean>Thorne</Korean>
+                <French>Thorne</French>
+            </Key>
+            <Key ID="STR_A3AU_Utility">
+                <Original>Utility</Original>
+                <German>Utility</German>
+                <Russian>Utility</Russian>
+                <Chinesesimp>Utility</Chinesesimp>
+                <Korean>Utility</Korean>
+                <French>Utility</French>
+            </Key>
             <Key ID="STR_A3AU_Tier1">
                 <Original>Tier1</Original>
                 <English>Tier1</English>
@@ -15,13 +31,6 @@
                 <Korean>SIG Sauer XM7</Korean>
                 <French>SIG Sauer XM7</French>
             </Key>
-            <Key ID="STR_A3AU_mss">
-                <Original>MSS</Original>
-                <Russian>MSS</Russian>
-                <Korean>MSS</Korean>
-                <French>MSS</French>
-                <Chinesesimp>MSS</Chinesesimp>
-            </Key>
             <Key ID="STR_A3AU_R3F">
                 <Original>R3F</Original>
                 <Russian>R3F</Russian>
@@ -29,13 +38,12 @@
                 <French>R3F</French>
                 <Chinesesimp>R3F</Chinesesimp>
             </Key>
-            <Key ID="STR_A3AU_QDI">
-                <Original>QDI</Original>
-                <German>QDI</German>
-                <Russian>QDI</Russian>
-                <Chinesesimp>QDI</Chinesesimp>
-                <Korean>QDI</Korean>
-                <French>QDI</French>
+            <Key ID="STR_A3AU_MCC">
+                <Original>MCC</Original>
+                <English>MCC</English>
+                <Russian>MCC</Russian>
+                <Korean>MCC</Korean>
+                <French>MCC</French>
             </Key>
         </Container>
     </Package>

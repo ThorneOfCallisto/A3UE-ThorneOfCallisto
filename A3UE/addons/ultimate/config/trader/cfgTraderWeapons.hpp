@@ -23,3 +23,8 @@
         {
             prefix = "R3F";
         };
+
+        class weapons_mcc : weapons_base
+        {
+            prefix = "mcc";
+        };

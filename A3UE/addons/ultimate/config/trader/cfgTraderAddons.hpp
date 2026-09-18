@@ -30,3 +30,8 @@
         addons[] = {"R3F_G_SCAR"};
         weapons = "weapons_R3F";
     };
+    class addons_mcc : addons_base
+    {
+        addons[] = {"MCC_HK416"};
+        weapons = "weapons_mcc";
+    };
