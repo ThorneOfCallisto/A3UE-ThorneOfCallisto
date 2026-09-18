@@ -39,6 +39,14 @@ class cfgHALsStore
 
 	class stores 
 	{
+		class Thorne
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"utilityThorne"
+			};
+		};
+
 		class Tier1
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -63,18 +71,6 @@ class cfgHALsStore
 			};
 		};
 
-		class mss
-		{
-			displayName = $STR_ARMS_DEALER_STORE;
-			categories[] = {
-				"sniperRiflesMss",
-				"opticsMss",
-				"muzzlesMss",
-				"bipodsMss",
-				"magazinesMss"
-			};
-		};
-
 		class R3F
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -82,19 +78,6 @@ class cfgHALsStore
 				"riflesR3F",
 				"muzzlesR3F",
 				"opticsR3F"
-			};
-		};
-		
-		class qdi
-		{
-			displayName = $STR_ARMS_DEALER_STORE;
-			categories[] = {
-				"handgunsQDI",
-				"riflesQDI",
-				"mgQDI",
-				"sniperRiflesQDI",
-				"opticsQDI",
-				"magazinesQDI"
 			};
 		};
 	};

@@ -108,10 +108,10 @@ _maps append ["ItemMap"];
 _watches append ["ItemWatch"];
 _compasses append ["ItemCompass"];
 _radios append ["ItemRadio"];
-_gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_gpses append [];
+_NVGs append [];
 _binoculars append ["Binocular"];
-_rangefinders append ["Rangefinder"];
+_rangefinders append [];
 
 _traitorUniforms append [];
 _traitorVests append [];

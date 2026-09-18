@@ -113,10 +113,10 @@ _maps append ["vn_b_item_map"];
 _watches append ["vn_b_item_watch"];
 _compasses append ["vn_b_item_compass"];
 _radios append ["vn_b_item_radio_urc10"];
-_gpses append ["ItemGPS"];
-_NVGs append ["NVGoggles"];
+_gpses append [];
+_NVGs append [];
 _binoculars append ["vn_mk21_binocs"];
-_rangefinders append ["Rangefinder"];
+_rangefinders append [];
 
 _traitorUniforms append ["vn_o_uniform_vc_mf_01_07"];
 _traitorVests append ["vn_o_vest_05", "vn_o_vest_04"];

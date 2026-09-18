@@ -525,7 +525,6 @@ _policeSLuniforms append [];
 _policevests append ["V_TacVest_gen_F"];
 _policehelmets append ["H_Beret_gen_F"];
 _policeWeapons append [
-    ["R3F_M4S90", "", "", "", ["R3F_7Rnd_M4S90"], [], ""],
     ["amf_hk_mp5_01_f", "", "", "", ["AMF_30Rnd_9x19_MP5_BO_123GR"], [], ""]
 ];
 _policesidearms append [

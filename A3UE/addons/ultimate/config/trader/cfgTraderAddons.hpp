@@ -1,4 +1,10 @@
     // Custom ones
+    class addons_thorne : addons_base
+    {
+        addons[] = {};
+        vehicles = "vehicles_thorne";
+        weapons = "weapons_thorne";
+    };
     class addons_fir : addons_base
     {
         addons[] = {"FIR_A10A_F", "FIR_F15_F", "FIR_FA18_F", "FIR_F16D_F"};
@@ -19,18 +25,8 @@
         addons[] = {"Tier1_Weapons_cfg"};
         weapons = "weapons_Tier1";
     };
-    class addons_mss : addons_base
-    {
-        addons[] = {"MSS_Core"};
-        weapons = "weapons_mss";
-    };
     class addons_R3F : addons_base
     {
         addons[] = {"R3F_G_SCAR"};
         weapons = "weapons_R3F";
-    };
-    class addons_QDI : addons_base
-    {
-        addons[] = {"qdi_core"};
-        weapons = "weapons_QDI";
     };
