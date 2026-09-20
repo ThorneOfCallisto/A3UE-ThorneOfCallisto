@@ -4,13 +4,20 @@ class CfgFunctions
     class A3A
     {
         class CREATE {
-            class createUnit { file = QPATHTOFOLDER(functions\CREATE\fn_createUnit.sqf); };
-            class NATOinit { file = QPATHTOFOLDER(functions\CREATE\fn_NATOinit.sqf); };
             class spawnGroup { file = QPATHTOFOLDER(functions\CREATE\fn_spawnGroup.sqf); };
         };
         
         class FunctionsTemplates {
             class compatibilityLoadFaction { file = QPATHTOFOLDER(functions\Templates\fn_compatibilityLoadFaction.sqf); };
+        };
+
+        class Coalition {
+            file = QPATHTOFOLDER(functions\Coalition);
+
+            class initCoalition { preInit = 1; };
+            class loadCoalitionFaction {};
+            class loadCoalitionForSide {};
+            class resolveCoalitionType {};
         };
     };
 };
