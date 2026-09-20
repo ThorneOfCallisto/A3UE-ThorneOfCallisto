@@ -1,54 +1,173 @@
 /*
-    Loads one ordinary A3AU faction as an EXTRA coalition faction.
+    Thorne_fnc_loadCoalitionFaction
 
-    Params:
-      0: template file path <STRING>
-      1: side               <SIDE>
-      2: unique tag         <STRING>
-
-    The faction loadouts are registered under unique aliases:
-      loadouts_occ_BAF_military_Rifleman
-      loadouts_inv_AFRF_military_Rifleman
-
-    This means they do not overwrite A3AU's normal active faction loadouts.
+    Parameters:
+        0: SIDE   - west / east
+        1: STRING - "occ" / "inv"
+        2: STRING - coalition tag, e.g. "BAF"
+        3: STRING - template file
 */
 
-#include "..\..\script_component.hpp"
-FIX_LINE_NUMBERS()
-
-params ["_file", "_side", "_tag"];
-
-if !(_file isEqualType "" && {_tag isEqualType ""}) exitWith { createHashMap };
-if (_file == "" || {_tag == ""}) exitWith { createHashMap };
-
-private _sideIndex = [west, east, independent, civilian] find _side;
-if (_sideIndex < 0) exitWith { createHashMap };
-
-private _factionPrefix = ["occ", "inv", "reb", "civ"] # _sideIndex;
-private _defaultName = ["EnemyDefaults", "EnemyDefaults", "RebelDefaults", "CivilianDefaults"] # _sideIndex;
-
-private _defaultFile = format [
-    "\x\A3A\addons\core\Templates\Templates\FactionDefaults\%1.sqf",
-    _defaultName
+params [
+    ["_side", sideUnknown, [west]],
+    ["_prefix", "", [""]],
+    ["_tag", "", [""]],
+    ["_file", "", [""]]
 ];
 
-private _faction = [[_defaultFile, _file]] call A3A_fnc_loadFaction;
-if ((count _faction) == 0) exitWith {
-    diag_log format ["[Thorne Coalition] ERROR: faction '%1' (%2) returned empty template", _tag, _file];
-    createHashMap
+diag_log format [
+    "[Thorne Coalition] loadCoalitionFaction PARAMS side=%1 prefix='%2' tag='%3' file='%4'",
+    _side,
+    _prefix,
+    _tag,
+    _file
+];
+
+
+// -------------------------------------------------------------------------
+// Validation
+// -------------------------------------------------------------------------
+
+if !(_side in [west, east]) exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR invalid side: %1",
+        _side
+    ];
+
+    false
 };
+
+if !(_prefix in ["occ", "inv"]) exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR invalid prefix: '%1'",
+        _prefix
+    ];
+
+    false
+};
+
+if (_tag isEqualTo "") exitWith {
+    diag_log "[Thorne Coalition] ERROR empty faction tag";
+    false
+};
+
+if (_file isEqualTo "") exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR empty faction file for tag='%1'",
+        _tag
+    ];
+
+    false
+};
+
+
+// -------------------------------------------------------------------------
+// Default faction
+// -------------------------------------------------------------------------
+
+private _defaultFile =
+    "\x\A3A\addons\core\Templates\Templates\FactionDefaults\EnemyDefaults.sqf";
+
+diag_log format [
+    "[Thorne Coalition] loading raw faction tag='%1' defaults='%2' faction='%3'",
+    _tag,
+    _defaultFile,
+    _file
+];
+
+
+// -------------------------------------------------------------------------
+// Load normal AU faction
+// -------------------------------------------------------------------------
+
+private _faction = [
+    [
+        _defaultFile,
+        _file
+    ]
+] call A3A_fnc_loadFaction;
+
+
+if (isNil "_faction") exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR loadFaction returned nil tag='%1'",
+        _tag
+    ];
+
+    false
+};
+
+
+if !(_faction isEqualType createHashMap) exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR loadFaction returned invalid type tag='%1': %2",
+        _tag,
+        _faction
+    ];
+
+    false
+};
+
+
+// -------------------------------------------------------------------------
+// Read loadouts
+// -------------------------------------------------------------------------
+
+private _allDefinitions = _faction getOrDefault [
+    "loadouts",
+    createHashMap
+];
+
+diag_log format [
+    "[Thorne Coalition] faction parsed tag='%1' name='%2' loadouts=%3",
+    _tag,
+    _faction getOrDefault ["name", "UNKNOWN"],
+    count _allDefinitions
+];
+
+if ((count _allDefinitions) == 0) exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR faction '%1' has no loadouts",
+        _tag
+    ];
+
+    false
+};
+
+
+// -------------------------------------------------------------------------
+// Compile faction groups
+//
+// IMPORTANT:
+// Do NOT use "occ" directly because that would overwrite the main faction.
+// Give every coalition faction its own prefix.
+// -------------------------------------------------------------------------
+
+private _coalitionPrefix = format [
+    "%1_%2",
+    _prefix,
+    _tag
+];
+
+[
+    _faction,
+    _coalitionPrefix
+] call A3A_fnc_compileGroups;
+
+
+// -------------------------------------------------------------------------
+// Register custom unit types
+// -------------------------------------------------------------------------
 
 private _unitClassMap = _side call SCRT_fnc_unit_getUnitMap;
-private _baseUnitClass = switch (_side) do {
-    case west:        { "a3a_unit_west" };
-    case east:        { "a3a_unit_east" };
-    case independent: { "a3a_unit_reb" };
-    default           { "a3a_unit_civ" };
+
+private _baseUnitClass = if (_side isEqualTo west) then {
+    "a3a_unit_west"
+} else {
+    "a3a_unit_east"
 };
 
-private _aliasPrefix = format ["loadouts_%1_%2_", _factionPrefix, _tag];
-private _unitNames = createHashMap;
-private _allDefinitions = _faction getOrDefault ["loadouts", createHashMap];
+private _registeredNames = createHashMap;
 
 {
     private _loadoutName = _x;
@@ -59,54 +178,102 @@ private _allDefinitions = _faction getOrDefault ["loadouts", createHashMap];
         _baseUnitClass
     ];
 
-    private _alias = _aliasPrefix + _loadoutName;
+    /*
+        Standard AU:
+            loadouts_occ_military_Rifleman
+
+        Coalition:
+            loadouts_occ_BAF_military_Rifleman
+    */
+
+    private _globalName = format [
+        "loadouts_%1_%2_%3",
+        _prefix,
+        _tag,
+        _loadoutName
+    ];
 
     [
-        _alias,
+        _globalName,
         _definition + [_unitClass]
     ] call A3A_fnc_registerUnitType;
 
-    _unitNames set [_loadoutName, _alias];
+    /*
+        Map the original AU classname to our coalition classname.
+
+        military_Rifleman
+              ->
+        loadouts_occ_BAF_military_Rifleman
+    */
+
+    _registeredNames set [
+        format [
+            "loadouts_%1_%2",
+            _prefix,
+            _loadoutName
+        ],
+        _globalName
+    ];
+
 } forEach _allDefinitions;
 
-// Same derived vehicle lists A3AU creates for enemy factions.
-if (_side in [Occupants, Invaders, west, east]) then {
-    private _lightArmedTroop = (_faction getOrDefault ["vehiclesLightArmed", []]) select {
-        ([_x, true] call BIS_fnc_crewCount) - ([_x, false] call BIS_fnc_crewCount) >= 4
-    };
-    _faction set ["vehiclesLightArmedTroop", _lightArmedTroop];
 
-    private _vehArmor =
-        (_faction getOrDefault ["vehiclesTanks", [], true])
-        + (_faction getOrDefault ["vehiclesAA", [], true])
-        + (_faction getOrDefault ["vehiclesArtillery", [], true])
-        + (_faction getOrDefault ["vehiclesLightAPCs", [], true])
-        + (_faction getOrDefault ["vehiclesAPCs", [], true])
-        + (_faction getOrDefault ["vehiclesLightTanks", [], true])
-        + (_faction getOrDefault ["vehiclesAirborne", [], true])
-        + (_faction getOrDefault ["vehiclesIFVs", [], true]);
+// -------------------------------------------------------------------------
+// Attach resolution map to faction
+// -------------------------------------------------------------------------
 
-    _faction set ["vehiclesArmor", _vehArmor];
-};
-
-_faction set ["Thorne_CoalitionTag", _tag];
-_faction set ["Thorne_CoalitionFile", _file];
-_faction set ["Thorne_CoalitionUnitNames", _unitNames];
-
-private _key = format ["%1:%2", _factionPrefix, _tag];
-Thorne_CoalitionFactions set [_key, _faction];
-Thorne_CoalitionUnitTypes set [_key, _unitNames];
-
-missionNamespace setVariable ["Thorne_CoalitionFactions", Thorne_CoalitionFactions];
-missionNamespace setVariable ["Thorne_CoalitionUnitTypes", Thorne_CoalitionUnitTypes];
-
-diag_log format [
-    "[Thorne Coalition] loaded tag='%1' side='%2' name='%3' loadouts=%4 file='%5'",
-    _tag,
-    _factionPrefix,
-    _faction getOrDefault ["name", "UNKNOWN"],
-    count (keys _unitNames),
-    _file
+_faction set [
+    "Thorne_CoalitionUnitMap",
+    _registeredNames
 ];
 
-_faction
+_faction set [
+    "Thorne_CoalitionTag",
+    _tag
+];
+
+_faction set [
+    "Thorne_CoalitionPrefix",
+    _prefix
+];
+
+
+// -------------------------------------------------------------------------
+// Store faction
+// -------------------------------------------------------------------------
+
+if (isNil "Thorne_CoalitionFactions") then {
+
+    Thorne_CoalitionFactions = createHashMapFromArray [
+        ["occ", createHashMap],
+        ["inv", createHashMap]
+    ];
+
+};
+
+private _sidePool = Thorne_CoalitionFactions getOrDefault [
+    _prefix,
+    createHashMap
+];
+
+_sidePool set [
+    _tag,
+    _faction
+];
+
+Thorne_CoalitionFactions set [
+    _prefix,
+    _sidePool
+];
+
+
+diag_log format [
+    "[Thorne Coalition] LOADED tag='%1' prefix='%2' name='%3' units=%4 coalitionPool=%5",
+    _tag,
+    _prefix,
+    _faction getOrDefault ["name", "UNKNOWN"],
+    count _registeredNames,
+    keys _sidePool
+];
+
+true

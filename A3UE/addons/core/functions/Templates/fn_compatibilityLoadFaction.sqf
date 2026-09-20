@@ -10,24 +10,56 @@ FIX_LINE_NUMBERS()
 
 params ["_file", "_side"];
 
-Info_2("Compatibility loading template: '%1' as side %2", _file, _side);
+Info_2(
+    "Compatibility loading template: '%1' as side %2",
+    _file,
+    _side
+);
 
 private _sideIndex = [west, east, independent, civilian] find _side;
-private _factionDefaultFile = [
+
+if (_sideIndex < 0) exitWith {
+    diag_log format [
+        "[Thorne Coalition] ERROR compatibilityLoadFaction invalid side: %1",
+        _side
+    ];
+
+    createHashMap
+};
+
+private _defaultName = [
     "EnemyDefaults",
     "EnemyDefaults",
     "RebelDefaults",
     "CivilianDefaults"
-] # _sideIndex;
+] select _sideIndex;
 
-// Important because this function is compiled from A3UE, not A3A.
-private _defaultFile = format [
+private _factionPrefix = [
+    "occ",
+    "inv",
+    "reb",
+    "civ"
+] select _sideIndex;
+
+private _factionDefaultFile = format [
     "\x\A3A\addons\core\Templates\Templates\FactionDefaults\%1.sqf",
     _defaultName
 ];
 
-private _faction = [[_factionDefaultFile, _file]] call A3A_fnc_loadFaction;
-private _factionPrefix = ["occ", "inv", "reb", "civ"] # _sideIndex;
+diag_log format [
+    "[Thorne Coalition] compatibilityLoadFaction side=%1 prefix=%2 default='%3' faction='%4'",
+    _side,
+    _factionPrefix,
+    _factionDefaultFile,
+    _file
+];
+
+private _faction = [
+    [
+        _factionDefaultFile,
+        _file
+    ]
+] call A3A_fnc_loadFaction;
 
 missionNamespace setVariable ["A3A_faction_" + _factionPrefix, _faction];
 [_faction, _factionPrefix] call A3A_fnc_compileGroups;
@@ -62,11 +94,17 @@ private _allDefinitions = _faction get "loadouts";
     [_faction, _side, _file] call A3A_fnc_TV_verifyAssets;
 #endif
 
-if (_side in [Occupants, Invaders]) then {
+if (_side in [west, east]) then {
     private _lightArmedTroop = (_faction get "vehiclesLightArmed") select {
-        ([_x, true] call BIS_fnc_crewCount) - ([_x, false] call BIS_fnc_crewCount) >= 4
+        ([_x, true] call BIS_fnc_crewCount)
+        - ([_x, false] call BIS_fnc_crewCount)
+        >= 4
     };
-    _faction set ["vehiclesLightArmedTroop", _lightArmedTroop];
+
+    _faction set [
+        "vehiclesLightArmedTroop",
+        _lightArmedTroop
+    ];
 
     private _vehArmor =
         (_faction getOrDefault ["vehiclesTanks", [], true])
@@ -78,16 +116,46 @@ if (_side in [Occupants, Invaders]) then {
         + (_faction getOrDefault ["vehiclesAirborne", [], true])
         + (_faction getOrDefault ["vehiclesIFVs", [], true]);
 
-    _faction set ["vehiclesArmor", _vehArmor];
+    _faction set [
+        "vehiclesArmor",
+        _vehArmor
+    ];
 };
 
-// Load the optional extra normal AU factions after the base faction is ready.
-// Only do it for enemy sides.
-if (_side in [west, east]) then {
+// -------------------------------------------------------------------------
+// Thorne Coalition
+// ONLY the main Occupier (WEST) and Invader (EAST) factions participate.
+// Rebels, civilians and rivals must never be touched here.
+// -------------------------------------------------------------------------
+
+if (_factionPrefix in ["occ", "inv"]) then {
+
     if (isNil "Thorne_CoalitionConfig") then {
-        call Thorne_fnc_initCoalition;
+        if (!isNil "Thorne_fnc_initCoalition") then {
+            call Thorne_fnc_initCoalition;
+        } else {
+            diag_log "[Thorne Coalition] ERROR: Thorne_fnc_initCoalition is not registered";
+        };
     };
-    [_side] call Thorne_fnc_loadCoalitionForSide;
+
+    if (!isNil "Thorne_fnc_loadCoalitionForSide") then {
+
+        diag_log format [
+            "[Thorne Coalition] Loading coalition pool for prefix=%1 side=%2",
+            _factionPrefix,
+            _side
+        ];
+
+        [_side] call Thorne_fnc_loadCoalitionForSide;
+
+    } else {
+
+        diag_log format [
+            "[Thorne Coalition] ERROR: Thorne_fnc_loadCoalitionForSide is not registered. prefix=%1 side=%2",
+            _factionPrefix,
+            _side
+        ];
+    };
 };
 
 _faction
