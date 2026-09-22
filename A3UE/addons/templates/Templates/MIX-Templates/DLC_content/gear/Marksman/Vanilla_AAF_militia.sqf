@@ -1,1 +1,0 @@
-_militiabinoculars append ["Laserdesignator_03"];

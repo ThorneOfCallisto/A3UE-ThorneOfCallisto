@@ -1,1 +1,0 @@
-_policevests pushBack "V_TacVest_gen_holster_RF";

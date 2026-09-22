@@ -25,11 +25,6 @@
         addons[] = {"Tier1_Weapons_cfg"};
         weapons = "weapons_Tier1";
     };
-    class addons_R3F : addons_base
-    {
-        addons[] = {"R3F_G_SCAR"};
-        weapons = "weapons_R3F";
-    };
     class addons_mcc : addons_base
     {
         addons[] = {"MCC_HK416"};

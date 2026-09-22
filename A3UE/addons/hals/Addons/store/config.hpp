@@ -33,7 +33,6 @@ class cfgHALsStore
 		#include "config\Thorne.hpp"
 		#include "config\SIGXM7.hpp"
 		#include "config\Tier1.hpp"
-		#include "config\R3F.hpp"
 		#include "config\mcc.hpp"
 	};
 
@@ -68,16 +67,6 @@ class cfgHALsStore
 			categories[] = {
 				"riflesSIGXM7",
 				"magazinesSIGXM7"
-			};
-		};
-
-		class R3F
-		{
-			displayName = $STR_ARMS_DEALER_STORE;
-			categories[] = {
-				"riflesR3F",
-				"muzzlesR3F",
-				"opticsR3F"
 			};
 		};
 

@@ -31,13 +31,6 @@
                 <Korean>SIG Sauer XM7</Korean>
                 <French>SIG Sauer XM7</French>
             </Key>
-            <Key ID="STR_A3AU_R3F">
-                <Original>R3F</Original>
-                <Russian>R3F</Russian>
-                <Korean>R3F</Korean>
-                <French>R3F</French>
-                <Chinesesimp>R3F</Chinesesimp>
-            </Key>
             <Key ID="STR_A3AU_MCC">
                 <Original>MCC</Original>
                 <English>MCC</English>
