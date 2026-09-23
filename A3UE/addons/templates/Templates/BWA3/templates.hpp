@@ -1,10 +1,4 @@
-    class BWA3_Base
-    {
-        requiredAddons[] = {"bwa3_common"};
-        basepath = QPATHTOFOLDER(templates\Templates\BWA3);
-        logo = QPATHTOFOLDER(templates\Templates\BWA3\bwa3_logo.paa);
-        priority = 65;
-    };
+    class BWA3_Base;
 
     class BWA3_BW_Arid : BWA3_Base
     {

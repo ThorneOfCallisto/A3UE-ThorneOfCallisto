@@ -1,10 +1,4 @@
-    class AMF_Base
-    {
-        requiredAddons[] = {"AMF_FAMAS"};
-        basepath = QPATHTOFOLDER(templates\Templates\AMF);
-        logo = QPATHTOFOLDER(Pictures\antistasi_ultimate_logo.paa);
-        priority = 80;
-    };
+    class AMF_Base;
 
     class AMF_Army : AMF_Base
     {

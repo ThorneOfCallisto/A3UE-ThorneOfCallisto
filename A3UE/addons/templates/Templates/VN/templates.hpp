@@ -1,12 +1,4 @@
-    class VN_Base : Base
-    {
-        requiredAddons[] = {"vn_weapons"};
-        logo = "\vn\data_f_vietnam\logos\vn_sml_ca.paa";
-        basepath = QPATHTOFOLDER(templates\Templates\VN);
-        priority = 50;
-        equipFlags[] = {"lowTech","replaceCompass","replaceWatch"};
-        forceDLC[] = {"vn"};
-    };
+    class VN_Base;
 
     class VN_MACV : VN_Base
     {

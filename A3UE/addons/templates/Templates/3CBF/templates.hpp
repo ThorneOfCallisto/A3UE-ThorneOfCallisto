@@ -1,11 +1,4 @@
-    class 3CBF_Base : Base
-    {
-        requiredAddons[] = {"UK3CB_Factions_Vehicles_SUV"};
-        logo = "UK3CB_Factions\addons\UK3CB_Factions_Common\editor\logo_3cb_ca.paa";
-        basepath = QPATHTOFOLDER(templates\Templates\3CBF);
-        priority = 40;
-        equipFlags[] = {"specialRHS"};
-    };
+    class 3CBF_Base;
 
     class 3CBF_AFRF : 3CBF_Base
     {

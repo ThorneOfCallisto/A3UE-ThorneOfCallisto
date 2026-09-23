@@ -1,34 +1,31 @@
 
 class Templates
 {
-    class Base
-    {
-        description = "";
-    };
+    class Base;
 
     // ***************************** VN *****************************
 
-    #include "Templates\VN\templates.hpp"
+    #include "VN\templates.hpp"
 	
     // ***************************** SWE *****************************
 
-    #include "Templates\SWE\templates.hpp"
+    #include "SWE\templates.hpp"
 	
     // ***************************** 3CB BAF *****************************
 
-    #include "Templates\3CBBAF\templates.hpp"
+    #include "3CBBAF\templates.hpp"
   
     // ***************************** BWA3 *****************************
 
-    #include "Templates\BWA3\templates.hpp"
+    #include "BWA3\templates.hpp"
 
     // ***************************** AMF *****************************
 
-    #include "Templates\AMF\templates.hpp"
+    #include "AMF\templates.hpp"
 
     // ***************************** 3CB Factions *****************************
 
-    #include "Templates\3CBF\templates.hpp"
+    #include "3CBF\templates.hpp"
 
 };
 

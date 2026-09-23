@@ -1,13 +1,4 @@
-    // ***************************** 3CB BAF *****************************
-
-    class 3CBBAF_Base
-    {
-        requiredAddons[] = {"UK3CB_BAF_Weapons","UK3CB_BAF_Vehicles","UK3CB_BAF_Units_Common","UK3CB_BAF_Equipment","rhsgref_main"};
-        //requiredAddons[] = {"UK3CB_BAF_Units_Common"};              // has weapons/equipment/vehicles dependencies
-        basepath = QPATHTOFOLDER(templates\Templates\3CBBAF);
-        logo = "\UK3CB_BAF_Weapons\addons\UK3CB_BAF_Weapons_Ammo\data\ui\logo_small_3cb_ca.paa";
-        priority = 50;
-    };
+    class 3CBBAF_Base;
 
     class 3CBBAF_Arid : 3CBBAF_Base
     {

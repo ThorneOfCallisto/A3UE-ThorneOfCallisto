@@ -14,8 +14,6 @@ private _hasSOG = "vn" in A3A_enabledDLC;
 private _hasSPE = "spe" in A3A_enabledDLC;
 private _hasEF = "ef" in A3A_enabledDLC;
 
-#include "..\INCLUDES\Init_Base.sqf"
-
 //////////////////////////
 //       Vehicles       //
 //////////////////////////

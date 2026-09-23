@@ -2,13 +2,11 @@
 //   Side Information   //
 //////////////////////////
 
-#include "..\..\..\script_component.hpp"
-
 ["name", "French Army"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "French Support Corridor"] call _fnc_saveToTemplate; 			
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; 						
-["flagTexture", QPATHTOFOLDER(templates\Templates\AMF\images\flag_france_co.paa)] call _fnc_saveToTemplate;			
+["flagTexture", QPATHTOFOLDER(Templates\AMF\images\flag_france_co.paa)] call _fnc_saveToTemplate;			
 ["flagMarkerType", "flag_France"] call _fnc_saveToTemplate; 	
 
 #include "..\INCLUDES\Init_Base.sqf"
@@ -248,7 +246,7 @@ _sfmachineGuns append [
 _sfmarksmanRifles append [
     ["AMF_714_Long_01_F", "", "AMF_AN_PEQ_15_black", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "bipod_03_F_blk"],
     ["AMF_714_Long_01_F", "", "AMF_AN_PEQ_15_black", "AMF_specter", ["20Rnd_762x51_HK417_mag"], [], "bipod_03_F_blk"],
-    ["AMF_SCAR_H_02_F_BLK", "", "AMF_AN_PEQ_15_black", "AMF_specter", ["AMF_30Rnd_556x45_SS109_Tracer_Stanag"], [], "amf_Scar_VGBipodBLK"],
+    ["AMF_SCAR_H_02_F_BLK", "", "AMF_AN_PEQ_15_black", "AMF_specter", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], "amf_Scar_VGBipodBLK"],
     ["AMF_714_Long_01_F", "muzzle_snds_B", "", "AMF_schmidt_benderx4", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "amf_acc_714_long_grip3"]
 ];
 _sfsniperRifles append [   
@@ -465,7 +463,7 @@ _militarymachineGuns append [
     ["FN_Minimi_MK3", "", "", "AMF_EOTECH_553", ["AMF_100Rnd_556x45_Minimi_BO_BT_SS109_DCP"], [], "Minimi_Grip_MK2"]
 ];
 _militarymarksmanRifles append [
-    ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["20Rnd_762x51_Mag"], [], ""],
+    ["AMF_SCAR_H_01_F", "", "", "AMF_schmidt_benderx4_tan", ["AMF_20Rnd_762x51_SCAR_BLK_BO_F3"], [], ""],
     ["AMF_SCAR_H_01_F", "", "", "optic_LRPS", ["20Rnd_762x51_Mag"], [], "bipod_01_F_blk"],
     ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["20Rnd_762x51_HK417_mag"], [], "amf_acc_714_long_grip3"],
     ["AMF_714_Long_01_F", "", "", "AMF_schmidt_benderx4", ["AMF_10Rnd_308WIN_UR_CBC_168GR_HPBT"], [], "amf_acc_714_long_grip3"]
@@ -575,7 +573,7 @@ _militiagrenadeLaunchers append [
 ];
 _militiadesignatedGrenadeLaunchers append [];
 _militiaSMGs append [
-    ["amf_hk_mp5_01_f", "", "", "", [], [], ""]
+    ["amf_hk_mp5_01_f", "", "", "", [AMF_30Rnd_9x19_MP5_BO_123GR"], [], ""]
 ];
 _militiamachineGuns append [
     ["amf_mag58_01_f", "", "", "", ["AMF_50Rnd_762x51_MAG58_BO_F3", "AMF_75Rnd_762x51_MAG58_BO_F3"], [], ""],

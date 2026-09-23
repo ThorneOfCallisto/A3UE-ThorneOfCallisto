@@ -9,7 +9,7 @@
     class SFP_SWE_Temperate : SFP_Base
     {
         side = "Occ";
-        flagTexture = QPATHTOFOLDER(templates\Templates\SWE\flag_sweden.paa);
+        flagTexture = QPATHTOFOLDER(Templates\SWE\flag_sweden.paa);
         name = "SFP Sweden Temperate";
         file = "SFP_AI_SWE_Temperate";
         climate[] = {"temperate","tropical"};
@@ -18,7 +18,7 @@
     class SFP_SWE_Arid : SFP_Base
     {
         side = "Occ";
-        flagTexture = QPATHTOFOLDER(templates\Templates\SWE\flag_sweden.paa);
+        flagTexture = QPATHTOFOLDER(Templates\SWE\flag_sweden.paa);
         name = "SFP Sweden Arid";
         file = "SFP_AI_SWE_Arid";
         climate[] = {"arid"};
@@ -27,7 +27,7 @@
     class SFP_SWE_Arctic : SFP_Base
     {
         side = "Occ";
-        flagTexture = QPATHTOFOLDER(templates\Templates\SWE\flag_sweden.paa);
+        flagTexture = QPATHTOFOLDER(Templates\SWE\flag_sweden.paa);
         name = "SFP Sweden Winter";
         file = "SFP_AI_SWE_Arctic";
         climate[] = {"arctic"};

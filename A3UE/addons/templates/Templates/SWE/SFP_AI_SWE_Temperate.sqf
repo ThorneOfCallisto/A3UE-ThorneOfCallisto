@@ -2,13 +2,11 @@
 //   Side Information   //
 //////////////////////////
 
-#include "..\..\..\script_component.hpp"
-
 ["name", "SweAF"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "Swedish Support Corridor"] call _fnc_saveToTemplate; 			
 
 ["flag", "sfp_flagcarrier_sweden"] call _fnc_saveToTemplate; 						
-["flagTexture", QPATHTOFOLDER(templates\Templates\SWE\flag_sweden.paa)] call _fnc_saveToTemplate; 				
+["flagTexture", QPATHTOFOLDER(Templates\SWE\flag_sweden.paa)] call _fnc_saveToTemplate; 				
 ["flagMarkerType", "sfp_marker_sweden"] call _fnc_saveToTemplate; 	
 
 #include "..\INCLUDES\Init_Base.sqf"
@@ -17,9 +15,6 @@
 //       Vehicles       //
 //////////////////////////
 
-/* Faction : SweAF
- * Converted from: SFP_AI_SWE_Temperate.sqf
- */
 _basic              append ["sfp_cykel42"];
 _lightUnarmed    append ["sfp_tgb11", "sfp_81_tgb1112", "sfp_tgb1317"];
 _lightArmed      append ["sfp_tgb13_ksp58", "sfp_tgb1111", "sfp_tgb1111_sog_rbs56"];

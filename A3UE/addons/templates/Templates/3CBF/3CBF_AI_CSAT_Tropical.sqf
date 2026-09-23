@@ -343,7 +343,7 @@ _sfMGvests append [];
 _sfMEDvests append [];
 _sfSLvests append [];
 _sfSNIvests append [];
-_sfGLvests append ["UK3CB_CSAT_G_O_V_Carrier_Rig_CQB_TAN", "UK3CB_CSAT_G_O_V_Carrier_Rig_Tactical_TAN", "UK3CB_CSAT_G_O_V_Carrier_Rig_Heavy"];
+_sfGLvests append ["UK3CB_CSAT_G_O_V_Carrier_Rig_Heavy"];
 _sfATvests append [];
 _sfENGvests append [];
 _sfbackpacks append ["UK3CB_CSAT_O_B_TACPACK_BRN", "UK3CB_CSAT_G_O_B_ASS", "UK3CB_CSAT_G_O_B_RIF"];

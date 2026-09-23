@@ -2,13 +2,11 @@
 //   Side Information   //
 //////////////////////////
 
-#include "..\..\..\script_component.hpp"
-
 ["name", "SweAF"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "Swedish Support Corridor"] call _fnc_saveToTemplate; 			
 
 ["flag", "sfp_flagcarrier_sweden"] call _fnc_saveToTemplate; 						
-["flagTexture", QPATHTOFOLDER(templates\Templates\SWE\flag_sweden.paa)] call _fnc_saveToTemplate; 				
+["flagTexture", QPATHTOFOLDER(Templates\SWE\flag_sweden.paa)] call _fnc_saveToTemplate; 				
 ["flagMarkerType", "sfp_marker_sweden"] call _fnc_saveToTemplate; 	
 
 #include "..\INCLUDES\Init_Base.sqf"
